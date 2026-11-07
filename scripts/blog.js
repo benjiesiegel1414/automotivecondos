@@ -388,6 +388,8 @@ html: `
 // posts
 fs.mkdirSync(path.join(ROOT, 'blog'), {recursive:true});
 for (const post of POSTS) {
+  const bodyFile = path.join(__dirname, 'posts', post.slug + '.html');
+  const body = fs.existsSync(bodyFile) ? fs.readFileSync(bodyFile, 'utf8') : post.html;
   let faqHtml = '', faqLd = '';
   if (post.faq && post.faq.length) {
     faqHtml = `<h2>Frequently asked questions</h2>` + post.faq.map(([q,a]) =>
@@ -416,7 +418,7 @@ for (const post of POSTS) {
     <article class="post">
       <h1>${post.title}</h1>
       <div class="post-meta">${post.date} · AutomotiveCondos.com</div>
-      ${post.html}
+      ${body}
       ${faqHtml}
     </article>
   </div>

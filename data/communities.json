@@ -218,6 +218,18 @@
    "offer": "both"
   },
   {
+   "name": "Desert Storage of Lake Havasu",
+   "city": "Lake Havasu City",
+   "state": "AZ",
+   "status": "Resale only",
+   "units": 169,
+   "priceNote": "Resales ~$82K",
+   "website": null,
+   "lat": 34.47,
+   "lng": -114.33,
+   "offer": "buy"
+  },
+  {
    "name": "LuxeLocker Lake Havasu City",
    "city": "Lake Havasu City",
    "state": "AZ",
@@ -275,6 +287,30 @@
    "lat": 34.54,
    "lng": -112.47,
    "offer": "both"
+  },
+  {
+   "name": "Prescott Luxury Garages",
+   "city": "Prescott",
+   "state": "AZ",
+   "status": "Under construction",
+   "units": 62,
+   "priceNote": "Pre-construction",
+   "website": null,
+   "lat": 34.55,
+   "lng": -112.44,
+   "offer": "buy"
+  },
+  {
+   "name": "Prescott Luxury RV Storage",
+   "city": "Prescott",
+   "state": "AZ",
+   "status": "Resale only",
+   "units": 126,
+   "priceNote": "$135K\u2013$145K",
+   "website": null,
+   "lat": 34.56,
+   "lng": -112.45,
+   "offer": "buy"
   },
   {
    "name": "Elite Garages Scottsdale",
@@ -349,6 +385,30 @@
    "offer": "buy"
   },
   {
+   "name": "Eucalyptus at Beaumont",
+   "city": "Beaumont",
+   "state": "CA",
+   "status": "Established",
+   "units": null,
+   "priceNote": "Deeded RV/garage lots",
+   "website": null,
+   "lat": 33.93,
+   "lng": -116.98,
+   "offer": "buy"
+  },
+  {
+   "name": "Finish Line Auto Storage Calabasas",
+   "city": "Calabasas",
+   "state": "CA",
+   "status": "Planned",
+   "units": 30,
+   "priceNote": "Awaiting approval",
+   "website": null,
+   "lat": 34.16,
+   "lng": -118.64,
+   "offer": "buy"
+  },
+  {
    "name": "MonSTORE Garages Coachella",
    "city": "Coachella",
    "state": "CA",
@@ -370,6 +430,18 @@
    "website": null,
    "lat": 33.68,
    "lng": -117.88,
+   "offer": "buy"
+  },
+  {
+   "name": "Hobby Condos El Dorado Hills",
+   "city": "El Dorado Hills",
+   "state": "CA",
+   "status": "Selling",
+   "units": 43,
+   "priceNote": "From ~$350/sq ft",
+   "website": "https://www.hobbycondos.com",
+   "lat": 38.69,
+   "lng": -121.08,
    "offer": "buy"
   },
   {
@@ -421,6 +493,18 @@
    "offer": "buy"
   },
   {
+   "name": "GarageTown Palm Desert",
+   "city": "Palm Desert",
+   "state": "CA",
+   "status": "Resale only",
+   "units": null,
+   "priceNote": "Resales",
+   "website": null,
+   "lat": 33.72,
+   "lng": -116.37,
+   "offer": "buy"
+  },
+  {
    "name": "MonSTORE Garages Palm Springs",
    "city": "Palm Springs",
    "state": "CA",
@@ -431,6 +515,18 @@
    "lat": 33.83,
    "lng": -116.55,
    "offer": "both"
+  },
+  {
+   "name": "Grand Prix Auto Club San Diego",
+   "city": "San Diego",
+   "state": "CA",
+   "status": "Under construction",
+   "units": 23,
+   "priceNote": "$1.25M\u2013$3.37M",
+   "website": null,
+   "lat": 32.83,
+   "lng": -117.15,
+   "offer": "buy"
   },
   {
    "name": "Club Auto Sport",
@@ -445,6 +541,18 @@
    "offer": "buy"
   },
   {
+   "name": "Garage Unlimited of Santa Cruz",
+   "city": "Santa Cruz",
+   "state": "CA",
+   "status": "Resale only",
+   "units": null,
+   "priceNote": "Resales ~$475K",
+   "website": null,
+   "lat": 36.97,
+   "lng": -122.03,
+   "offer": "buy"
+  },
+  {
    "name": "The Thermal Club",
    "city": "Thermal",
    "state": "CA",
@@ -454,6 +562,30 @@
    "website": null,
    "lat": 33.64,
    "lng": -116.14,
+   "offer": "buy"
+  },
+  {
+   "name": "Grand Prix Auto Club Torrance",
+   "city": "Torrance",
+   "state": "CA",
+   "status": "Under construction",
+   "units": 33,
+   "priceNote": "$1.4M\u2013$3.2M",
+   "website": null,
+   "lat": 33.84,
+   "lng": -118.34,
+   "offer": "buy"
+  },
+  {
+   "name": "Finish Line Auto Storage Westlake Village",
+   "city": "Westlake Village",
+   "state": "CA",
+   "status": "Selling",
+   "units": 30,
+   "priceNote": "$606K\u2013$1.2M",
+   "website": null,
+   "lat": 34.15,
+   "lng": -118.81,
    "offer": "buy"
   },
   {
@@ -481,6 +613,42 @@
    "offer": "buy"
   },
   {
+   "name": "My Car Barn",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "status": "Selling",
+   "units": 3,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 38.83,
+   "lng": -104.82,
+   "offer": "buy"
+  },
+  {
+   "name": "MyGarage Northcrest",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "status": "Selling",
+   "units": 71,
+   "priceNote": "$175K\u2013$258K",
+   "website": null,
+   "lat": 38.95,
+   "lng": -104.82,
+   "offer": "buy"
+  },
+  {
+   "name": "Playground Garages Colorado Springs",
+   "city": "Colorado Springs",
+   "state": "CO",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Pre-construction",
+   "website": "https://playgroundgarages.com",
+   "lat": 38.87,
+   "lng": -104.8,
+   "offer": "buy"
+  },
+  {
    "name": "The Garage Society",
    "city": "Commerce City",
    "state": "CO",
@@ -493,6 +661,54 @@
    "offer": "buy"
   },
   {
+   "name": "Dove Valley Storage",
+   "city": "Englewood",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 176,
+   "priceNote": "$55K\u2013$83K",
+   "website": null,
+   "lat": 39.65,
+   "lng": -104.99,
+   "offer": "buy"
+  },
+  {
+   "name": "ManCaves at Dove Valley",
+   "city": "Englewood",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 64,
+   "priceNote": "Resales ~$295K",
+   "website": null,
+   "lat": 39.63,
+   "lng": -104.99,
+   "offer": "buy"
+  },
+  {
+   "name": "Windmill Creek Storage Condos",
+   "city": "Englewood",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 62,
+   "priceNote": "$172K\u2013$180K",
+   "website": null,
+   "lat": 39.64,
+   "lng": -104.98,
+   "offer": "buy"
+  },
+  {
+   "name": "Personal Warehouses Fort Collins",
+   "city": "Fort Collins",
+   "state": "CO",
+   "status": "Selling",
+   "units": 8,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 40.59,
+   "lng": -105.08,
+   "offer": "buy"
+  },
+  {
    "name": "Citadel Luxury Garages",
    "city": "Glenwood Springs",
    "state": "CO",
@@ -502,6 +718,54 @@
    "website": null,
    "lat": 39.55,
    "lng": -107.32,
+   "offer": "buy"
+  },
+  {
+   "name": "44th Storage Condominiums",
+   "city": "Golden",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 40,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 39.77,
+   "lng": -105.19,
+   "offer": "buy"
+  },
+  {
+   "name": "Canyon View Warehouse Condos",
+   "city": "Golden",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 40,
+   "priceNote": "$300K\u2013$325K",
+   "website": null,
+   "lat": 39.75,
+   "lng": -105.21,
+   "offer": "buy"
+  },
+  {
+   "name": "Golden Garages by Playground",
+   "city": "Golden",
+   "state": "CO",
+   "status": "Under construction",
+   "units": 53,
+   "priceNote": "Pre-construction",
+   "website": "https://playgroundgarages.com",
+   "lat": 39.76,
+   "lng": -105.22,
+   "offer": "buy"
+  },
+  {
+   "name": "Indiana Street RV Plaza Condos",
+   "city": "Golden",
+   "state": "CO",
+   "status": "Resale only",
+   "units": 27,
+   "priceNote": "$240K\u2013$250K",
+   "website": null,
+   "lat": 39.74,
+   "lng": -105.2,
    "offer": "buy"
   },
   {
@@ -526,6 +790,18 @@
    "website": null,
    "lat": 40.41,
    "lng": -105.0,
+   "offer": "buy"
+  },
+  {
+   "name": "Garage Point Colorado",
+   "city": "Morrison",
+   "state": "CO",
+   "status": "Selling",
+   "units": 89,
+   "priceNote": "$220K\u2013$435K",
+   "website": null,
+   "lat": 39.65,
+   "lng": -105.19,
    "offer": "buy"
   },
   {
@@ -1962,6 +2238,18 @@
    "offer": "buy"
   },
   {
+   "name": "All Purpose Garage & Storage",
+   "city": "Bucyrus",
+   "state": "KS",
+   "status": "Resale only",
+   "units": 32,
+   "priceNote": "Resale ~$440K",
+   "website": null,
+   "lat": 38.72,
+   "lng": -94.72,
+   "offer": "buy"
+  },
+  {
    "name": "Carriage Houses of Johnson County",
    "city": "De Soto",
    "state": "KS",
@@ -1971,6 +2259,42 @@
    "website": "https://kcgaragecondos4sale.com/",
    "lat": 38.98,
    "lng": -94.97,
+   "offer": "buy"
+  },
+  {
+   "name": "My Extra Garage Derby",
+   "city": "Derby",
+   "state": "KS",
+   "status": "Selling",
+   "units": 7,
+   "priceNote": "$75K\u2013$150K",
+   "website": "https://myextragarage.net",
+   "lat": 37.55,
+   "lng": -97.27,
+   "offer": "buy"
+  },
+  {
+   "name": "Flex Space KS",
+   "city": "Haysville",
+   "state": "KS",
+   "status": "Selling",
+   "units": null,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 37.56,
+   "lng": -97.35,
+   "offer": "buy"
+  },
+  {
+   "name": "Mammoth Storage Garage Condominiums",
+   "city": "Kechi",
+   "state": "KS",
+   "status": "Selling",
+   "units": 6,
+   "priceNote": "$125K\u2013$150K",
+   "website": null,
+   "lat": 37.8,
+   "lng": -97.28,
    "offer": "buy"
   },
   {
@@ -1998,6 +2322,42 @@
    "offer": "buy"
   },
   {
+   "name": "Park 33 Premium Coach Suites",
+   "city": "Shawnee",
+   "state": "KS",
+   "status": "Established",
+   "units": null,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 39.02,
+   "lng": -94.72,
+   "offer": "buy"
+  },
+  {
+   "name": "GreenLight GarageDominiums",
+   "city": "Wichita",
+   "state": "KS",
+   "status": "Selling",
+   "units": 29,
+   "priceNote": "From $299K",
+   "website": null,
+   "lat": 37.75,
+   "lng": -97.22,
+   "offer": "buy"
+  },
+  {
+   "name": "Greenwich Garage Condos",
+   "city": "Wichita",
+   "state": "KS",
+   "status": "Established",
+   "units": null,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 37.68,
+   "lng": -97.25,
+   "offer": "buy"
+  },
+  {
    "name": "Sandlot Garage Condos",
    "city": "Wichita",
    "state": "KS",
@@ -2007,6 +2367,18 @@
    "website": "https://www.sandlotcondos.com/",
    "lat": 37.73,
    "lng": -97.43,
+   "offer": "buy"
+  },
+  {
+   "name": "Storage Caves Benton",
+   "city": "Benton",
+   "state": "KY",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Reservations open",
+   "website": "https://www.storagecaves.com/",
+   "lat": 36.86,
+   "lng": -88.35,
    "offer": "buy"
   },
   {
@@ -2130,6 +2502,18 @@
    "offer": "buy"
   },
   {
+   "name": "Sunny Slope Drive Garages",
+   "city": "Camdenton",
+   "state": "MO",
+   "status": "Selling",
+   "units": 38,
+   "priceNote": "From $25K (cold storage)",
+   "website": null,
+   "lat": 38.01,
+   "lng": -92.74,
+   "offer": "buy"
+  },
+  {
    "name": "The Place in Chesterfield Valley",
    "city": "Chesterfield",
    "state": "MO",
@@ -2151,6 +2535,54 @@
    "website": "https://www.autotoybarn.com/",
    "lat": 38.89,
    "lng": -94.61,
+   "offer": "buy"
+  },
+  {
+   "name": "The Toybox Condominiums",
+   "city": "Lake Ozark",
+   "state": "MO",
+   "status": "Selling",
+   "units": null,
+   "priceNote": "$426K\u2013$442K",
+   "website": null,
+   "lat": 38.2,
+   "lng": -92.64,
+   "offer": "buy"
+  },
+  {
+   "name": "GKR Paddock Club",
+   "city": "New Bloomfield",
+   "state": "MO",
+   "status": "Under construction",
+   "units": 66,
+   "priceNote": "From $205K",
+   "website": "https://gkrpaddockclub.com",
+   "lat": 38.72,
+   "lng": -92.09,
+   "offer": "buy"
+  },
+  {
+   "name": "Bayside Luxury Garage Condos",
+   "city": "Biloxi",
+   "state": "MS",
+   "status": "Selling",
+   "units": 63,
+   "priceNote": "From $139K",
+   "website": null,
+   "lat": 30.41,
+   "lng": -88.89,
+   "offer": "buy"
+  },
+  {
+   "name": "The Paddock Ocean Springs",
+   "city": "Ocean Springs",
+   "state": "MS",
+   "status": "Established",
+   "units": 8,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 30.41,
+   "lng": -88.83,
    "offer": "buy"
   },
   {
@@ -2221,6 +2653,18 @@
    "units": null,
    "priceNote": "Inquire",
    "website": "https://storagecaves.com",
+   "lat": 35.41,
+   "lng": -80.58,
+   "offer": "buy"
+  },
+  {
+   "name": "Storage Caves Concord II",
+   "city": "Concord",
+   "state": "NC",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Reservations open",
+   "website": "https://www.storagecaves.com/",
    "lat": 35.41,
    "lng": -80.58,
    "offer": "buy"
@@ -2418,6 +2862,42 @@
    "offer": "both"
   },
   {
+   "name": "Octane Club",
+   "city": "Henderson",
+   "state": "NV",
+   "status": "Selling",
+   "units": null,
+   "priceNote": "Custom garage condos; inquire",
+   "website": "https://octaneclubusa.com/",
+   "lat": 36.04,
+   "lng": -114.98,
+   "offer": "buy"
+  },
+  {
+   "name": "The Stack Auto Lofts",
+   "city": "Henderson",
+   "state": "NV",
+   "status": "Selling",
+   "units": 29,
+   "priceNote": "From the high $900Ks",
+   "website": "https://thestackautolofts.com/",
+   "lat": 36.04,
+   "lng": -114.98,
+   "offer": "buy"
+  },
+  {
+   "name": "South Jones Storage Condominiums",
+   "city": "Las Vegas",
+   "state": "NV",
+   "status": "Resale only",
+   "units": null,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 36.07,
+   "lng": -115.22,
+   "offer": "buy"
+  },
+  {
    "name": "LuxeLocker Mesquite",
    "city": "Mesquite",
    "state": "NV",
@@ -2478,6 +2958,30 @@
    "offer": "buy"
   },
   {
+   "name": "Avon Storage Condos",
+   "city": "Avon",
+   "state": "OH",
+   "status": "Selling",
+   "units": 62,
+   "priceNote": "From ~$120K",
+   "website": null,
+   "lat": 41.45,
+   "lng": -82.04,
+   "offer": "buy"
+  },
+  {
+   "name": "Avon Lake Office & Storage Condos",
+   "city": "Avon Lake",
+   "state": "OH",
+   "status": "Resale only",
+   "units": 90,
+   "priceNote": "$85K\u2013$195K",
+   "website": null,
+   "lat": 41.51,
+   "lng": -82.03,
+   "offer": "buy"
+  },
+  {
    "name": "Torque Motor Suites Blue Ash",
    "city": "Blue Ash",
    "state": "OH",
@@ -2502,6 +3006,150 @@
    "offer": "buy"
   },
   {
+   "name": "Resolute Motorsports Club",
+   "city": "Delaware",
+   "state": "OH",
+   "status": "Planned",
+   "units": 250,
+   "priceNote": "Pre-construction",
+   "website": null,
+   "lat": 40.3,
+   "lng": -83.07,
+   "offer": "buy"
+  },
+  {
+   "name": "Hudson Pointe",
+   "city": "Hudson",
+   "state": "OH",
+   "status": "Selling",
+   "units": 9,
+   "priceNote": "$216K\u2013$263K",
+   "website": null,
+   "lat": 41.24,
+   "lng": -81.44,
+   "offer": "buy"
+  },
+  {
+   "name": "Forrer Pointe",
+   "city": "Kettering",
+   "state": "OH",
+   "status": "Selling",
+   "units": 54,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 39.69,
+   "lng": -84.17,
+   "offer": "buy"
+  },
+  {
+   "name": "Marysville Executive Storage Condos",
+   "city": "Marysville",
+   "state": "OH",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 40.24,
+   "lng": -83.37,
+   "offer": "buy"
+  },
+  {
+   "name": "Garage Condos at Mason Pointe",
+   "city": "Mason",
+   "state": "OH",
+   "status": "Selling",
+   "units": 9,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 39.36,
+   "lng": -84.31,
+   "offer": "buy"
+  },
+  {
+   "name": "Biz Caves",
+   "city": "Medina",
+   "state": "OH",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 41.14,
+   "lng": -81.87,
+   "offer": "buy"
+  },
+  {
+   "name": "Store-With-Us Storage Condominiums",
+   "city": "Medina",
+   "state": "OH",
+   "status": "Resale only",
+   "units": 340,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 41.14,
+   "lng": -81.86,
+   "offer": "buy"
+  },
+  {
+   "name": "Tin Man Storage Center",
+   "city": "Mentor",
+   "state": "OH",
+   "status": "Selling",
+   "units": 113,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 41.67,
+   "lng": -81.34,
+   "offer": "buy"
+  },
+  {
+   "name": "The Motor Enclave New Albany",
+   "city": "New Albany",
+   "state": "OH",
+   "status": "Planned",
+   "units": 165,
+   "priceNote": "$160K\u2013$550K planned",
+   "website": null,
+   "lat": 40.08,
+   "lng": -82.81,
+   "offer": "buy"
+  },
+  {
+   "name": "Executive Storage Estates",
+   "city": "Plain City",
+   "state": "OH",
+   "status": "Resale only",
+   "units": 117,
+   "priceNote": "Resales ~$370K",
+   "website": null,
+   "lat": 40.11,
+   "lng": -83.27,
+   "offer": "buy"
+  },
+  {
+   "name": "Horsepower Farms",
+   "city": "Powell",
+   "state": "OH",
+   "status": "Selling",
+   "units": 92,
+   "priceNote": "$156K\u2013$290K",
+   "website": null,
+   "lat": 40.16,
+   "lng": -83.08,
+   "offer": "buy"
+  },
+  {
+   "name": "Mega Storage Condominiums",
+   "city": "Twinsburg",
+   "state": "OH",
+   "status": "Selling",
+   "units": 107,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 41.31,
+   "lng": -81.44,
+   "offer": "buy"
+  },
+  {
    "name": "Garage Condos of Oklahoma",
    "city": "Edmond",
    "state": "OK",
@@ -2523,6 +3171,18 @@
    "website": "https://mammothluxurygaragecondos.com/",
    "lat": 35.96,
    "lng": -96.01,
+   "offer": "buy"
+  },
+  {
+   "name": "Wilshire Point Executive Garage Condos",
+   "city": "Oklahoma City",
+   "state": "OK",
+   "status": "Selling",
+   "units": 7,
+   "priceNote": "$388K per unit",
+   "website": null,
+   "lat": 35.55,
+   "lng": -97.53,
    "offer": "buy"
   },
   {
@@ -2754,6 +3414,18 @@
    "offer": "buy"
   },
   {
+   "name": "LuxeLocker Austin",
+   "city": "Austin",
+   "state": "TX",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Coming soon; buy or rent",
+   "website": "https://luxelocker.com",
+   "lat": 30.27,
+   "lng": -97.74,
+   "offer": "both"
+  },
+  {
    "name": "T11 Car Condos at COTA",
    "city": "Austin",
    "state": "TX",
@@ -2859,6 +3531,18 @@
    "website": "https://garagesoftheamericas.com/",
    "lat": 30.13,
    "lng": -97.62,
+   "offer": "buy"
+  },
+  {
+   "name": "Storage Caves Forney",
+   "city": "Forney",
+   "state": "TX",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Reservations open",
+   "website": "https://www.storagecaves.com/",
+   "lat": 32.75,
+   "lng": -96.47,
    "offer": "buy"
   },
   {
@@ -2982,6 +3666,18 @@
    "offer": "buy"
   },
   {
+   "name": "LuxeLocker McKinney",
+   "city": "McKinney",
+   "state": "TX",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Coming soon; buy or rent",
+   "website": "https://luxelocker.com",
+   "lat": 33.2,
+   "lng": -96.62,
+   "offer": "both"
+  },
+  {
    "name": "Trailblazer Garages \u2014 McKinney",
    "city": "McKinney",
    "state": "TX",
@@ -3042,6 +3738,18 @@
    "offer": "buy"
   },
   {
+   "name": "LuxeLocker Round Rock",
+   "city": "Round Rock",
+   "state": "TX",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Coming soon; buy or rent",
+   "website": "https://luxelocker.com",
+   "lat": 30.51,
+   "lng": -97.68,
+   "offer": "both"
+  },
+  {
    "name": "Dominion Motor Club",
    "city": "San Antonio",
    "state": "TX",
@@ -3090,6 +3798,18 @@
    "offer": "buy"
   },
   {
+   "name": "Park East II & III Business Condominiums",
+   "city": "Park City",
+   "state": "UT",
+   "status": "Resale only",
+   "units": null,
+   "priceNote": "Resales $1.45M\u2013$1.7M",
+   "website": null,
+   "lat": 40.65,
+   "lng": -111.5,
+   "offer": "buy"
+  },
+  {
    "name": "Hobby Hut RV Garages",
    "city": "St. George",
    "state": "UT",
@@ -3114,6 +3834,66 @@
    "offer": "buy"
   },
   {
+   "name": "Carolina Business Park Condominium",
+   "city": "Bellingham",
+   "state": "WA",
+   "status": "Selling",
+   "units": 44,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 48.76,
+   "lng": -122.47,
+   "offer": "buy"
+  },
+  {
+   "name": "Irongate RediSpace Condominium",
+   "city": "Bellingham",
+   "state": "WA",
+   "status": "Selling",
+   "units": 51,
+   "priceNote": "$246K\u2013$340K",
+   "website": null,
+   "lat": 48.75,
+   "lng": -122.48,
+   "offer": "buy"
+  },
+  {
+   "name": "My Garage at Birch Bay",
+   "city": "Blaine",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 43,
+   "priceNote": "$160K\u2013$170K",
+   "website": null,
+   "lat": 48.99,
+   "lng": -122.75,
+   "offer": "buy"
+  },
+  {
+   "name": "Sunset Storage Condos Chattaroy",
+   "city": "Chattaroy",
+   "state": "WA",
+   "status": "Planned",
+   "units": 122,
+   "priceNote": "Pre-construction",
+   "website": null,
+   "lat": 47.89,
+   "lng": -117.36,
+   "offer": "buy"
+  },
+  {
+   "name": "Chelan Luxury Garages",
+   "city": "Chelan",
+   "state": "WA",
+   "status": "Under construction",
+   "units": 58,
+   "priceNote": "Pre-construction",
+   "website": null,
+   "lat": 47.84,
+   "lng": -120.02,
+   "offer": "buy"
+  },
+  {
    "name": "Cle Elum Garage Condos",
    "city": "Cle Elum",
    "state": "WA",
@@ -3123,6 +3903,18 @@
    "website": null,
    "lat": 47.2,
    "lng": -120.94,
+   "offer": "buy"
+  },
+  {
+   "name": "Monster Garage Condos",
+   "city": "Cle Elum",
+   "state": "WA",
+   "status": "Selling",
+   "units": 116,
+   "priceNote": "$415K\u2013$420K",
+   "website": null,
+   "lat": 47.2,
+   "lng": -120.95,
    "offer": "buy"
   },
   {
@@ -3136,6 +3928,162 @@
    "lat": 47.32,
    "lng": -122.31,
    "offer": "buy"
+  },
+  {
+   "name": "Flexspace North",
+   "city": "Ferndale",
+   "state": "WA",
+   "status": "Selling",
+   "units": 40,
+   "priceNote": "$328K\u2013$335K",
+   "website": null,
+   "lat": 48.85,
+   "lng": -122.59,
+   "offer": "buy"
+  },
+  {
+   "name": "Pioneer Flexspace",
+   "city": "Ferndale",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 108,
+   "priceNote": "$279K\u2013$290K",
+   "website": null,
+   "lat": 48.84,
+   "lng": -122.6,
+   "offer": "buy"
+  },
+  {
+   "name": "Gold Bar Garage Condominiums",
+   "city": "Gold Bar",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 23,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 47.86,
+   "lng": -121.7,
+   "offer": "buy"
+  },
+  {
+   "name": "GarageTown Kennewick",
+   "city": "Kennewick",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 71,
+   "priceNote": "Resales",
+   "website": "https://garagetown.com",
+   "lat": 46.21,
+   "lng": -119.14,
+   "offer": "buy"
+  },
+  {
+   "name": "GarageTown Liberty Lake",
+   "city": "Liberty Lake",
+   "state": "WA",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Coming soon",
+   "website": "https://garagetown.com",
+   "lat": 47.67,
+   "lng": -117.09,
+   "offer": "buy"
+  },
+  {
+   "name": "GarageTown Pasco",
+   "city": "Pasco",
+   "state": "WA",
+   "status": "Planned",
+   "units": null,
+   "priceNote": "Coming soon",
+   "website": "https://garagetown.com",
+   "lat": 46.24,
+   "lng": -119.1,
+   "offer": "buy"
+  },
+  {
+   "name": "GarageMahal Pullman",
+   "city": "Pullman",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 20,
+   "priceNote": "Resales ~$92K",
+   "website": null,
+   "lat": 46.73,
+   "lng": -117.18,
+   "offer": "buy"
+  },
+  {
+   "name": "Crescent Bar Garage Condominiums",
+   "city": "Quincy",
+   "state": "WA",
+   "status": "Selling",
+   "units": 64,
+   "priceNote": "From ~$107K",
+   "website": null,
+   "lat": 47.23,
+   "lng": -119.87,
+   "offer": "buy"
+  },
+  {
+   "name": "Garages at Crescent Ridge Ranch",
+   "city": "Quincy",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 51,
+   "priceNote": "$160K\u2013$237K",
+   "website": null,
+   "lat": 47.23,
+   "lng": -119.85,
+   "offer": "buy"
+  },
+  {
+   "name": "Garages at The Vineyard",
+   "city": "Quincy",
+   "state": "WA",
+   "status": "Selling",
+   "units": 47,
+   "priceNote": "Around $349K",
+   "website": null,
+   "lat": 47.24,
+   "lng": -119.86,
+   "offer": "buy"
+  },
+  {
+   "name": "Trinidad Garages",
+   "city": "Quincy",
+   "state": "WA",
+   "status": "Selling",
+   "units": 39,
+   "priceNote": "$130K\u2013$132K",
+   "website": null,
+   "lat": 47.22,
+   "lng": -119.84,
+   "offer": "buy"
+  },
+  {
+   "name": "Fat Cat Garages Tri-Cities",
+   "city": "Richland",
+   "state": "WA",
+   "status": "Selling",
+   "units": 38,
+   "priceNote": "$356K\u2013$365K",
+   "website": null,
+   "lat": 46.29,
+   "lng": -119.29,
+   "offer": "buy"
+  },
+  {
+   "name": "LuxeLocker Richland",
+   "city": "Richland",
+   "state": "WA",
+   "status": "Selling",
+   "units": null,
+   "priceNote": "Buy or rent",
+   "website": "https://luxelocker.com",
+   "lat": 46.29,
+   "lng": -119.28,
+   "offer": "both"
   },
   {
    "name": "Terminal One Motor + Yacht Club",
@@ -3174,15 +4122,51 @@
    "offer": "buy"
   },
   {
-   "name": "GarageTown Spokane",
-   "city": "Spokane",
+   "name": "GarageTown Spokane Valley",
+   "city": "Spokane Valley",
    "state": "WA",
-   "status": "Established",
-   "units": null,
+   "status": "Resale only",
+   "units": 91,
+   "priceNote": "Resales ~$314K",
+   "website": "https://garagetown.com",
+   "lat": 47.67,
+   "lng": -117.24,
+   "offer": "buy"
+  },
+  {
+   "name": "RV Home Storage Condominiums",
+   "city": "Sultan",
+   "state": "WA",
+   "status": "Resale only",
+   "units": 35,
+   "priceNote": "Deeded RV garages",
+   "website": null,
+   "lat": 47.86,
+   "lng": -121.82,
+   "offer": "buy"
+  },
+  {
+   "name": "Lake Park Storage Condos",
+   "city": "Big Bend",
+   "state": "WI",
+   "status": "Resale only",
+   "units": 42,
    "priceNote": "Resales; inquire",
-   "website": "https://garagetownusa.com",
-   "lat": 47.66,
-   "lng": -117.43,
+   "website": null,
+   "lat": 42.88,
+   "lng": -88.21,
+   "offer": "buy"
+  },
+  {
+   "name": "Overdrive Motor Condos",
+   "city": "De Pere",
+   "state": "WI",
+   "status": "Planned",
+   "units": 22,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 44.45,
+   "lng": -88.06,
    "offer": "buy"
   },
   {
@@ -3198,6 +4182,66 @@
    "offer": "buy"
   },
   {
+   "name": "P2 Auto Vault & Business Condos",
+   "city": "Grafton",
+   "state": "WI",
+   "status": "Selling",
+   "units": 133,
+   "priceNote": "$148K\u2013$311K",
+   "website": null,
+   "lat": 43.32,
+   "lng": -87.95,
+   "offer": "buy"
+  },
+  {
+   "name": "Hobart Storage Condominiums",
+   "city": "Hobart",
+   "state": "WI",
+   "status": "Selling",
+   "units": 44,
+   "priceNote": "$98K\u2013$151K",
+   "website": null,
+   "lat": 44.5,
+   "lng": -88.16,
+   "offer": "buy"
+  },
+  {
+   "name": "Fox Valley Man Caves and She Sheds",
+   "city": "Neenah",
+   "state": "WI",
+   "status": "Selling",
+   "units": 37,
+   "priceNote": "Inquire",
+   "website": null,
+   "lat": 44.19,
+   "lng": -88.46,
+   "offer": "buy"
+  },
+  {
+   "name": "Wisconsin Storage Condos \u2014 New Berlin",
+   "city": "New Berlin",
+   "state": "WI",
+   "status": "Resale only",
+   "units": 47,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 42.98,
+   "lng": -88.11,
+   "offer": "buy"
+  },
+  {
+   "name": "Woodfield Court Motor Condos",
+   "city": "Suamico",
+   "state": "WI",
+   "status": "Selling",
+   "units": 101,
+   "priceNote": "$171K\u2013$360K",
+   "website": null,
+   "lat": 44.63,
+   "lng": -88.04,
+   "offer": "buy"
+  },
+  {
    "name": "3rd Space Garages",
    "city": "Verona",
    "state": "WI",
@@ -3207,6 +4251,18 @@
    "website": null,
    "lat": 42.99,
    "lng": -89.53,
+   "offer": "buy"
+  },
+  {
+   "name": "Saturn 5 Storage Condos",
+   "city": "Waterford",
+   "state": "WI",
+   "status": "Resale only",
+   "units": 23,
+   "priceNote": "Resales; inquire",
+   "website": null,
+   "lat": 42.76,
+   "lng": -88.21,
    "offer": "buy"
   },
   {
