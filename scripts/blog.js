@@ -50,6 +50,7 @@ ${body}
         <a href="${p}map.html">Map</a>
         <a href="${p}states.html">Browse by State</a>
         <a href="${p}list-your-condo.html">List Your Condo</a>
+        <a href="${p}advertise.html">Advertise</a>
       </div>
       <div>
         <h4>Learn</h4>

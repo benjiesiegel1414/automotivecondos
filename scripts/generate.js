@@ -56,6 +56,7 @@ ${body}
         <a href="${p}map.html">Map</a>
         <a href="${p}states.html">Browse by State</a>
         <a href="${p}list-your-condo.html">List Your Condo</a>
+        <a href="${p}advertise.html">Advertise</a>
       </div>
       <div>
         <h4>Learn</h4>
@@ -367,7 +368,7 @@ for (const c of DATA.communities) {
 }
 
 // --- sitemap ---
-const urls = ['', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html',
+const urls = ['', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise.html',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`)];
