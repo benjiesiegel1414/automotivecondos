@@ -531,6 +531,102 @@ faq: [
 ["Is it safe to buy a pre-construction car condo in the Carolinas?", "Pre-construction can be a good way to get new product and choose your unit, and most of the Carolinas market is new construction. Protect yourself by confirming that deposits are held in escrow, reading the completion and outside dates in the contract, reviewing the draft association documents and budget, and verifying unit specifications like door height and ceiling clearance before you sign."]
 ],
 html: ``
+},
+{
+slug: "garage-condos-wisconsin",
+tag: "State Guides",
+title: "Garage Condos in Wisconsin: 2026 Market Guide",
+desc: "Wisconsin garage condo guide: all 26 communities, 1,003 known units, prices from about $98K to $360K, Door County, Green Bay and Madison.",
+date: 'November 7, 2026',
+teaser: "Wisconsin has 26 garage condo communities and some of the lowest prices in the country. Here is every one, what they cost and where they are.",
+faq: [
+["How many garage condo communities are there in Wisconsin?", "The AutomotiveCondos.com directory tracks 26 garage condo and car condo communities in Wisconsin as of November 2026, with 1,003 known units across the 24 projects that publish unit counts. Sixteen are selling from the developer, six trade on resale only and four are planned."],
+["How much does a garage condo cost in Wisconsin?", "Published entry prices in the directory run from about $98K (Hobart Storage Condominiums and B&J Storage Condos in Milton) to about $200K (Troy Condo Garages in Hudson). The top of published ranges reaches $311K at P2 Auto Vault in Grafton and $360K at Woodfield Court Motor Condos in Suamico. Sixteen communities price on an inquire basis."],
+["What is the largest garage condo project in Wisconsin?", "P2 Auto Vault & Business Condos in Grafton, north of Milwaukee, is the largest at 133 units, with published prices from $148K to $311K. Woodfield Court Motor Condos in Suamico, near Green Bay, is second at 101 units."],
+["Are there garage condos for boat storage in Door County?", "Yes. The directory lists three Door County projects: Indigo Storage Condos in Egg Harbor (10 units, about $170K to $200K), Boat House Motor Condos in Sturgeon Bay (15 units, selling) and Whitetail Storage Condominium in Sturgeon Bay (63 units, resale only). Confirm door height and unit depth for your boat and trailer before you buy."],
+["Are there garage condos near Road America in Elkhart Lake?", "Trackside Road Garage Condos in Elkhart Lake trades on resale only, with units near Road America. Resale inventory is limited, so register your interest with the community and check the directory listing regularly for new availability."]
+],
+html: ``
+},
+{
+slug: "car-condos-ohio",
+tag: "State Guides",
+title: "Car Condos in Ohio: 2026 Market Guide",
+desc: "Ohio car condo guide: all 25 communities, 2,360 known units, Lake Erie storage condos from ~$66K and Columbus and Cincinnati suites to $550K.",
+date: 'November 7, 2026',
+teaser: "Ohio has 2,360 known car and storage condo units, from Port Clinton boat storage to luxury motor suites. Here is every community and what it costs.",
+faq: [
+["How many car condo communities are there in Ohio?", "The AutomotiveCondos.com directory tracks 25 car condo and storage condo communities in Ohio as of November 2026, with 2,360 known units across the 21 projects that publish unit counts. Eleven are selling, seven are resale only, two are established and five are planned."],
+["How much does a car condo cost in Ohio?", "Prices in the directory range from resales around $66K at Catawba Storage Condominiums in Port Clinton to new motor suites from $399,900 at Torque Motor Suites Blue Ash. Planned pricing at The Motor Enclave New Albany reaches $550K. Storage condos on the lake and in Northeast Ohio mostly fall between about $66K and $200K."],
+["Where are the storage condos near Port Clinton and the Lake Erie islands?", "The directory lists seven communities on the Lake Erie shore with 882 known units: four in Port Clinton (Catawba Storage Condominiums, NorthCoast, Island Landings and West Bay), two in Lakeside Marblehead (Shoreline Storage Suites and East Harbor Condominium Storage) and Safe Harbor Storage Condos in Marblehead."],
+["What is the largest car condo community in Ohio?", "Catawba Storage Condominiums (I-VI) in Port Clinton is the largest, with 379 units and a sixth phase under construction. Store-With-Us Storage Condominiums in Medina is second at 340 units, and the planned Resolute Motorsports Club in Delaware would be third at 250 units."],
+["Are there luxury car condos in Columbus or Cincinnati?", "Yes. Around Columbus, Horsepower Farms in Powell is selling from $156K to $290K, Executive Storage Estates in Plain City resells around $370K, and Resolute Motorsports Club and The Motor Enclave New Albany are planned. In Cincinnati, Torque Motor Suites has an established location in Oakley from $300K and a new Blue Ash project from $399,900."]
+],
+html: ``
+},
+{
+slug: "garage-condos-georgia",
+tag: "State Guides",
+title: "Garage Condos in Georgia: 2026 Market Guide",
+desc: "Atlanta and Georgia garage condo guide: all 12 communities, prices from $98K to $850K, Alpharetta, Acworth, Buford and trackside units.",
+date: 'November 7, 2026',
+teaser: "Georgia's 12 garage condo communities are mostly new and selling, clustered in Atlanta's north suburbs. Here is every one and what it costs.",
+faq: [
+["How many garage condo communities are there in Georgia?", "The AutomotiveCondos.com directory tracks 12 garage condo and car condo communities in Georgia as of November 2026. Nine are selling from the developer, one is resale only, one is under construction and one is established. Eight of the 12 are in Atlanta's northern suburbs."],
+["How much does a garage condo cost in the Atlanta area?", "Published starting prices in the directory range from $98K at Storage Caves Buford to $375K at Alpharetta Personal Warehouse. The top of published ranges reaches $850K in Alpharetta and $725K at Storage Caves Buford. Most published starting prices fall between $225K and $375K."],
+["Are there garage condos in Alpharetta?", "Yes. Alpharetta Personal Warehouse is selling units from $375K to $850K, and Stables Motor Condos in Alpharetta trades on resale only with both purchase and rental options. Nearby, Ball Ground Garage Condos in Cherokee County is selling 28 units from $325K to $400K."],
+["Can I buy a garage condo at a Georgia racetrack?", "Atlanta Motorsports Park Trackside Garage Condos in Dawsonville is an established trackside community with units from $225K. Stables Motor Condos (Braselton) is selling in Braselton, the home of Michelin Raceway Road Atlanta. Confirm track access arrangements directly with each community."],
+["Are there garage condos near Lake Lanier?", "Buford, on the south end of Lake Lanier, has two communities: Storage Caves Buford, which is selling 44 units from $98K to $725K, and Garage Lofts at Mall of Georgia, which is under construction. Both suit buyers who want to store a boat alongside cars."]
+],
+html: ``
+},
+{
+slug: "garage-condos-idaho",
+tag: "State Guides",
+title: "Garage Condos in Idaho: 2026 Market Guide",
+desc: "Boise and Idaho garage condo guide: all 11 communities, prices from $218K to $315K, sold-out projects, Meridian presales and rentals.",
+date: 'November 7, 2026',
+teaser: "Idaho's 11 garage condo communities include sold-out Boise projects and new Meridian presales. Here is every one, what it costs and how to get in.",
+faq: [
+["How many garage condo communities are there in Idaho?", "The AutomotiveCondos.com directory tracks 11 garage condo and car condo communities in Idaho as of November 2026: five in Boise, two in Meridian, one in Eagle, one in Coeur d'Alene, one in Post Falls and one in Jerome. Four are selling, five are resale only, one is established and one is under construction."],
+["How much does a garage condo cost in Boise?", "Published Treasure Valley pricing in the directory includes resales from $218K to $315K at Eagle Storage Condos and pre-sale pricing from $270,000 at Ten Mile Storage Condos in Meridian. Most Boise communities price on an inquire basis, and LuxeLocker Boise offers both purchase and rental."],
+["Are Boise garage condos sold out?", "Several are. Falcon Storage Condos Boise and Falcon Storage Condos East Boise are listed as sold out and trade on resale only, as does the original Falcon Storage Condos. Buyers can still purchase new units at LuxeLocker Boise, Club Storage Condos in Meridian and Ten Mile Storage Condos (under construction)."],
+["Can I rent a garage condo in Idaho instead of buying?", "Yes. LuxeLocker Boise and LuxeLocker Magic Valley in Jerome both offer purchase and rental options. Some individual owners in other communities also rent their units, subject to each association's rules."],
+["Are there garage condos in Coeur d'Alene and North Idaho?", "Yes. GarageTown USA Coeur d'Alene trades on resales, and Locked and Loaded Garage Condos in Post Falls is selling 20' x 50' units from about $250,000. Both serve boat, RV and car owners around Lake Coeur d'Alene and the Spokane area."]
+],
+html: ``
+},
+{
+slug: "car-condos-kansas",
+tag: "State Guides",
+title: "Car Condos in Kansas: 2026 Market Guide",
+desc: "Wichita and Kansas car condo guide: all 11 communities, prices from $75K to about $440K, plus Overland Park, Leawood and Johnson County.",
+date: 'November 7, 2026',
+teaser: "Kansas has 11 car condo communities split between Wichita and Kansas City, with prices from $75K. Here is every one and how to choose.",
+faq: [
+["How many car condo communities are there in Kansas?", "The AutomotiveCondos.com directory tracks 11 car condo and garage condo communities in Kansas as of November 2026: six in the Wichita area and five on the Kansas side of the Kansas City metro. Six are selling, two are resale only, two are established and one is planned."],
+["How much does a car condo cost in Wichita?", "Published Wichita-area prices in the directory run from $75K to $150K at My Extra Garage Derby, $125K to $150K at Mammoth Storage Garage Condominiums in Kechi, and from $299K at GreenLight GarageDominiums in Wichita. Sandlot, Greenwich and Flex Space KS price on an inquire basis."],
+["Are there car condos in Overland Park or Johnson County?", "Yes. The Lux in Overland Park is selling suites from 1,250 to 3,500 square feet, The Foundry in Leawood is planned at 88 units with reservations open, Park 33 Premium Coach Suites in Shawnee is established, and Carriage Houses of Johnson County in De Soto trades on resales from $247K to $275K."],
+["What is the largest car condo project in Kansas?", "The Foundry in Leawood is the largest, planned at 88 units with reservations open. Among existing communities that publish counts, All Purpose Garage & Storage in Bucyrus (32 units) and GreenLight GarageDominiums in Wichita (29 units) are the largest."],
+["What is the cheapest car condo in Kansas?", "The lowest published price in the directory is $75K at My Extra Garage Derby, where units range from $75K to $150K. Mammoth Storage Garage Condominiums in Kechi, from $125K to $150K, is the other low-cost Wichita-area option."]
+],
+html: ``
+},
+{
+slug: "car-condos-nevada",
+tag: "State Guides",
+title: "Car Condos in Nevada: 2026 Market Guide",
+desc: "Las Vegas and Nevada car condo guide: all 8 communities in Henderson, Las Vegas, Pahrump, Mesquite and Reno, plus buy or rent options.",
+date: 'November 7, 2026',
+teaser: "Nevada has 8 car condo communities, from a high $900Ks Henderson loft project to four LuxeLocker locations you can buy or rent.",
+faq: [
+["How many car condo communities are there in Nevada?", "The AutomotiveCondos.com directory tracks 8 car condo and garage condo communities in Nevada as of November 2026: three in Henderson and one each in Las Vegas, Pahrump, Mesquite, Reno and Sparks. Six are selling, one is resale only and one is established."],
+["How much does a car condo cost in Las Vegas?", "The only published price in the directory for Nevada is The Stack Auto Lofts in Henderson, from the high $900Ks. Octane Club, LuxeLocker Henderson, South Jones Storage Condominiums and Spring Mountain Motor Resort Garage Condos all price on request, so ask each for current quotes on comparable unit sizes."],
+["Can I rent a car condo in Las Vegas or Reno?", "Yes. All four LuxeLocker locations in Nevada (Henderson, Mesquite, Reno and Spanish Springs in Sparks) offer both purchase and rental options. Individual owners in other communities may also rent units, subject to each association's rules."],
+["Are there car condos at a racetrack in Nevada?", "Spring Mountain Motor Resort Garage Condos in Pahrump is an established garage condo community at Spring Mountain Motor Resort and Country Club, about an hour west of Las Vegas. Contact the community for current availability and pricing."],
+["Which Nevada city has the most car condos?", "Henderson has the most, with three communities: The Stack Auto Lofts (29 units, from the high $900Ks), Octane Club (custom garage condos) and LuxeLocker Henderson (buy or rent)."]
+],
+html: ``
 }
 ];
 
