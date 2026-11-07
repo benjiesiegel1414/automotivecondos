@@ -111,7 +111,7 @@ for (const st of states) {
   const name = STATE_NAMES[st];
   const list = byState[st].slice().sort((a,b)=>a.city.localeCompare(b.city)||a.name.localeCompare(b.name));
   const cities = [...new Set(list.map(c=>c.city))].sort();
-  const rows = list.map(c=>`<tr><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../list-your-condo.html?c=${encodeURIComponent(c.name)}">Inquire →</a></td></tr>`).join('\n');
+  const rows = list.map(c=>`<tr><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: ${encodeURIComponent(c.name)} (${c.state})">Inquire →</a></td></tr>`).join('\n');
   fs.writeFileSync(path.join(ROOT, 'states', slug(name)+'.html'), page({
     title: `Car Condos in ${name}: Communities & Listings | AutomotiveCondos.com`,
     desc: `${list.length} car condo communities in ${name} across ${cities.length} cities — status, unit counts and pricing, plus how to buy or sell a unit.`,

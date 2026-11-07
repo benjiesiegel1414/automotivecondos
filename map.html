@@ -118,7 +118,7 @@ function render() {
     const lat = c.lat + (j % 3) * 0.012, lng = c.lng + Math.floor(j / 3) * 0.012;
     const units = c.units ? c.units + ' units · ' : '';
     const m = L.marker([lat, lng], {icon: blueIcon(COLORS[c.status] || '#0054A6')});
-    m.bindPopup(`<div class="pname">${c.name}</div>${c.city}, ${c.state} · ${c.status}<br>${units}<span class="pprice">${c.priceNote || 'Inquire'}</span><br><a href="states/${slugState(c.state)}.html">${STATE_NAMES[c.state]} directory →</a> · <a href="list-your-condo.html">Inquire</a>`);
+    m.bindPopup(`<div class="pname">${c.name}</div>${c.city}, ${c.state} · ${c.status}<br>${units}<span class="pprice">${c.priceNote || 'Inquire'}</span><br><a href="states/${slugState(c.state)}.html">${STATE_NAMES[c.state]} directory →</a> · <a href="mailto:contact@automotivecondos.com?subject=Inquiry: ${encodeURIComponent(c.name)} (${c.state})">Inquire</a>`);
     layer.addLayer(m); n++;
   }
   document.getElementById('count').textContent = n + ' communities shown';
