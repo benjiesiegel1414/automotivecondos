@@ -219,3 +219,20 @@ img,svg{max-width:100%;height:auto}
   .acmap-side{max-height:380px}
   .grid.c2{grid-template-columns:1fr}
 }
+/* community detail layout */
+.detail-cols{display:flex;gap:28px;align-items:flex-start;margin-top:28px}
+.detail-main{flex:1;min-width:0}
+.detail-main h2{font-size:20px;margin:26px 0 10px}
+.detail-main h2:first-child{margin-top:0}
+.detail-main p{color:#374151;font-size:15px;line-height:1.65}
+.faq-q{font-size:15.5px;margin:16px 0 6px}
+.feat-list{margin:0 0 10px;padding-left:20px;color:#374151;font-size:14.5px;line-height:1.9}
+.feat-list.ctx li{margin-bottom:2px}
+.detail-side{flex:0 0 340px;position:sticky;top:76px}
+.card.inq{border:2px solid var(--blue);padding:20px}
+.inq-tag{display:inline-block;background:#E8F1FB;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;border-radius:3px;padding:4px 8px;margin-bottom:10px}
+.card.inq .field{width:100%;margin:0 0 10px}
+.lead-note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
+#lead-ok{font-size:14px;color:#374151;line-height:1.6}
+.lead-ok-big{font-weight:800;color:#1B7F4D;font-size:17px;margin-bottom:6px}
+@media(max-width:860px){.detail-cols{flex-direction:column}.detail-side{position:static;flex:none;width:100%}}

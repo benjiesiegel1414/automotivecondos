@@ -172,36 +172,155 @@ for (const st of states) {
 
 // --- community detail pages ---
 fs.mkdirSync(path.join(ROOT, 'communities'), {recursive: true});
+
+function priceNums(s){
+  if(!s) return [];
+  const m = s.match(/\$\s?[\d,.]+\s?[KkMm]?/g) || [];
+  return m.map(x=>{
+    const mm = x.match(/\$\s?([\d,.]+)\s?([KkMm]?)/);
+    let v = parseFloat(mm[1].replace(/,/g,''));
+    const u = (mm[2]||'').toLowerCase();
+    if(u==='k') v*=1e3; if(u==='m') v*=1e6;
+    if(v>0 && v<10000 && !u) v*=1000; // "$650/SF" style guards below
+    return v;
+  }).filter(v=>v>=20000 && v<=5e6);
+}
+function fmtPrice(v){
+  if(v>=1e6) return '$'+(v/1e6).toFixed(v%1e6?1:0)+'M';
+  return '$'+Math.round(v/1000)+'K';
+}
+const stateAgg = {};
+for (const st of states) {
+  const cs = DATA.communities.filter(c=>c.state===st);
+  let nums = [];
+  cs.forEach(c=>{ nums = nums.concat(priceNums(c.priceNote)); });
+  stateAgg[st] = {
+    count: cs.length,
+    units: cs.reduce((a,c)=>a+(c.units||0),0),
+    selling: cs.filter(c=>c.status==='Selling').length,
+    rent: cs.filter(c=>c.offer==='both').length,
+    min: nums.length?Math.min.apply(null,nums):null,
+    max: nums.length?Math.max.apply(null,nums):null
+  };
+}
+function kindOf(c){
+  const n = c.name.toLowerCase();
+  if(/track|motorsport|raceway|circuit|speedway|paddock|pit row|racing|apex|concourse|bir |cota/.test(n)) return 'track';
+  if(/rv|boat|coach|marine|toy/.test(n)) return 'toy';
+  if(/storage|flex|warehouse|suites|condos? of|space/.test(n) && !/motor|auto|car|garage club/.test(n)) return 'storage';
+  return 'motor';
+}
+const KIND_COPY = {
+  track: {label:'motorsports / trackside community', feats:['Direct or near-direct track access for events and lapping days','Secure garage bays sized for race cars, trailers, and tools','A social paddock scene — owners wrench, watch, and run the track together','Power, lighting, and prep space suited to performance cars']},
+  toy:   {label:'RV, boat & toy storage community', feats:['Tall doors and deep bays sized for motorhomes, boats on trailers, and off-road toys','Owner-controlled access — pull in and out on your schedule, no valet windows','Power for battery tenders, interior lighting, and often water or dump access','Climate and security far beyond a typical outdoor or self-storage lot']},
+  motor: {label:'car condo / motor condo community', feats:['Private, deeded garage bays built for collections — not generic storage','Room for lifts, epoxy floors, cabinetry, and mezzanine lounges','Gated entry, cameras, and an owner community that cares about cars','A clubhouse or shared social space in many communities of this style']},
+  storage: {label:'garage / storage condo community', feats:['Deeded ownership — an appreciating alternative to renting storage forever','Tall roll-up doors and clear-span space for vehicles, trailers, and gear','Power, lighting, and often climate control inside your own four walls','Low association dues covering the roof, exterior, and common drives']}
+};
+const STATUS_COPY = {
+  'Selling': n => `${n} is actively selling units — developer inventory is available now, which usually means first pick of sizes and locations within the community.`,
+  'Resale only': n => `${n} is sold out of developer inventory. Units here trade on the resale market, so availability comes and goes — inquiries get first word when an owner lists.`,
+  'Under construction': n => `${n} is under construction. Pre-construction buyers typically get the best pricing and unit selection before delivery.`,
+  'Planned': n => `${n} is in the planning / pre-development stage. Early reservations often lock pre-construction pricing before the first shovel hits dirt.`,
+  'Established': n => `${n} is an established, operating community. Units change hands by resale and occasionally by lease — inquire to hear what's available.`
+};
+
 for (const c of DATA.communities) {
   const stName = STATE_NAMES[c.state];
+  const agg = stateAgg[c.state];
   const offer = c.offer === 'both' ? 'For sale or for rent' : 'For sale / resale';
-  const mail = 'mailto:contact@automotivecondos.com?subject=' + encodeURIComponent('Inquiry: ' + c.name + ' (' + c.state + ')');
   const nearby = DATA.communities.filter(x => x.state === c.state && x.slug !== c.slug).slice(0, 6);
+  const kc = KIND_COPY[kindOf(c)];
+  const myNums = priceNums(c.priceNote);
+  const pageUrl = `https://automotivecondos.com/communities/${c.slug}.html`;
+
+  // about paragraph
+  const bits = [];
+  bits.push(`${c.name} is a ${kc.label} in ${c.city}, ${stName}.`);
+  if (c.units) bits.push(`The community spans ${c.units} individually owned units.`);
+  bits.push(STATUS_COPY[c.status] ? STATUS_COPY[c.status](c.name.split('(')[0].trim()) : '');
+  if (c.offer === 'both') bits.push(`Units here are offered both for sale and for rent, so you can get in the door without buying first.`);
+  const about = bits.filter(Boolean).join(' ');
+
+  // market context
+  const rankByUnits = c.units ? (DATA.communities.filter(x=>x.state===c.state && (x.units||0) > c.units).length + 1) : null;
+  const ctx = [];
+  ctx.push(`<strong>${agg.count}</strong> car condo communit${agg.count===1?'y':'ies'} tracked in ${stName}`);
+  if (agg.units) ctx.push(`<strong>${agg.units.toLocaleString()}+</strong> known units statewide`);
+  if (agg.min && agg.max && agg.min < agg.max) ctx.push(`${stName} pricing we track runs roughly <strong>${fmtPrice(agg.min)} – ${fmtPrice(agg.max)}</strong>`);
+  if (rankByUnits && rankByUnits <= 10 && agg.count > 3) ctx.push(`Top-${rankByUnits} largest community in the state by unit count`);
+  if (agg.rent) ctx.push(`<strong>${agg.rent}</strong> ${stName} communit${agg.rent===1?'y':'ies'} also offer${agg.rent===1?'s':''} rentals`);
+
+  // FAQ
+  const faqs = [];
+  faqs.push([`How much does a unit at ${c.name} cost?`,
+    (c.priceNote && c.priceNote !== 'Inquire') ? `Our latest tracked pricing for ${c.name} is: ${c.priceNote}. Pricing moves with the market — request the listing info below for current numbers.`
+    : `Pricing for ${c.name} is available on inquiry. For context, ${stName} communities we track run roughly ${agg.min&&agg.max?fmtPrice(agg.min)+' to '+fmtPrice(agg.max):'from under $100K for basic storage condos to seven figures for luxury motor condos'}. Request the listing info below for current numbers.`]);
+  faqs.push([`Can I rent a unit at ${c.name}?`,
+    c.offer === 'both' ? `Yes — ${c.name} offers units for rent as well as for sale. Request the listing info below and we'll include current rental availability.`
+    : `${c.name} is tracked as a for-sale community. Some owners do lease their units privately, though — inquire below and we'll check what's available, and point you to ${stName} communities with rentals if needed.`]);
+  faqs.push([`How do I buy at ${c.name}?`,
+    `Start with the free listing info request on this page. You'll get everything we track on ${c.name} by email, and we follow up personally with current availability, pricing, and the direct path to buy${c.offer==='both'?' or rent':''} — typically within 24 hours.`]);
+  const faqLd = JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(f=>({"@type":"Question","name":f[0],"acceptedAnswer":{"@type":"Answer","text":f[1]}}))});
+
+  const mlName = JSON.stringify(c.name + ' (' + c.state + ')');
+  const mlUrl = JSON.stringify(pageUrl);
+
   fs.writeFileSync(path.join(ROOT, 'communities', c.slug + '.html'), page({
     title: `${c.name} — Car Condos in ${c.city}, ${c.state} | AutomotiveCondos.com`,
-    desc: `${c.name} in ${c.city}, ${stName}: ${c.status.toLowerCase()}${c.units ? ', ' + c.units + ' units' : ''}. ${c.priceNote && c.priceNote !== 'Inquire' ? 'Pricing: ' + c.priceNote + '. ' : ''}Inquire about available units through AutomotiveCondos.`,
-    canonical: `https://automotivecondos.com/communities/${c.slug}.html`,
+    desc: `${c.name} in ${c.city}, ${stName}: ${c.status.toLowerCase()}${c.units ? ', ' + c.units + ' units' : ''}. ${c.priceNote && c.priceNote !== 'Inquire' ? 'Pricing: ' + c.priceNote + '. ' : ''}Get the full listing info by email, free.`,
+    canonical: pageUrl,
     depth: 1,
     body: `
+<script type="application/ld+json">${faqLd}</script>
 <section class="block">
   <div class="wrap">
     <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states.html">By State</a> / <a href="../states/${slug(stName)}.html">${stName}</a> / ${esc(c.name)}</div>
     <h1 style="margin-top:10px">${esc(c.name)}</h1>
-    <p style="color:var(--muted);font-size:17px">${esc(c.city)}, ${stName}</p>
+    <p style="color:var(--muted);font-size:17px">${esc(c.city)}, ${stName} · ${esc(kc.label.charAt(0).toUpperCase()+kc.label.slice(1))}</p>
     <div class="grid c4" style="margin-top:18px">
       <div class="card"><div class="meta">Status</div><div style="font-weight:800;font-size:17px">${esc(c.status)}</div></div>
       <div class="card"><div class="meta">Units</div><div style="font-weight:800;font-size:17px">${c.units ?? '—'}</div></div>
       <div class="card"><div class="meta">Offering</div><div style="font-weight:800;font-size:17px">${offer}</div></div>
       <div class="card"><div class="meta">Pricing</div><div style="font-weight:800;font-size:17px;color:var(--blue)">${esc(c.priceNote || 'Inquire')}</div></div>
     </div>
-    <div class="card" style="margin-top:18px;max-width:760px;border:2px solid var(--blue)">
-      <h3 style="margin-bottom:6px">Interested in ${esc(c.name)}?</h3>
-      <p class="meta" style="font-size:14.5px;margin-bottom:14px">Tell us what you're looking for — size, door height, budget, buy or rent — and we'll connect you with what's available at this community and others like it in ${stName}. No cost, no obligation.</p>
-      <a class="btn" href="${mail}">Inquire About This Community</a>
-      <span style="margin-left:12px;font-size:13px;color:var(--muted)">Replies within one business day</span>
+
+    <div class="detail-cols">
+      <div class="detail-main">
+        <h2>About this community</h2>
+        <p>${esc(about)}</p>
+
+        <h2>What communities like this offer</h2>
+        <p class="meta" style="font-size:13.5px;margin-bottom:8px">Typical of the ${esc(kc.label.replace("community","communities"))} we track — confirm specifics for ${esc(c.name)} via the listing info request.</p>
+        <ul class="feat-list">${kc.feats.map(f=>`<li>${f}</li>`).join('')}</ul>
+
+        <h2>The ${stName} market at a glance</h2>
+        <ul class="feat-list ctx">${ctx.map(x=>`<li>${x}</li>`).join('')}</ul>
+        <p style="font-size:14px"><a href="../states/${slug(stName)}.html">Browse every ${stName} community →</a> · <a href="../map.html">See the national map →</a></p>
+
+        <h2>Frequently asked questions</h2>
+        ${faqs.map(f=>`<h3 class="faq-q">${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join('')}
+      </div>
+
+      <div class="detail-side">
+        <div class="card inq" id="inquire">
+          <div class="inq-tag">Free · No obligation</div>
+          <h3>Get the full listing info</h3>
+          <p class="meta" style="font-size:14px;margin-bottom:12px">Available units, current pricing, and how to buy${c.offer==='both'?' or rent':''} at ${esc(c.name)} — sent straight to your inbox.</p>
+          <form id="lead-form">
+            <input type="email" required placeholder="you@email.com" class="field" id="lead-email" autocomplete="email">
+            <button class="btn" type="submit" style="width:100%">Email Me The Listing Info</button>
+            <div class="lead-note">We follow up personally with availability within 24 hours. No spam — unsubscribe anytime.</div>
+          </form>
+          <div id="lead-ok" style="display:none">
+            <div class="lead-ok-big">✓ You're all set</div>
+            Check your inbox — your ${esc(c.name)} info is on the way. If it doesn't show up in a couple of minutes, check spam or promotions.
+          </div>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:10px">Details compiled from public sources and may change. Represent this community? <a href="../list-your-condo.html">Claim this page</a>.</p>
+      </div>
     </div>
-    <p style="font-size:13px;color:var(--muted);margin-top:14px">Details are compiled from public sources and may change — confirm specifics with the community. Represent this community? <a href="../list-your-condo.html">Claim this page and add direct contact</a>.</p>
-    ${nearby.length ? `<div class="sec-head" style="margin-top:30px"><h2 style="font-size:20px">More in ${stName}</h2><div class="sub"><a href="../states/${slug(stName)}.html">Full directory →</a></div></div>
+
+    ${nearby.length ? `<div class="sec-head" style="margin-top:34px"><h2 style="font-size:20px">More in ${stName}</h2><div class="sub"><a href="../states/${slug(stName)}.html">Full directory →</a></div></div>
     <div class="grid c3">` + nearby.map(x => `<a class="card" href="${x.slug}.html" style="display:block"><h3 style="font-size:15px">${esc(x.name)}</h3><div class="meta">${esc(x.city)}, ${x.state} · ${esc(x.status)}</div><div class="price">${esc(x.priceNote || 'Inquire')}</div></a>`).join('') + '</div>' : ''}
   </div>
 </section>
@@ -211,7 +330,32 @@ for (const c of DATA.communities) {
     <p>Buyers are viewing this page. List your unit for a one-time $49, or add your direct contact for $29/month and every inquiry reaches you instantly.</p>
     <a class="btn" href="../list-your-condo.html">List Your Condo</a>
   </div>
-</section>`
+</section>
+<script>
+(function(){
+  var f = document.getElementById('lead-form');
+  if (!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = f.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending...';
+    var fd = new FormData();
+    fd.append('fields[email]', document.getElementById('lead-email').value);
+    fd.append('fields[community]', ${mlName});
+    fd.append('fields[community_url]', ${mlUrl});
+    fd.append('ml-submit', '1');
+    fd.append('anticsrf', 'true');
+    var done = function(){
+      f.style.display = 'none';
+      document.getElementById('lead-ok').style.display = 'block';
+      try { gtag('event', 'generate_lead', {community: ${mlName}}); } catch(err) {}
+    };
+    var url = 'https://assets.mailerlite.com/jsonp/2512297/forms/203492809790982079/subscribe';
+    fetch(url, {method:'POST', body: fd}).then(done).catch(function(){
+      fetch(url, {method:'POST', body: fd, mode:'no-cors'}).then(done).catch(done);
+    });
+  });
+})();
+</script>`
   }));
 }
 
