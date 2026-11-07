@@ -10,7 +10,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 61.14,
-   "lng": -149.87
+   "lng": -149.87,
+   "offer": "buy"
   },
   {
    "name": "GarageTown Anchorage",
@@ -21,7 +22,8 @@
    "priceNote": "Sold out; resales",
    "website": "https://garagetownusa.com",
    "lat": 61.15,
-   "lng": -149.86
+   "lng": -149.86,
+   "offer": "buy"
   },
   {
    "name": "Oceanview Garage Condos",
@@ -32,7 +34,8 @@
    "priceNote": "From ~$550K",
    "website": null,
    "lat": 61.11,
-   "lng": -149.86
+   "lng": -149.86,
+   "offer": "buy"
   },
   {
    "name": "The Garage at Lake Otis",
@@ -43,7 +46,8 @@
    "priceNote": "$255K\u2013$522K",
    "website": null,
    "lat": 61.16,
-   "lng": -149.84
+   "lng": -149.84,
+   "offer": "buy"
   },
   {
    "name": "Mat Valley Man Caves",
@@ -54,7 +58,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 61.58,
-   "lng": -149.44
+   "lng": -149.44,
+   "offer": "buy"
   },
   {
    "name": "Torque Motor Suites at Barber",
@@ -65,7 +70,8 @@
    "priceNote": "From $399.5K",
    "website": null,
    "lat": 33.55,
-   "lng": -86.54
+   "lng": -86.54,
+   "offer": "buy"
   },
   {
    "name": "Marque Collection Suites",
@@ -76,7 +82,8 @@
    "priceNote": "From $325K",
    "website": null,
    "lat": 36.33,
-   "lng": -94.12
+   "lng": -94.12,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Dove Valley",
@@ -87,7 +94,8 @@
    "priceNote": "Coming Dec 2026",
    "website": "https://toybarnstorage.com",
    "lat": 33.81,
-   "lng": -111.98
+   "lng": -111.98,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Lone Mountain",
@@ -98,7 +106,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.83,
-   "lng": -111.95
+   "lng": -111.95,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Lone Mountain North",
@@ -109,7 +118,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.83,
-   "lng": -111.96
+   "lng": -111.96,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Peak View",
@@ -120,7 +130,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.8,
-   "lng": -111.97
+   "lng": -111.97,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Chandler",
@@ -131,7 +142,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 33.31,
-   "lng": -111.84
+   "lng": -111.84,
+   "offer": "both"
   },
   {
    "name": "Toy Barn Chandler Airpark",
@@ -142,7 +154,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.27,
-   "lng": -111.81
+   "lng": -111.81,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Chandler Airpark North",
@@ -153,7 +166,8 @@
    "priceNote": "Now open",
    "website": "https://toybarnstorage.com",
    "lat": 33.28,
-   "lng": -111.81
+   "lng": -111.81,
+   "offer": "buy"
   },
   {
    "name": "Flagstaff RV Condos",
@@ -164,7 +178,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.2,
-   "lng": -111.65
+   "lng": -111.65,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Glendale",
@@ -175,7 +190,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 33.54,
-   "lng": -112.19
+   "lng": -112.19,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Goodyear",
@@ -186,7 +202,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 33.44,
-   "lng": -112.36
+   "lng": -112.36,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Kingman",
@@ -197,7 +214,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 35.19,
-   "lng": -114.05
+   "lng": -114.05,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Lake Havasu City",
@@ -208,7 +226,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 34.48,
-   "lng": -114.32
+   "lng": -114.32,
+   "offer": "both"
   },
   {
    "name": "Apex Motor Club",
@@ -218,7 +237,8 @@
    "units": null,
    "priceNote": "Track-side garage condos",
    "lat": 33.06,
-   "lng": -112.05
+   "lng": -112.05,
+   "offer": "buy"
   },
   {
    "name": "GarageTown USA Mesa",
@@ -229,7 +249,8 @@
    "priceNote": "Resales",
    "website": null,
    "lat": 33.42,
-   "lng": -111.72
+   "lng": -111.72,
+   "offer": "buy"
   },
   {
    "name": "Motor Vault Peoria",
@@ -240,7 +261,8 @@
    "priceNote": "Opening ~2027",
    "website": null,
    "lat": 33.73,
-   "lng": -112.27
+   "lng": -112.27,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Prescott",
@@ -251,7 +273,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 34.54,
-   "lng": -112.47
+   "lng": -112.47,
+   "offer": "both"
   },
   {
    "name": "Elite Garages Scottsdale",
@@ -262,7 +285,8 @@
    "priceNote": "Reservations open",
    "website": null,
    "lat": 33.64,
-   "lng": -111.89
+   "lng": -111.89,
+   "offer": "buy"
   },
   {
    "name": "OTTO Car Club",
@@ -273,7 +297,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 33.55,
-   "lng": -111.89
+   "lng": -111.89,
+   "offer": "buy"
   },
   {
    "name": "The Garages of Scottsdale",
@@ -284,7 +309,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 33.65,
-   "lng": -111.87
+   "lng": -111.87,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn North Scottsdale",
@@ -295,7 +321,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.69,
-   "lng": -111.92
+   "lng": -111.92,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Scottsdale (Helm)",
@@ -306,7 +333,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.63,
-   "lng": -111.91
+   "lng": -111.91,
+   "offer": "buy"
   },
   {
    "name": "Toy Barn Scottsdale Airpark",
@@ -317,7 +345,8 @@
    "priceNote": "Inquire",
    "website": "https://toybarnstorage.com",
    "lat": 33.62,
-   "lng": -111.91
+   "lng": -111.91,
+   "offer": "buy"
   },
   {
    "name": "MonSTORE Garages Coachella",
@@ -328,7 +357,8 @@
    "priceNote": "Resales and rentals",
    "website": "https://www.monstoregarages.com",
    "lat": 33.68,
-   "lng": -116.17
+   "lng": -116.17,
+   "offer": "both"
   },
   {
    "name": "Finish Line Auto Club",
@@ -339,7 +369,8 @@
    "priceNote": "$750K\u2013$3.5M",
    "website": null,
    "lat": 33.68,
-   "lng": -117.88
+   "lng": -117.88,
+   "offer": "buy"
   },
   {
    "name": "Easy Street Garages",
@@ -350,7 +381,8 @@
    "priceNote": "Resales and rentals",
    "website": "https://www.monstoregarages.com",
    "lat": 33.72,
-   "lng": -116.22
+   "lng": -116.22,
+   "offer": "both"
   },
   {
    "name": "Garage Unlimited of Monterey",
@@ -361,7 +393,8 @@
    "priceNote": "Sold out; resales",
    "website": "https://garageunlimitedmonterey.com",
    "lat": 36.58,
-   "lng": -121.85
+   "lng": -121.85,
+   "offer": "buy"
   },
   {
    "name": "Monterey Motorsport Park",
@@ -372,7 +405,8 @@
    "priceNote": "Resales; inquire",
    "website": "https://montereymotorsportpark.com",
    "lat": 36.59,
-   "lng": -121.85
+   "lng": -121.85,
+   "offer": "buy"
   },
   {
    "name": "Napa Vault Garage Condos",
@@ -383,7 +417,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 38.26,
-   "lng": -122.29
+   "lng": -122.29,
+   "offer": "buy"
   },
   {
    "name": "MonSTORE Garages Palm Springs",
@@ -394,7 +429,8 @@
    "priceNote": "Resales and rentals",
    "website": "https://www.monstoregarages.com",
    "lat": 33.83,
-   "lng": -116.55
+   "lng": -116.55,
+   "offer": "both"
   },
   {
    "name": "Club Auto Sport",
@@ -405,7 +441,8 @@
    "priceNote": "Resales; inquire",
    "website": "https://clubautosport.net",
    "lat": 37.38,
-   "lng": -121.91
+   "lng": -121.91,
+   "offer": "buy"
   },
   {
    "name": "The Thermal Club",
@@ -416,7 +453,8 @@
    "priceNote": "Trackside villas and garages",
    "website": null,
    "lat": 33.64,
-   "lng": -116.14
+   "lng": -116.14,
+   "offer": "buy"
   },
   {
    "name": "Depot Hill Garage Condos",
@@ -427,7 +465,8 @@
    "priceNote": "~$390K avg",
    "website": null,
    "lat": 39.92,
-   "lng": -105.06
+   "lng": -105.06,
+   "offer": "buy"
   },
   {
    "name": "The Garage Den",
@@ -438,7 +477,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 39.58,
-   "lng": -104.86
+   "lng": -104.86,
+   "offer": "buy"
   },
   {
    "name": "The Garage Society",
@@ -449,7 +489,8 @@
    "priceNote": "From ~$242K",
    "website": null,
    "lat": 39.87,
-   "lng": -104.86
+   "lng": -104.86,
+   "offer": "buy"
   },
   {
    "name": "Citadel Luxury Garages",
@@ -460,7 +501,8 @@
    "priceNote": "From $449K",
    "website": null,
    "lat": 39.55,
-   "lng": -107.32
+   "lng": -107.32,
+   "offer": "buy"
   },
   {
    "name": "Garage Condos by My Dream Storage",
@@ -471,7 +513,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 39.7,
-   "lng": -105.08
+   "lng": -105.08,
+   "offer": "buy"
   },
   {
    "name": "Motorplex at Centerra",
@@ -482,7 +525,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 40.41,
-   "lng": -105.0
+   "lng": -105.0,
+   "offer": "buy"
   },
   {
    "name": "Circuit Florida Car Condos",
@@ -492,7 +536,8 @@
    "units": 75,
    "priceNote": "Inquire",
    "lat": 28.07,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Bonita Breeze Auto Condos",
@@ -503,7 +548,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.34,
-   "lng": -81.78
+   "lng": -81.78,
+   "offer": "buy"
   },
   {
    "name": "Bonita Motor Vault",
@@ -514,7 +560,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.34,
-   "lng": -81.78
+   "lng": -81.78,
+   "offer": "buy"
   },
   {
    "name": "Naples Motor Condos \u2014 Race Track Rd",
@@ -524,7 +571,8 @@
    "units": 30,
    "priceNote": "$400K\u2013$1.3M",
    "lat": 26.34,
-   "lng": -81.78
+   "lng": -81.78,
+   "offer": "buy"
   },
   {
    "name": "The Paddock at The Bonita Foundry",
@@ -534,7 +582,8 @@
    "units": 37,
    "priceNote": "Inquire",
    "lat": 26.34,
-   "lng": -81.78
+   "lng": -81.78,
+   "offer": "buy"
   },
   {
    "name": "SR 64 Executive Storage",
@@ -545,7 +594,8 @@
    "priceNote": "$259K\u2013$450K",
    "website": null,
    "lat": 27.5,
-   "lng": -82.57
+   "lng": -82.57,
+   "offer": "buy"
   },
   {
    "name": "The Caves of Cape Coral",
@@ -555,7 +605,8 @@
    "units": 53,
    "priceNote": "$190K\u2013$700K",
    "lat": 26.56,
-   "lng": -81.95
+   "lng": -81.95,
+   "offer": "buy"
   },
   {
    "name": "Daytona Toy Storage",
@@ -565,7 +616,8 @@
    "units": 63,
    "priceNote": "Pre-construction",
    "lat": 29.21,
-   "lng": -81.02
+   "lng": -81.02,
+   "offer": "buy"
   },
   {
    "name": "Hyde Park Storage Suites",
@@ -575,7 +627,8 @@
    "units": 54,
    "priceNote": "Inquire",
    "lat": 29.21,
-   "lng": -81.02
+   "lng": -81.02,
+   "offer": "buy"
   },
   {
    "name": "Emerald Coast Motor Club",
@@ -586,7 +639,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 30.72,
-   "lng": -86.12
+   "lng": -86.12,
+   "offer": "buy"
   },
   {
    "name": "The Paddock of Delray",
@@ -597,7 +651,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.46,
-   "lng": -80.07
+   "lng": -80.07,
+   "offer": "buy"
   },
   {
    "name": "CollectionSuites Miami",
@@ -607,7 +662,8 @@
    "units": 38,
    "priceNote": "From $1.1M",
    "lat": 25.81,
-   "lng": -80.36
+   "lng": -80.36,
+   "offer": "buy"
   },
   {
    "name": "Florida Garage Condos of Englewood",
@@ -618,7 +674,8 @@
    "priceNote": "Around $250K",
    "website": null,
    "lat": 26.96,
-   "lng": -82.35
+   "lng": -82.35,
+   "offer": "buy"
   },
   {
    "name": "Florida Garage Condos of Englewood II",
@@ -629,7 +686,8 @@
    "priceNote": "Around $200K",
    "website": null,
    "lat": 26.96,
-   "lng": -82.35
+   "lng": -82.35,
+   "offer": "buy"
   },
   {
    "name": "Estero Motorplex",
@@ -639,7 +697,8 @@
    "units": 40,
    "priceNote": "Pre-construction",
    "lat": 26.44,
-   "lng": -81.81
+   "lng": -81.81,
+   "offer": "buy"
   },
   {
    "name": "Auto Vault Ft Lauderdale",
@@ -649,7 +708,8 @@
    "units": 84,
    "priceNote": "Inquire",
    "lat": 26.12,
-   "lng": -80.14
+   "lng": -80.14,
+   "offer": "buy"
   },
   {
    "name": "Classic Estates",
@@ -660,7 +720,8 @@
    "priceNote": "Around $375K",
    "website": null,
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Classic Ultra Storage Condos",
@@ -670,7 +731,8 @@
    "units": 17,
    "priceNote": "$425K\u2013$489K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Excalibur Motor Condominiums",
@@ -680,7 +742,8 @@
    "units": 42,
    "priceNote": "$374K\u2013$395K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Island Storage Suites",
@@ -690,7 +753,8 @@
    "units": 67,
    "priceNote": "$354K\u2013$425K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Lakeside Storage Suites",
@@ -700,7 +764,8 @@
    "units": 40,
    "priceNote": "$390K\u2013$410K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "My ITEC Place",
@@ -710,7 +775,8 @@
    "units": 47,
    "priceNote": "Resales",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "The Collection at ITEC",
@@ -721,7 +787,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Toy Vault Condo",
@@ -731,7 +798,8 @@
    "units": 96,
    "priceNote": "$175K\u2013$500K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Vehicle Fortress",
@@ -741,7 +809,8 @@
    "units": 170,
    "priceNote": "$182K\u2013$370K",
    "lat": 26.64,
-   "lng": -81.87
+   "lng": -81.87,
+   "offer": "buy"
   },
   {
    "name": "Treasure Coast Vault",
@@ -751,7 +820,8 @@
    "units": 60,
    "priceNote": "$232K\u2013$450K",
    "lat": 27.45,
-   "lng": -80.33
+   "lng": -80.33,
+   "offer": "buy"
   },
   {
    "name": "Hobe Sound Auto Vault",
@@ -761,7 +831,8 @@
    "units": 64,
    "priceNote": "$390K\u2013$545K",
    "lat": 27.06,
-   "lng": -80.14
+   "lng": -80.14,
+   "offer": "buy"
   },
   {
    "name": "Extreme Toy Garage",
@@ -771,7 +842,8 @@
    "units": 49,
    "priceNote": "Resales",
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "Fortress Garage",
@@ -781,7 +853,8 @@
    "units": 32,
    "priceNote": "Inquire",
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "REVHAUS Suites Luxury Garage Condos",
@@ -791,7 +864,8 @@
    "units": 29,
    "priceNote": "Pre-construction",
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "The Paddocks Luxury Garage",
@@ -802,7 +876,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "The Shed",
@@ -812,7 +887,8 @@
    "units": 40,
    "priceNote": "$275K\u2013$465K",
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "WheelHouse San Pablo",
@@ -822,7 +898,8 @@
    "units": 80,
    "priceNote": "Resales",
    "lat": 30.33,
-   "lng": -81.66
+   "lng": -81.66,
+   "offer": "buy"
   },
   {
    "name": "Jensen Beach Auto Vault",
@@ -832,7 +909,8 @@
    "units": 35,
    "priceNote": "$435K\u2013$550K",
    "lat": 27.25,
-   "lng": -80.23
+   "lng": -80.23,
+   "offer": "buy"
   },
   {
    "name": "Auto ClubHouse Palm Beach",
@@ -842,7 +920,8 @@
    "units": 19,
    "priceNote": "From $615K",
    "lat": 26.93,
-   "lng": -80.09
+   "lng": -80.09,
+   "offer": "buy"
   },
   {
    "name": "Exotic Auto Vault",
@@ -852,7 +931,8 @@
    "units": null,
    "priceNote": "From $799K",
    "lat": 26.93,
-   "lng": -80.09
+   "lng": -80.09,
+   "offer": "buy"
   },
   {
    "name": "The Collectors Vault",
@@ -862,7 +942,8 @@
    "units": 31,
    "priceNote": "Inquire",
    "lat": 27.91,
-   "lng": -82.79
+   "lng": -82.79,
+   "offer": "buy"
   },
   {
    "name": "Apex Auto & RV Vault",
@@ -872,7 +953,8 @@
    "units": 17,
    "priceNote": "Inquire",
    "lat": 28.81,
-   "lng": -81.88
+   "lng": -81.88,
+   "offer": "buy"
   },
   {
    "name": "Florida Premier Garage Condos \u2014 Leesburg",
@@ -883,7 +965,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.81,
-   "lng": -81.88
+   "lng": -81.88,
+   "offer": "buy"
   },
   {
    "name": "Marco Luxe Motor Condos",
@@ -893,7 +976,8 @@
    "units": 20,
    "priceNote": "Pre-construction",
    "lat": 25.94,
-   "lng": -81.72
+   "lng": -81.72,
+   "offer": "buy"
   },
   {
    "name": "Revault",
@@ -904,7 +988,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 25.76,
-   "lng": -80.19
+   "lng": -80.19,
+   "offer": "buy"
   },
   {
    "name": "Garage Luxury at Miramar",
@@ -915,7 +1000,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 30.39,
-   "lng": -86.36
+   "lng": -86.36,
+   "offer": "buy"
   },
   {
    "name": "5th Avenue Car Club",
@@ -926,7 +1012,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "951 Auto Suites",
@@ -937,7 +1024,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Hyper Club / Naples Racing Resort",
@@ -947,7 +1035,8 @@
    "units": 400,
    "priceNote": "Pre-construction",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Jetport Motor Suites",
@@ -957,7 +1046,8 @@
    "units": 47,
    "priceNote": "Inquire",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Naples Auto Vault",
@@ -968,7 +1058,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Naples Luxury Motor Suites",
@@ -978,7 +1069,8 @@
    "units": 9,
    "priceNote": "Around $930K",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Naples Motor Condos \u2014 Livingston Rd",
@@ -988,7 +1080,8 @@
    "units": 46,
    "priceNote": "Resales",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Naples Prestige Auto Suites",
@@ -999,7 +1092,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Prima Auto Condos",
@@ -1009,7 +1103,8 @@
    "units": 33,
    "priceNote": "Inquire",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "The Box Naples \u2014 Motor Condos",
@@ -1020,7 +1115,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "The Hideout Elite Motor Storage",
@@ -1030,7 +1126,8 @@
    "units": 38,
    "priceNote": "$650K\u2013$699K",
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Ultimate Garages",
@@ -1041,7 +1138,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.14,
-   "lng": -81.79
+   "lng": -81.79,
+   "offer": "buy"
   },
   {
    "name": "Paddock1 Orlando",
@@ -1052,7 +1150,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.54,
-   "lng": -81.38
+   "lng": -81.38,
+   "offer": "buy"
   },
   {
    "name": "The Motor Enclave Orlando",
@@ -1063,7 +1162,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.54,
-   "lng": -81.38
+   "lng": -81.38,
+   "offer": "buy"
   },
   {
    "name": "Collection 674",
@@ -1074,7 +1174,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.67,
-   "lng": -81.21
+   "lng": -81.21,
+   "offer": "buy"
   },
   {
    "name": "The Hargrove Car Club",
@@ -1085,7 +1186,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 29.58,
-   "lng": -81.21
+   "lng": -81.21,
+   "offer": "buy"
   },
   {
    "name": "Pembroke Pines Collector Car Condo",
@@ -1096,7 +1198,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.01,
-   "lng": -80.3
+   "lng": -80.3,
+   "offer": "buy"
   },
   {
    "name": "9990 LUX Luxury Garage Condos",
@@ -1107,7 +1210,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 30.24,
-   "lng": -81.39
+   "lng": -81.39,
+   "offer": "buy"
   },
   {
    "name": "WheelHouse West End",
@@ -1117,7 +1221,8 @@
    "units": 49,
    "priceNote": "$310K\u2013$460K",
    "lat": 30.24,
-   "lng": -81.39
+   "lng": -81.39,
+   "offer": "buy"
   },
   {
    "name": "WheelHouse Ponte Vedra",
@@ -1128,7 +1233,8 @@
    "priceNote": "Expansion permitted",
    "website": null,
    "lat": 30.24,
-   "lng": -81.39
+   "lng": -81.39,
+   "offer": "buy"
   },
   {
    "name": "P1 Motor Club",
@@ -1139,7 +1245,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 27.27,
-   "lng": -80.35
+   "lng": -80.35,
+   "offer": "buy"
   },
   {
    "name": "Airport Storage Units",
@@ -1150,7 +1257,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "Isles Coach Caves RV Storage",
@@ -1160,7 +1268,8 @@
    "units": null,
    "priceNote": "Around $240K",
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "Scenic View III",
@@ -1171,7 +1280,8 @@
    "priceNote": "$200K\u2013$279K",
    "website": null,
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "Scenic View IV",
@@ -1182,7 +1292,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "Scenic View Storage",
@@ -1192,7 +1303,8 @@
    "units": 22,
    "priceNote": "Resales from $180K",
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "Scenic View Storage II",
@@ -1203,7 +1315,8 @@
    "priceNote": "Around $240K",
    "website": null,
    "lat": 26.93,
-   "lng": -82.05
+   "lng": -82.05,
+   "offer": "buy"
   },
   {
    "name": "The Hangar",
@@ -1213,7 +1326,8 @@
    "units": 37,
    "priceNote": "Resales near $950K+",
    "lat": 26.78,
-   "lng": -80.07
+   "lng": -80.07,
+   "offer": "buy"
   },
   {
    "name": "Grande Storage Condos",
@@ -1223,7 +1337,8 @@
    "units": 53,
    "priceNote": "$269K\u2013$330K",
    "lat": 26.88,
-   "lng": -82.26
+   "lng": -82.26,
+   "offer": "buy"
   },
   {
    "name": "Sunset Storage Condos",
@@ -1234,7 +1349,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.88,
-   "lng": -82.29
+   "lng": -82.29,
+   "offer": "buy"
   },
   {
    "name": "Garage 30A",
@@ -1244,7 +1360,8 @@
    "units": 52,
    "priceNote": "Pre-construction",
    "lat": 30.37,
-   "lng": -86.23
+   "lng": -86.23,
+   "offer": "buy"
   },
   {
    "name": "Car Bank 2.0",
@@ -1254,7 +1371,8 @@
    "units": 26,
    "priceNote": "Pre-construction",
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Car Bank SRQ",
@@ -1264,7 +1382,8 @@
    "units": 18,
    "priceNote": "Inquire",
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Car Collective",
@@ -1275,7 +1394,8 @@
    "priceNote": "Around $510K",
    "website": null,
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "LDG Waterside",
@@ -1286,7 +1406,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Luxe Dream Garage",
@@ -1296,7 +1417,8 @@
    "units": 65,
    "priceNote": "Resales near $510K",
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "The Motor Enclave Sarasota",
@@ -1307,7 +1429,8 @@
    "priceNote": "Pre-sales active",
    "website": null,
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Wheel Base Premium Garage Condos",
@@ -1317,7 +1440,8 @@
    "units": 46,
    "priceNote": "$238K\u2013$432K",
    "lat": 27.34,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Sebring Motor Garages",
@@ -1327,7 +1451,8 @@
    "units": 148,
    "priceNote": "$395K\u2013$525K",
    "lat": 27.5,
-   "lng": -81.44
+   "lng": -81.44,
+   "offer": "buy"
   },
   {
    "name": "Motown Luxury Storage",
@@ -1338,7 +1463,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.48,
-   "lng": -82.53
+   "lng": -82.53,
+   "offer": "buy"
   },
   {
    "name": "Pit Row Garage & Loft",
@@ -1349,7 +1475,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 29.9,
-   "lng": -81.31
+   "lng": -81.31,
+   "offer": "buy"
   },
   {
    "name": "Elite Garage Suites",
@@ -1359,7 +1486,8 @@
    "units": 48,
    "priceNote": "Pre-construction",
    "lat": 27.77,
-   "lng": -82.64
+   "lng": -82.64,
+   "offer": "buy"
   },
   {
    "name": "Motocave Luxury Car Condos",
@@ -1369,7 +1497,8 @@
    "units": 43,
    "priceNote": "$385K\u2013$520K",
    "lat": 27.77,
-   "lng": -82.64
+   "lng": -82.64,
+   "offer": "buy"
   },
   {
    "name": "Florida Premier Garage Condos \u2014 Sumterville",
@@ -1380,7 +1509,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.74,
-   "lng": -82.06
+   "lng": -82.06,
+   "offer": "buy"
   },
   {
    "name": "Paddock1 Premium Garage Condos",
@@ -1390,7 +1520,8 @@
    "units": 61,
    "priceNote": "$435K\u2013$600K",
    "lat": 27.95,
-   "lng": -82.46
+   "lng": -82.46,
+   "offer": "buy"
   },
   {
    "name": "The Motor Enclave",
@@ -1400,7 +1531,8 @@
    "units": 300,
    "priceNote": "Resales from the high $300Ks",
    "lat": 27.95,
-   "lng": -82.46
+   "lng": -82.46,
+   "offer": "buy"
   },
   {
    "name": "The Caves Auto Condos",
@@ -1411,7 +1543,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.93,
-   "lng": -81.99
+   "lng": -81.99,
+   "offer": "buy"
   },
   {
    "name": "Florida Premier Garage Condos \u2014 Venice",
@@ -1422,7 +1555,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 27.1,
-   "lng": -82.44
+   "lng": -82.44,
+   "offer": "buy"
   },
   {
    "name": "Bespoke Auto Lofts",
@@ -1432,7 +1566,8 @@
    "units": 17,
    "priceNote": "Pre-construction",
    "lat": 27.64,
-   "lng": -80.4
+   "lng": -80.4,
+   "offer": "buy"
   },
   {
    "name": "Indian River MotorHaus",
@@ -1443,7 +1578,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 27.64,
-   "lng": -80.4
+   "lng": -80.4,
+   "offer": "buy"
   },
   {
    "name": "Indian River MotorHaus 2.0",
@@ -1454,7 +1590,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 27.64,
-   "lng": -80.4
+   "lng": -80.4,
+   "offer": "buy"
   },
   {
    "name": "Indian River MotorHaus 3.0",
@@ -1464,7 +1601,8 @@
    "units": 77,
    "priceNote": "Pre-construction",
    "lat": 27.64,
-   "lng": -80.4
+   "lng": -80.4,
+   "offer": "buy"
   },
   {
    "name": "Vero Autohaus",
@@ -1474,7 +1612,8 @@
    "units": 37,
    "priceNote": "Resales",
    "lat": 27.64,
-   "lng": -80.4
+   "lng": -80.4,
+   "offer": "buy"
   },
   {
    "name": "CollectionSuites Palm Beach",
@@ -1484,7 +1623,8 @@
    "units": null,
    "priceNote": "Inquire",
    "lat": 26.71,
-   "lng": -80.05
+   "lng": -80.05,
+   "offer": "buy"
   },
   {
    "name": "Palm Beach Auto Haus",
@@ -1495,7 +1635,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 26.71,
-   "lng": -80.05
+   "lng": -80.05,
+   "offer": "buy"
   },
   {
    "name": "The Hangar at PBIA",
@@ -1505,7 +1646,8 @@
    "units": 22,
    "priceNote": "Inquire",
    "lat": 26.71,
-   "lng": -80.05
+   "lng": -80.05,
+   "offer": "buy"
   },
   {
    "name": "Florida Premier Garage Condos \u2014 Wildwood",
@@ -1516,7 +1658,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 28.87,
-   "lng": -82.04
+   "lng": -82.04,
+   "offer": "buy"
   },
   {
    "name": "Garage Lofts at Acworth Summit",
@@ -1527,7 +1670,8 @@
    "priceNote": "$225K\u2013$500K",
    "website": null,
    "lat": 34.07,
-   "lng": -84.68
+   "lng": -84.68,
+   "offer": "buy"
   },
   {
    "name": "Seven Hills Car Condos",
@@ -1538,7 +1682,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 34.07,
-   "lng": -84.68
+   "lng": -84.68,
+   "offer": "buy"
   },
   {
    "name": "Alpharetta Personal Warehouse",
@@ -1549,7 +1694,8 @@
    "priceNote": "$375K\u2013$850K",
    "website": null,
    "lat": 34.08,
-   "lng": -84.29
+   "lng": -84.29,
+   "offer": "buy"
   },
   {
    "name": "Ball Ground Garage Condos",
@@ -1560,7 +1706,8 @@
    "priceNote": "$325K\u2013$400K",
    "website": null,
    "lat": 34.34,
-   "lng": -84.38
+   "lng": -84.38,
+   "offer": "buy"
   },
   {
    "name": "Garage Lofts at Mall of Georgia",
@@ -1571,7 +1718,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 34.12,
-   "lng": -84.0
+   "lng": -84.0,
+   "offer": "buy"
   },
   {
    "name": "Storage Caves Buford",
@@ -1582,7 +1730,8 @@
    "priceNote": "$98K\u2013$725K",
    "website": "https://storagecaves.com",
    "lat": 34.12,
-   "lng": -84.0
+   "lng": -84.0,
+   "offer": "buy"
   },
   {
    "name": "Atlanta Motorsports Park Trackside Garage Condos",
@@ -1593,7 +1742,8 @@
    "priceNote": "From $225K",
    "website": "https://www.atlantamotorsportspark.com",
    "lat": 34.42,
-   "lng": -84.12
+   "lng": -84.12,
+   "offer": "buy"
   },
   {
    "name": "The Toy Barn of Dillard",
@@ -1604,7 +1754,8 @@
    "priceNote": "From $295K",
    "website": null,
    "lat": 34.97,
-   "lng": -83.38
+   "lng": -83.38,
+   "offer": "buy"
   },
   {
    "name": "Park Court Garage Condos",
@@ -1615,7 +1766,8 @@
    "priceNote": "Lake Oconee; inquire",
    "website": null,
    "lat": 33.58,
-   "lng": -83.18
+   "lng": -83.18,
+   "offer": "buy"
   },
   {
    "name": "HomeBase Flex Garage Condos",
@@ -1626,7 +1778,8 @@
    "priceNote": "From $150K",
    "website": null,
    "lat": 34.92,
-   "lng": -85.11
+   "lng": -85.11,
+   "offer": "buy"
   },
   {
    "name": "Waukee Garage Condos",
@@ -1637,7 +1790,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 41.61,
-   "lng": -93.89
+   "lng": -93.89,
+   "offer": "buy"
   },
   {
    "name": "Falcon Storage Condos",
@@ -1648,7 +1802,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 43.57,
-   "lng": -116.15
+   "lng": -116.15,
+   "offer": "buy"
   },
   {
    "name": "Go To My Garage",
@@ -1659,7 +1814,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 43.56,
-   "lng": -116.16
+   "lng": -116.16,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Boise",
@@ -1670,7 +1826,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 43.55,
-   "lng": -116.15
+   "lng": -116.15,
+   "offer": "both"
   },
   {
    "name": "GarageTown USA Coeur d'Alene",
@@ -1681,7 +1838,8 @@
    "priceNote": "Resales",
    "website": null,
    "lat": 47.7,
-   "lng": -116.84
+   "lng": -116.84,
+   "offer": "buy"
   },
   {
    "name": "Eagle Storage Condos",
@@ -1692,7 +1850,8 @@
    "priceNote": "Resales $218K\u2013$315K",
    "website": null,
    "lat": 43.69,
-   "lng": -116.28
+   "lng": -116.28,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Magic Valley",
@@ -1703,7 +1862,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 42.72,
-   "lng": -114.52
+   "lng": -114.52,
+   "offer": "both"
   },
   {
    "name": "MotorCave Suites",
@@ -1714,7 +1874,8 @@
    "priceNote": "From $410K",
    "website": null,
    "lat": 42.15,
-   "lng": -88.14
+   "lng": -88.14,
+   "offer": "buy"
   },
   {
    "name": "Crystal Lake Car Condos",
@@ -1725,7 +1886,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 42.24,
-   "lng": -88.32
+   "lng": -88.32,
+   "offer": "buy"
   },
   {
    "name": "Autobahn Country Club Garages",
@@ -1736,7 +1898,8 @@
    "priceNote": "Inquire",
    "website": "https://autobahncc.com",
    "lat": 41.53,
-   "lng": -88.08
+   "lng": -88.08,
+   "offer": "buy"
   },
   {
    "name": "Luxe Corsa Car Condos",
@@ -1747,7 +1910,8 @@
    "priceNote": "From $549K",
    "website": null,
    "lat": 42.2,
-   "lng": -88.09
+   "lng": -88.09,
+   "offer": "buy"
   },
   {
    "name": "Big Door Garage Condos",
@@ -1758,7 +1922,8 @@
    "priceNote": "Sold out; resales",
    "website": null,
    "lat": 42.26,
-   "lng": -88.0
+   "lng": -88.0,
+   "offer": "buy"
   },
   {
    "name": "Iron Gate Motor Condos",
@@ -1769,7 +1934,8 @@
    "priceNote": "Resales; inquire",
    "website": "https://www.irongatemotorcondos.com",
    "lat": 41.75,
-   "lng": -88.15
+   "lng": -88.15,
+   "offer": "buy"
   },
   {
    "name": "AutoMotorPlex Indianapolis",
@@ -1780,7 +1946,8 @@
    "priceNote": "From ~$200K",
    "website": "https://automotorplex.com/indianapolis",
    "lat": 39.77,
-   "lng": -86.16
+   "lng": -86.16,
+   "offer": "buy"
   },
   {
    "name": "Motor District",
@@ -1791,7 +1958,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 40.04,
-   "lng": -86.13
+   "lng": -86.13,
+   "offer": "buy"
   },
   {
    "name": "Carriage Houses of Johnson County",
@@ -1802,7 +1970,8 @@
    "priceNote": "Resales $247K\u2013$275K",
    "website": "https://kcgaragecondos4sale.com/",
    "lat": 38.98,
-   "lng": -94.97
+   "lng": -94.97,
+   "offer": "buy"
   },
   {
    "name": "The Foundry",
@@ -1813,7 +1982,8 @@
    "priceNote": "Reservations open",
    "website": "https://kcgaragecondos4sale.com/",
    "lat": 38.92,
-   "lng": -94.62
+   "lng": -94.62,
+   "offer": "buy"
   },
   {
    "name": "The Lux",
@@ -1824,7 +1994,8 @@
    "priceNote": "1,250\u20133,500 sq ft suites",
    "website": "https://www.luxurycondogarage.com/",
    "lat": 38.86,
-   "lng": -94.67
+   "lng": -94.67,
+   "offer": "buy"
   },
   {
    "name": "Sandlot Garage Condos",
@@ -1835,7 +2006,8 @@
    "priceNote": "Inquire",
    "website": "https://www.sandlotcondos.com/",
    "lat": 37.73,
-   "lng": -97.43
+   "lng": -97.43,
+   "offer": "buy"
   },
   {
    "name": "Red Squirrel Street Garage Condos",
@@ -1846,7 +2018,8 @@
    "priceNote": "From $279,900",
    "website": null,
    "lat": 36.97,
-   "lng": -86.48
+   "lng": -86.48,
+   "offer": "buy"
   },
   {
    "name": "The Car Vault",
@@ -1857,7 +2030,8 @@
    "priceNote": "From $200K",
    "website": null,
    "lat": 42.35,
-   "lng": -71.1
+   "lng": -71.1,
+   "offer": "buy"
   },
   {
    "name": "Motor Toys Luxury Vehicle Storage",
@@ -1868,7 +2042,8 @@
    "priceNote": "From $165K",
    "website": null,
    "lat": 43.91,
-   "lng": -69.97
+   "lng": -69.97,
+   "offer": "buy"
   },
   {
    "name": "Motorsports Gateway Howell",
@@ -1879,7 +2054,8 @@
    "priceNote": "From $599,990",
    "website": "https://motorsportsgateway.com",
    "lat": 42.61,
-   "lng": -83.93
+   "lng": -83.93,
+   "offer": "buy"
   },
   {
    "name": "M1 Concourse",
@@ -1890,7 +2066,8 @@
    "priceNote": "Resales from ~$399K",
    "website": "https://m1concourse.com",
    "lat": 42.64,
-   "lng": -83.29
+   "lng": -83.29,
+   "offer": "buy"
   },
   {
    "name": "Big Lake Car Condos",
@@ -1901,7 +2078,8 @@
    "priceNote": "From $169/sq ft",
    "website": null,
    "lat": 45.33,
-   "lng": -93.75
+   "lng": -93.75,
+   "offer": "buy"
   },
   {
    "name": "AutoMotorPlex Chanhassen",
@@ -1912,7 +2090,8 @@
    "priceNote": "Resales; inquire",
    "website": "https://automotorplex.com",
    "lat": 44.86,
-   "lng": -93.53
+   "lng": -93.53,
+   "offer": "buy"
   },
   {
    "name": "Motor Condos at Independence",
@@ -1923,7 +2102,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 45.03,
-   "lng": -93.71
+   "lng": -93.71,
+   "offer": "buy"
   },
   {
    "name": "Midwest FlexSpace Lakeville",
@@ -1934,7 +2114,8 @@
    "priceNote": "From $185K",
    "website": null,
    "lat": 44.65,
-   "lng": -93.24
+   "lng": -93.24,
+   "offer": "buy"
   },
   {
    "name": "AutoMotorPlex Medina",
@@ -1945,7 +2126,8 @@
    "priceNote": "Phase 3 selling",
    "website": "https://p3.automotorplex.com",
    "lat": 45.04,
-   "lng": -93.58
+   "lng": -93.58,
+   "offer": "buy"
   },
   {
    "name": "The Place in Chesterfield Valley",
@@ -1956,7 +2138,8 @@
    "priceNote": "Inquire",
    "website": "https://theplaceinchesterfield.com/",
    "lat": 38.66,
-   "lng": -90.58
+   "lng": -90.58,
+   "offer": "buy"
   },
   {
    "name": "AutoToyBarn",
@@ -1967,7 +2150,8 @@
    "priceNote": "Inquire",
    "website": "https://www.autotoybarn.com/",
    "lat": 38.89,
-   "lng": -94.61
+   "lng": -94.61,
+   "offer": "buy"
   },
   {
    "name": "Eveso Bozeman",
@@ -1978,7 +2162,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 45.67,
-   "lng": -111.12
+   "lng": -111.12,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Bozeman",
@@ -1989,7 +2174,8 @@
    "priceNote": "Coming soon",
    "website": "https://luxelocker.com",
    "lat": 45.68,
-   "lng": -111.04
+   "lng": -111.04,
+   "offer": "buy"
   },
   {
    "name": "Big Toy Condos",
@@ -2000,7 +2186,8 @@
    "priceNote": "~$249K",
    "website": null,
    "lat": 48.29,
-   "lng": -114.26
+   "lng": -114.26,
+   "offer": "buy"
   },
   {
    "name": "Village Point Landing",
@@ -2011,7 +2198,8 @@
    "priceNote": "Inquire",
    "website": "https://www.villagepointlanding.com",
    "lat": 34.07,
-   "lng": -78.15
+   "lng": -78.15,
+   "offer": "buy"
   },
   {
    "name": "Auto ClubHouse Charlotte",
@@ -2022,7 +2210,8 @@
    "priceNote": "Pre-construction",
    "website": null,
    "lat": 35.23,
-   "lng": -80.84
+   "lng": -80.84,
+   "offer": "buy"
   },
   {
    "name": "Storage Caves Concord",
@@ -2033,7 +2222,8 @@
    "priceNote": "Inquire",
    "website": "https://storagecaves.com",
    "lat": 35.41,
-   "lng": -80.58
+   "lng": -80.58,
+   "offer": "buy"
   },
   {
    "name": "Ten Tenths Motor Club",
@@ -2044,7 +2234,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.35,
-   "lng": -80.68
+   "lng": -80.68,
+   "offer": "buy"
   },
   {
    "name": "Chartown Drive Showroom Condos",
@@ -2055,7 +2246,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.49,
-   "lng": -80.86
+   "lng": -80.86,
+   "offer": "buy"
   },
   {
    "name": "Race City Motorpark Social Club",
@@ -2066,7 +2258,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.63,
-   "lng": -80.52
+   "lng": -80.52,
+   "offer": "buy"
   },
   {
    "name": "Storage Caves Lake Norman",
@@ -2077,7 +2270,8 @@
    "priceNote": "Coming soon",
    "website": "https://storagecaves.com",
    "lat": 35.59,
-   "lng": -80.82
+   "lng": -80.82,
+   "offer": "buy"
   },
   {
    "name": "The Garages at LKN",
@@ -2088,7 +2282,8 @@
    "priceNote": "From $360K",
    "website": "https://www.thegaragesatlkn.com",
    "lat": 35.58,
-   "lng": -80.81
+   "lng": -80.81,
+   "offer": "buy"
   },
   {
    "name": "Carolina Exotic Car Club",
@@ -2099,7 +2294,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.78,
-   "lng": -78.64
+   "lng": -78.64,
+   "offer": "buy"
   },
   {
    "name": "Autoport Luxury Driving Resort",
@@ -2110,7 +2306,8 @@
    "priceNote": "Garage villas",
    "website": null,
    "lat": 35.43,
-   "lng": -79.59
+   "lng": -79.59,
+   "offer": "buy"
   },
   {
    "name": "Luxstor Garage Condos",
@@ -2121,7 +2318,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 46.88,
-   "lng": -96.79
+   "lng": -96.79,
+   "offer": "buy"
   },
   {
    "name": "Victory Lane Condominiums",
@@ -2132,7 +2330,8 @@
    "priceNote": "Resales; inquire",
    "website": null,
    "lat": 41.26,
-   "lng": -95.93
+   "lng": -95.93,
+   "offer": "buy"
   },
   {
    "name": "Newfound Toy Vault",
@@ -2143,7 +2342,8 @@
    "priceNote": "From $209K",
    "website": null,
    "lat": 43.61,
-   "lng": -71.79
+   "lng": -71.79,
+   "offer": "buy"
   },
   {
    "name": "Lake Shore Storage Condominiums",
@@ -2154,7 +2354,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 43.55,
-   "lng": -71.41
+   "lng": -71.41,
+   "offer": "buy"
   },
   {
    "name": "Carriage House Storage",
@@ -2165,7 +2366,8 @@
    "priceNote": "From $350K",
    "website": null,
    "lat": 43.66,
-   "lng": -71.5
+   "lng": -71.5,
+   "offer": "buy"
   },
   {
    "name": "NJMP Exotic Car Garages",
@@ -2176,7 +2378,8 @@
    "priceNote": "Phase IX selling; inquire",
    "website": "https://njmp.com",
    "lat": 39.4,
-   "lng": -75.04
+   "lng": -75.04,
+   "offer": "buy"
   },
   {
    "name": "Brielle Avenue Car Condos",
@@ -2187,7 +2390,8 @@
    "priceNote": "From $1.2M",
    "website": null,
    "lat": 40.25,
-   "lng": -74.04
+   "lng": -74.04,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Albuquerque",
@@ -2198,7 +2402,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 35.08,
-   "lng": -106.65
+   "lng": -106.65,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Henderson",
@@ -2209,7 +2414,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 36.04,
-   "lng": -114.98
+   "lng": -114.98,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Mesquite",
@@ -2220,7 +2426,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 36.81,
-   "lng": -114.07
+   "lng": -114.07,
+   "offer": "both"
   },
   {
    "name": "Spring Mountain Motor Resort Garage Condos",
@@ -2231,7 +2438,8 @@
    "priceNote": "Inquire",
    "website": "https://www.springmountainmotorsports.com",
    "lat": 36.18,
-   "lng": -115.91
+   "lng": -115.91,
+   "offer": "buy"
   },
   {
    "name": "LuxeLocker Reno",
@@ -2242,7 +2450,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 39.62,
-   "lng": -119.85
+   "lng": -119.85,
+   "offer": "both"
   },
   {
    "name": "LuxeLocker Spanish Springs",
@@ -2253,7 +2462,8 @@
    "priceNote": "Buy or rent",
    "website": "https://luxelocker.com",
    "lat": 39.66,
-   "lng": -119.7
+   "lng": -119.7,
+   "offer": "both"
   },
   {
    "name": "Monticello Motor Club Trackside Garages",
@@ -2264,7 +2474,8 @@
    "priceNote": "Members; inquire",
    "website": "https://www.monticellomotorclub.com",
    "lat": 41.66,
-   "lng": -74.69
+   "lng": -74.69,
+   "offer": "buy"
   },
   {
    "name": "Torque Motor Suites Blue Ash",
@@ -2275,7 +2486,8 @@
    "priceNote": "From $399,900",
    "website": null,
    "lat": 39.23,
-   "lng": -84.38
+   "lng": -84.38,
+   "offer": "buy"
   },
   {
    "name": "Torque Motor Suites Oakley",
@@ -2286,7 +2498,8 @@
    "priceNote": "From $300K",
    "website": null,
    "lat": 39.16,
-   "lng": -84.43
+   "lng": -84.43,
+   "offer": "buy"
   },
   {
    "name": "Garage Condos of Oklahoma",
@@ -2297,7 +2510,8 @@
    "priceNote": "Inquire",
    "website": "https://www.garagecondosofok.com/",
    "lat": 35.65,
-   "lng": -97.48
+   "lng": -97.48,
+   "offer": "buy"
   },
   {
    "name": "Mammoth Luxury Garage Condos",
@@ -2308,7 +2522,8 @@
    "priceNote": "Inquire",
    "website": "https://mammothluxurygaragecondos.com/",
    "lat": 35.96,
-   "lng": -96.01
+   "lng": -96.01,
+   "offer": "buy"
   },
   {
    "name": "Garage Condos Enclave",
@@ -2319,7 +2534,8 @@
    "priceNote": "Inquire",
    "website": "https://www.gcenclave.com/",
    "lat": 36.05,
-   "lng": -96.01
+   "lng": -96.01,
+   "offer": "buy"
   },
   {
    "name": "Garage Condos Tulsa",
@@ -2330,7 +2546,8 @@
    "priceNote": "Inquire",
    "website": "https://www.gcenclave.com/",
    "lat": 36.15,
-   "lng": -95.99
+   "lng": -95.99,
+   "offer": "buy"
   },
   {
    "name": "Garaj Mahal",
@@ -2341,7 +2558,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 44.06,
-   "lng": -121.32
+   "lng": -121.32,
+   "offer": "buy"
   },
   {
    "name": "The Concours at Carlisle",
@@ -2352,7 +2570,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 40.2,
-   "lng": -77.2
+   "lng": -77.2,
+   "offer": "buy"
   },
   {
    "name": "South Trail Commerce Center",
@@ -2363,7 +2582,8 @@
    "priceNote": "From $245K",
    "website": null,
    "lat": 41.58,
-   "lng": -71.54
+   "lng": -71.54,
+   "offer": "buy"
   },
   {
    "name": "Awendaw Garage Condos",
@@ -2374,7 +2594,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 32.95,
-   "lng": -79.61
+   "lng": -79.61,
+   "offer": "buy"
   },
   {
    "name": "CarVillage USA",
@@ -2385,7 +2606,8 @@
    "priceNote": "From $550K",
    "website": null,
    "lat": 32.24,
-   "lng": -80.86
+   "lng": -80.86,
+   "offer": "buy"
   },
   {
    "name": "The Vault Luxury Motor Condos \u2014 Daniel Island",
@@ -2396,7 +2618,8 @@
    "priceNote": "From $450K",
    "website": null,
    "lat": 32.86,
-   "lng": -79.9
+   "lng": -79.9,
+   "offer": "buy"
   },
   {
    "name": "Storage Caves Fort Mill",
@@ -2407,7 +2630,8 @@
    "priceNote": "Inquire",
    "website": "https://storagecaves.com",
    "lat": 35.01,
-   "lng": -80.94
+   "lng": -80.94,
+   "offer": "buy"
   },
   {
    "name": "The Vault Luxury Motor Condos \u2014 Greenville",
@@ -2418,7 +2642,8 @@
    "priceNote": "From $335K",
    "website": null,
    "lat": 34.85,
-   "lng": -82.39
+   "lng": -82.39,
+   "offer": "buy"
   },
   {
    "name": "Motor District",
@@ -2429,7 +2654,8 @@
    "priceNote": "From $395K",
    "website": "https://motordistrict.com",
    "lat": 32.69,
-   "lng": -80.1
+   "lng": -80.1,
+   "offer": "buy"
   },
   {
    "name": "The Vault Luxury Motor Condos \u2014 Mount Pleasant",
@@ -2440,7 +2666,8 @@
    "priceNote": "From $395K",
    "website": null,
    "lat": 32.83,
-   "lng": -79.82
+   "lng": -79.82,
+   "offer": "buy"
   },
   {
    "name": "Motor-Vault Lakeside at Lake Keowee",
@@ -2451,7 +2678,8 @@
    "priceNote": "From $285K",
    "website": "https://motor-vault.com",
    "lat": 34.8,
-   "lng": -82.82
+   "lng": -82.82,
+   "offer": "buy"
   },
   {
    "name": "605 Storage Condos",
@@ -2462,7 +2690,8 @@
    "priceNote": "From $169K",
    "website": null,
    "lat": 43.54,
-   "lng": -96.73
+   "lng": -96.73,
+   "offer": "buy"
   },
   {
    "name": "RallyPoint Motor Condos",
@@ -2473,7 +2702,8 @@
    "priceNote": "Inquire",
    "website": "https://rallypointmc.com",
    "lat": 36.3,
-   "lng": -86.62
+   "lng": -86.62,
+   "offer": "buy"
   },
   {
    "name": "Flatrock Motorclub Garage Lofts",
@@ -2484,7 +2714,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 35.87,
-   "lng": -84.68
+   "lng": -84.68,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Allen",
@@ -2495,7 +2726,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 33.1,
-   "lng": -96.67
+   "lng": -96.67,
+   "offer": "buy"
   },
   {
    "name": "MSR Houston Garages",
@@ -2506,7 +2738,8 @@
    "priceNote": "Inquire",
    "website": "https://msrhouston.com/garage/",
    "lat": 29.17,
-   "lng": -95.43
+   "lng": -95.43,
+   "offer": "buy"
   },
   {
    "name": "G2 Motorsports Park Garage Condos",
@@ -2517,7 +2750,8 @@
    "priceNote": "From $495K",
    "website": "https://g2motorsportspark.com/private-garage-condos/",
    "lat": 33.35,
-   "lng": -96.55
+   "lng": -96.55,
+   "offer": "buy"
   },
   {
    "name": "T11 Car Condos at COTA",
@@ -2528,7 +2762,8 @@
    "priceNote": "From $1.25M",
    "website": "https://edgewiserealty.com/projects/t11-car-condos",
    "lat": 30.13,
-   "lng": -97.64
+   "lng": -97.64,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Carrollton",
@@ -2539,7 +2774,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 32.98,
-   "lng": -96.89
+   "lng": -96.89,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Carrollton II",
@@ -2550,7 +2786,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 32.97,
-   "lng": -96.89
+   "lng": -96.89,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Colleyville",
@@ -2561,7 +2798,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 32.88,
-   "lng": -97.16
+   "lng": -97.16,
+   "offer": "buy"
   },
   {
    "name": "MotorSport Ranch",
@@ -2572,7 +2810,8 @@
    "priceNote": "Track-side; resales",
    "website": null,
    "lat": 32.53,
-   "lng": -97.62
+   "lng": -97.62,
+   "offer": "buy"
   },
   {
    "name": "Garage Werks",
@@ -2583,7 +2822,8 @@
    "priceNote": "From $192.5K",
    "website": "https://garagewerks.net/",
    "lat": 29.97,
-   "lng": -95.7
+   "lng": -95.7,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Dallas",
@@ -2594,7 +2834,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/dallas-community/",
    "lat": 32.79,
-   "lng": -96.8
+   "lng": -96.8,
+   "offer": "buy"
   },
   {
    "name": "Texas Autohaus",
@@ -2605,7 +2846,8 @@
    "priceNote": "Inquire",
    "website": "https://texasautohaus.com/",
    "lat": 32.78,
-   "lng": -96.8
+   "lng": -96.8,
+   "offer": "buy"
   },
   {
    "name": "Garages of the Americas",
@@ -2616,7 +2858,8 @@
    "priceNote": "Phase III; inquire",
    "website": "https://garagesoftheamericas.com/",
    "lat": 30.13,
-   "lng": -97.62
+   "lng": -97.62,
+   "offer": "buy"
   },
   {
    "name": "Garage Ultimate",
@@ -2627,7 +2870,8 @@
    "priceNote": "Inquire",
    "website": "https://www.garageultimate.com/",
    "lat": 29.53,
-   "lng": -95.2
+   "lng": -95.2,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Frisco",
@@ -2638,7 +2882,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 33.15,
-   "lng": -96.82
+   "lng": -96.82,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Frisco II",
@@ -2649,7 +2894,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 33.16,
-   "lng": -96.82
+   "lng": -96.82,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Firewheel",
@@ -2660,7 +2906,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 32.97,
-   "lng": -96.64
+   "lng": -96.64,
+   "offer": "buy"
   },
   {
    "name": "Paddock Car Condos",
@@ -2671,7 +2918,8 @@
    "priceNote": "Inquire",
    "website": "https://www.paddockcarcondos.com/",
    "lat": 29.8,
-   "lng": -95.48
+   "lng": -95.48,
+   "offer": "buy"
   },
   {
    "name": "Trailblazer Garages \u2014 Las Colinas",
@@ -2682,7 +2930,8 @@
    "priceNote": "From ~$500K",
    "website": "https://trailblazergarages.com/",
    "lat": 32.89,
-   "lng": -96.95
+   "lng": -96.95,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Katy",
@@ -2693,7 +2942,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 29.79,
-   "lng": -95.82
+   "lng": -95.82,
+   "offer": "buy"
   },
   {
    "name": "Republic Luxury Garage Condos",
@@ -2704,7 +2954,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 29.74,
-   "lng": -95.77
+   "lng": -95.77,
+   "offer": "buy"
   },
   {
    "name": "Luxury Garages",
@@ -2715,7 +2966,8 @@
    "priceNote": "Phase II; inquire",
    "website": "https://luxurygaragestx.com/",
    "lat": 33.12,
-   "lng": -97.03
+   "lng": -97.03,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Lakeway",
@@ -2726,7 +2978,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 30.36,
-   "lng": -97.97
+   "lng": -97.97,
+   "offer": "buy"
   },
   {
    "name": "Trailblazer Garages \u2014 McKinney",
@@ -2737,7 +2990,8 @@
    "priceNote": "Presales; inquire",
    "website": "https://trailblazergarages.com/",
    "lat": 33.2,
-   "lng": -96.62
+   "lng": -96.62,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Plano",
@@ -2748,7 +3002,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 33.02,
-   "lng": -96.7
+   "lng": -96.7,
+   "offer": "buy"
   },
   {
    "name": "The Garage x Dennis Collins",
@@ -2759,7 +3014,8 @@
    "priceNote": "Inquire",
    "website": "https://thegarageplanotx.com/",
    "lat": 33.08,
-   "lng": -96.82
+   "lng": -96.82,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Roanoke",
@@ -2770,7 +3026,8 @@
    "priceNote": "Resales ~$475K",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 33.0,
-   "lng": -97.23
+   "lng": -97.23,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Rockwall",
@@ -2781,7 +3038,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/",
    "lat": 32.93,
-   "lng": -96.46
+   "lng": -96.46,
+   "offer": "buy"
   },
   {
    "name": "Dominion Motor Club",
@@ -2792,7 +3050,8 @@
    "priceNote": "Inquire",
    "website": "https://www.dominionmotorclub.com/",
    "lat": 29.64,
-   "lng": -98.61
+   "lng": -98.61,
+   "offer": "buy"
   },
   {
    "name": "Dream Garage Condos",
@@ -2803,7 +3062,8 @@
    "priceNote": "Inquire",
    "website": "https://www.dreamgaragecondos.com/",
    "lat": 29.42,
-   "lng": -98.49
+   "lng": -98.49,
+   "offer": "buy"
   },
   {
    "name": "Shavano Garage Condos",
@@ -2814,7 +3074,8 @@
    "priceNote": "Inquire",
    "website": "https://www.kboudi.com/shavanogaragecondos/",
    "lat": 29.56,
-   "lng": -98.55
+   "lng": -98.55,
+   "offer": "buy"
   },
   {
    "name": "Garages of America \u2014 Woodlands",
@@ -2825,7 +3086,8 @@
    "priceNote": "Inquire",
    "website": "https://garagesofamerica.com/locations/woodlands-community/",
    "lat": 30.17,
-   "lng": -95.46
+   "lng": -95.46,
+   "offer": "buy"
   },
   {
    "name": "Hobby Hut RV Garages",
@@ -2836,7 +3098,8 @@
    "priceNote": "Resales ~$395K",
    "website": null,
    "lat": 37.03,
-   "lng": -113.62
+   "lng": -113.62,
+   "offer": "buy"
   },
   {
    "name": "Dominion Lux",
@@ -2847,7 +3110,8 @@
    "priceNote": "Inquire",
    "website": "https://dominionlux.com",
    "lat": 38.39,
-   "lng": -77.43
+   "lng": -77.43,
+   "offer": "buy"
   },
   {
    "name": "Cle Elum Garage Condos",
@@ -2858,7 +3122,8 @@
    "priceNote": "From ~$209K",
    "website": null,
    "lat": 47.2,
-   "lng": -120.94
+   "lng": -120.94,
+   "offer": "buy"
   },
   {
    "name": "GarageTown Federal Way",
@@ -2869,7 +3134,8 @@
    "priceNote": "Resales",
    "website": "https://garagetownusa.com",
    "lat": 47.32,
-   "lng": -122.31
+   "lng": -122.31,
+   "offer": "buy"
   },
   {
    "name": "Terminal One Motor + Yacht Club",
@@ -2880,7 +3146,8 @@
    "priceNote": "From mid-$600Ks",
    "website": null,
    "lat": 47.67,
-   "lng": -122.4
+   "lng": -122.4,
+   "offer": "buy"
   },
   {
    "name": "Fat Cat of Spokane",
@@ -2891,7 +3158,8 @@
    "priceNote": "Around $200K",
    "website": null,
    "lat": 47.63,
-   "lng": -117.5
+   "lng": -117.5,
+   "offer": "buy"
   },
   {
    "name": "Garage Lodge Storage Condos",
@@ -2902,7 +3170,8 @@
    "priceNote": "From ~$250K",
    "website": null,
    "lat": 47.63,
-   "lng": -117.53
+   "lng": -117.53,
+   "offer": "buy"
   },
   {
    "name": "GarageTown Spokane",
@@ -2913,7 +3182,8 @@
    "priceNote": "Resales; inquire",
    "website": "https://garagetownusa.com",
    "lat": 47.66,
-   "lng": -117.43
+   "lng": -117.43,
+   "offer": "buy"
   },
   {
    "name": "Trackside Road Garage Condos",
@@ -2924,7 +3194,8 @@
    "priceNote": "Resales near Road America",
    "website": null,
    "lat": 43.83,
-   "lng": -88.02
+   "lng": -88.02,
+   "offer": "buy"
   },
   {
    "name": "3rd Space Garages",
@@ -2935,7 +3206,8 @@
    "priceNote": "Inquire",
    "website": null,
    "lat": 42.99,
-   "lng": -89.53
+   "lng": -89.53,
+   "offer": "buy"
   },
   {
    "name": "Deer Drive Luxury Garage Condos",
@@ -2946,7 +3218,8 @@
    "priceNote": "From $526K",
    "website": null,
    "lat": 43.47,
-   "lng": -110.79
+   "lng": -110.79,
+   "offer": "buy"
   }
  ]
 }

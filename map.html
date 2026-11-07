@@ -49,6 +49,11 @@
         <option>Planned</option>
         <option>Established</option>
       </select>
+      <select id="f-offer" aria-label="Buy or rent">
+        <option value="">Buy &amp; Rent</option>
+        <option value="buy">For Sale</option>
+        <option value="rent">For Rent</option>
+      </select>
       <span class="map-count" id="count"></span>
     </div>
     <div id="map"></div>
@@ -104,6 +109,7 @@ function slugState(st){return (STATE_NAMES[st]||st).toLowerCase().replace(/[^a-z
 function render() {
   const st = document.getElementById('f-state').value;
   const status = document.getElementById('f-status').value;
+  const offer = document.getElementById('f-offer').value;
   layer.clearLayers();
   // jitter identical city coords slightly so markers don't stack
   const seen = {};
@@ -112,6 +118,9 @@ function render() {
     if (!c.lat || !c.lng) continue;
     if (st && c.state !== st) continue;
     if (status && c.status !== status) continue;
+    const o = c.offer || 'buy';
+    if (offer === 'buy' && !(o === 'buy' || o === 'both')) continue;
+    if (offer === 'rent' && o !== 'both') continue;
     const k = c.lat + ',' + c.lng;
     seen[k] = (seen[k] || 0) + 1;
     const j = seen[k] - 1;
@@ -132,6 +141,7 @@ fetch('data/communities.json').then(r => r.json()).then(d => {
 });
 document.getElementById('f-state').addEventListener('change', render);
 document.getElementById('f-status').addEventListener('change', render);
+document.getElementById('f-offer').addEventListener('change', render);
 </script>
 </body>
 </html>

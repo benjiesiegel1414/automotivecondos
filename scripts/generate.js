@@ -111,7 +111,7 @@ for (const st of states) {
   const name = STATE_NAMES[st];
   const list = byState[st].slice().sort((a,b)=>a.city.localeCompare(b.city)||a.name.localeCompare(b.name));
   const cities = [...new Set(list.map(c=>c.city))].sort();
-  const rows = list.map(c=>`<tr><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: ${encodeURIComponent(c.name)} (${c.state})">Inquire →</a></td></tr>`).join('\n');
+  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: ${encodeURIComponent(c.name)} (${c.state})">Inquire →</a></td></tr>`).join('\n');
   fs.writeFileSync(path.join(ROOT, 'states', slug(name)+'.html'), page({
     title: `Car Condos in ${name}: Communities & Listings | AutomotiveCondos.com`,
     desc: `${list.length} car condo communities in ${name} across ${cities.length} cities — status, unit counts and pricing, plus how to buy or sell a unit.`,
@@ -123,13 +123,33 @@ for (const st of states) {
     <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../states.html">By State</a> / ${name}</div>
     <h1 style="margin-top:10px">Car Condos in <span class="blue">${name}</span></h1>
     <p style="color:var(--muted);max-width:680px">${list.length} communit${list.length===1?'y':'ies'} across ${cities.length} cit${cities.length===1?'y':'ies'} in our ${name} directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> — for sale or for rent — and reach the buyers and renters comparing communities on this page.</p>
-    <div style="margin:18px 0 26px">${cities.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div>
+    <div style="margin:18px 0 10px">${cities.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div>
+    <div style="margin:0 0 18px" id="offer-toggle">
+      <button class="btn" data-f="all" style="margin-right:8px">All</button>
+      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
+      <button class="btn ghost" data-f="rent">For Rent</button>
+    </div>
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
     </div>
+    <script>
+    (function(){
+      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
+      wrap.addEventListener('click', function(e){
+        var b = e.target.closest('button'); if(!b) return;
+        var f = b.getAttribute('data-f');
+        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
+        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
+          var o = tr.getAttribute('data-offer')||'buy';
+          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
+          tr.style.display = show ? '' : 'none';
+        });
+      });
+    })();
+    </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated ${DATA.updated}. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>
 </section>

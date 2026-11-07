@@ -30,13 +30,33 @@
     <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../states.html">By State</a> / Virginia</div>
     <h1 style="margin-top:10px">Car Condos in <span class="blue">Virginia</span></h1>
     <p style="color:var(--muted);max-width:680px">1 community across 1 city in our Virginia directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> — for sale or for rent — and reach the buyers and renters comparing communities on this page.</p>
-    <div style="margin:18px 0 26px"><span class="pill">Woodford</span></div>
+    <div style="margin:18px 0 10px"><span class="pill">Woodford</span></div>
+    <div style="margin:0 0 18px" id="offer-toggle">
+      <button class="btn" data-f="all" style="margin-right:8px">All</button>
+      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
+      <button class="btn ghost" data-f="rent">For Rent</button>
+    </div>
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr><td><strong>Dominion Lux</strong></td><td>Woodford</td><td>Selling</td><td>63</td><td>Inquire</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: Dominion%20Lux (VA)">Inquire →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy"><td><strong>Dominion Lux</strong></td><td>Woodford</td><td>Selling</td><td>63</td><td>Inquire</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: Dominion%20Lux (VA)">Inquire →</a></td></tr></tbody>
     </table>
     </div>
+    <script>
+    (function(){
+      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
+      wrap.addEventListener('click', function(e){
+        var b = e.target.closest('button'); if(!b) return;
+        var f = b.getAttribute('data-f');
+        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
+        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
+          var o = tr.getAttribute('data-offer')||'buy';
+          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
+          tr.style.display = show ? '' : 'none';
+        });
+      });
+    })();
+    </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-06. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>
 </section>
