@@ -24,18 +24,23 @@
   <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
   <path d="M266 234 H388 M266 246 H388" stroke="#3B8EE2" stroke-width="3.5"/>
 
-  <!-- the car: low coupe with a big swan-neck rear wing, facing left -->
-  <path d="M272 312 C272 304 276 298 283 296 L293 294 C299 286 307 281 315 280 L331 280 C343 282 353 288 361 294 L375 296 C381 298 384 303 384 308 L384 312 Z"
-        fill="#3B8EE2" fill-opacity=".3" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
-  <!-- wing uprights + plank + endplate -->
-  <path d="M366 294 L371 272 M379 295 L384 272" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
-  <path d="M352 272 L392 268" stroke="#3B8EE2" stroke-width="3.2" stroke-linecap="round"/>
-  <path d="M392 263 V274" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
-  <!-- side window hint -->
-  <path d="M312 284 L320 284 L330 293 L306 293 Z" fill="#0D1117" opacity=".5" stroke="#3B8EE2" stroke-width="1.4"/>
-  <!-- wheels -->
-  <circle cx="291" cy="312" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.8"/>
-  <circle cx="361" cy="312" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.8"/>
-  <circle cx="291" cy="312" r="3" fill="#3B8EE2"/>
-  <circle cx="361" cy="312" r="3" fill="#3B8EE2"/>
+  <!-- the car: head-on front view, low and wide -->
+  <!-- wheels/tires at the edges -->
+  <rect x="276" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+  <rect x="366" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+  <!-- body -->
+  <path d="M284 312 V293 C284 283 291 276 301 275 L353 275 C363 276 370 283 370 293 V312 Z"
+        fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
+  <!-- cabin + windshield -->
+  <path d="M297 275 C299 264 306 258 314 257 L340 257 C348 258 355 264 357 275"
+        fill="none" stroke="#3B8EE2" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M303 273 C305 266 309 262 315 261 L339 261 C345 262 349 266 351 273 Z"
+        fill="#0D1117" opacity=".55" stroke="#3B8EE2" stroke-width="1.6"/>
+  <!-- mirrors -->
+  <path d="M284 280 L276 276 M370 280 L378 276" stroke="#3B8EE2" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- headlights -->
+  <path d="M291 287 L306 284 M348 284 L363 287" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <!-- lower intake -->
+  <path d="M305 302 H349" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M296 307 H302 M352 307 H358" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
 </svg>

@@ -57,7 +57,11 @@
             tip.style.top = (e.clientY - r.top - 12) + 'px';
           });
           p.addEventListener('mouseleave', function () { tip.style.display = 'none'; });
-          p.addEventListener('mouseenter', function () { if (p !== selected) { p.style.strokeWidth = '2'; p.style.stroke = '#212121'; } });
+          p.addEventListener('mouseenter', function () {
+            if (p !== selected) { p.style.strokeWidth = '2'; p.style.stroke = '#212121'; }
+            var hp = panelEl.querySelector('.side-head .sub');
+            if (hp && n) hp.textContent = 'Hovering: ' + STATE_NAMES[st] + ' (' + n + ') — click to view';
+          });
           p.addEventListener('mouseout', function () { if (p !== selected) { p.style.strokeWidth = '1'; p.style.stroke = '#FFFFFF'; } });
           p.addEventListener('click', function () {
             if (!n) return;
@@ -92,20 +96,23 @@
         return true;
       });
       var name = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'}[st] || st;
-      var max = opts.limit || 0;
-      var items = max ? shown.slice(0, max) : shown;
-      var cards = items.map(function (c) {
-        var badge = (c.offer === 'both') ? '<span class="tag" style="background:#0E7A4E">Buy or Rent</span> ' : '';
-        return '<div class="card"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:15px;margin:0">' + esc(c.name) + '</h3>' + badge + '</div>' +
-          '<div class="meta">' + esc(c.city) + ', ' + st + ' · ' + esc(c.status) + (c.units ? ' · ' + c.units + ' units' : '') + '</div>' +
-          ((c.priceNote && c.priceNote !== 'Inquire') ? '<div class="price">' + esc(c.priceNote) + '</div>' : '') +
-          '<a style="font-size:13px;font-weight:600" href="mailto:contact@automotivecondos.com?subject=Inquiry: ' + encodeURIComponent(c.name) + ' (' + st + ')">Inquire →</a></div>';
+      function chip(c){
+        if (c.offer === 'both') return '<span class="chip rent">Buy or Rent</span>';
+        if (c.status === 'Selling') return '<span class="chip sell">Selling</span>';
+        return '<span class="chip">' + esc(c.status) + '</span>';
+      }
+      var rows = shown.map(function (c) {
+        return '<a class="rowi" href="mailto:contact@automotivecondos.com?subject=Inquiry: ' + encodeURIComponent(c.name) + ' (' + st + ')">' +
+          '<div class="rn"><span>' + esc(c.name) + '</span>' + chip(c) + '</div>' +
+          '<div class="rm">' + esc(c.city) + ', ' + st + (c.units ? ' · ' + c.units + ' units' : '') + '</div>' +
+          ((c.priceNote && c.priceNote !== 'Inquire') ? '<div class="rp">' + esc(c.priceNote) + '</div>' : '') +
+          '</a>';
       }).join('');
       panelEl.innerHTML =
-        '<div class="sec-head" style="margin-top:22px"><h2 style="font-size:22px">' + name + ' <span class="blue">· ' + shown.length + ' communit' + (shown.length === 1 ? 'y' : 'ies') + '</span></h2>' +
-        '<div class="sub"><a href="' + base + 'states/' + slug(name) + '.html">Full ' + name + ' directory →</a></div></div>' +
-        (shown.length ? '<div class="grid c3">' + cards + '</div>' : '<p style="color:var(--muted)">No communities match these filters in ' + name + ' yet.</p>') +
-        (max && shown.length > max ? '<p style="margin-top:12px"><a href="' + base + 'states/' + slug(name) + '.html">See all ' + shown.length + ' in the ' + name + ' directory →</a></p>' : '');
+        '<div class="side-head"><h3>' + name + ' — ' + shown.length + ' communit' + (shown.length === 1 ? 'y' : 'ies') + '</h3>' +
+        '<div class="sub">Click any community to inquire</div></div>' +
+        '<div class="side-list">' + (rows || '<p style="padding:16px;color:#6B7280;font-size:13.5px">No communities match these filters here yet.</p>') + '</div>' +
+        '<div class="side-foot"><a href="' + base + 'states/' + slug(name) + '.html">Full ' + name + ' directory →</a></div>';
     }
   };
 })();

@@ -30,7 +30,7 @@ function page({title, desc, canonical, body, depth}) {
 <body>
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="${p}index.html">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
+    <a class="brand" href="/">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
     <nav class="main">
       <a href="${p}map.html">Map</a>
       <a href="${p}states.html">Browse by State</a>
@@ -97,7 +97,7 @@ fs.writeFileSync(path.join(ROOT, 'states.html'), page({
   body: `
 <section class="block">
   <div class="wrap">
-    <div class="breadcrumbs"><a href="index.html">Home</a> / Car Condos by State</div>
+    <div class="breadcrumbs"><a href="/">Home</a> / Car Condos by State</div>
     <h1 style="margin-top:10px">Car Condos <span class="blue">by State</span></h1>
     <p style="color:var(--muted);max-width:640px">Every car condo community in our national directory, organized by state. Updated ${DATA.updated}.</p>
     <div class="grid c3" style="margin-top:26px">${indexCards}</div>
@@ -120,7 +120,7 @@ for (const st of states) {
     body: `
 <section class="block">
   <div class="wrap">
-    <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../states.html">By State</a> / ${name}</div>
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states.html">By State</a> / ${name}</div>
     <h1 style="margin-top:10px">Car Condos in <span class="blue">${name}</span></h1>
     <p style="color:var(--muted);max-width:680px">${list.length} communit${list.length===1?'y':'ies'} across ${cities.length} cit${cities.length===1?'y':'ies'} in our ${name} directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> — for sale or for rent — and reach the buyers and renters comparing communities on this page.</p>
     <div style="margin:18px 0 10px">${cities.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div>

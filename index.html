@@ -14,7 +14,7 @@
 <body>
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="index.html"><svg width="30" height="26" viewBox="0 0 70 60" aria-hidden="true"><rect x="5" y="5" width="60" height="50" rx="4" fill="none" stroke="#FFFFFF" stroke-width="4"/><path d="M11 12 H59 M11 18 H59" stroke="#FFFFFF" stroke-width="3"/><rect x="11" y="23" width="48" height="26" fill="#3B8EE2"/><path d="M17 45 C17 41 19 38 22 38 H27 L31 33 H42 L46 38 H48 C51 38 53 41 53 45 Z" fill="#FFFFFF"/><circle cx="23" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/><circle cx="46" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/></svg><span class="word">Automotive<span>Condos</span></span></a>
+    <a class="brand" href="/"><svg width="30" height="26" viewBox="0 0 70 60" aria-hidden="true"><rect x="5" y="5" width="60" height="50" rx="4" fill="none" stroke="#FFFFFF" stroke-width="4"/><path d="M11 12 H59 M11 18 H59" stroke="#FFFFFF" stroke-width="3"/><rect x="11" y="23" width="48" height="26" fill="#3B8EE2"/><path d="M17 45 C17 41 19 38 22 38 H27 L31 33 H42 L46 38 H48 C51 38 53 41 53 45 Z" fill="#FFFFFF"/><circle cx="23" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/><circle cx="46" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/></svg><span class="word">Automotive<span>Condos</span></span></a>
     <nav class="main">
       <a href="map.html">Map</a>
       <a href="states.html">Browse by State</a>
@@ -29,7 +29,7 @@
   <div class="wrap" style="display:flex;align-items:center;gap:48px">
     <div style="flex:1 1 55%;min-width:0">
     <div class="kicker">The National Car Condo Marketplace</div>
-    <h1>Every Car Condo<br><span class="outline">In America.</span><br>One Site.</h1>
+    <h1>Every Car Condo<br><span class="blue">In America</span> <svg width="44" height="30" viewBox="0 0 44 30" style="vertical-align:-2px" aria-label="USA flag"><rect x="1" y="1" width="42" height="28" rx="4" fill="#212121" stroke="#3B8EE2" stroke-width="2"/><rect x="3" y="3" width="16" height="12" rx="2" fill="#0054A6"/><path d="M6 6 l1 0 M10 6 l1 0 M14 6 l1 0 M8 9 l1 0 M12 9 l1 0 M6 12 l1 0 M10 12 l1 0 M14 12 l1 0" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M21 6 H41 M21 10 H41 M21 14 H41 M5 19 H41 M5 23 H41" stroke="#FFFFFF" stroke-width="2" opacity=".85"/><path d="M5 19 H41" stroke="#3B8EE2" stroke-width="2"/></svg><br>One Site.</h1>
     <p class="lead">Car condos — deeded garage units you own, with room for the collection, a lift, and a loft. We track every community in the country so you can compare, buy, rent, and sell in one place.</p>
     <div class="hero-actions">
       <a class="btn" href="states.html">Browse Communities</a>
@@ -57,8 +57,10 @@
       <h2>Explore the <span class="blue">Map</span></h2>
       <div class="sub"><a href="map.html">Open the full map with filters →</a></div>
     </div>
-    <div id="usmap"></div>
-    <div id="state-panel"></div>
+    <div class="map-flex">
+      <div class="acmap-col"><div id="usmap"></div></div>
+      <div class="acmap-side" id="state-panel"></div>
+    </div>
   </div>
 </section>
 
@@ -114,19 +116,64 @@
 
 <section class="block" style="background:#FFFFFF;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
-    <div class="sec-head"><h2>How It <span class="blue">Works</span></h2></div>
-    <div class="grid c3">
-      <div class="card">
-        <h3>1 · Browse</h3>
-        <p class="meta" style="font-size:14px">Every community in the country, organized by state and city — status, unit counts, and what pricing looks like.</p>
+    <div class="sec-head">
+      <h2>One Place for the <span class="blue">Whole Category</span></h2>
+      <div class="sub">Buy it, know it, sell it — all under one roof</div>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pic">
+          <svg width="220" height="110" viewBox="0 0 220 110" fill="none" aria-hidden="true">
+            <path d="M14 102 H206" stroke="#3B8EE2" stroke-width="3" stroke-linecap="round"/>
+            <path d="M40 102 V36 H180 V102" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M40 48 H180 M40 60 H180" stroke="#3B8EE2" stroke-width="3"/>
+            <rect x="64" y="70" width="12" height="16" rx="3" fill="#0D1117" stroke="#FFFFFF" stroke-width="2"/>
+            <rect x="144" y="70" width="12" height="16" rx="3" fill="#0D1117" stroke="#FFFFFF" stroke-width="2"/>
+            <path d="M70 100 V84 C70 76 76 70 84 69 L136 69 C144 70 150 76 150 84 V100" fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M80 80 L95 77 M125 77 L140 80" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="bd">
+          <div class="step">01 · Buy</div>
+          <h3>Find your unit</h3>
+          <p>Every community in America — 360+ of them across 43 states — on one map and one directory. Compare status, size, and pricing, then inquire in one click.</p>
+          <a class="plink" href="map.html">Explore the map →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>2 · Inquire</h3>
-        <p class="meta" style="font-size:14px">Found a community you like? Inquire through us and we connect you with what's available — listed with us or not.</p>
+      <div class="pillar">
+        <div class="pic">
+          <svg width="220" height="110" viewBox="0 0 220 110" fill="none" aria-hidden="true">
+            <path d="M30 96 H190" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <rect x="46" y="62" width="22" height="34" fill="#3B8EE2" fill-opacity=".35" stroke="#3B8EE2" stroke-width="2.4"/>
+            <rect x="84" y="46" width="22" height="50" fill="#3B8EE2" fill-opacity=".45" stroke="#3B8EE2" stroke-width="2.4"/>
+            <rect x="122" y="30" width="22" height="66" fill="#3B8EE2" fill-opacity=".6" stroke="#3B8EE2" stroke-width="2.4"/>
+            <rect x="160" y="14" width="22" height="82" fill="#0054A6" stroke="#3B8EE2" stroke-width="2.4"/>
+            <path d="M48 54 L90 38 L128 24 L166 8" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="1 7"/>
+          </svg>
+        </div>
+        <div class="bd">
+          <div class="step">02 · Know the Market</div>
+          <h3>Price it like a pro</h3>
+          <p>Real pricing, unit counts, and status on every community — plus deep guides on costs, financing, and what units actually resell for.</p>
+          <a class="plink" href="blog/car-condo-cost-guide.html">Read the cost guide →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>3 · Sell or Rent Out</h3>
-        <p class="meta" style="font-size:14px">Own a unit? List it for sale or for rent — a featured listing puts your photos, details, and contact at the top of your state's page, in front of active buyers and renters.</p>
+      <div class="pillar">
+        <div class="pic">
+          <svg width="220" height="110" viewBox="0 0 220 110" fill="none" aria-hidden="true">
+            <path d="M30 60 L86 16 C90 13 96 13 100 16 L108 22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <rect x="52" y="40" width="112" height="56" rx="6" fill="#3B8EE2" fill-opacity=".18" stroke="#3B8EE2" stroke-width="2.6" transform="rotate(-8 108 68)"/>
+            <circle cx="78" cy="56" r="7" fill="none" stroke="#FFFFFF" stroke-width="2.6" transform="rotate(-8 108 68)"/>
+            <path d="M96 56 L156 48 M100 70 L150 63 M102 82 L134 78" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" transform="rotate(-8 108 68)"/>
+            <path d="M160 86 l20 8 -4 -10 10 -4 -20 -8 4 10 Z" fill="#0054A6" stroke="#3B8EE2" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <div class="bd">
+          <div class="step">03 · Sell or Rent Out</div>
+          <h3>List where buyers already are</h3>
+          <p>List your unit for a one-time $49 — photos, specs, your asking price — or go Direct Contact for $29/mo and buyers reach you instantly.</p>
+          <a class="plink" href="list-your-condo.html">See listing options →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -161,7 +208,7 @@
 <section class="cta-band">
   <div class="wrap">
     <h2>Own a car condo? <span class="lightblue">Your buyer — or renter — is here.</span></h2>
-    <p>Buyers researching communities land on these pages every day. List your unit for sale or for rent, with photos, full details, and your contact — at the top of your state's directory.</p>
+    <p>Buyers researching communities land on these pages every day. List your unit for sale or for rent from a one-time $49 — photos, full details, and your contact at the top of your state's directory.</p>
     <a class="btn" href="list-your-condo.html">List Your Condo</a>
   </div>
 </section>

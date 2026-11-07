@@ -24,7 +24,7 @@ function page({title, desc, canonical, body, depth}) {
 <body>
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="${p}index.html">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
+    <a class="brand" href="/">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
     <nav class="main">
       <a href="${p}map.html">Map</a>
       <a href="${p}states.html">Browse by State</a>
@@ -414,10 +414,11 @@ for (const post of POSTS) {
     body: `${articleLd}${faqLd}
 <section class="block">
   <div class="wrap">
-    <div class="breadcrumbs" style="max-width:820px;margin:0 auto 14px"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / ${post.title}</div>
+    <div class="breadcrumbs" style="max-width:820px;margin:0 auto 14px"><a href="/">Home</a> / <a href="../blog.html">Blog</a> / ${post.title}</div>
     <article class="post">
       <h1>${post.title}</h1>
       <div class="post-meta">${post.date} · AutomotiveCondos.com</div>
+      ${fs.existsSync(path.join(ROOT,'assets','blog',post.slug+'.svg')) ? `<img src="../assets/blog/${post.slug}.svg" alt="${post.title} — illustration" style="width:100%;height:auto;border-radius:6px;margin:4px 0 14px">` : ''}
       ${body}
       ${faqHtml}
     </article>
