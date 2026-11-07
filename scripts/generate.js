@@ -83,6 +83,18 @@ const byState = {};
 for (const c of DATA.communities) (byState[c.state] ||= []).push(c);
 const states = Object.keys(byState).sort((a,b)=>STATE_NAMES[a].localeCompare(STATE_NAMES[b]));
 
+// --- city index (cities with 2+ communities get their own page) ---
+function cleanCity(s){ return String(s).replace(/\s*\(.*?\)/g,'').trim(); }
+const cityMap = {};
+for (const c of DATA.communities) { const k = cleanCity(c.city) + '|' + c.state; (cityMap[k] = cityMap[k] || []).push(c); }
+const cityPages = Object.entries(cityMap).filter(([k,v]) => v.length >= 2).map(([k,v]) => {
+  const [city, st] = k.split('|');
+  return { city, st, list: v, slug: slug(city) + '-' + st.toLowerCase() };
+}).sort((a,b) => b.list.length - a.list.length);
+const cityByKey = {}; cityPages.forEach(cp => { cityByKey[cp.city + '|' + cp.st] = cp; });
+const STATE_GUIDES = { MI:'garage-condos-michigan', MN:'garage-condos-minnesota', AZ:'car-condos-arizona', TX:'garage-condos-texas' };
+function ld(obj){ return '<script type="application/ld+json">' + JSON.stringify(obj).replace(/</g,'\\u003c') + '</script>'; }
+
 // --- states index ---
 const indexCards = states.map(st => {
   const list = byState[st];
@@ -106,6 +118,8 @@ fs.writeFileSync(path.join(ROOT, 'states.html'), page({
     <h1 style="margin-top:10px">Car Condos <span class="blue">by State</span></h1>
     <p style="color:var(--muted);max-width:640px">Every car condo community in our national directory, organized by state. Updated ${DATA.updated}.</p>
     <div class="grid c3" style="margin-top:26px">${indexCards}</div>
+    <div class="sec-head" style="margin-top:40px"><h2 style="font-size:22px">Popular car condo cities</h2></div>
+    <div style="margin-top:12px">${cityPages.slice(0,40).map(cp=>`<a class="pill" href="cities/${cp.slug}.html">${esc(cp.city)}, ${cp.st} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>`).join('')}</div>
   </div>
 </section>`
 }));
@@ -128,7 +142,10 @@ for (const st of states) {
     <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states.html">By State</a> / ${name}</div>
     <h1 style="margin-top:10px">Car Condos in <span class="blue">${name}</span></h1>
     <p style="color:var(--muted);max-width:680px">${list.length} communit${list.length===1?'y':'ies'} across ${cities.length} cit${cities.length===1?'y':'ies'} in our ${name} directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> — for sale or for rent — and reach the buyers and renters comparing communities on this page.</p>
-    <div style="margin:18px 0 10px">${cities.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div>
+    ${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":"By State","item":"https://automotivecondos.com/states.html"},{"@type":"ListItem","position":3,"name":name,"item":`https://automotivecondos.com/states/${slug(name)}.html`}]})}
+    ${ld({"@context":"https://schema.org","@type":"ItemList","name":`Car condo communities in ${name}`,"numberOfItems":list.length,"itemListElement":list.map((c,i)=>({"@type":"ListItem","position":i+1,"url":`https://automotivecondos.com/communities/${c.slug}.html`,"name":c.name}))})}
+    <div style="margin:18px 0 10px">${[...new Set(cities.map(cleanCity))].map(c=>{const cp=cityByKey[c+'|'+st]; return cp ? `<a class="pill" href="../cities/${cp.slug}.html">${esc(c)} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>` : `<span class="pill" style="cursor:default">${esc(c)}</span>`;}).join('')}</div>
+    ${STATE_GUIDES[st] ? `<p style="font-size:14px;margin:0 0 14px">New to the ${name} market? Read our <a href="../blog/${STATE_GUIDES[st]}.html">${name} car condo market guide →</a></p>` : ''}
     <div style="margin:0 0 18px" id="offer-toggle">
       <button class="btn" data-f="all" style="margin-right:8px">All</button>
       <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
@@ -281,7 +298,9 @@ for (const c of DATA.communities) {
   <div class="wrap">
     <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states.html">By State</a> / <a href="../states/${slug(stName)}.html">${stName}</a> / ${esc(c.name)}</div>
     <h1 style="margin-top:10px">${esc(c.name)}</h1>
-    <p style="color:var(--muted);font-size:17px">${esc(c.city)}, ${stName} · ${esc(kc.label.charAt(0).toUpperCase()+kc.label.slice(1))}</p>
+    <p style="color:var(--muted);font-size:17px">${cityByKey[cleanCity(c.city)+'|'+c.state] ? `<a href="../cities/${cityByKey[cleanCity(c.city)+'|'+c.state].slug}.html">${esc(c.city)}</a>` : esc(c.city)}, <a href="../states/${slug(stName)}.html">${stName}</a> · ${esc(kc.label.charAt(0).toUpperCase()+kc.label.slice(1))}</p>
+    ${ld(Object.assign({"@context":"https://schema.org","@type":"Place","name":c.name,"url":pageUrl,"address":{"@type":"PostalAddress","addressLocality":cleanCity(c.city),"addressRegion":c.state,"addressCountry":"US"}}, (typeof c.lat==='number'&&typeof c.lng==='number') ? {"geo":{"@type":"GeoCoordinates","latitude":c.lat,"longitude":c.lng}} : {}))}
+    ${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":stName,"item":`https://automotivecondos.com/states/${slug(stName)}.html`},{"@type":"ListItem","position":3,"name":c.name,"item":pageUrl}]})}
     <div class="grid c4" style="margin-top:18px">
       <div class="card"><div class="meta">Status</div><div style="font-weight:800;font-size:17px">${esc(c.status)}</div></div>
       <div class="card"><div class="meta">Units</div><div style="font-weight:800;font-size:17px">${c.units ?? '—'}</div></div>
@@ -368,11 +387,97 @@ for (const c of DATA.communities) {
   }));
 }
 
+// --- city pages ---
+fs.mkdirSync(path.join(ROOT, 'cities'), {recursive: true});
+const STATUS_ORDER = {'Selling':0,'Under construction':1,'Planned':2,'Established':3,'Resale only':4};
+for (const cp of cityPages) {
+  const stName = STATE_NAMES[cp.st];
+  const list = cp.list.slice().sort((a,b)=>(STATUS_ORDER[a.status]-STATUS_ORDER[b.status]) || ((b.units||0)-(a.units||0)));
+  const n = list.length;
+  const units = list.reduce((a,c)=>a+(c.units||0),0);
+  let nums = []; list.forEach(c=>{ nums = nums.concat(priceNums(c.priceNote)); });
+  const pmin = nums.length ? Math.min.apply(null,nums) : null, pmax = nums.length ? Math.max.apply(null,nums) : null;
+  const priceTxt = pmin ? (pmin===pmax ? fmtPrice(pmin) : fmtPrice(pmin)+' – '+fmtPrice(pmax)) : 'Inquire';
+  const selling = list.filter(c=>['Selling','Under construction','Planned'].includes(c.status)).length;
+  const resale = list.filter(c=>['Resale only','Established'].includes(c.status)).length;
+  const rentals = list.filter(c=>c.offer==='both').length;
+  const stTotal = DATA.communities.filter(c=>c.state===cp.st).length;
+  const url = `https://automotivecondos.com/cities/${cp.slug}.html`;
+  const nearby = cityPages.filter(x=>x.st===cp.st && x.slug!==cp.slug).slice(0,8);
+  const place = `${cp.city}, ${cp.st}`;
+
+  const about = [
+    `${cp.city} is home to ${n} of the ${stTotal} car condo communities we track in ${stName}${stTotal ? ` — about ${Math.round(n/stTotal*100)}% of the state's market` : ''}.`,
+    selling ? `${selling} ${selling===1?'is':'are'} actively selling, under construction, or taking reservations, so new-build units are available${resale ? `, while ${resale} ${resale===1?'trades':'trade'} on the resale market` : ''}.` : `Every community here is established, so units trade on the resale market — inquiring early is the best way to hear about openings.`,
+    rentals ? `${rentals} ${rentals===1?'community also offers':'communities also offer'} units for rent if you want to try a garage condo before you buy.` : `None of the ${cp.city} communities we track advertise rentals, though individual owners sometimes lease privately.`,
+    pmin ? `Tracked pricing in ${cp.city} runs roughly ${priceTxt}, depending on unit size, finish, and community amenities.` : ''
+  ].filter(Boolean).join(' ');
+
+  const faqs = [
+    [`How many car condo communities are in ${place}?`, `We currently track ${n} car condo and garage condo communities in ${cp.city}, ${stName}${units ? `, with ${units.toLocaleString()}+ known units between them` : ''}. Each one has its own page with status, unit count, and pricing.`],
+    [`How much does a car condo cost in ${cp.city}?`, pmin ? `Pricing we track in ${cp.city} runs roughly ${priceTxt}. Smaller storage-style units sit at the low end; finished luxury units with mezzanines and amenities sit at the top.` : `Most ${cp.city} communities price units on inquiry. Open any community below to unlock its direct listing and current pricing.`],
+    [`Can I rent a car condo in ${cp.city}?`, rentals ? `Yes — ${rentals} ${rentals===1?'community':'communities'} in ${cp.city} also ${rentals===1?'offers':'offer'} units for rent. Look for the "For sale or for rent" label below.` : `The ${cp.city} communities we track are primarily for sale, but private owner leases do come up. Check each community page, or browse ${stName} communities that offer rentals.`]
+  ];
+
+  const cards = list.map(c=>`<a class="card" href="../communities/${c.slug}.html" style="display:block">
+      <div class="meta" style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:${['Selling','Under construction','Planned'].includes(c.status)?'var(--blue)':'var(--muted)'}">${esc(c.status)}${c.offer==='both'?' · Buy or rent':''}</div>
+      <h3 style="font-size:16.5px;margin:6px 0 4px">${esc(c.name)}</h3>
+      <div class="meta">${c.units ? c.units + ' units' : 'Units: inquire'}</div>
+      <div class="price">${esc(c.priceNote || 'Inquire')}</div>
+      <div style="margin-top:8px;font-size:13px;font-weight:800;color:var(--blue)">View community →</div>
+    </a>`).join('\n');
+
+  fs.writeFileSync(path.join(ROOT, 'cities', cp.slug + '.html'), page({
+    title: `Car Condos in ${place}: ${n} Communities (2026) | AutomotiveCondos.com`,
+    desc: `Compare ${n} car condo and garage condo communities in ${cp.city}, ${stName}${pmin ? ` — pricing from ${fmtPrice(pmin)}` : ''}. Status, units, rentals, and direct listing links.`,
+    canonical: url,
+    depth: 1,
+    body: `
+${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":stName,"item":`https://automotivecondos.com/states/${slug(stName)}.html`},{"@type":"ListItem","position":3,"name":cp.city,"item":url}]})}
+${ld({"@context":"https://schema.org","@type":"ItemList","name":`Car condo communities in ${place}`,"numberOfItems":n,"itemListElement":list.map((c,i)=>({"@type":"ListItem","position":i+1,"url":`https://automotivecondos.com/communities/${c.slug}.html`,"name":c.name}))})}
+${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(f=>({"@type":"Question","name":f[0],"acceptedAnswer":{"@type":"Answer","text":f[1]}}))})}
+<section class="block">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states/${slug(stName)}.html">${stName}</a> / ${esc(cp.city)}</div>
+    <h1 style="margin-top:10px">Car Condos in <span class="blue">${esc(place)}</span></h1>
+    <p style="color:var(--muted);max-width:700px;font-size:16px">${n} car condo and garage condo communities in ${esc(cp.city)}, compared side by side. Open any community to see the details and unlock its direct listing link.</p>
+    <div class="grid c4" style="margin-top:18px">
+      <div class="card"><div class="meta">Communities</div><div style="font-weight:800;font-size:24px">${n}</div></div>
+      <div class="card"><div class="meta">Known units</div><div style="font-weight:800;font-size:24px">${units ? units.toLocaleString() + '+' : '—'}</div></div>
+      <div class="card"><div class="meta">${pmin && pmin!==pmax ? 'Price range' : 'Tracked pricing'}</div><div style="font-weight:800;font-size:20px;color:var(--blue)">${priceTxt}</div></div>
+      <div class="card"><div class="meta">Selling / pre-selling</div><div style="font-weight:800;font-size:24px">${selling}</div></div>
+    </div>
+    <div class="sec-head" style="margin-top:34px"><h2 style="font-size:22px">Every community in ${esc(cp.city)}</h2></div>
+    <div class="grid c3" style="margin-top:14px">${cards}</div>
+
+    <div class="detail-main" style="max-width:820px;margin-top:36px">
+      <h2>The ${esc(cp.city)} car condo market</h2>
+      <p>${esc(about)}</p>
+      <h2>Frequently asked questions</h2>
+      ${faqs.map(f=>`<h3 class="faq-q">${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join('')}
+    </div>
+
+    ${nearby.length ? `<div class="sec-head" style="margin-top:30px"><h2 style="font-size:20px">More ${stName} car condo cities</h2></div>
+    <div style="margin-top:10px">${nearby.map(x=>`<a class="pill" href="${x.slug}.html">${esc(x.city)} <span style="color:var(--muted);font-weight:500">(${x.list.length})</span></a>`).join('')}</div>` : ''}
+    <p style="font-size:14px;margin-top:14px"><a href="../states/${slug(stName)}.html">All ${stName} car condos →</a>${STATE_GUIDES[cp.st] ? ` · <a href="../blog/${STATE_GUIDES[cp.st]}.html">${stName} market guide →</a>` : ''} · <a href="../map.html">National map →</a></p>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Own a car condo in ${esc(cp.city)}?</h2>
+    <p>Buyers comparing ${esc(cp.city)} communities land on this page. List your unit for sale or rent from a one-time $49.</p>
+    <a class="btn" href="../list-your-condo.html">List Your Condo</a>
+  </div>
+</section>`
+  }));
+}
+
 // --- sitemap ---
 const urls = ['', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise.html',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
-  ...DATA.communities.map(c=>`communities/${c.slug}.html`)];
+  ...DATA.communities.map(c=>`communities/${c.slug}.html`),
+  ...cityPages.map(cp=>`cities/${cp.slug}.html`)];
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -380,4 +485,4 @@ ${urls.map(u=>`  <url><loc>https://automotivecondos.com/${u}</loc></url>`).join(
 </urlset>
 `);
 
-console.log(`Built states.html, ${states.length} state pages, sitemap.xml (${DATA.communities.length} communities).`);
+console.log(`Built states.html, ${states.length} state pages, ${cityPages.length} city pages, sitemap.xml (${DATA.communities.length} communities).`);
