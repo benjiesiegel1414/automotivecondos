@@ -22,8 +22,7 @@
   <!-- highlighted bay: glow + open slatted door -->
   <rect x="266" y="222" width="122" height="100" fill="#3B8EE2" opacity=".08"/>
   <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
-  <path d="M266 236 H388 M266 250 H388" stroke="#3B8EE2" stroke-width="3.5"/>
-  <path d="M302 262 h50" stroke="#3B8EE2" stroke-width="3.5" opacity=".55"/>
+  <path d="M266 234 H388 M266 246 H388" stroke="#3B8EE2" stroke-width="3.5"/>
 
   <!-- the car: low coupe with a big swan-neck rear wing, facing left -->
   <path d="M272 312 C272 304 276 298 283 296 L293 294 C299 286 307 281 315 280 L331 280 C343 282 353 288 361 294 L375 296 C381 298 384 303 384 308 L384 312 Z"
