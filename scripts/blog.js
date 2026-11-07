@@ -385,6 +385,70 @@ html: `
 <h2>Sequence it like a pro</h2>
 <p>Floors → electrical → climate → lift/air → mezzanine → finishes. Every owner who did it backwards (mezzanine first, floors last) has a story about moving nine tons of steel to epoxy underneath it.</p>
 <p>Still shopping for the shell itself? Check ceiling heights and door specs before you fall in love — our <a href="buying-a-car-condo-guide.html">9-point buying checklist</a> covers what to verify, and the <a href="../states.html">directory</a> covers where to look.</p>`
+},
+{
+slug: "garage-condos-michigan",
+tag: "State Guides",
+title: "Garage Condos in Michigan: 2026 Market Guide",
+desc: "33 Michigan garage condo communities, 1,322+ units, real 2026 pricing from $95K to $1.1M. M1 Concourse, Grand Haven, Howell and more.",
+date: 'November 7, 2026',
+teaser: "Michigan has 33 garage condo communities and 1,322+ units, from $95K storage condos in Zeeland to M1 Concourse trackside garages. Here is the full market, region by region, with real 2026 prices.",
+faq: [
+["How much does a garage condo cost in Michigan?", "Based on AutomotiveCondos.com directory data, Michigan garage condos range from about $95,000 for entry-level storage condos in Zeeland to $599,990 and up for new trackside units at Motorsports Gateway Howell. Most 2026 sales fell between $160,000 and $353,000, while premium markets run higher: M1 Concourse resales start around $399,000 and Grand Haven resales posted a $585,000 median in 2026, topping out at $1.1 million."],
+["How many garage condo communities are there in Michigan?", "The AutomotiveCondos.com directory tracks 33 garage condo communities in Michigan with more than 1,322 known units. Twenty communities are actively selling, eight are sold out and resale only, three are under construction, one is planned, and M1 Concourse in Pontiac is fully established with roughly 250 units trading on the resale market."],
+["What is the biggest car condo community in Michigan?", "M1 Concourse in Pontiac is Michigan's largest, with roughly 250 private garage condos built around a 1.5-mile private performance track on a former General Motors site. The largest actively selling community is St. Clair Storage Condos in Casco Township with 90 units, followed by Grand Haven Storage with 81 units on the resale market."],
+["Can I store a boat or RV in a Michigan garage condo?", "Yes, and in West Michigan that is the primary use case. Lakeshore communities in Grand Haven, Ferrysburg, Muskegon, Holland, and Mears are built with tall doors and deep bays specifically for boats, wake trailers, and Class A motorhomes. Always verify the specific unit's door height, depth, and the association's rules before buying, since specs vary by building and phase."],
+["Are garage condos in Michigan a good investment?", "Michigan's sold-out communities suggest real appreciation potential: Grand Haven Storage units resold between $285,000 and $1.1 million in 2026, and M1 Concourse resales start well above original developer pricing. That said, garage condos are a niche asset with thinner resale markets than houses, so buy a unit you will actually use, in a supply-constrained location, and treat appreciation as a bonus rather than the plan."]
+],
+html: ``
+},
+{
+slug: "garage-condos-minnesota",
+tag: "State Guides",
+title: "Garage Condos in Minnesota: 2026 Market Guide",
+desc: "28 Minnesota car condo communities, 2,227+ units, real 2026 sales from $45K to $861K. AutoMotorPlex, Park Place, The Hideout and more.",
+date: 'November 7, 2026',
+teaser: "Minnesota has more known garage condo units than any state in the directory: 28 communities and 2,227+ units, from $45K entry units to $861K trophy garages. The full market, campus by campus.",
+faq: [
+["How much does a car condo cost in Minnesota?", "Recorded 2026 sales in the AutomotiveCondos.com directory run from $45,000 for small units at Stor Smart North near Alexandria to $861,000 at Garage Solution Condominiums in Columbus. Most Twin Cities metro units trade between roughly $120,000 and $350,000, with new construction like Midwest FlexSpace Lakeville starting at $185,000 and enthusiast-grade communities like The Hideout in St. Michael around $345,000."],
+["How many garage condo communities are in Minnesota?", "The AutomotiveCondos.com directory tracks 28 communities in Minnesota with more than 2,227 known units, the highest unit count of any state in the directory. Twenty communities are actively selling, two are under construction, three are planned, and three (AutoMotorPlex Chanhassen, Brink 4 in Lakeville, and Mesenbrink in Prior Lake) are sold out and resale only."],
+["What is the largest car condo community in Minnesota?", "Park Place Storage in Minnetrista is the largest at 369 units, with 2026 sales between $195,000 and $450,000. The Park Place network as a whole spans four campuses (Minnetrista, Prior Lake, Corcoran, and Woodbury) totaling 834 units, more than a third of all known garage condo units in the state."],
+["What is AutoMotorPlex and can I still buy there?", "AutoMotorPlex in Chanhassen is the pioneering Minnesota car condo campus, a clubhouse-style community famous for its large cars-and-coffee events. The original Chanhassen campus is sold out and trades resale only, with units surfacing infrequently. Its sister campus, AutoMotorPlex Medina, is actively selling Phase 3, which is currently the easiest way to buy new into the AutoMotorPlex ecosystem."],
+["Do Minnesota garage condos hold their value?", "The sold-out communities suggest they do: Brink 4 units in Lakeville resold at $283,000 to $345,000 in 2026, Mesenbrink resales run around $275,000, and AutoMotorPlex Chanhassen units sell quickly when they appear. That said, Minnesota still has abundant new supply, so value holds best in sold-out or supply-constrained submarkets. Buy for use first, in a strong location, and let appreciation be the upside rather than the thesis."]
+],
+html: ``
+},
+{
+slug: "car-condos-arizona",
+tag: "State Guides",
+title: "Car Condos in Arizona: 2026 Market Guide",
+desc: "71 Arizona car condo communities mapped: Scottsdale luxury clubs, Lake Havasu toy storage, Prescott's pipeline, and real pricing from $30K to $874K.",
+date: 'November 7, 2026',
+teaser: "Arizona is the largest car condo market in our directory, with 71 communities from $30K Yuma bays to $874K Scottsdale trophies. Here is the full state, metro by metro.",
+faq: [
+["How much does a car condo cost in Scottsdale?", "Scottsdale is Arizona's premium tier. Completed luxury resales run toward $874,000 at Silverleaf Auto Garages, and nearby Motor Vault Fountain Hills resales list at roughly $799,000 to $899,000. Pre-construction reservations at planned projects like Elite Garages Scottsdale typically start lower, and value exists just outside Scottsdale: Motor Vault Queen Creek sells new units from $271,900, and Chandler airpark resales trade in the $256,000 to $375,000 range."],
+["What is the cheapest way to own a garage condo in Arizona?", "Resale storage condos in Yuma and Lake Havasu City. Premier Storage Condominiums of Yuma sells units from roughly $30,000, and Havasu entry-tier resales at communities like Premier Storage, Sun N Sand, and Sweetwater start around $38,000 to $50,000. These are basic secure bays rather than finished man caves, but they are deeded real estate at a fraction of Valley pricing."],
+["Can I rent a car condo in Arizona instead of buying?", "Yes. LuxeLocker operates six Arizona locations (Chandler, Glendale, Goodyear, Kingman, Lake Havasu City, and Prescott) that offer both purchase and rental, and the planned Finish Line Auto Club Scottsdale intends to offer both paths as well. Renting first in a community you are considering is an inexpensive way to test the location, security, and HOA culture before committing."],
+["Why does Lake Havasu City have so many storage condos?", "Havasu is a national boating and off-road destination where a large share of households own boats, sand cars, side-by-sides, and toy haulers that do not fit in residential garages. The AutomotiveCondos.com directory tracks 19 communities in Lake Havasu City alone, more than any other Arizona city, including the state's largest single community, the 169 unit Desert Storage of Lake Havasu. Because the market matured early, most Havasu communities now trade resale only with well-established pricing from about $38,000 to over $500,000."],
+["Do Arizona car condos need climate control?", "For collector vehicles, yes, or at minimum serious insulation and ventilation. Arizona's dry air eliminates rust, but Phoenix-area summers above 110 degrees degrade paint, rubber, leather, and electronics in uncooled spaces. Premium Valley communities are built insulated with high-efficiency cooling options, while many Havasu and Yuma entry-tier bays are not climate controlled, one of the main reasons otherwise similar units can differ in price by six figures."]
+],
+html: ``
+},
+{
+slug: "garage-condos-texas",
+tag: "State Guides",
+title: "Garage Condos in Texas: 2026 Market Guide",
+desc: "All 42 Texas garage condo communities: DFW's Garages of America network, Maranello Plano, Houston's Cypress corridor, and T11 at COTA from $1.25M.",
+date: 'November 7, 2026',
+teaser: "From $192.5K shop space in Cypress to $1.25M trackside units at COTA, we map all 42 Texas garage condo communities, metro by metro, with real directory pricing.",
+faq: [
+["How much do garage condos cost in Texas?", "Published pricing in the AutomotiveCondos.com directory runs from $192,500 at Garage Werks in Cypress to $1.25 million and up at T11 Car Condos at COTA in Austin. The practical middle of the market sits near $475,000 to $500,000, where Garages of America Roanoke resales, G2 Motorsports Park in Anna, and Trailblazer Las Colinas all cluster, while Plano's Maranello runs about $650 per square foot ($650,000 to over $1.3 million) and Houston's Toy Cave sells at $839,000 to $865,000."],
+["Who is the biggest garage condo developer in Dallas-Fort Worth?", "Garages of America, by a wide margin. The directory lists 15 Texas locations, 12 of them in the DFW metro including Allen, Carrollton, Colleyville, Dallas, Frisco, Garland (Firewheel), Plano, Roanoke, and Rockwall. Most locations are established and sold out, trading only on the resale market, with Carrollton II and Frisco II currently selling new units."],
+["What is the most expensive car condo community in Texas?", "T11 Car Condos at Circuit of The Americas in Austin, selling from $1.25 million. The premium buys trackside ownership at the only Formula 1 circuit in the United States. Among non-trackside communities, the ceiling is Maranello Luxury Auto Garages in Plano, where 79 units sell at roughly $650 per square foot, topping out above $1.3 million."],
+["Are there trackside garage condos in Texas?", "Yes, four tracked options: T11 at COTA in Austin (from $1.25M), G2 Motorsports Park Garage Condos in Anna north of DFW (from $495K), MotorSport Ranch in Cresson southwest of Fort Worth (established, resales), and MSR Houston garages in Angleton (selling). They span every tier from club-racer practical to F1-adjacent trophy property."],
+["Can I rent a garage condo in Texas instead of buying?", "Increasingly, yes. LuxeLocker is bringing its buy-or-rent model to four Texas locations: Cypress (under construction) plus Austin, Round Rock, and McKinney (planned). In sold-out communities, individual owners also lease units privately from time to time. Renting is a sensible first step if you want to test a location before buying, though owners, not renters, capture the appreciation that sold-out DFW communities have shown."]
+],
+html: ``
 }
 ];
 
