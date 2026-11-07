@@ -26,6 +26,7 @@ function page({title, desc, canonical, body, depth}) {
   <div class="wrap">
     <a class="brand" href="${p}index.html">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
     <nav class="main">
+      <a href="${p}map.html">Map</a>
       <a href="${p}states.html">Browse by State</a>
       <a href="${p}blog.html">Blog</a>
       <a href="${p}about.html">About</a>
@@ -43,6 +44,7 @@ ${body}
       </div>
       <div>
         <h4>Marketplace</h4>
+        <a href="${p}map.html">Map</a>
         <a href="${p}states.html">Browse by State</a>
         <a href="${p}list-your-condo.html">List Your Condo</a>
       </div>
