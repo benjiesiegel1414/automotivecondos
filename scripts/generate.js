@@ -122,7 +122,7 @@ for (const st of states) {
   <div class="wrap">
     <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../states.html">By State</a> / ${name}</div>
     <h1 style="margin-top:10px">Car Condos in <span class="blue">${name}</span></h1>
-    <p style="color:var(--muted);max-width:680px">${list.length} communit${list.length===1?'y':'ies'} across ${cities.length} cit${cities.length===1?'y':'ies'} in our ${name} directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> and reach buyers comparing communities on this page.</p>
+    <p style="color:var(--muted);max-width:680px">${list.length} communit${list.length===1?'y':'ies'} across ${cities.length} cit${cities.length===1?'y':'ies'} in our ${name} directory. Own a unit here? <a href="../list-your-condo.html">List it with us</a> — for sale or for rent — and reach the buyers and renters comparing communities on this page.</p>
     <div style="margin:18px 0 26px">${cities.map(c=>`<span class="pill">${esc(c)}</span>`).join('')}</div>
     <div class="table-scroll">
     <table class="data">
@@ -135,8 +135,8 @@ for (const st of states) {
 </section>
 <section class="cta-band">
   <div class="wrap">
-    <h2>Selling a ${name} car condo?</h2>
-    <p>Your buyer is already on this page. A featured listing puts your unit — photos, full details, your contact — at the top of the ${name} directory.</p>
+    <h2>Selling or renting out a ${name} car condo?</h2>
+    <p>Your buyer — or renter — is already on this page. A featured listing puts your unit, for sale or for rent, at the top of the ${name} directory.</p>
     <a class="btn" href="../list-your-condo.html">List Your Condo</a>
   </div>
 </section>`
