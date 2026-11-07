@@ -418,7 +418,7 @@ for (const post of POSTS) {
     <article class="post">
       <h1>${post.title}</h1>
       <div class="post-meta">${post.date} · AutomotiveCondos.com</div>
-      ${fs.existsSync(path.join(ROOT,'assets','blog',post.slug+'.svg')) ? `<img src="../assets/blog/${post.slug}.svg" alt="${post.title} — illustration" style="width:100%;height:auto;border-radius:6px;margin:4px 0 14px">` : ''}
+      ${fs.existsSync(path.join(ROOT,'assets','blog',post.slug+'.jpg')) ? `<img src="../assets/blog/${post.slug}.jpg" alt="${post.title}" style="width:100%;height:auto;border-radius:6px;margin:4px 0 14px">` : fs.existsSync(path.join(ROOT,'assets','blog',post.slug+'.svg')) ? `<img src="../assets/blog/${post.slug}.svg" alt="${post.title} — illustration" style="width:100%;height:auto;border-radius:6px;margin:4px 0 14px">` : ''}
       ${body}
       ${faqHtml}
     </article>
