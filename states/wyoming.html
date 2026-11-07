@@ -42,7 +42,7 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Deer Drive Luxury Garage Condos</strong></td><td>Jackson</td><td>Under construction</td><td>12</td><td>From $526K</td><td><a href="../communities/deer-drive-luxury-garage-condos-wy.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/deer-drive-luxury-garage-condos-wy.html"><td><strong>Deer Drive Luxury Garage Condos</strong></td><td>Jackson</td><td>Under construction</td><td>12</td><td>From $526K</td><td><a href="../communities/deer-drive-luxury-garage-condos-wy.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -59,6 +59,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

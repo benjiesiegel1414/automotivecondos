@@ -42,11 +42,11 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Garage Condos of Oklahoma</strong></td><td>Edmond</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-of-oklahoma-ok.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Mammoth Luxury Garage Condos</strong></td><td>Glenpool</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/mammoth-luxury-garage-condos-ok.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Wilshire Point Executive Garage Condos</strong></td><td>Oklahoma City</td><td>Selling</td><td>7</td><td>$388K per unit</td><td><a href="../communities/wilshire-point-executive-garage-condos-ok.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Garage Condos Enclave</strong></td><td>Tulsa</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-enclave-ok.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Garage Condos Tulsa</strong></td><td>Tulsa</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-tulsa-ok.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/garage-condos-of-oklahoma-ok.html"><td><strong>Garage Condos of Oklahoma</strong></td><td>Edmond</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-of-oklahoma-ok.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/mammoth-luxury-garage-condos-ok.html"><td><strong>Mammoth Luxury Garage Condos</strong></td><td>Glenpool</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/mammoth-luxury-garage-condos-ok.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/wilshire-point-executive-garage-condos-ok.html"><td><strong>Wilshire Point Executive Garage Condos</strong></td><td>Oklahoma City</td><td>Selling</td><td>7</td><td>$388K per unit</td><td><a href="../communities/wilshire-point-executive-garage-condos-ok.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/garage-condos-enclave-ok.html"><td><strong>Garage Condos Enclave</strong></td><td>Tulsa</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-enclave-ok.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/garage-condos-tulsa-ok.html"><td><strong>Garage Condos Tulsa</strong></td><td>Tulsa</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/garage-condos-tulsa-ok.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -63,6 +63,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

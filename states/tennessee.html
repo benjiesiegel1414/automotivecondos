@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>RallyPoint Motor Condos</strong></td><td>Hendersonville</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/rallypoint-motor-condos-tn.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Torque Motor Suites — Nolensville</strong></td><td>Nolensville</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/torque-motor-suites-nolensville-tn.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Flatrock Motorclub Garage Lofts</strong></td><td>Rockwood</td><td>Under construction</td><td>—</td><td>Inquire</td><td><a href="../communities/flatrock-motorclub-garage-lofts-tn.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/rallypoint-motor-condos-tn.html"><td><strong>RallyPoint Motor Condos</strong></td><td>Hendersonville</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/rallypoint-motor-condos-tn.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/torque-motor-suites-nolensville-tn.html"><td><strong>Torque Motor Suites — Nolensville</strong></td><td>Nolensville</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/torque-motor-suites-nolensville-tn.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/flatrock-motorclub-garage-lofts-tn.html"><td><strong>Flatrock Motorclub Garage Lofts</strong></td><td>Rockwood</td><td>Under construction</td><td>—</td><td>Inquire</td><td><a href="../communities/flatrock-motorclub-garage-lofts-tn.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

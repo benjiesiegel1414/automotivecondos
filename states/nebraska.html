@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Motorsport Park Hastings Trackside Car Condos (Showboat)</strong></td><td>Hastings</td><td>Selling</td><td>—</td><td>$378,000 (garage + living, paddock access)</td><td><a href="../communities/motorsport-park-hastings-trackside-car-condos-showboat-ne.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Victory Lane Condominiums</strong></td><td>Omaha</td><td>Resale only</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/victory-lane-condominiums-ne.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Harvest Heights Hobby Condos</strong></td><td>Waterloo</td><td>Selling</td><td>8</td><td>$385,000 per 1,500 SF unit</td><td><a href="../communities/harvest-heights-hobby-condos-ne.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/motorsport-park-hastings-trackside-car-condos-showboat-ne.html"><td><strong>Motorsport Park Hastings Trackside Car Condos (Showboat)</strong></td><td>Hastings</td><td>Selling</td><td>—</td><td>$378,000 (garage + living, paddock access)</td><td><a href="../communities/motorsport-park-hastings-trackside-car-condos-showboat-ne.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/victory-lane-condominiums-ne.html"><td><strong>Victory Lane Condominiums</strong></td><td>Omaha</td><td>Resale only</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/victory-lane-condominiums-ne.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/harvest-heights-hobby-condos-ne.html"><td><strong>Harvest Heights Hobby Condos</strong></td><td>Waterloo</td><td>Selling</td><td>8</td><td>$385,000 per 1,500 SF unit</td><td><a href="../communities/harvest-heights-hobby-condos-ne.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

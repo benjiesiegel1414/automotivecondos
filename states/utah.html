@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Park East II &amp; III Business Condominiums</strong></td><td>Park City</td><td>Resale only</td><td>—</td><td>Resales $1.45M–$1.7M</td><td><a href="../communities/park-east-ii-iii-business-condominiums-ut.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Hobby Hut RV Garages</strong></td><td>St. George</td><td>Resale only</td><td>—</td><td>Resales ~$395K</td><td><a href="../communities/hobby-hut-rv-garages-ut.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Falcon Storage Condos St. George</strong></td><td>Washington City</td><td>Resale only</td><td>140</td><td>Sold out - inquire for resales</td><td><a href="../communities/falcon-storage-condos-st-george-ut.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/park-east-ii-iii-business-condominiums-ut.html"><td><strong>Park East II &amp; III Business Condominiums</strong></td><td>Park City</td><td>Resale only</td><td>—</td><td>Resales $1.45M–$1.7M</td><td><a href="../communities/park-east-ii-iii-business-condominiums-ut.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/hobby-hut-rv-garages-ut.html"><td><strong>Hobby Hut RV Garages</strong></td><td>St. George</td><td>Resale only</td><td>—</td><td>Resales ~$395K</td><td><a href="../communities/hobby-hut-rv-garages-ut.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/falcon-storage-condos-st-george-ut.html"><td><strong>Falcon Storage Condos St. George</strong></td><td>Washington City</td><td>Resale only</td><td>140</td><td>Sold out - inquire for resales</td><td><a href="../communities/falcon-storage-condos-st-george-ut.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

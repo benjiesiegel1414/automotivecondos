@@ -42,11 +42,11 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Pelican Bay Storage Condominiums</strong></td><td>Milford</td><td>Selling</td><td>84</td><td>$69,900 per unit (24x48)</td><td><a href="../communities/pelican-bay-storage-condominiums-ia.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Stones Throw Storage Condominium</strong></td><td>Milford</td><td>Selling</td><td>—</td><td>$120,000 single / $230,000–$349,000 double</td><td><a href="../communities/stones-throw-storage-condominium-ia.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Storage City Condominiums</strong></td><td>Spirit Lake</td><td>Resale only</td><td>—</td><td>Resale $189,000 (30x60)</td><td><a href="../communities/storage-city-condominiums-ia.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Waukee Garage Condos</strong></td><td>Waukee</td><td>Resale only</td><td>—</td><td>Inquire</td><td><a href="../communities/waukee-garage-condos-ia.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Liberty Storage Condominiums</strong></td><td>West Okoboji</td><td>Resale only</td><td>—</td><td>Resale $110,000</td><td><a href="../communities/liberty-storage-condominiums-ia.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/pelican-bay-storage-condominiums-ia.html"><td><strong>Pelican Bay Storage Condominiums</strong></td><td>Milford</td><td>Selling</td><td>84</td><td>$69,900 per unit (24x48)</td><td><a href="../communities/pelican-bay-storage-condominiums-ia.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/stones-throw-storage-condominium-ia.html"><td><strong>Stones Throw Storage Condominium</strong></td><td>Milford</td><td>Selling</td><td>—</td><td>$120,000 single / $230,000–$349,000 double</td><td><a href="../communities/stones-throw-storage-condominium-ia.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/storage-city-condominiums-ia.html"><td><strong>Storage City Condominiums</strong></td><td>Spirit Lake</td><td>Resale only</td><td>—</td><td>Resale $189,000 (30x60)</td><td><a href="../communities/storage-city-condominiums-ia.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/waukee-garage-condos-ia.html"><td><strong>Waukee Garage Condos</strong></td><td>Waukee</td><td>Resale only</td><td>—</td><td>Inquire</td><td><a href="../communities/waukee-garage-condos-ia.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/liberty-storage-condominiums-ia.html"><td><strong>Liberty Storage Condominiums</strong></td><td>West Okoboji</td><td>Resale only</td><td>—</td><td>Resale $110,000</td><td><a href="../communities/liberty-storage-condominiums-ia.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -63,6 +63,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

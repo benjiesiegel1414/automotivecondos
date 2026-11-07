@@ -42,10 +42,10 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="both"><td><strong>Bozeman Personal Warehouse</strong></td><td>Belgrade</td><td>Selling</td><td>15</td><td>Units for sale (~$692K/1,654 SF) and lease</td><td><a href="../communities/bozeman-personal-warehouse-mt.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Eveso Bozeman</strong></td><td>Bozeman</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/eveso-bozeman-mt.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>LuxeLocker Bozeman</strong></td><td>Bozeman</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/luxelocker-bozeman-mt.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Big Toy Condos</strong></td><td>Kalispell</td><td>Selling</td><td>—</td><td>~$249K</td><td><a href="../communities/big-toy-condos-mt.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="both" data-href="../communities/bozeman-personal-warehouse-mt.html"><td><strong>Bozeman Personal Warehouse</strong></td><td>Belgrade</td><td>Selling</td><td>15</td><td>Units for sale (~$692K/1,654 SF) and lease</td><td><a href="../communities/bozeman-personal-warehouse-mt.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/eveso-bozeman-mt.html"><td><strong>Eveso Bozeman</strong></td><td>Bozeman</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/eveso-bozeman-mt.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/luxelocker-bozeman-mt.html"><td><strong>LuxeLocker Bozeman</strong></td><td>Bozeman</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/luxelocker-bozeman-mt.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/big-toy-condos-mt.html"><td><strong>Big Toy Condos</strong></td><td>Kalispell</td><td>Selling</td><td>—</td><td>~$249K</td><td><a href="../communities/big-toy-condos-mt.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -62,6 +62,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

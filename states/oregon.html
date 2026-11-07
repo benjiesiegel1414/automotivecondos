@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Falcon Storage Condos Bend</strong></td><td>Bend</td><td>Resale only</td><td>—</td><td>Sold out; resale units ~$475K-$495K</td><td><a href="../communities/falcon-storage-condos-bend-or.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Garaj Mahal</strong></td><td>Bend</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/garaj-mahal-or.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>Oregon Raceway Park Trackside Garages</strong></td><td>Grass Valley</td><td>Established</td><td>—</td><td>Annual garage lease - inquire</td><td><a href="../communities/oregon-raceway-park-trackside-garages-or.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/falcon-storage-condos-bend-or.html"><td><strong>Falcon Storage Condos Bend</strong></td><td>Bend</td><td>Resale only</td><td>—</td><td>Sold out; resale units ~$475K-$495K</td><td><a href="../communities/falcon-storage-condos-bend-or.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/garaj-mahal-or.html"><td><strong>Garaj Mahal</strong></td><td>Bend</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/garaj-mahal-or.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/oregon-raceway-park-trackside-garages-or.html"><td><strong>Oregon Raceway Park Trackside Garages</strong></td><td>Grass Valley</td><td>Established</td><td>—</td><td>Annual garage lease - inquire</td><td><a href="../communities/oregon-raceway-park-trackside-garages-or.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

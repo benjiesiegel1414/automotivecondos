@@ -42,12 +42,12 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Sunny Slope Drive Garages</strong></td><td>Camdenton</td><td>Selling</td><td>38</td><td>From $25K (cold storage)</td><td><a href="../communities/sunny-slope-drive-garages-mo.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>The Place in Chesterfield Valley</strong></td><td>Chesterfield</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/the-place-in-chesterfield-valley-mo.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>AutoToyBarn</strong></td><td>Kansas City</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/autotoybarn-mo.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>The Toy Box (Bagnell Dam Blvd)</strong></td><td>Lake Ozark</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/the-toy-box-bagnell-dam-blvd-mo.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>The Toybox Condominiums</strong></td><td>Lake Ozark</td><td>Selling</td><td>—</td><td>$426K–$442K</td><td><a href="../communities/the-toybox-condominiums-mo.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>GKR Paddock Club</strong></td><td>New Bloomfield</td><td>Under construction</td><td>66</td><td>From $205K</td><td><a href="../communities/gkr-paddock-club-mo.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/sunny-slope-drive-garages-mo.html"><td><strong>Sunny Slope Drive Garages</strong></td><td>Camdenton</td><td>Selling</td><td>38</td><td>From $25K (cold storage)</td><td><a href="../communities/sunny-slope-drive-garages-mo.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/the-place-in-chesterfield-valley-mo.html"><td><strong>The Place in Chesterfield Valley</strong></td><td>Chesterfield</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/the-place-in-chesterfield-valley-mo.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/autotoybarn-mo.html"><td><strong>AutoToyBarn</strong></td><td>Kansas City</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/autotoybarn-mo.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/the-toy-box-bagnell-dam-blvd-mo.html"><td><strong>The Toy Box (Bagnell Dam Blvd)</strong></td><td>Lake Ozark</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/the-toy-box-bagnell-dam-blvd-mo.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/the-toybox-condominiums-mo.html"><td><strong>The Toybox Condominiums</strong></td><td>Lake Ozark</td><td>Selling</td><td>—</td><td>$426K–$442K</td><td><a href="../communities/the-toybox-condominiums-mo.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/gkr-paddock-club-mo.html"><td><strong>GKR Paddock Club</strong></td><td>New Bloomfield</td><td>Under construction</td><td>66</td><td>From $205K</td><td><a href="../communities/gkr-paddock-club-mo.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -64,6 +64,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

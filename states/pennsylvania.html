@@ -42,8 +42,8 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>The Concours at Carlisle</strong></td><td>Carlisle</td><td>Established</td><td>40</td><td>Inquire</td><td><a href="../communities/the-concours-at-carlisle-pa.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Premier Garages of America</strong></td><td>Dillsburg</td><td>Selling</td><td>—</td><td>$215K–$240K</td><td><a href="../communities/premier-garages-of-america-pa.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/the-concours-at-carlisle-pa.html"><td><strong>The Concours at Carlisle</strong></td><td>Carlisle</td><td>Established</td><td>40</td><td>Inquire</td><td><a href="../communities/the-concours-at-carlisle-pa.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/premier-garages-of-america-pa.html"><td><strong>Premier Garages of America</strong></td><td>Dillsburg</td><td>Selling</td><td>—</td><td>$215K–$240K</td><td><a href="../communities/premier-garages-of-america-pa.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -60,6 +60,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

@@ -114,7 +114,7 @@ for (const st of states) {
   const name = STATE_NAMES[st];
   const list = byState[st].slice().sort((a,b)=>a.city.localeCompare(b.city)||a.name.localeCompare(b.name));
   const cities = [...new Set(list.map(c=>c.city))].sort();
-  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../communities/${c.slug}.html">Details →</a></td></tr>`).join('\n');
+  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}" data-href="../communities/${c.slug}.html"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../communities/${c.slug}.html">Details →</a></td></tr>`).join('\n');
   fs.writeFileSync(path.join(ROOT, 'states', slug(name)+'.html'), page({
     title: `Car Condos in ${name}: Communities & Listings | AutomotiveCondos.com`,
     desc: `${list.length} car condo communities in ${name} across ${cities.length} cities — status, unit counts and pricing, plus how to buy or sell a unit.`,
@@ -152,6 +152,10 @@ for (const st of states) {
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated ${DATA.updated}. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

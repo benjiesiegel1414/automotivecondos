@@ -42,14 +42,14 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="both"><td><strong>LuxeLocker Henderson</strong></td><td>Henderson</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-henderson-nv.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Octane Club</strong></td><td>Henderson</td><td>Selling</td><td>—</td><td>Custom garage condos; inquire</td><td><a href="../communities/octane-club-nv.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>The Stack Auto Lofts</strong></td><td>Henderson</td><td>Selling</td><td>29</td><td>From the high $900Ks</td><td><a href="../communities/the-stack-auto-lofts-nv.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>South Jones Storage Condominiums</strong></td><td>Las Vegas</td><td>Resale only</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/south-jones-storage-condominiums-nv.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>LuxeLocker Mesquite</strong></td><td>Mesquite</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-mesquite-nv.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Spring Mountain Motor Resort Garage Condos</strong></td><td>Pahrump</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/spring-mountain-motor-resort-garage-condos-nv.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>LuxeLocker Reno</strong></td><td>Reno</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-reno-nv.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>LuxeLocker Spanish Springs</strong></td><td>Sparks</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-spanish-springs-nv.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="both" data-href="../communities/luxelocker-henderson-nv.html"><td><strong>LuxeLocker Henderson</strong></td><td>Henderson</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-henderson-nv.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/octane-club-nv.html"><td><strong>Octane Club</strong></td><td>Henderson</td><td>Selling</td><td>—</td><td>Custom garage condos; inquire</td><td><a href="../communities/octane-club-nv.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/the-stack-auto-lofts-nv.html"><td><strong>The Stack Auto Lofts</strong></td><td>Henderson</td><td>Selling</td><td>29</td><td>From the high $900Ks</td><td><a href="../communities/the-stack-auto-lofts-nv.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/south-jones-storage-condominiums-nv.html"><td><strong>South Jones Storage Condominiums</strong></td><td>Las Vegas</td><td>Resale only</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/south-jones-storage-condominiums-nv.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/luxelocker-mesquite-nv.html"><td><strong>LuxeLocker Mesquite</strong></td><td>Mesquite</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-mesquite-nv.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/spring-mountain-motor-resort-garage-condos-nv.html"><td><strong>Spring Mountain Motor Resort Garage Condos</strong></td><td>Pahrump</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/spring-mountain-motor-resort-garage-condos-nv.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/luxelocker-reno-nv.html"><td><strong>LuxeLocker Reno</strong></td><td>Reno</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-reno-nv.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/luxelocker-spanish-springs-nv.html"><td><strong>LuxeLocker Spanish Springs</strong></td><td>Sparks</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-spanish-springs-nv.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -66,6 +66,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

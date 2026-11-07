@@ -42,14 +42,14 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>MotorCave Suites</strong></td><td>Barrington</td><td>Selling</td><td>37</td><td>From $410K</td><td><a href="../communities/motorcave-suites-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Crystal Lake Car Condos</strong></td><td>Crystal Lake</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/crystal-lake-car-condos-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>BeSpoke Motor Union</strong></td><td>Gilberts</td><td>Under construction</td><td>18</td><td>Pre-construction from ~$390K</td><td><a href="../communities/bespoke-motor-union-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Autobahn Country Club Garages</strong></td><td>Joliet</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/autobahn-country-club-garages-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Luxe Corsa Car Condos</strong></td><td>Lake Zurich</td><td>Under construction</td><td>121</td><td>From $549K</td><td><a href="../communities/luxe-corsa-car-condos-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Big Door Garage Condos</strong></td><td>Mundelein</td><td>Resale only</td><td>35</td><td>Sold out; resales</td><td><a href="../communities/big-door-garage-condos-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Iron Gate Motor Condos</strong></td><td>Naperville</td><td>Established</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/iron-gate-motor-condos-il.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Torque Motor Suites Westmont</strong></td><td>Westmont</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/torque-motor-suites-westmont-il.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/motorcave-suites-il.html"><td><strong>MotorCave Suites</strong></td><td>Barrington</td><td>Selling</td><td>37</td><td>From $410K</td><td><a href="../communities/motorcave-suites-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/crystal-lake-car-condos-il.html"><td><strong>Crystal Lake Car Condos</strong></td><td>Crystal Lake</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/crystal-lake-car-condos-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/bespoke-motor-union-il.html"><td><strong>BeSpoke Motor Union</strong></td><td>Gilberts</td><td>Under construction</td><td>18</td><td>Pre-construction from ~$390K</td><td><a href="../communities/bespoke-motor-union-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/autobahn-country-club-garages-il.html"><td><strong>Autobahn Country Club Garages</strong></td><td>Joliet</td><td>Established</td><td>—</td><td>Inquire</td><td><a href="../communities/autobahn-country-club-garages-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/luxe-corsa-car-condos-il.html"><td><strong>Luxe Corsa Car Condos</strong></td><td>Lake Zurich</td><td>Under construction</td><td>121</td><td>From $549K</td><td><a href="../communities/luxe-corsa-car-condos-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/big-door-garage-condos-il.html"><td><strong>Big Door Garage Condos</strong></td><td>Mundelein</td><td>Resale only</td><td>35</td><td>Sold out; resales</td><td><a href="../communities/big-door-garage-condos-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/iron-gate-motor-condos-il.html"><td><strong>Iron Gate Motor Condos</strong></td><td>Naperville</td><td>Established</td><td>—</td><td>Resales; inquire</td><td><a href="../communities/iron-gate-motor-condos-il.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/torque-motor-suites-westmont-il.html"><td><strong>Torque Motor Suites Westmont</strong></td><td>Westmont</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/torque-motor-suites-westmont-il.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -66,6 +66,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

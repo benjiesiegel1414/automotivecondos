@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>NJMP Exotic Car Garages</strong></td><td>Millville</td><td>Selling</td><td>57</td><td>Phase IX selling; inquire</td><td><a href="../communities/njmp-exotic-car-garages-nj.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Brielle Avenue Car Condos</strong></td><td>Ocean Township</td><td>Selling</td><td>14</td><td>From $1.2M</td><td><a href="../communities/brielle-avenue-car-condos-nj.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>Corsa Car Condos (Shore Car Club)</strong></td><td>Ocean Township</td><td>Selling</td><td>14</td><td>$1.2M per 2,000 SF unit</td><td><a href="../communities/corsa-car-condos-shore-car-club-nj.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/njmp-exotic-car-garages-nj.html"><td><strong>NJMP Exotic Car Garages</strong></td><td>Millville</td><td>Selling</td><td>57</td><td>Phase IX selling; inquire</td><td><a href="../communities/njmp-exotic-car-garages-nj.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/brielle-avenue-car-condos-nj.html"><td><strong>Brielle Avenue Car Condos</strong></td><td>Ocean Township</td><td>Selling</td><td>14</td><td>From $1.2M</td><td><a href="../communities/brielle-avenue-car-condos-nj.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/corsa-car-condos-shore-car-club-nj.html"><td><strong>Corsa Car Condos (Shore Car Club)</strong></td><td>Ocean Township</td><td>Selling</td><td>14</td><td>$1.2M per 2,000 SF unit</td><td><a href="../communities/corsa-car-condos-shore-car-club-nj.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

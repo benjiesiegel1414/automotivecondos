@@ -42,8 +42,8 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="both"><td><strong>Virginia International Raceway Villas &amp; Garages</strong></td><td>Alton</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/virginia-international-raceway-villas-garages-va.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Dominion Lux</strong></td><td>Woodford</td><td>Selling</td><td>63</td><td>Inquire</td><td><a href="../communities/dominion-lux-va.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="both" data-href="../communities/virginia-international-raceway-villas-garages-va.html"><td><strong>Virginia International Raceway Villas &amp; Garages</strong></td><td>Alton</td><td>Selling</td><td>—</td><td>Inquire</td><td><a href="../communities/virginia-international-raceway-villas-garages-va.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/dominion-lux-va.html"><td><strong>Dominion Lux</strong></td><td>Woodford</td><td>Selling</td><td>63</td><td>Inquire</td><td><a href="../communities/dominion-lux-va.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -60,6 +60,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>

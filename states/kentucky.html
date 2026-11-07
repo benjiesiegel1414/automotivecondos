@@ -42,9 +42,9 @@
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy"><td><strong>Storage Caves Benton</strong></td><td>Benton</td><td>Planned</td><td>—</td><td>Reservations open</td><td><a href="../communities/storage-caves-benton-ky.html">Details →</a></td></tr>
-<tr data-offer="both"><td><strong>NCM Motorsports Park Garages</strong></td><td>Bowling Green</td><td>Established</td><td>—</td><td>Lease only — Inquire</td><td><a href="../communities/ncm-motorsports-park-garages-ky.html">Details →</a></td></tr>
-<tr data-offer="buy"><td><strong>Red Squirrel Street Garage Condos</strong></td><td>Bowling Green</td><td>Selling</td><td>7</td><td>From $279,900</td><td><a href="../communities/red-squirrel-street-garage-condos-ky.html">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-href="../communities/storage-caves-benton-ky.html"><td><strong>Storage Caves Benton</strong></td><td>Benton</td><td>Planned</td><td>—</td><td>Reservations open</td><td><a href="../communities/storage-caves-benton-ky.html">Details →</a></td></tr>
+<tr data-offer="both" data-href="../communities/ncm-motorsports-park-garages-ky.html"><td><strong>NCM Motorsports Park Garages</strong></td><td>Bowling Green</td><td>Established</td><td>—</td><td>Lease only — Inquire</td><td><a href="../communities/ncm-motorsports-park-garages-ky.html">Details →</a></td></tr>
+<tr data-offer="buy" data-href="../communities/red-squirrel-street-garage-condos-ky.html"><td><strong>Red Squirrel Street Garage Condos</strong></td><td>Bowling Green</td><td>Selling</td><td>7</td><td>From $279,900</td><td><a href="../communities/red-squirrel-street-garage-condos-ky.html">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
@@ -61,6 +61,10 @@
         });
       });
     })();
+    document.querySelectorAll('tr[data-href]').forEach(function(r){
+      r.style.cursor='pointer';
+      r.addEventListener('click', function(e){ if(e.target.closest('a')) return; location.href = r.getAttribute('data-href'); });
+    });
     </script>
     <p style="font-size:13px;color:var(--muted);margin-top:10px">Data updated 2026-11-07. Unit counts and pricing are approximate — confirm with each community. See something out of date? <a href="mailto:contact@automotivecondos.com">Tell us</a></p>
   </div>
