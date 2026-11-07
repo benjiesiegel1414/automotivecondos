@@ -154,3 +154,27 @@ svg.acmap path{transition:fill .15s}
 .pillar h3{color:#fff;font-size:20px;margin:0}
 .pillar p{color:#C9CDD3;font-size:14px;line-height:1.55;margin:0;flex:1}
 .pillar a.plink{color:#3B8EE2;font-weight:700;font-size:14px}
+
+/* featured spot cards */
+.card.spot{padding:0;overflow:hidden;border:2px dashed #B9C2CE;display:flex;flex-direction:column;text-decoration:none;transition:transform .15s,border-color .15s}
+.card.spot:hover{transform:translateY(-3px);border-color:var(--blue)}
+.spot-img{height:128px;background-size:cover;background-position:center;position:relative;filter:saturate(.55)}
+.spot-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,26,31,.15),rgba(23,26,31,.55))}
+.spot-img .tag.open{position:absolute;top:10px;left:10px;z-index:2;background:#fff;color:var(--blue);margin:0}
+.spot-bd{padding:14px 16px 16px}
+.spot-bd h3{margin:0 0 6px;color:var(--ink)}
+.spot-bd .meta{font-size:13px;color:var(--muted);line-height:1.5}
+.spot-link{margin-top:10px;color:var(--blue);font-weight:800;font-size:14px}
+/* pro cta band */
+.cta-pro{position:relative;color:#fff;overflow:hidden}
+.cta-pro-bg{position:absolute;inset:0;background-size:cover;background-position:center 65%}
+.cta-pro-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,20,24,.96) 0%,rgba(18,20,24,.88) 45%,rgba(18,20,24,.55) 100%)}
+.cta-pro-in{position:relative;z-index:2;padding:72px 0}
+.cta-pro .kicker{color:var(--blue-2);font-weight:800;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+.cta-pro h2{color:#fff;font-size:34px;line-height:1.15;margin:0 0 14px}
+.cta-pro p{color:#D1D5DB;max-width:560px;font-size:15.5px;line-height:1.6;margin:0 0 22px}
+.cta-pro-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.cta-pro-stats{display:flex;gap:40px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;max-width:560px}
+.cta-pro-stats strong{display:block;font-size:24px;font-weight:800;color:#fff}
+.cta-pro-stats span{font-size:12.5px;color:#9AA3AF}
+@media(max-width:720px){.cta-pro h2{font-size:26px}.cta-pro-stats{gap:24px}}
