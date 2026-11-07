@@ -61,16 +61,16 @@
       <div class="detail-side">
         <div class="card inq" id="inquire">
           <div class="inq-tag">Free · No obligation</div>
-          <h3>Get the full listing info</h3>
-          <p class="meta" style="font-size:14px;margin-bottom:12px">Available units, current pricing, and how to buy at Trackside Road Garage Condos — sent straight to your inbox.</p>
+          <h3>Unlock the direct listing link</h3>
+          <p class="meta" style="font-size:14px;margin-bottom:12px">Enter your email for instant access to the direct listing details for Trackside Road Garage Condos — plus everything we track on this community, sent to your inbox.</p>
           <form id="lead-form">
             <input type="email" required placeholder="you@email.com" class="field" id="lead-email" autocomplete="email">
-            <button class="btn" type="submit" style="width:100%">Email Me The Listing Info</button>
-            <div class="lead-note">We follow up personally with availability within 24 hours. No spam — unsubscribe anytime.</div>
+            <button class="btn" type="submit" style="width:100%">Unlock Instant Access</button>
+            <div class="lead-note">Instant access — no confirmation hoops. We'll also email you the link and new listings like this one. Unsubscribe anytime.</div>
           </form>
           <div id="lead-ok" style="display:none">
-            <div class="lead-ok-big">✓ You're all set</div>
-            Check your inbox — your Trackside Road Garage Condos info is on the way. If it doesn't show up in a couple of minutes, check spam or promotions.
+            <div class="lead-ok-big">✓ Unlocked</div>
+            <div style="font-size:14px;margin:4px 0 8px">Trackside Road Garage Condos doesn't have a public listing site — everything we track is on this page, and we just emailed it to you. We'll follow up with direct contact details.</div>
           </div>
         </div>
         <p style="font-size:12.5px;color:var(--muted);margin-top:10px">Details compiled from public sources and may change. Represent this community? <a href="../list-your-condo.html">Claim this page</a>.</p>
@@ -99,6 +99,7 @@
     fd.append('fields[email]', document.getElementById('lead-email').value);
     fd.append('fields[community]', "Trackside Road Garage Condos (WI)");
     fd.append('fields[community_url]', "https://automotivecondos.com/communities/trackside-road-garage-condos-wi.html");
+    fd.append('fields[community_site]', "https://automotivecondos.com/communities/trackside-road-garage-condos-wi.html");
     fd.append('ml-submit', '1');
     fd.append('anticsrf', 'true');
     var done = function(){
