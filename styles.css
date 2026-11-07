@@ -257,3 +257,6 @@ img,svg{max-width:100%;height:auto}
 .stp p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
 .stp-line{flex:0 0 60px;height:3px;background:#C9D6E4;border-radius:2px;margin-top:26px}
 @media(max-width:720px){.stepper{flex-direction:column;align-items:center;gap:18px}.stp-line{flex:none;width:3px;height:34px;margin:0}}
+
+nav.main a.nav-adv{color:#FFD23F}
+nav.main a.nav-adv:hover{color:#FFE27A}

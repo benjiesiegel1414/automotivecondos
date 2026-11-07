@@ -33,6 +33,7 @@ function page({title, desc, canonical, body, depth}) {
       <a href="${p}states.html">Browse by State</a>
       <a href="${p}blog.html">Blog</a>
       <a href="${p}about.html">About</a>
+      <a class="nav-adv" href="${p}advertise.html">Advertise</a>
       <a class="btn" href="${p}list-your-condo.html">List Your Condo</a>
     </nav>
   </div>
