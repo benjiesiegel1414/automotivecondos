@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 360" fill="none">
   <defs>
     <clipPath id="bayclip"><rect x="269" y="225" width="116" height="95"/></clipPath>
     <filter id="hlblur" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4.5"/></filter>
@@ -16,7 +16,7 @@
   <circle cx="300" cy="70" r="2.5" fill="#3B8EE2" opacity=".6"/>
 
   <!-- ground -->
-  <path d="M12 322 H548" stroke="#3B8EE2" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M12 322 H600" stroke="#3B8EE2" stroke-width="3.5" stroke-linecap="round"/>
 
   <!-- skyline of condo buildings -->
   <path d="M30 322 V232 H130 V322" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" opacity=".85"/>
@@ -40,10 +40,21 @@
   <path d="M428 322 V214 H514 V322" stroke="#FFFFFF" stroke-width="2.6" opacity=".8"/>
   <rect x="428" y="214" width="86" height="13" fill="#1B1B1B"/>
   <path d="M428 219 H514 M428 224 H514" stroke="#3B8EE2" stroke-width="2" opacity=".55"/>
-  <g opacity=".45">
-    <path d="M440 316 C440 309 444 304 449 303 L459 301 C464 295 470 292 476 292 H488 C495 293 500 297 503 302 L506 304 C509 306 510 310 510 313 L510 316 Z" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round"/>
-    <circle cx="452" cy="316" r="6" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
-    <circle cx="496" cy="316" r="6" fill="none" stroke="#FFFFFF" stroke-width="2.2"/>
+  <g opacity=".85" transform="translate(235.6,95.4) scale(0.72)">
+    <rect x="276" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+    <rect x="366" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+    <path d="M284 312 V293 C284 283 291 276 301 275 L353 275 C363 276 370 283 370 293 V312 Z"
+          fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M297 275 C299 264 306 258 314 257 L340 257 C348 258 355 264 357 275"
+          fill="none" stroke="#3B8EE2" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M303 273 C305 266 309 262 315 261 L339 261 C345 262 349 266 351 273 Z"
+          fill="#0D1117" opacity=".55" stroke="#3B8EE2" stroke-width="1.6"/>
+    <path d="M284 280 L276 276 M370 280 L378 276" stroke="#3B8EE2" stroke-width="2.4" stroke-linecap="round"/>
+    <ellipse cx="298" cy="286" rx="10" ry="5.5" fill="#FFE14D" opacity=".4" filter="url(#hlblur)"/>
+    <ellipse cx="356" cy="286" rx="10" ry="5.5" fill="#FFE14D" opacity=".4" filter="url(#hlblur)"/>
+    <path d="M291 287 L306 284 M348 284 L363 287" stroke="#FFE14D" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M305 302 H349" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M296 307 H302 M352 307 H358" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
   </g>
 
   <!-- highlighted bay: glow + car behind the animated door -->
@@ -83,4 +94,12 @@
 
   <!-- bay frame on top -->
   <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
+
+  <!-- palms along the right edge -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M566 322 C564 300 568 278 574 260" stroke="#FFFFFF" stroke-width="3" opacity=".85"/>
+    <path d="M574 260 C566 254 556 252 548 255 M574 260 C570 250 562 244 554 243 M574 260 C577 249 585 242 594 241 M574 260 C583 253 593 251 601 254 M574 260 C580 256 590 258 596 263" stroke="#3B8EE2" stroke-width="2.6" opacity=".9"/>
+    <path d="M596 322 C595 308 597 296 601 286" stroke="#FFFFFF" stroke-width="2.6" opacity=".7"/>
+    <path d="M601 286 C595 281 588 279 582 281 M601 286 C599 278 593 273 587 272 M601 286 C605 278 611 274 617 274 M601 286 C607 282 614 282 619 285" stroke="#3B8EE2" stroke-width="2.2" opacity=".75"/>
+  </g>
 </svg>
