@@ -111,7 +111,7 @@ for (const st of states) {
   const name = STATE_NAMES[st];
   const list = byState[st].slice().sort((a,b)=>a.city.localeCompare(b.city)||a.name.localeCompare(b.name));
   const cities = [...new Set(list.map(c=>c.city))].sort();
-  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="mailto:contact@automotivecondos.com?subject=Inquiry: ${encodeURIComponent(c.name)} (${c.state})">Inquire →</a></td></tr>`).join('\n');
+  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../communities/${c.slug}.html">Details →</a></td></tr>`).join('\n');
   fs.writeFileSync(path.join(ROOT, 'states', slug(name)+'.html'), page({
     title: `Car Condos in ${name}: Communities & Listings | AutomotiveCondos.com`,
     desc: `${list.length} car condo communities in ${name} across ${cities.length} cities — status, unit counts and pricing, plus how to buy or sell a unit.`,
@@ -163,10 +163,56 @@ for (const st of states) {
   }));
 }
 
+// --- community detail pages ---
+fs.mkdirSync(path.join(ROOT, 'communities'), {recursive: true});
+for (const c of DATA.communities) {
+  const stName = STATE_NAMES[c.state];
+  const offer = c.offer === 'both' ? 'For sale or for rent' : 'For sale / resale';
+  const mail = 'mailto:contact@automotivecondos.com?subject=' + encodeURIComponent('Inquiry: ' + c.name + ' (' + c.state + ')');
+  const nearby = DATA.communities.filter(x => x.state === c.state && x.slug !== c.slug).slice(0, 6);
+  fs.writeFileSync(path.join(ROOT, 'communities', c.slug + '.html'), page({
+    title: `${c.name} — Car Condos in ${c.city}, ${c.state} | AutomotiveCondos.com`,
+    desc: `${c.name} in ${c.city}, ${stName}: ${c.status.toLowerCase()}${c.units ? ', ' + c.units + ' units' : ''}. ${c.priceNote && c.priceNote !== 'Inquire' ? 'Pricing: ' + c.priceNote + '. ' : ''}Inquire about available units through AutomotiveCondos.`,
+    canonical: `https://automotivecondos.com/communities/${c.slug}.html`,
+    depth: 1,
+    body: `
+<section class="block">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states.html">By State</a> / <a href="../states/${slug(stName)}.html">${stName}</a> / ${esc(c.name)}</div>
+    <h1 style="margin-top:10px">${esc(c.name)}</h1>
+    <p style="color:var(--muted);font-size:17px">${esc(c.city)}, ${stName}</p>
+    <div class="grid c4" style="margin-top:18px">
+      <div class="card"><div class="meta">Status</div><div style="font-weight:800;font-size:17px">${esc(c.status)}</div></div>
+      <div class="card"><div class="meta">Units</div><div style="font-weight:800;font-size:17px">${c.units ?? '—'}</div></div>
+      <div class="card"><div class="meta">Offering</div><div style="font-weight:800;font-size:17px">${offer}</div></div>
+      <div class="card"><div class="meta">Pricing</div><div style="font-weight:800;font-size:17px;color:var(--blue)">${esc(c.priceNote || 'Inquire')}</div></div>
+    </div>
+    <div class="card" style="margin-top:18px;max-width:760px;border:2px solid var(--blue)">
+      <h3 style="margin-bottom:6px">Interested in ${esc(c.name)}?</h3>
+      <p class="meta" style="font-size:14.5px;margin-bottom:14px">Tell us what you're looking for — size, door height, budget, buy or rent — and we'll connect you with what's available at this community and others like it in ${stName}. No cost, no obligation.</p>
+      <a class="btn" href="${mail}">Inquire About This Community</a>
+      <span style="margin-left:12px;font-size:13px;color:var(--muted)">Replies within one business day</span>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:14px">Details are compiled from public sources and may change — confirm specifics with the community. Represent this community? <a href="../list-your-condo.html">Claim this page and add direct contact</a>.</p>
+    ${nearby.length ? `<div class="sec-head" style="margin-top:30px"><h2 style="font-size:20px">More in ${stName}</h2><div class="sub"><a href="../states/${slug(stName)}.html">Full directory →</a></div></div>
+    <div class="grid c3">` + nearby.map(x => `<a class="card" href="${x.slug}.html" style="display:block"><h3 style="font-size:15px">${esc(x.name)}</h3><div class="meta">${esc(x.city)}, ${x.state} · ${esc(x.status)}</div><div class="price">${esc(x.priceNote || 'Inquire')}</div></a>`).join('') + '</div>' : ''}
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Own a unit at ${esc(c.name)}?</h2>
+    <p>Buyers are viewing this page. List your unit for a one-time $49, or add your direct contact for $29/month and every inquiry reaches you instantly.</p>
+    <a class="btn" href="../list-your-condo.html">List Your Condo</a>
+  </div>
+</section>`
+  }));
+}
+
 // --- sitemap ---
 const urls = ['', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
-  ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`)];
+  ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
+  ...DATA.communities.map(c=>`communities/${c.slug}.html`)];
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

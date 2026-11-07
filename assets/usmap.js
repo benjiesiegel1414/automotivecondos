@@ -102,7 +102,7 @@
         return '<span class="chip">' + esc(c.status) + '</span>';
       }
       var rows = shown.map(function (c) {
-        return '<a class="rowi" href="mailto:contact@automotivecondos.com?subject=Inquiry: ' + encodeURIComponent(c.name) + ' (' + st + ')">' +
+        return '<a class="rowi" href="' + base + 'communities/' + (c.slug || '') + '.html">' +
           '<div class="rn"><span>' + esc(c.name) + '</span>' + chip(c) + '</div>' +
           '<div class="rm">' + esc(c.city) + ', ' + st + (c.units ? ' · ' + c.units + ' units' : '') + '</div>' +
           ((c.priceNote && c.priceNote !== 'Inquire') ? '<div class="rp">' + esc(c.priceNote) + '</div>' : '') +
