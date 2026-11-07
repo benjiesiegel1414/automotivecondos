@@ -451,6 +451,86 @@ faq: [
 ["Can I rent a garage condo in Texas instead of buying?", "Increasingly, yes. LuxeLocker is bringing its buy-or-rent model to four Texas locations: Cypress (under construction) plus Austin, Round Rock, and McKinney (planned). In sold-out communities, individual owners also lease units privately from time to time. Renting is a sensible first step if you want to test a location before buying, though owners, not renters, capture the appreciation that sold-out DFW communities have shown."]
 ],
 html: ``
+},
+{
+slug: "car-condos-florida",
+tag: "State Guides",
+title: "Car Condos in Florida: 2026 Market Guide",
+desc: "Florida car condo market guide: 99 communities, 4,149 known units, prices from $175K to $1.1M, plus Naples, Fort Myers, Tampa and hurricane tips.",
+date: 'November 7, 2026',
+teaser: "Florida leads the nation with 99 car condo communities. See where they are, what they cost by region, and the hurricane, flood and insurance checks every buyer should make.",
+faq: [
+["How many car condo communities are there in Florida?", "The AutomotiveCondos.com directory tracks 99 car condo and garage condo communities in Florida as of November 2026, with 4,149 known units across the 81 projects that publish a unit count. Of those, 36 are selling, 26 are resale only, 12 are under construction and 25 are planned."],
+["Where are most car condos in Florida located?", "Southwest Florida. The region from Naples and Marco Island north to Englewood holds 38 of the state's 99 communities and about 44% of known units. Naples leads all cities with 12 communities, followed by Fort Myers (9), Sarasota (7), Jacksonville (6) and Punta Gorda (6)."],
+["How much does a car condo cost in Florida?", "Among the 35 Florida communities that publish pricing, starting prices range from about $175K to $1.1M. Ten communities start under $250K, 13 start between $250K and $399K, six start between $400K and $599K, and six start at $600K or more. Charlotte County and Fort Myers are the most affordable areas, while Naples, Palm Beach County and Miami are the most expensive."],
+["How much do garage condos cost in Naples, FL?", "Naples sits at the upper end of the Florida market. In the directory, The Hideout Elite Motor Storage lists units at $650K to $699K and Naples Luxury Motor Suites lists around $930K, while several other Naples projects price on inquiry. Nearby Bonita Springs and Fort Myers offer lower entry points, with many Fort Myers units listed in the high $300Ks to $400Ks."],
+["Do Florida car condos need hurricane protection?", "Yes. Ask for the wind and impact rating of the overhead doors and glass, the roof system, the FEMA flood zone and floor elevation, and the association's master insurance policy and windstorm deductible. Buildings in Miami-Dade and Broward must meet the High-Velocity Hurricane Zone provisions of the Florida Building Code, and buyers elsewhere in the state should hold projects to a similarly high standard."]
+],
+html: ``
+},
+{
+slug: "car-condos-california",
+tag: "State Guides",
+title: "Car Condos in California: 2026 Market Guide",
+desc: "California car condo guide: all 21 communities, prices from the $300s to $1.4M+, Monterey, Coachella Valley, LA and why supply is so scarce.",
+date: 'November 7, 2026',
+teaser: "California has just 21 car condo communities and only three selling from the developer. Here is every one, what they cost, and how to get in.",
+faq: [
+["How many car condo communities are there in California?", "The AutomotiveCondos.com directory tracks 21 car condo and garage condo communities in California as of November 2026, with 465 known units across the 10 projects that publish unit counts. Three are selling, eight are resale only, four are established, two are under construction and four are planned."],
+["How much does a car condo cost in California?", "Published starting prices in the directory range from the $300s (The Caves in Murrieta) to $1.4M (Grand Prix Auto Club Torrance), and the top of published ranges reaches $3.5M at Finish Line Auto Club in Costa Mesa. Five of the seven communities with published starting prices begin at $600K or more, so California is far more expensive than the national market."],
+["Where can I buy a car condo in California right now?", "Only three California communities in the directory are selling from the developer: Finish Line Auto Storage in Westlake Village, Hobby Condos El Dorado Hills and Napa Vault Garage Condos. Two more (the Grand Prix Auto Club projects in Torrance and San Diego) are under construction, and most other communities trade through resales, private sales or rentals."],
+["Are there car condos near Monterey and Pebble Beach?", "Yes. The directory lists Garage Unlimited of Monterey and Monterey Motorsport Park (86 units), both of which trade on resale only. Garage Unlimited of Santa Cruz is also nearby, with resales around $475K. Inventory is limited, especially around Monterey Car Week in August, so register interest with each community early."],
+["Why are car condos so expensive in California?", "California car condos are built on scarce, expensive industrial land, face long entitlement timelines, and carry higher construction costs from seismic and energy codes, labor and impact fees. Combined with a large collector population and a mostly sold-out existing stock, that pushes coastal new builds into seven-figure territory. Inland areas such as Murrieta, Beaumont, El Dorado Hills and the Coachella Valley are more affordable."]
+],
+html: ``
+},
+{
+slug: "car-condos-colorado",
+tag: "State Guides",
+title: "Car Condos in Colorado: 2026 Market Guide",
+desc: "23 Colorado car condo communities mapped: Denver metro, Colorado Springs, Grand Junction and Glenwood Springs, with real pricing from $55K to $449K.",
+date: 'November 7, 2026',
+teaser: "Colorado has 23 car condo communities, from $55K Englewood storage bays to $449K luxury garages in Glenwood Springs. Here is every Front Range and Western Slope market.",
+faq: [
+["How many car condo communities are there in Colorado?", "The AutomotiveCondos.com directory tracks 23 car and garage condo communities in Colorado as of November 2026, with 736 known units among communities that publish unit counts. Seventeen are in the Denver metro, three are in Colorado Springs, two are in Grand Junction, and the rest are in Fort Collins, Loveland, and Glenwood Springs."],
+["How much does a garage condo cost in Denver?", "Denver metro pricing ranges widely. Resale storage bays at Dove Valley Storage in Englewood list around $55,000 to $83,000, while most core product (Windmill Creek, Indiana Street RV Plaza, The Garage Society, Garage Point, Canyon View) falls between about $172,000 and $325,000. Larger or more finished units, such as those at Depot Hill in Broomfield (about $390,000 average) and the upper end of Garage Point (up to about $435,000), sit in the premium tier."],
+["What is the cheapest car condo in Colorado?", "Dove Valley Storage in Englewood, with resales from roughly $55,000 to $83,000, is the lowest published entry point in the Colorado directory. For new construction, MyGarage Northcrest in Colorado Springs starts around $175,000, and Grand Garages in Grand Junction works out to roughly $206,000 for a 20 by 35 foot unit."],
+["Are there new garage condos being built in Colorado?", "Yes. Golden Garages by Playground (53 units) and Playground Garages Grand Junction are under construction, and Playground has planned projects in Colorado Springs, Broomfield, and Arvada. Several other communities, including Garage Point Colorado in Morrison, MyGarage Northcrest in Colorado Springs, and Grand Garages in Grand Junction, are actively selling new units."],
+["Can I store an RV or camper in a Colorado garage condo?", "Some Colorado communities are built for it. Indiana Street RV Plaza Condos in Golden was designed with RV and trailer storage in mind, and several larger projects offer tall-door units. Always confirm the clear door opening and ceiling height against your vehicle's height, and check the association rules on vehicle types and length before you buy."]
+],
+html: ``
+},
+{
+slug: "garage-condos-washington",
+tag: "State Guides",
+title: "Garage Condos in Washington State: 2026 Market Guide",
+desc: "26 Washington garage condo communities and 1,257 known units: Spokane, Tri-Cities, Quincy, Bellingham and Seattle, priced from $92K to the mid-$600Ks.",
+date: 'November 7, 2026',
+teaser: "Washington has 26 garage condo communities and 1,257 known units, built on boat and RV culture. Here is every market from Bellingham to Spokane.",
+faq: [
+["How many garage condo communities are there in Washington State?", "The AutomotiveCondos.com directory tracks 26 garage condo communities in Washington as of November 2026, with 1,257 known units among communities that publish unit counts. They are spread across Whatcom County, the Puget Sound area, Cle Elum and Chelan, Quincy, the Tri-Cities, greater Spokane, and Pullman."],
+["How much does a garage condo cost in Washington State?", "Published entry pricing ranges from about $92,000 for resales at GarageMahal Pullman and about $107,000 for new units at Crescent Bar Garage Condominiums in Quincy, up to the mid-$600,000s at Terminal One Motor + Yacht Club in Seattle. Most Washington communities fall in the $200,000 to $365,000 range, including Bellingham, Ferndale, Spokane, and the Tri-Cities."],
+["Where can I buy a garage condo in Spokane?", "Greater Spokane has five communities in the directory. Fat Cat of Spokane is selling around $200,000, Garage Lodge Storage Condos is selling from about $250,000, and GarageTown Spokane Valley trades as resales around $314,000. GarageTown Liberty Lake is coming soon, and Sunset Storage Condos Chattaroy has 122 units planned with pre-construction pricing."],
+["Are there garage condos in the Tri-Cities?", "Yes. In Richland, Fat Cat Garages Tri-Cities is selling 38 units at about $356,000 to $365,000, and LuxeLocker Richland offers both purchase and rental options. GarageTown Kennewick has 71 units trading as resales, and GarageTown Pasco is planned and listed as coming soon."],
+["Can I store a boat or RV in a Washington garage condo?", "Many Washington communities are built for it. RV Home Storage Condominiums in Sultan sells deeded RV garages, Terminal One in Seattle is positioned as a combined motor and yacht club, and several Quincy, Chelan, and eastern Washington projects cater to boat and RV owners. Always confirm the door opening height, unit depth, and association rules on vehicle types before you buy."]
+],
+html: ``
+},
+{
+slug: "car-condos-north-south-carolina",
+tag: "State Guides",
+title: "Car Condos in North and South Carolina: 2026 Market Guide",
+desc: "19 car condo communities in NC and SC: Charlotte, Concord, Lake Norman, Charleston and Greenville, with new-build pricing from $285K to $550K.",
+date: 'November 7, 2026',
+teaser: "The Carolinas have 19 car condo communities, most of them new or pre-construction. Here is every option from Charlotte and Lake Norman to Charleston.",
+faq: [
+["How many car condo communities are there in North and South Carolina?", "The AutomotiveCondos.com directory tracks 19 communities across the two states as of November 2026: 11 in North Carolina and 8 in South Carolina. Nine are in the Charlotte metro (including Fort Mill, SC), four are in the Charleston area, and the rest are in Upstate South Carolina, Raleigh, the Sandhills, and along the southern coast."],
+["Are there car condos in Charlotte, NC?", "Yes. The Charlotte metro has nine communities in the directory. Concord has Storage Caves Concord (selling), Storage Caves Concord II (reservations open), and Ten Tenths Motor Club (established). Mooresville has The Garages at LKN (from $360,000), Storage Caves Lake Norman, and Race City Motorpark Social Club. Cornelius has Chartown Drive Showroom Condos, Charlotte has the planned Auto ClubHouse Charlotte, and Fort Mill, SC has Storage Caves Fort Mill with 119 units under construction."],
+["How much does a car condo cost in Charleston, SC?", "Published starting prices in the Charleston area run from $395,000 to $450,000. The Vault Luxury Motor Condos starts from $395,000 in Mount Pleasant and from $450,000 on Daniel Island, and Motor District on Johns Island starts from $395,000. Awendaw Garage Condos is also selling, with pricing on inquiry."],
+["What is the cheapest car condo in the Carolinas?", "Among communities that publish pricing, Motor-Vault Lakeside at Lake Keowee in Six Mile, SC has the lowest starting price at $285,000, followed by The Vault Luxury Motor Condos in Greenville from $335,000. Several other communities, including Storage Caves Concord, Village Point Landing, and Awendaw Garage Condos, list pricing on inquiry, so contact them for current numbers."],
+["Is it safe to buy a pre-construction car condo in the Carolinas?", "Pre-construction can be a good way to get new product and choose your unit, and most of the Carolinas market is new construction. Protect yourself by confirming that deposits are held in escrow, reading the completion and outside dates in the contract, reviewing the draft association documents and budget, and verifying unit specifications like door height and ceiling clearance before you sign."]
+],
+html: ``
 }
 ];
 
