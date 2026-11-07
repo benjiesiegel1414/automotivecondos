@@ -1,40 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+  <!-- sky accents -->
+  <circle cx="90" cy="120" r="3" fill="#FFFFFF" opacity=".4"/>
+  <circle cx="455" cy="95" r="3" fill="#FFFFFF" opacity=".4"/>
+  <circle cx="300" cy="70" r="2.5" fill="#3B8EE2" opacity=".6"/>
+
   <!-- ground -->
-  <path d="M10 356 H550" stroke="#3B8EE2" stroke-width="3" stroke-linecap="round" opacity=".9"/>
-  <!-- building shell: mono-pitch roof -->
-  <path d="M40 356 V140 L520 112 V356" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M28 142 L532 112" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
-  <!-- clerestory windows upper left -->
-  <path d="M70 172 H230 M70 192 H230" stroke="#FFFFFF" stroke-width="2" opacity=".5"/>
-  <path d="M110 166 V198 M150 164 V198 M190 162 V198" stroke="#FFFFFF" stroke-width="2" opacity=".5"/>
-  <!-- mezzanine loft (left half) -->
-  <path d="M40 238 H250" stroke="#3B8EE2" stroke-width="3.5"/>
-  <path d="M60 238 V214 M100 238 V214 M140 238 V214 M180 238 V214 M220 238 V214" stroke="#3B8EE2" stroke-width="2.4"/>
-  <path d="M52 214 H246" stroke="#3B8EE2" stroke-width="2.4"/>
-  <!-- lounge furniture hint on mezzanine -->
-  <path d="M78 206 h34 v8 M118 198 v16" stroke="#FFFFFF" stroke-width="2" opacity=".6"/>
-  <!-- stairs from mezzanine -->
-  <path d="M250 238 h22 v14 h22 v14 h22 v14 h22 v14 h22 v14 h22 v14 h22 v14 h22" stroke="#FFFFFF" stroke-width="2.4" opacity=".85"/>
-  <!-- car on lift under mezzanine -->
-  <path d="M74 318 V284 M216 318 V284" stroke="#FFFFFF" stroke-width="3"/>
-  <path d="M66 284 H224" stroke="#FFFFFF" stroke-width="3"/>
-  <path d="M86 284 C86 272 94 264 102 264 H118 L134 248 H176 L192 264 H200 C208 264 212 272 212 284 Z" fill="#3B8EE2" fill-opacity=".22" stroke="#3B8EE2" stroke-width="2.6"/>
-  <circle cx="110" cy="284" r="9" stroke="#3B8EE2" stroke-width="2.6"/>
-  <circle cx="186" cy="284" r="9" stroke="#3B8EE2" stroke-width="2.6"/>
-  <!-- car on the floor, under the lift -->
-  <path d="M84 350 C84 340 91 334 98 334 H116 L130 320 H174 L190 334 H202 C210 334 214 340 214 350 Z" fill="#FFFFFF" fill-opacity=".10" stroke="#FFFFFF" stroke-width="2.6"/>
-  <circle cx="112" cy="350" r="9" stroke="#FFFFFF" stroke-width="2.6"/>
-  <circle cx="188" cy="350" r="9" stroke="#FFFFFF" stroke-width="2.6"/>
-  <!-- roll-up door bay (right), door half open -->
-  <path d="M330 356 V168 H500 V356" stroke="#FFFFFF" stroke-width="3"/>
-  <path d="M330 184 H500 M330 200 H500 M330 216 H500" stroke="#3B8EE2" stroke-width="3"/>
-  <path d="M398 222 h34" stroke="#3B8EE2" stroke-width="3" opacity=".6"/>
-  <!-- revealed car in the bay -->
-  <path d="M348 350 C348 338 356 330 364 330 H384 L400 312 H452 L470 330 H478 C488 330 492 338 492 350 Z" fill="#3B8EE2" fill-opacity=".30" stroke="#3B8EE2" stroke-width="2.8"/>
-  <circle cx="380" cy="350" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.6"/>
-  <circle cx="462" cy="350" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.6"/>
-  <path d="M414 316 v14 M400 330 h52" stroke="#3B8EE2" stroke-width="1.8" opacity=".6"/>
-  <!-- small AC logo plate above door -->
-  <path d="M396 150 l10 -18 l10 18 M400 144 h12" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M436 136 a 9 9 0 1 0 0 14" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M12 322 H548" stroke="#3B8EE2" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- skyline of condo buildings -->
+  <path d="M30 322 V232 H130 V322" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" opacity=".85"/>
+  <path d="M130 322 V178 L252 158 V322" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" opacity=".85"/>
+  <path d="M252 322 V200 H402 V322" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M402 322 V162 H540 V322" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" opacity=".85"/>
+
+  <!-- small details on neighbor buildings -->
+  <path d="M55 262 H105 M55 278 H105" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
+  <path d="M152 200 V218 M178 196 V218 M204 192 V218 M230 188 V218" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
+  <path d="M424 190 H518 M424 206 H518" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
+  <path d="M446 184 V212 M472 184 V212 M498 184 V212" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
+
+  <!-- highlighted bay: glow + open slatted door -->
+  <rect x="266" y="222" width="122" height="100" fill="#3B8EE2" opacity=".08"/>
+  <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M266 236 H388 M266 250 H388" stroke="#3B8EE2" stroke-width="3.5"/>
+  <path d="M302 262 h50" stroke="#3B8EE2" stroke-width="3.5" opacity=".55"/>
+
+  <!-- the car: low coupe with a big swan-neck rear wing, facing left -->
+  <path d="M272 312 C272 304 276 298 283 296 L293 294 C299 286 307 281 315 280 L331 280 C343 282 353 288 361 294 L375 296 C381 298 384 303 384 308 L384 312 Z"
+        fill="#3B8EE2" fill-opacity=".3" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
+  <!-- wing uprights + plank + endplate -->
+  <path d="M366 294 L371 272 M379 295 L384 272" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M352 272 L392 268" stroke="#3B8EE2" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M392 263 V274" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- side window hint -->
+  <path d="M312 284 L320 284 L330 293 L306 293 Z" fill="#0D1117" opacity=".5" stroke="#3B8EE2" stroke-width="1.4"/>
+  <!-- wheels -->
+  <circle cx="291" cy="312" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.8"/>
+  <circle cx="361" cy="312" r="10" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.8"/>
+  <circle cx="291" cy="312" r="3" fill="#3B8EE2"/>
+  <circle cx="361" cy="312" r="3" fill="#3B8EE2"/>
 </svg>
