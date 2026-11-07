@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+  <defs>
+    <clipPath id="bayclip"><rect x="269" y="225" width="116" height="95"/></clipPath>
+  </defs>
+  <style>
+    .gdoor{animation:gd 9s ease-in-out infinite}
+    @keyframes gd{0%,10%{transform:translateY(0)}35%,70%{transform:translateY(-82px)}95%,100%{transform:translateY(0)}}
+  </style>
+
   <!-- sky accents -->
   <circle cx="90" cy="120" r="3" fill="#FFFFFF" opacity=".4"/>
   <circle cx="455" cy="95" r="3" fill="#FFFFFF" opacity=".4"/>
@@ -19,28 +27,35 @@
   <path d="M424 190 H518 M424 206 H518" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
   <path d="M446 184 V212 M472 184 V212 M498 184 V212" stroke="#FFFFFF" stroke-width="2" opacity=".4"/>
 
-  <!-- highlighted bay: glow + open slatted door -->
+  <!-- highlighted bay: glow + car behind the animated door -->
   <rect x="266" y="222" width="122" height="100" fill="#3B8EE2" opacity=".08"/>
-  <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
-  <path d="M266 234 H388 M266 246 H388" stroke="#3B8EE2" stroke-width="3.5"/>
 
-  <!-- the car: head-on front view, low and wide -->
-  <!-- wheels/tires at the edges -->
-  <rect x="276" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
-  <rect x="366" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
-  <!-- body -->
-  <path d="M284 312 V293 C284 283 291 276 301 275 L353 275 C363 276 370 283 370 293 V312 Z"
-        fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
-  <!-- cabin + windshield -->
-  <path d="M297 275 C299 264 306 258 314 257 L340 257 C348 258 355 264 357 275"
-        fill="none" stroke="#3B8EE2" stroke-width="2.8" stroke-linecap="round"/>
-  <path d="M303 273 C305 266 309 262 315 261 L339 261 C345 262 349 266 351 273 Z"
-        fill="#0D1117" opacity=".55" stroke="#3B8EE2" stroke-width="1.6"/>
-  <!-- mirrors -->
-  <path d="M284 280 L276 276 M370 280 L378 276" stroke="#3B8EE2" stroke-width="2.4" stroke-linecap="round"/>
-  <!-- headlights -->
-  <path d="M291 287 L306 284 M348 284 L363 287" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
-  <!-- lower intake -->
-  <path d="M305 302 H349" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
-  <path d="M296 307 H302 M352 307 H358" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+  <!-- the car: head-on front view, revealed as the door rolls up -->
+  <g>
+    <rect x="276" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+    <rect x="366" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
+    <path d="M284 312 V293 C284 283 291 276 301 275 L353 275 C363 276 370 283 370 293 V312 Z"
+          fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="M297 275 C299 264 306 258 314 257 L340 257 C348 258 355 264 357 275"
+          fill="none" stroke="#3B8EE2" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M303 273 C305 266 309 262 315 261 L339 261 C345 262 349 266 351 273 Z"
+          fill="#0D1117" opacity=".55" stroke="#3B8EE2" stroke-width="1.6"/>
+    <path d="M284 280 L276 276 M370 280 L378 276" stroke="#3B8EE2" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M291 287 L306 284 M348 284 L363 287" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M305 302 H349" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M296 307 H302 M352 307 H358" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+  </g>
+
+  <!-- animated roll-up door (clipped to the opening) -->
+  <g clip-path="url(#bayclip)">
+    <g class="gdoor">
+      <rect x="269" y="225" width="116" height="95" fill="#1B1B1B"/>
+      <path d="M269 239 H385 M269 253 H385 M269 267 H385 M269 281 H385 M269 295 H385 M269 309 H385" stroke="#3B8EE2" stroke-width="3"/>
+      <path d="M269 232 H385" stroke="#FFFFFF" stroke-width="2" opacity=".5"/>
+      <rect x="315" y="314" width="24" height="4" rx="2" fill="#FFFFFF" opacity=".8"/>
+    </g>
+  </g>
+
+  <!-- bay frame on top -->
+  <path d="M266 322 V222 H388 V322" stroke="#FFFFFF" stroke-width="3"/>
 </svg>
