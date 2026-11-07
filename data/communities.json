@@ -73,7 +73,7 @@
    "status": "Under construction",
    "units": 105,
    "priceNote": "From $399.5K",
-   "website": null,
+   "website": "https://torquesuites.com",
    "lat": 33.55,
    "lng": -86.54,
    "offer": "buy",
@@ -86,7 +86,7 @@
    "status": "Selling",
    "units": 52,
    "priceNote": "From $325K",
-   "website": null,
+   "website": "https://www.crexi.com/properties/1737246/arkansas-marque-collection-suites",
    "lat": 36.33,
    "lng": -94.12,
    "offer": "buy",
@@ -865,7 +865,7 @@
    "status": "Selling",
    "units": 89,
    "priceNote": "$220K\u2013$435K",
-   "website": null,
+   "website": "https://www.loopnet.com/Listing/4285-S-Eldridge-St-Morrison-CO/40631732/",
    "lat": 39.65,
    "lng": -105.19,
    "offer": "buy",
@@ -881,7 +881,8 @@
    "lat": 28.07,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "circuit-florida-car-condos-fl"
+   "slug": "circuit-florida-car-condos-fl",
+   "website": "https://circuitflorida.com"
   },
   {
    "name": "Bonita Breeze Auto Condos",
@@ -968,7 +969,8 @@
    "lat": 29.21,
    "lng": -81.02,
    "offer": "buy",
-   "slug": "daytona-toy-storage-fl"
+   "slug": "daytona-toy-storage-fl",
+   "website": "https://daytonatoystorage.com"
   },
   {
    "name": "Hyde Park Storage Suites",
@@ -980,7 +982,8 @@
    "lat": 29.21,
    "lng": -81.02,
    "offer": "buy",
-   "slug": "hyde-park-storage-suites-fl"
+   "slug": "hyde-park-storage-suites-fl",
+   "website": "https://hydeparkstoragesuites.com"
   },
   {
    "name": "Emerald Coast Motor Club",
@@ -1068,7 +1071,8 @@
    "lat": 26.12,
    "lng": -80.14,
    "offer": "buy",
-   "slug": "auto-vault-ft-lauderdale-fl"
+   "slug": "auto-vault-ft-lauderdale-fl",
+   "website": "https://www.crexi.com/properties/2615186/florida-exclusive-auto-vaultfort-lauderdale-salelease-lease-to-own"
   },
   {
    "name": "Classic Estates",
@@ -1166,7 +1170,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "toy-vault-condo-fl"
+   "slug": "toy-vault-condo-fl",
+   "website": "https://www.crexi.com/properties/2557802/florida-17860-toy-vault-ln-803-fort-myers-fl-33967"
   },
   {
    "name": "Vehicle Fortress",
@@ -1178,7 +1183,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "vehicle-fortress-fl"
+   "slug": "vehicle-fortress-fl",
+   "website": "https://vehiclefortress.com"
   },
   {
    "name": "Treasure Coast Vault",
@@ -1190,7 +1196,8 @@
    "lat": 27.45,
    "lng": -80.33,
    "offer": "buy",
-   "slug": "treasure-coast-vault-fl"
+   "slug": "treasure-coast-vault-fl",
+   "website": "https://treasurecoastvault.com"
   },
   {
    "name": "Hobe Sound Auto Vault",
@@ -1202,7 +1209,8 @@
    "lat": 27.06,
    "lng": -80.14,
    "offer": "buy",
-   "slug": "hobe-sound-auto-vault-fl"
+   "slug": "hobe-sound-auto-vault-fl",
+   "website": "https://www.loopnet.com/Listing/7040-SE-Federal-Hwy-Hobe-Sound-FL/38928327/"
   },
   {
    "name": "Extreme Toy Garage",
@@ -1436,7 +1444,8 @@
    "lat": 26.14,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "jetport-motor-suites-fl"
+   "slug": "jetport-motor-suites-fl",
+   "website": "https://jetportmotorsuites.com"
   },
   {
    "name": "Naples Auto Vault",
@@ -1777,7 +1786,8 @@
    "lat": 30.37,
    "lng": -86.23,
    "offer": "buy",
-   "slug": "garage-30a-fl"
+   "slug": "garage-30a-fl",
+   "website": "https://www.compass.com/homedetails/5283-Highway-98-Unit-S4-Santa-Rosa-Beach-FL-32459/21NNMA_pid"
   },
   {
    "name": "Car Bank 2.0",
@@ -1876,7 +1886,8 @@
    "lat": 27.5,
    "lng": -81.44,
    "offer": "buy",
-   "slug": "sebring-motor-garages-fl"
+   "slug": "sebring-motor-garages-fl",
+   "website": "https://www.sebringresorts.com"
   },
   {
    "name": "Motown Luxury Storage",
@@ -1951,7 +1962,8 @@
    "lat": 27.95,
    "lng": -82.46,
    "offer": "buy",
-   "slug": "paddock1-premium-garage-condos-fl"
+   "slug": "paddock1-premium-garage-condos-fl",
+   "website": "https://www.loopnet.com/Listing/1111-N-34th-St-Tampa-FL/39492913/"
   },
   {
    "name": "The Motor Enclave",
@@ -2039,7 +2051,8 @@
    "lat": 27.64,
    "lng": -80.4,
    "offer": "buy",
-   "slug": "indian-river-motorhaus-3-0-fl"
+   "slug": "indian-river-motorhaus-3-0-fl",
+   "website": "https://indianrivermotorhaus.com"
   },
   {
    "name": "Vero Autohaus",
@@ -2370,7 +2383,7 @@
    "status": "Under construction",
    "units": 121,
    "priceNote": "From $549K",
-   "website": null,
+   "website": "https://luxecorsa.com",
    "lat": 42.2,
    "lng": -88.09,
    "offer": "buy",
@@ -2422,7 +2435,7 @@
    "status": "Selling",
    "units": 150,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://motor-district.squarespace.com",
    "lat": 40.04,
    "lng": -86.13,
    "offer": "buy",
@@ -2695,7 +2708,7 @@
    "status": "Under construction",
    "units": 98,
    "priceNote": "From $185K",
-   "website": null,
+   "website": "https://midwestflexspace.com",
    "lat": 44.65,
    "lng": -93.24,
    "offer": "buy",
@@ -3358,7 +3371,7 @@
    "status": "Selling",
    "units": 113,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://www.loopnet.com/Listing/6271-Tinman-Rd-Mentor-OH/28263735",
    "lat": 41.67,
    "lng": -81.34,
    "offer": "buy",
@@ -4177,7 +4190,7 @@
    "status": "Selling",
    "units": 51,
    "priceNote": "$246K\u2013$340K",
-   "website": null,
+   "website": "https://irongateredispace.com",
    "lat": 48.75,
    "lng": -122.48,
    "offer": "buy",
@@ -4216,7 +4229,7 @@
    "status": "Under construction",
    "units": 58,
    "priceNote": "Pre-construction",
-   "website": null,
+   "website": "https://www.windermere.com/listing/WA/Chelan/73-E-Shop-Avenue-B6-98816/217100283",
    "lat": 47.84,
    "lng": -120.02,
    "offer": "buy",
@@ -4242,7 +4255,7 @@
    "status": "Selling",
    "units": 116,
    "priceNote": "$415K\u2013$420K",
-   "website": null,
+   "website": "https://monstergaragecondos.com",
    "lat": 47.2,
    "lng": -120.95,
    "offer": "buy",
@@ -4359,7 +4372,7 @@
    "status": "Selling",
    "units": 64,
    "priceNote": "From ~$107K",
-   "website": null,
+   "website": "https://www.wicklundre.com/listing/5292153/8903-Crescent-Bar-Rd-NW-Unit-5-Quincy-WA-98848",
    "lat": 47.23,
    "lng": -119.87,
    "offer": "buy",
@@ -4385,7 +4398,7 @@
    "status": "Selling",
    "units": 47,
    "priceNote": "Around $349K",
-   "website": null,
+   "website": "https://estately.com/listings/info/23631-canopy-drive-nw-quincy-wa-98848--3",
    "lat": 47.24,
    "lng": -119.86,
    "offer": "buy",
@@ -4437,7 +4450,7 @@
    "status": "Under construction",
    "units": 100,
    "priceNote": "From mid-$600Ks",
-   "website": null,
+   "website": "https://terminaloneseattle.com",
    "lat": 47.67,
    "lng": -122.4,
    "offer": "buy",
@@ -4541,7 +4554,7 @@
    "status": "Selling",
    "units": 133,
    "priceNote": "$148K\u2013$311K",
-   "website": null,
+   "website": "https://p2autovault.com",
    "lat": 43.32,
    "lng": -87.95,
    "offer": "buy",
@@ -4697,7 +4710,7 @@
    "status": "Selling",
    "units": 79,
    "priceNote": "~$650/SF ($650K\u2013$1.3M+)",
-   "website": null,
+   "website": "https://www.maranello.com",
    "lat": 33.062,
    "lng": -96.766,
    "offer": "buy",
@@ -4710,7 +4723,7 @@
    "status": "Under construction",
    "units": 50,
    "priceNote": "Inquire ($5K reservation)",
-   "website": null,
+   "website": "https://dominionmotorclub.com",
    "lat": 29.625,
    "lng": -98.613,
    "offer": "buy",
@@ -5672,7 +5685,7 @@
    "status": "Selling",
    "units": 50,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://commercialteam.c21.com/property/5863-storage-loop-drive-traverse-city-mi-49685-C2184046156",
    "lat": 44.73,
    "lng": -85.66,
    "offer": "buy",
@@ -5698,7 +5711,7 @@
    "status": "Selling",
    "units": 90,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://stclairstoragecondos.com",
    "lat": 42.77,
    "lng": -82.66,
    "offer": "buy",
@@ -5737,7 +5750,7 @@
    "status": "Selling",
    "units": 68,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://dunelockers.com",
    "lat": 43.68,
    "lng": -86.42,
    "offer": "buy",
@@ -5893,7 +5906,7 @@
    "status": "Selling",
    "units": 56,
    "priceNote": "2026 sales $140K\u2013$200K",
-   "website": null,
+   "website": "https://shorelinestoragesuites.com",
    "lat": 41.54,
    "lng": -82.77,
    "offer": "buy",
@@ -5997,7 +6010,7 @@
    "status": "Selling",
    "units": 369,
    "priceNote": "2026 sales $195K\u2013$450K",
-   "website": null,
+   "website": "https://parkplacestorage.net",
    "lat": 44.94,
    "lng": -93.72,
    "offer": "buy",
@@ -6010,7 +6023,7 @@
    "status": "Selling",
    "units": 191,
    "priceNote": "2026 sales $112K\u2013$324K",
-   "website": null,
+   "website": "https://parkplacestorage.net",
    "lat": 44.71,
    "lng": -93.42,
    "offer": "buy",
@@ -6023,7 +6036,7 @@
    "status": "Selling",
    "units": 189,
    "priceNote": "2026 sales $135K\u2013$327K",
-   "website": null,
+   "website": "https://parkplacestorage.net",
    "lat": 45.1,
    "lng": -93.55,
    "offer": "buy",
@@ -6036,7 +6049,7 @@
    "status": "Selling",
    "units": 85,
    "priceNote": "2026 sales $118K\u2013$410K",
-   "website": null,
+   "website": "https://parkplacestorage.net",
    "lat": 44.92,
    "lng": -92.96,
    "offer": "buy",
@@ -6088,7 +6101,7 @@
    "status": "Selling",
    "units": 60,
    "priceNote": "~$195K\u2013$250K",
-   "website": null,
+   "website": "https://midwestflexspace.com",
    "lat": 45.08,
    "lng": -93.01,
    "offer": "buy",
@@ -6101,7 +6114,7 @@
    "status": "Selling",
    "units": 67,
    "priceNote": "~$195K",
-   "website": null,
+   "website": "https://midwestflexspace.com",
    "lat": 44.74,
    "lng": -93.13,
    "offer": "buy",
@@ -6205,7 +6218,7 @@
    "status": "Selling",
    "units": 124,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://www.showcase.com/10120-10160-72nd-st-otsego-mn-55301/39420103/",
    "lat": 45.27,
    "lng": -93.59,
    "offer": "buy",
@@ -6218,7 +6231,7 @@
    "status": "Selling",
    "units": 85,
    "priceNote": "Inquire",
-   "website": null,
+   "website": "https://oronogaragecondos.com",
    "lat": 44.97,
    "lng": -93.6,
    "offer": "buy",
