@@ -145,7 +145,7 @@ for (const st of states) {
 
 // --- sitemap ---
 const urls = ['', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html',
-  'blog/what-is-a-car-condo.html', 'blog/car-condo-cost-guide.html', 'blog/buying-a-car-condo-guide.html',
+  ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`)];
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>
