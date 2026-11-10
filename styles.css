@@ -136,7 +136,9 @@ svg.acmap path{transition:fill .15s}
 .acmap-side .rowi .rn{font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
 .acmap-side .rowi .rm{font-size:12px;color:var(--muted);margin-top:1px}
 .acmap-side .rowi .rp{font-size:12.5px;color:var(--blue);font-weight:700;margin-top:2px}
-.acmap-side .side-foot{padding:11px 16px;border-top:1px solid var(--line);background:#FAFBFC;font-size:13px}
+.acmap-side .side-foot{padding:12px 14px;border-top:1px solid var(--line);background:#FAFBFC}
+.acmap-side .side-foot a{display:block;text-align:center;background:var(--blue);color:#fff;font-weight:800;font-size:16px;padding:12px 14px;border-radius:10px;text-decoration:none;box-shadow:0 6px 16px rgba(0,84,166,.25);transition:background .15s,transform .15s}
+.acmap-side .side-foot a:hover{background:#00438A;transform:translateY(-1px);text-decoration:none}
 .chip{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:2px 7px;border-radius:3px;background:#EEF1F5;color:#374151;white-space:nowrap}
 .chip.sell{background:#E3EDF9;color:#0054A6}
 .chip.rent{background:#E2F3EB;color:#0E7A4E}
@@ -364,20 +366,16 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .b-fine{margin-top:auto;padding-top:10px}
 .b-search .ticker{flex:1;height:auto;min-height:230px}
 
-/* Featured communities showcase (homepage) */
-.featC{background:linear-gradient(135deg,#0054A6,#0A3D78);padding:54px 0;color:#fff}
-.featC .kick{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#FFD23F}
-.featC h2{color:#fff;margin:8px 0 0}.featC .sec-head .sub a{color:#CFE3F8}
-.featC .lay{display:grid;grid-template-columns:1.6fr 1fr;gap:18px;margin-top:22px}
-.featC .stack{display:grid;gap:18px}
-.featC .fc{position:relative;display:block;border-radius:18px;overflow:hidden;background-size:cover;background-position:center;min-height:200px;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.28);transition:transform .2s}
-.featC .fc.big{min-height:418px}
-.featC .fc:hover{transform:scale(1.015)}
-.featC .fc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.82))}
-.featC .badge{position:absolute;top:14px;left:14px;z-index:2;background:#FFD23F;color:#111;font-weight:800;font-size:12px;padding:5px 11px;border-radius:999px}
-.featC .tx{position:absolute;left:20px;right:20px;bottom:18px;z-index:2}
-.featC h3{color:#fff;margin:0 0 4px;font-size:20px}.featC .big h3{font-size:30px}
-.featC .meta{color:#E3E8EF;font-size:14px;line-height:1.45}
-.featC .go{display:inline-block;margin-top:12px;background:#fff;color:#0054A6;font-weight:800;font-size:14px;padding:9px 14px;border-radius:10px}
-.featC .note{color:#CFE3F8;font-size:13px;margin-top:16px}.featC .note a{color:#FFD23F}
-@media(max-width:760px){.featC .lay{grid-template-columns:1fr}.featC .fc.big{min-height:300px}}
+/* Featured communities gold frame (homepage) */
+.featB .kick{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#B8860B;margin-bottom:6px}
+.featB .fc{position:relative;display:flex;flex-direction:column;text-decoration:none;border-radius:16px;padding:3px;background:linear-gradient(135deg,#FFD23F,#F5A623 40%,#FFE89A 60%,#E0A10B);background-size:200% 200%;animation:goldShift 6s ease infinite;box-shadow:0 10px 28px rgba(224,161,11,.22);transition:transform .2s,box-shadow .2s}
+.featB .fc:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(224,161,11,.35)}
+@keyframes goldShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.featB .in{background:#fff;border-radius:13px;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.featB .fi{height:180px;background-size:cover;background-position:center;position:relative}
+.featB .ribbon{position:absolute;top:14px;right:-34px;transform:rotate(35deg);background:#16181C;color:#FFD23F;font-size:11px;font-weight:800;letter-spacing:1px;padding:5px 40px;text-transform:uppercase}
+.featB .badge{position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.95);color:#111;font-weight:800;font-size:12px;padding:5px 10px;border-radius:8px}
+.featB .bd{padding:16px 18px 20px;flex:1;display:flex;flex-direction:column}
+.featB h3{margin:0 0 6px;font-size:19px;color:var(--ink)}.featB .meta{color:var(--muted);font-size:14px;line-height:1.5;flex:1}
+.featB .go{margin-top:14px;color:var(--blue);font-weight:800;font-size:14px}
+@media (prefers-reduced-motion:reduce){.featB .fc{animation:none}}
