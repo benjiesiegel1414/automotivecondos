@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Your Car Condo Listing | AutomotiveCondos.com</title>
+<meta name="description" content="List your car condo unit for sale or rent on AutomotiveCondos.com: photos, full specs, your price and your contact info, $29/month, cancel anytime.">
+<link rel="canonical" href="https://automotivecondos.com/submit-listing.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2F3PGKL62S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-2F3PGKL62S');</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/"><svg width="30" height="26" viewBox="0 0 70 60" aria-hidden="true"><rect x="5" y="5" width="60" height="50" rx="4" fill="none" stroke="#FFFFFF" stroke-width="4"/><path d="M11 12 H59 M11 18 H59" stroke="#FFFFFF" stroke-width="3"/><rect x="11" y="23" width="48" height="26" fill="#3B8EE2"/><path d="M17 45 C17 41 19 38 22 38 H27 L31 33 H42 L46 38 H48 C51 38 53 41 53 45 Z" fill="#FFFFFF"/><circle cx="23" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/><circle cx="46" cy="45" r="3.6" fill="#3B8EE2" stroke="#FFFFFF" stroke-width="2.2"/></svg><span class="word">Automotive<span>Condos</span></span></a>
+    <nav class="main">
+      <a href="map.html">Map</a>
+      <a href="states.html">Browse by State</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a class="nav-adv" href="advertise.html">Advertise</a>
+      <a class="btn" href="list-your-condo.html">List Your Condo</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.sl-wrap{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}
+.sl-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 26px 8px;margin-bottom:20px}
+.sl-card h2{font-size:21px;margin:0 0 4px}.sl-card .hint{color:var(--muted);font-size:14px;margin:0 0 18px}
+.sl-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.sl-grid .full{grid-column:1/-1}
+.sl-card label{display:block;font-weight:700;font-size:14px;margin:0 0 6px}.sl-card label .opt{color:var(--muted);font-weight:500}
+.sl-card .field{margin-bottom:16px;border-radius:8px}
+.seg{display:flex;gap:8px;margin-bottom:16px}.seg label{flex:1;margin:0}.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;text-align:center;padding:11px;border:1.5px solid var(--line);border-radius:8px;font-weight:700;cursor:pointer;background:#fff}
+.seg input:checked+span{border-color:var(--blue);background:#EEF5FD;color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.chips label{margin:0;font-weight:600}
+.chips input{position:absolute;opacity:0;pointer-events:none}.chips span{display:inline-block;padding:8px 13px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;font-size:14px;background:#fff}
+.chips input:checked+span{border-color:var(--blue);background:#EEF5FD;color:var(--blue)}
+.drop{border:2px dashed #B9C2CE;border-radius:12px;padding:22px;text-align:center;cursor:pointer;background:#FAFBFC;margin-bottom:12px}
+.drop:hover{border-color:var(--blue)}.drop strong{display:block;font-size:15px}.drop small{color:var(--muted)}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:18px}.thumbs div{position:relative;aspect-ratio:4/3;border-radius:8px;background-size:cover;background-position:center}
+.thumbs button{position:absolute;top:4px;right:4px;border:0;border-radius:999px;width:22px;height:22px;background:rgba(0,0,0,.65);color:#fff;cursor:pointer;line-height:22px;padding:0}
+.sum{position:sticky;top:20px;background:#16181C;color:#fff;border-radius:14px;padding:22px}
+.sum h3{color:#fff;margin:0 0 4px;font-size:18px}.sum .price{font-size:40px;font-weight:800;margin:8px 0 2px}.sum .price span{font-size:16px;color:#A9B0BA;font-weight:600}
+.sum ul{list-style:none;padding:0;margin:14px 0 18px;font-size:14px;color:#D3D8DE}.sum li{padding:5px 0 5px 24px;position:relative}.sum li:before{content:"✓";position:absolute;left:0;color:#FFD23F;font-weight:800}
+.sum .btn{width:100%;justify-content:center;font-size:16px;padding:14px;border:0;cursor:pointer;background:#FFD23F;color:#111!important}
+.sum .btn[disabled]{opacity:.6;cursor:wait}.sum .fine2{color:#8B929C;font-size:12px;margin-top:12px;line-height:1.5}
+#sl-err{display:none;background:#FDECEC;color:#9B1C1C;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:12px}
+.hp{position:absolute;left:-9999px}
+@media(max-width:900px){.sl-wrap{grid-template-columns:1fr}.sum{position:static}.sl-grid{grid-template-columns:1fr}.thumbs{grid-template-columns:repeat(3,1fr)}}
+</style>
+
+<section class="hero" style="padding:40px 0 34px">
+  <div class="wrap">
+    <div class="breadcrumbs" style="color:#C9D3DE"><a href="/" style="color:#C9D3DE">Home</a> / <a href="list-your-condo.html" style="color:#C9D3DE">List Your Condo</a> / Submit</div>
+    <h1 style="margin-top:10px">List your car condo</h1>
+    <p style="max-width:640px">Fill this out in about 3 minutes, check out securely with Stripe, and your unit goes live on AutomotiveCondos.com within one business day.</p>
+  </div>
+</section>
+
+<section class="block" style="padding-top:30px">
+  <div class="wrap">
+    <form id="sl-form" class="sl-wrap" novalidate>
+      <div>
+        <div class="sl-card">
+          <h2>1. Where is it?</h2>
+          <p class="hint">Start typing the community name. If it's not in our directory yet, just type it and add the city and state.</p>
+          <label for="sl-comm">Community</label>
+          <input class="field" id="sl-comm" list="sl-comms" placeholder="e.g. Toy Barn Scottsdale" autocomplete="off" required>
+          <datalist id="sl-comms"></datalist>
+          <div class="sl-grid">
+            <div><label for="sl-city">City</label><input class="field" id="sl-city" required></div>
+            <div><label for="sl-state">State</label><select class="field" id="sl-state" required><option value="">Choose…</option></select></div>
+          </div>
+        </div>
+
+        <div class="sl-card">
+          <h2>2. The unit</h2>
+          <p class="hint">Specs are what buyers filter on, so the more you fill in, the better.</p>
+          <label>This unit is</label>
+          <div class="seg">
+            <label><input type="radio" name="offer" value="sale" checked><span>For sale</span></label>
+            <label><input type="radio" name="offer" value="rent"><span>For rent</span></label>
+          </div>
+          <div class="sl-grid">
+            <div class="full"><label for="sl-title">Listing headline</label><input class="field" id="sl-title" maxlength="90" placeholder="e.g. Corner unit with mezzanine and 14 ft door" required></div>
+            <div><label for="sl-price" id="sl-price-label">Asking price ($)</label><input class="field" id="sl-price" inputmode="numeric" placeholder="e.g. 325000" required></div>
+            <div><label for="sl-sqft">Size (sq ft) <span class="opt">optional</span></label><input class="field" id="sl-sqft" inputmode="numeric" placeholder="e.g. 1,200"></div>
+            <div><label for="sl-door">Door size (W x H) <span class="opt">optional</span></label><input class="field" id="sl-door" placeholder="e.g. 12 x 14 ft"></div>
+            <div><label for="sl-ceil">Clear ceiling height <span class="opt">optional</span></label><input class="field" id="sl-ceil" placeholder="e.g. 24 ft"></div>
+          </div>
+          <label>Features <span class="opt">tap all that apply</span></label>
+          <div class="chips" id="sl-feats"></div>
+          <label for="sl-desc">Description</label>
+          <textarea class="field" id="sl-desc" rows="6" maxlength="3000" placeholder="What makes this unit great? Build-out, finishes, amenities, HOA dues, availability..." required></textarea>
+        </div>
+
+        <div class="sl-card">
+          <h2>3. Photos</h2>
+          <p class="hint">Up to 10 photos. The first one becomes the cover. We resize them automatically.</p>
+          <div class="drop" id="sl-drop"><strong>Click to add photos</strong><small>or drag and drop JPG, PNG or WebP</small></div>
+          <input type="file" id="sl-files" accept="image/jpeg,image/png,image/webp" multiple hidden>
+          <div class="thumbs" id="sl-thumbs"></div>
+        </div>
+
+        <div class="sl-card">
+          <h2>4. Your contact info</h2>
+          <p class="hint">Shown on your listing so buyers and renters reach you directly. Your email is also where your receipt and listing link go.</p>
+          <div class="sl-grid">
+            <div><label for="sl-name">Name</label><input class="field" id="sl-name" autocomplete="name" required></div>
+            <div><label for="sl-email">Email</label><input class="field" id="sl-email" type="email" autocomplete="email" required></div>
+            <div><label for="sl-phone">Phone <span class="opt">optional</span></label><input class="field" id="sl-phone" type="tel" autocomplete="tel"></div>
+            <div><label for="sl-web">Website or listing link <span class="opt">optional</span></label><input class="field" id="sl-web" type="url" placeholder="https://"></div>
+          </div>
+          <input class="hp" id="sl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </div>
+      </div>
+
+      <aside class="sum">
+        <h3>Unit Listing</h3>
+        <div class="price">$29<span>/month</span></div>
+        <ul>
+          <li>Your own listing page with photos and full specs</li>
+          <li>Shown on your community and state pages</li>
+          <li>Your phone, email and website on the listing</li>
+          <li>Live within one business day</li>
+          <li>Cancel anytime, no contract</li>
+        </ul>
+        <div id="sl-err"></div>
+        <button class="btn" id="sl-go" type="submit">Continue to secure checkout →</button>
+        <p class="fine2">Payments are processed by Stripe. Your card statement will show our parent company, Dividend Empire (TOPDIVIDENDTOOLS.COM). Want the homepage spotlight instead? See <a href="advertise.html#packages" style="color:#FFD23F">featured packages</a>.</p>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<script>
+(function(){
+  var ENDPOINT='https://script.google.com/macros/s/AKfycbxwBv5WJjQ3WHMVzk5g831OCum5-lzTFK9u8u-kVFoxBzqe4dg22zx_ejMHhbLxVfOG/exec';
+  var STRIPE='https://buy.stripe.com/9B66oI3oh6Cq0nBcx21Fe0c';
+  var STATES={AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+  var FEATS=['Mezzanine / loft','Bathroom','Climate control / A/C','Car lift','Kitchenette','EV charging','Epoxy floors','Water hookup','Gated / 24-7 access','RV / boat size door','Clubhouse access','Finished build-out'];
+  var $=function(id){return document.getElementById(id)};
+  var st=$('sl-state'); Object.keys(STATES).forEach(function(k){var o=document.createElement('option');o.value=k;o.textContent=STATES[k];st.appendChild(o)});
+  var fc=$('sl-feats'); FEATS.forEach(function(f){var l=document.createElement('label');l.innerHTML='<input type="checkbox" value="'+f+'"><span>'+f+'</span>';fc.appendChild(l)});
+  var comms=[],bySlug={};
+  fetch('data/communities.json').then(function(r){return r.json()}).then(function(d){
+    comms=d.communities||d; var dl=$('sl-comms');
+    comms.forEach(function(c){var o=document.createElement('option');o.value=c.name+' ('+c.city+', '+c.state+')';dl.appendChild(o);bySlug[o.value]=c});
+    var q=new URLSearchParams(location.search).get('community');
+    if(q){var c=comms.filter(function(x){return x.slug===q})[0]; if(c){$('sl-comm').value=c.name+' ('+c.city+', '+c.state+')';fill(c)}}
+  }).catch(function(){});
+  function fill(c){$('sl-city').value=c.city.replace(/\s*\(.*?\)/g,'');st.value=c.state}
+  $('sl-comm').addEventListener('change',function(){var c=bySlug[this.value]; if(c) fill(c)});
+  document.querySelectorAll('input[name=offer]').forEach(function(r){r.addEventListener('change',function(){
+    var rent=document.querySelector('input[name=offer]:checked').value==='rent';
+    $('sl-price-label').textContent=rent?'Monthly rent ($)':'Asking price ($)'; $('sl-price').placeholder=rent?'e.g. 950':'e.g. 325000';})});
+
+  var photos=[];
+  function resize(file){return new Promise(function(res){var fr=new FileReader();fr.onload=function(){var im=new Image();im.onload=function(){
+    var max=1600,w=im.width,h=im.height,s=Math.min(1,max/Math.max(w,h));var cv=document.createElement('canvas');cv.width=Math.round(w*s);cv.height=Math.round(h*s);
+    cv.getContext('2d').drawImage(im,0,0,cv.width,cv.height);res(cv.toDataURL('image/jpeg',0.82))};im.onerror=function(){res(null)};im.src=fr.result};fr.readAsDataURL(file)})}
+  function render(){var t=$('sl-thumbs');t.innerHTML='';photos.forEach(function(p,i){var d=document.createElement('div');d.style.backgroundImage='url('+p+')';
+    var b=document.createElement('button');b.type='button';b.textContent='×';b.setAttribute('aria-label','Remove photo');b.onclick=function(){photos.splice(i,1);render()};d.appendChild(b);t.appendChild(d)})}
+  function add(files){var list=[].slice.call(files).filter(function(f){return /^image\//.test(f.type)}).slice(0,10-photos.length);
+    Promise.all(list.map(resize)).then(function(r){photos=photos.concat(r.filter(Boolean));render()})}
+  var drop=$('sl-drop'),inp=$('sl-files');
+  drop.onclick=function(){inp.click()}; inp.onchange=function(){add(inp.files);inp.value=''};
+  drop.ondragover=function(e){e.preventDefault()}; drop.ondrop=function(e){e.preventDefault();add(e.dataTransfer.files)};
+
+  function err(m){var e=$('sl-err');e.textContent=m;e.style.display=m?'block':'none'}
+  $('sl-form').addEventListener('submit',function(e){
+    e.preventDefault(); err('');
+    var req=['sl-comm','sl-city','sl-state','sl-title','sl-price','sl-desc','sl-name','sl-email'];
+    for(var i=0;i<req.length;i++){var el=$(req[i]); if(!el.value.trim()){err('Please fill in: '+(el.labels&&el.labels[0]?el.labels[0].textContent.replace(/optional/,'').trim():'all required fields'));el.focus();return}}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('sl-email').value.trim())){err('Please enter a valid email address.');$('sl-email').focus();return}
+    if(!photos.length){err('Please add at least one photo.');return}
+    var c=bySlug[$('sl-comm').value]; var id='AC'+Date.now().toString(36).toUpperCase()+Math.random().toString(36).slice(2,5).toUpperCase();
+    var offer=document.querySelector('input[name=offer]:checked').value;
+    var feats=[].slice.call(document.querySelectorAll('#sl-feats input:checked')).map(function(x){return x.value}).join(', ');
+    var payload={id:id,plan:'listing-29mo',community_slug:c?c.slug:'',community_name:c?c.name:$('sl-comm').value.trim(),city:$('sl-city').value.trim(),state:st.value,
+      offer:offer,price:$('sl-price').value.replace(/[^0-9.]/g,''),price_unit:offer==='rent'?'per month':'',sqft:$('sl-sqft').value.replace(/[^0-9]/g,''),
+      door:$('sl-door').value,ceiling:$('sl-ceil').value,features:feats,title:$('sl-title').value,description:$('sl-desc').value,
+      contact_name:$('sl-name').value,contact_email:$('sl-email').value.trim(),contact_phone:$('sl-phone').value,website:$('sl-web').value,show_contact:true,
+      photos:photos,website_hp:$('sl-hp').value};
+    var btn=$('sl-go'); btn.disabled=true; btn.textContent='Saving your listing…';
+    var go=function(){if(window.gtag)gtag('event','begin_checkout',{value:29,currency:'USD',items:[{item_name:'Unit Listing'}]});
+      location.href=STRIPE+'?client_reference_id='+encodeURIComponent(id)+'&prefilled_email='+encodeURIComponent(payload.contact_email)};
+    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+      .then(function(r){return r.json()}).then(function(j){if(j&&j.ok){go()}else{throw new Error(j&&j.error||'save failed')}})
+      .catch(function(){fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+        .then(go).catch(function(){btn.disabled=false;btn.textContent='Continue to secure checkout →';err('Something went wrong saving your listing. Please try again, or email contact@automotivecondos.com')})});
+  });
+})();
+</script>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>AutomotiveCondos.com</h4>
+        <p>The national directory of car condos — every community, every state, buyers and sellers in one place.</p>
+      </div>
+      <div>
+        <h4>Marketplace</h4>
+        <a href="map.html">Map</a>
+        <a href="states.html">Browse by State</a>
+        <a href="list-your-condo.html">List Your Condo</a>
+        <a href="advertise.html">Advertise</a>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <a href="blog.html">Blog</a>
+        <a href="blog/what-is-a-car-condo.html">What Is a Car Condo?</a>
+        <a href="blog/car-condo-cost-guide.html">Cost Guide</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="mailto:contact@automotivecondos.com">Contact</a>
+      </div>
+    </div>
+    <div class="fine">© 2026 AutomotiveCondos.com · All information deemed reliable but not guaranteed. Verify details with each community or developer.</div>
+  </div>
+</footer>
+</body>
+</html>

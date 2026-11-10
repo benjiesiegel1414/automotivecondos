@@ -98,6 +98,27 @@ const STATE_GUIDES = { MI:'garage-condos-michigan', MN:'garage-condos-minnesota'
 // add later guides only once their blog file exists
 Object.entries({ WI:'garage-condos-wisconsin', OH:'car-condos-ohio', GA:'garage-condos-georgia', ID:'garage-condos-idaho', KS:'car-condos-kansas', NV:'car-condos-nevada' })
   .forEach(([st,s]) => { if (fs.existsSync(path.join(ROOT,'blog',s+'.html'))) STATE_GUIDES[st]=s; });
+
+// --- paid unit listings (data/listings.json, built from the listing form + Stripe) ---
+const LISTINGS_FILE = path.join(ROOT, 'data', 'listings.json');
+const LISTINGS = fs.existsSync(LISTINGS_FILE) ? (JSON.parse(fs.readFileSync(LISTINGS_FILE, 'utf8')).listings || []).filter(l => l.status === 'active') : [];
+LISTINGS.forEach(l => { l.pageSlug = l.pageSlug || (slug(l.title || 'unit').slice(0, 60).replace(/-+$/,'') + '-' + String(l.id).toLowerCase()); });
+function fmtListPrice(l){ const n = Number(l.price); if (!n) return 'Inquire'; const s = '$' + n.toLocaleString('en-US'); return l.offer === 'rent' ? s + '/mo' : s; }
+function unitCard(l, pre){
+  const img = l.photos && l.photos[0] ? `${pre}${l.photos[0]}` : `${pre}assets/photos/pillar-market.jpg`;
+  const specs = [l.sqft ? Number(l.sqft).toLocaleString('en-US') + ' sq ft' : '', l.door ? esc(l.door) + ' door' : ''].filter(Boolean).join(' · ');
+  return `<a class="unit-card" href="${pre}listings/${l.pageSlug}.html">
+      <div class="uc-img" style="background-image:url('${img}')"><span class="uc-tag ${l.offer==='rent'?'rent':''}">${l.offer==='rent'?'For rent':'For sale'}</span></div>
+      <div class="uc-bd"><div class="uc-price">${fmtListPrice(l)}</div><h3>${esc(l.title)}</h3>
+      <div class="meta">${esc(l.community_name || '')}${l.community_name ? ' · ' : ''}${esc(cleanCity(l.city))}, ${l.state}</div>${specs ? `<div class="meta">${specs}</div>` : ''}</div>
+    </a>`;
+}
+function unitSection(list, pre, heading){
+  if (!list.length) return '';
+  return `<div class="sec-head" style="margin-top:30px"><h2 style="font-size:22px">${heading} <span class="blue">(${list.length})</span></h2></div>
+    <div class="grid c3 units-grid">${list.map(l => unitCard(l, pre)).join('\n')}</div>`;
+}
+
 function ld(obj){ return '<script type="application/ld+json">' + JSON.stringify(obj).replace(/</g,'\\u003c') + '</script>'; }
 
 // --- states index ---
@@ -153,7 +174,8 @@ for (const st of states) {
     ${ld({"@context":"https://schema.org","@type":"ItemList","name":`Car condo communities in ${name}`,"numberOfItems":list.length,"itemListElement":list.map((c,i)=>({"@type":"ListItem","position":i+1,"url":`https://automotivecondos.com/communities/${c.slug}.html`,"name":c.name}))})}
     <div style="margin:18px 0 10px">${[...new Set(cities.map(cleanCity))].map(c=>{const cp=cityByKey[c+'|'+st]; return cp ? `<a class="pill" href="../cities/${cp.slug}.html">${esc(c)} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>` : `<span class="pill" style="cursor:default">${esc(c)}</span>`;}).join('')}</div>
     <p style="font-size:14px;margin:0 0 14px">${byState[st].length >= 5 ? `<a href="../for-sale/garage-condos-for-sale-${slug(name)}.html">${name} garage condos for sale →</a> · ` : ''}${STATE_GUIDES[st] ? `<a href="../blog/${STATE_GUIDES[st]}.html">${name} market guide →</a> · ` : ''}<a href="../car-condos-for-rent.html">Car condos for rent →</a></p>
-    <div style="margin:0 0 18px" id="offer-toggle">
+    ${unitSection(LISTINGS.filter(l=>l.state===st), '../', `Units for sale &amp; rent in ${name}`)}
+    <div style="margin:${LISTINGS.some(l=>l.state===st)?'26px':'0'} 0 18px" id="offer-toggle">
       <button class="btn" data-f="all" style="margin-right:8px">All</button>
       <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
       <button class="btn ghost" data-f="rent">For Rent</button>
@@ -314,6 +336,7 @@ for (const c of DATA.communities) {
       <div class="card"><div class="meta">Offering</div><div style="font-weight:800;font-size:17px">${offer}</div></div>
       <div class="card"><div class="meta">Pricing</div><div style="font-weight:800;font-size:17px;color:var(--blue)">${esc(c.priceNote || 'Inquire')}</div></div>
     </div>
+    ${unitSection(LISTINGS.filter(l=>l.community_slug===c.slug), '../', `Units available at ${esc(c.name)}`)}
 
     <div class="detail-cols">
       <div class="detail-main">
@@ -361,8 +384,8 @@ for (const c of DATA.communities) {
 <section class="cta-band">
   <div class="wrap">
     <h2>Own a unit at ${esc(c.name)}?</h2>
-    <p>Buyers are viewing this page. List your unit for a one-time $49, or add your direct contact for $29/month and every inquiry reaches you instantly.</p>
-    <a class="btn" href="../list-your-condo.html">List Your Condo</a>
+    <p>Buyers are viewing this page. List your unit with photos, specs, your price and your direct contact info for $29/month, cancel anytime.</p>
+    <a class="btn" href="../submit-listing.html?community=${c.slug}">List My Unit Here</a>
   </div>
 </section>
 <script>
@@ -472,7 +495,7 @@ ${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(f=
 <section class="cta-band">
   <div class="wrap">
     <h2>Own a car condo in ${esc(cp.city)}?</h2>
-    <p>Buyers comparing ${esc(cp.city)} communities land on this page. List your unit for sale or rent from a one-time $49.</p>
+    <p>Buyers comparing ${esc(cp.city)} communities land on this page. List your unit for sale or rent with photos, specs and your direct contact for $29/month.</p>
     <a class="btn" href="../list-your-condo.html">List Your Condo</a>
   </div>
 </section>`
@@ -592,8 +615,74 @@ ${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(f=
   }));
 }
 
+
+// --- listing pages ---
+fs.mkdirSync(path.join(ROOT, 'listings'), {recursive: true});
+for (const l of LISTINGS) {
+  const stName = STATE_NAMES[l.state] || l.state;
+  const url = `https://automotivecondos.com/listings/${l.pageSlug}.html`;
+  const comm = DATA.communities.find(c => c.slug === l.community_slug);
+  const photos = (l.photos && l.photos.length) ? l.photos : ['assets/photos/pillar-market.jpg'];
+  const feats = (Array.isArray(l.features) ? l.features : String(l.features || '').split(',')).map(x => x.trim()).filter(Boolean);
+  const specs = [['Price', fmtListPrice(l)], ['Size', l.sqft ? Number(l.sqft).toLocaleString('en-US') + ' sq ft' : ''], ['Door (W x H)', l.door || ''], ['Clear height', l.ceiling || ''], ['Offer', l.offer === 'rent' ? 'For rent' : 'For sale']].filter(x => x[1]);
+  const others = LISTINGS.filter(x => x !== l && (x.community_slug === l.community_slug || x.state === l.state)).slice(0, 3);
+  const desc = `${l.offer==='rent'?'For rent':'For sale'}: ${l.title} at ${l.community_name || 'a car condo community'} in ${cleanCity(l.city)}, ${l.state}. ${fmtListPrice(l)}${l.sqft ? ', ' + l.sqft + ' sq ft' : ''}. Photos, specs and direct contact.`;
+  fs.writeFileSync(path.join(ROOT, 'listings', l.pageSlug + '.html'), page({
+    title: `${l.title} | ${l.offer==='rent'?'For Rent':'For Sale'} in ${cleanCity(l.city)}, ${l.state} | AutomotiveCondos.com`,
+    desc: desc.slice(0, 158),
+    canonical: url,
+    depth: 1,
+    body: `
+${ld({"@context":"https://schema.org","@type":"Product","name":l.title,"description":String(l.description||'').slice(0,500),"image":photos.map(p=>'https://automotivecondos.com/'+p),"url":url,"offers":{"@type":"Offer","price":Number(l.price)||undefined,"priceCurrency":"USD","availability":"https://schema.org/InStock","url":url}})}
+${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":stName,"item":`https://automotivecondos.com/states/${slug(stName)}.html`},...(comm?[{"@type":"ListItem","position":3,"name":comm.name,"item":`https://automotivecondos.com/communities/${comm.slug}.html`}]:[]),{"@type":"ListItem","position":comm?4:3,"name":l.title,"item":url}]})}
+<section class="block">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states/${slug(stName)}.html">${stName}</a>${comm ? ` / <a href="../communities/${comm.slug}.html">${esc(comm.name)}</a>` : ''} / Listing</div>
+    <div class="lst-head">
+      <div><span class="uc-tag static ${l.offer==='rent'?'rent':''}">${l.offer==='rent'?'For rent':'For sale'}</span>
+      <h1 style="margin:10px 0 6px">${esc(l.title)}</h1>
+      <p style="color:var(--muted);font-size:17px;margin:0">${comm ? `<a href="../communities/${comm.slug}.html">${esc(comm.name)}</a> · ` : (l.community_name ? esc(l.community_name) + ' · ' : '')}${esc(cleanCity(l.city))}, <a href="../states/${slug(stName)}.html">${stName}</a></p></div>
+      <div class="lst-price">${fmtListPrice(l)}</div>
+    </div>
+    <div class="lst-gallery${photos.length===1?' one':''}">
+      ${photos.slice(0,5).map((p,i)=>`<a href="../${p}" target="_blank" rel="noopener" class="g${i}" style="background-image:url('../${p}')" aria-label="Photo ${i+1}"></a>`).join('')}
+    </div>
+    ${photos.length > 5 ? `<p class="meta" style="font-size:13px;margin-top:6px">${photos.length} photos · <a href="../${photos[5]}" target="_blank" rel="noopener">see more</a></p>` : ''}
+    <div class="detail-cols">
+      <div class="detail-main">
+        <div class="grid c3 lst-specs">${specs.map(x=>`<div class="card"><div class="meta">${x[0]}</div><div style="font-weight:800;font-size:17px">${esc(x[1])}</div></div>`).join('')}</div>
+        <h2>About this unit</h2>
+        ${String(l.description||'').split(/\n{2,}|\r?\n/).filter(Boolean).map(p=>`<p>${esc(p)}</p>`).join('')}
+        ${feats.length ? `<h2>Features</h2><ul class="feat-list">${feats.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+        ${comm ? `<h2>About ${esc(comm.name)}</h2><p>${esc(comm.name)} is ${/^[aeiou]/i.test(comm.status)?'an':'a'} ${esc(comm.status.toLowerCase())} car condo community in ${esc(cleanCity(comm.city))}, ${stName}${comm.units ? ' with ' + comm.units + ' units' : ''}. <a href="../communities/${comm.slug}.html">See everything we track on ${esc(comm.name)} →</a></p>` : ''}
+        <p class="meta" style="font-size:12.5px;margin-top:22px">Listed by the owner or their agent. Details are provided by the lister and not verified by AutomotiveCondos.com; confirm everything directly before you buy or rent. Listing ID ${esc(l.id)}.</p>
+      </div>
+      <div class="detail-side">
+        <div class="card inq">
+          <div class="inq-tag">Contact the ${l.offer==='rent'?'owner':'seller'} directly</div>
+          <h3>${esc(l.contact_name || 'Listing contact')}</h3>
+          ${l.contact_phone ? `<a class="btn" style="width:100%;text-align:center;margin:8px 0" href="tel:${esc(String(l.contact_phone).replace(/[^0-9+]/g,''))}">Call ${esc(l.contact_phone)}</a>` : ''}
+          ${l.contact_email ? `<a class="btn ghost" style="width:100%;text-align:center;margin:4px 0" href="mailto:${esc(l.contact_email)}?subject=${encodeURIComponent('AutomotiveCondos listing: ' + l.title)}">Email the ${l.offer==='rent'?'owner':'seller'}</a>` : ''}
+          ${l.website ? `<a style="display:block;text-align:center;margin-top:10px;font-weight:700" href="${esc(l.website)}" target="_blank" rel="noopener nofollow">Visit website →</a>` : ''}
+          <p class="meta" style="font-size:12.5px;margin-top:12px">Mention you found it on AutomotiveCondos.com.</p>
+        </div>
+      </div>
+    </div>
+    ${unitSection(others, '../', 'More units nearby')}
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have a car condo to sell or rent?</h2>
+    <p>Get your own listing page like this one, shown on its community and state pages, for $29/month.</p>
+    <a class="btn" href="../submit-listing.html">List My Unit</a>
+  </div>
+</section>`
+  }));
+}
+
 // --- sitemap ---
-const urls = ['car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise.html',
+const urls = [...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise.html',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`),
