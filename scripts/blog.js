@@ -29,12 +29,12 @@ function page({title, desc, canonical, body, depth}) {
   <div class="wrap">
     <a class="brand" href="/">${LOGO}<span class="word">Automotive<span>Condos</span></span></a>
     <nav class="main">
-      <a href="${p}map.html">Map</a>
-      <a href="${p}states.html">Browse by State</a>
-      <a href="${p}blog.html">Blog</a>
-      <a href="${p}about.html">About</a>
+      <a href="${p}map">Map</a>
+      <a href="${p}states">Browse by State</a>
+      <a href="${p}blog">Blog</a>
+      <a href="${p}about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
-      <a class="btn" href="${p}list-your-condo.html">List Your Condo</a>
+      <a class="btn" href="${p}list-your-condo">List Your Condo</a>
     </nav>
   </div>
 </header>
@@ -48,20 +48,20 @@ ${body}
       </div>
       <div>
         <h4>Marketplace</h4>
-        <a href="${p}map.html">Map</a>
-        <a href="${p}states.html">Browse by State</a>
-        <a href="${p}list-your-condo.html">List Your Condo</a>
+        <a href="${p}map">Map</a>
+        <a href="${p}states">Browse by State</a>
+        <a href="${p}list-your-condo">List Your Condo</a>
         <a href="/advertise">Advertise</a>
       </div>
       <div>
         <h4>Learn</h4>
-        <a href="${p}blog.html">Blog</a>
-        <a href="${p}blog/what-is-a-car-condo.html">What Is a Car Condo?</a>
-        <a href="${p}blog/car-condo-cost-guide.html">Cost Guide</a>
+        <a href="${p}blog">Blog</a>
+        <a href="${p}blog/what-is-a-car-condo">What Is a Car Condo?</a>
+        <a href="${p}blog/car-condo-cost-guide">Cost Guide</a>
       </div>
       <div>
         <h4>Company</h4>
-        <a href="${p}about.html">About</a>
+        <a href="${p}about">About</a>
         <a href="mailto:contact@automotivecondos.com">Contact</a>
       </div>
     </div>
@@ -96,7 +96,7 @@ html: `
 <p>A rented storage bay is an expense that goes up every year and builds nothing. A car condo is an asset: you control your costs, you build equity, and well-located communities have appreciated meaningfully as the category has grown. Many sold-out communities now trade actively on the resale market.</p>
 <h2>The community factor</h2>
 <p>Don't underestimate this one: most car condo communities turn into car clubs. Cars-and-coffee mornings, member events, neighbors who will talk camshafts with you for an hour. For a lot of owners, that's half the purchase.</p>
-<p>Ready to look? <a href="../states.html">Browse every community by state</a>, or read our <a href="car-condo-cost-guide.html">2026 cost guide</a> next.</p>`
+<p>Ready to look? <a href="../states">Browse every community by state</a>, or read our <a href="car-condo-cost-guide">2026 cost guide</a> next.</p>`
 },
 {
 slug: 'car-condo-cost-guide',
@@ -125,7 +125,7 @@ html: `
 <li><strong>Utilities</strong> — power for the lift and A/C is on you.</li>
 </ul>
 <h2>Bottom line</h2>
-<p>Figure the real comparison in $/sq ft against other communities in the same metro, then adjust for door height, finish, and dues. <a href="../states.html">Compare communities in your state</a> — and if you own a unit and wonder what it's worth today, <a href="../list-your-condo.html">talk to us</a>.</p>`
+<p>Figure the real comparison in $/sq ft against other communities in the same metro, then adjust for door height, finish, and dues. <a href="../states">Compare communities in your state</a> — and if you own a unit and wonder what it's worth today, <a href="../list-your-condo">talk to us</a>.</p>`
 },
 {
 slug: 'buying-a-car-condo-guide',
@@ -154,7 +154,7 @@ html: `
 <p>The community is half the product. Show up when owners are around: if the culture is cars-and-coffee and open doors, you'll know in ten minutes. If it's dead silent rows of closed doors, you'll know that too.</p>
 <h2>9. Think resale from day one</h2>
 <p>Generic, well-located units with tall doors resell fastest. Ultra-personalized build-outs can narrow your buyer pool. You don't have to build for the next owner — just know what you're choosing.</p>
-<p>Start the hunt: <a href="../states.html">every car condo community, by state</a>. New to the category? Read <a href="what-is-a-car-condo.html">What Is a Car Condo?</a> first.</p>`
+<p>Start the hunt: <a href="../states">every car condo community, by state</a>. New to the category? Read <a href="what-is-a-car-condo">What Is a Car Condo?</a> first.</p>`
 },
 {
 slug: 'garage-condos-for-sale-near-me',
@@ -178,14 +178,14 @@ html: `
 <li><strong>Resales happen inside the walls.</strong> In sold-out communities, units frequently change hands owner-to-owner — someone mentions at cars-and-coffee that they're selling, and it's gone before it was ever listed.</li>
 </ul>
 <h2>The right way to search</h2>
-<p><strong>Step 1: Map every community in your market.</strong> Before you shop units, you need the full list of communities within driving distance. That's exactly what our <a href="../states.html">state-by-state directory</a> and <a href="../map.html">national map</a> are for — every community we track, including resale-only communities that never advertise and planned projects you can get into at pre-construction pricing.</p>
+<p><strong>Step 1: Map every community in your market.</strong> Before you shop units, you need the full list of communities within driving distance. That's exactly what our <a href="../states">state-by-state directory</a> and <a href="../map">national map</a> are for — every community we track, including resale-only communities that never advertise and planned projects you can get into at pre-construction pricing.</p>
 <p><strong>Step 2: Sort by status.</strong> "Selling" communities have developer inventory today. "Resale only" communities are sold out, but units trade regularly — these are often the best-located, most established buildings. "Under construction" and "Planned" are your early-pricing opportunities.</p>
 <p><strong>Step 3: Get on lists.</strong> For sold-out communities you love, contact the association or developer and ask to be notified of resales. Serious buyers who've expressed interest hear about units days before the public does.</p>
 <p><strong>Step 4: Check the commercial platforms too.</strong> Once you know a community's exact name, search it on LoopNet and Crexi — resale units that do get formally listed usually land there.</p>
 <h2>What "near me" really means in this market</h2>
 <p>Garage condos cluster around wealth, car culture, and friendly zoning — which means coverage is uneven. Florida alone has 100+ communities; some entire states have one or two. If your metro has nothing, look at the nearest hub: collectors routinely buy units 45–90 minutes from home, because the unit is a destination, not a daily commute.</p>
 <h2>Skip the searching — inquire once</h2>
-<p>Found a community on our directory you want in? Hit the Inquire link on any <a href="../states.html">state page</a> or <a href="../map.html">map pin</a> and we'll point you at what's available there — listed with us or not.</p>`
+<p>Found a community on our directory you want in? Hit the Inquire link on any <a href="../states">state page</a> or <a href="../map">map pin</a> and we'll point you at what's available there — listed with us or not.</p>`
 },
 {
 slug: 'are-garage-condos-a-good-investment',
@@ -219,7 +219,7 @@ html: `
 <p>Treat it like small commercial real estate: compare on <strong>price per square foot</strong> against other communities in the same metro (most of the national market trades between roughly $175 and $325/sq ft, with premium markets well above), confirm door height and clear height (they drive rentability), read the association budget and reserves, and model dues + taxes + insurance against realistic lease rates. If the numbers work as a rental, the lifestyle use is free optionality.</p>
 <h2>Bottom line</h2>
 <p>A well-located unit bought at a sane $/sq ft in a supply-constrained market has been a genuinely good hold over the past five years. A top-of-market unit in a metro with six competing projects under construction is a lifestyle purchase — enjoy it, but don't call it alpha.</p>
-<p>Research your market: <a href="../states.html">browse every community by state</a> or read the <a href="car-condo-cost-guide.html">2026 cost guide</a> next. This is general information, not financial advice — run your own numbers.</p>`
+<p>Research your market: <a href="../states">browse every community by state</a> or read the <a href="car-condo-cost-guide">2026 cost guide</a> next. This is general information, not financial advice — run your own numbers.</p>`
 },
 {
 slug: 'how-to-finance-a-garage-condo',
@@ -248,10 +248,10 @@ html: `
 <h2>What every lender will ask about</h2>
 <ul>
 <li><strong>The association's health</strong> — budget, reserves, owner-occupancy mix, pending litigation.</li>
-<li><strong>The appraisal</strong> — comps are thin in young communities; expect the appraiser to look at other garage condo sales in the metro, which is where knowing your market's $/sq ft helps you sanity-check the price. Our <a href="car-condo-cost-guide.html">cost guide</a> covers typical ranges.</li>
+<li><strong>The appraisal</strong> — comps are thin in young communities; expect the appraiser to look at other garage condo sales in the metro, which is where knowing your market's $/sq ft helps you sanity-check the price. Our <a href="car-condo-cost-guide">cost guide</a> covers typical ranges.</li>
 <li><strong>Your exit</strong> — shorter loan terms mean you should know whether you'll hold, refinance, or sell before any balloon.</li>
 </ul>
-<p>Shopping markets first? <a href="../states.html">Browse communities by state</a> and compare pricing before you talk to a single lender. This is general information, not financial advice — confirm terms with your own lender.</p>`
+<p>Shopping markets first? <a href="../states">Browse communities by state</a> and compare pricing before you talk to a single lender. This is general information, not financial advice — confirm terms with your own lender.</p>`
 },
 {
 slug: 'renting-out-your-garage-condo',
@@ -268,7 +268,7 @@ faq: [
 html: `
 <p>The quiet secret of the garage condo world: a lot of owners never park a car in their unit. They lease it — to the collector who isn't ready to buy, the small business that needs deeded-quality space without buying, the RV owner whose HOA just sent another nastygram. Done right, it's some of the lowest-drama rental income in real estate.</p>
 <h2>What units actually lease for</h2>
-<p>Rates track size, finish, and market. Rough bands we see across the country: basic unfinished bays in secondary markets from a few hundred dollars a month; mid-size finished units in active markets $800–$1,500; large, climate-controlled units with mezzanines in premium metros $1,500–$2,500+. One data point from our directory: a 29-unit Spokane community leases units from about $1,250/month. Your true comp is whatever similar units in your own metro lease for — check the communities near you on our <a href="../map.html">map</a> and call around.</p>
+<p>Rates track size, finish, and market. Rough bands we see across the country: basic unfinished bays in secondary markets from a few hundred dollars a month; mid-size finished units in active markets $800–$1,500; large, climate-controlled units with mezzanines in premium metros $1,500–$2,500+. One data point from our directory: a 29-unit Spokane community leases units from about $1,250/month. Your true comp is whatever similar units in your own metro lease for — check the communities near you on our <a href="../map">map</a> and call around.</p>
 <h2>Read the declaration first</h2>
 <p>Before you buy with rental intent, confirm three things in the condo documents:</p>
 <ul>
@@ -277,12 +277,12 @@ html: `
 <li><strong>Insurance requirements.</strong> Most associations require owners (and often tenants) to carry their own liability and contents coverage.</li>
 </ul>
 <h2>The underwriting math</h2>
-<p>Say a unit costs $350K with $250/month dues, $300/month taxes, and $75/month insurance. At $1,400/month rent you're grossing 4.8% and netting roughly 2.6% before any debt — plus whatever appreciation the market gives you. That's not a cap-rate monster; it's a hard asset that pays its own carry while it (historically, in good markets) appreciates. Buyers using leverage need the rent to clear the commercial loan payment too — see <a href="how-to-finance-a-garage-condo.html">our financing guide</a>.</p>
+<p>Say a unit costs $350K with $250/month dues, $300/month taxes, and $75/month insurance. At $1,400/month rent you're grossing 4.8% and netting roughly 2.6% before any debt — plus whatever appreciation the market gives you. That's not a cap-rate monster; it's a hard asset that pays its own carry while it (historically, in good markets) appreciates. Buyers using leverage need the rent to clear the commercial loan payment too — see <a href="how-to-finance-a-garage-condo">our financing guide</a>.</p>
 <h2>Finding tenants</h2>
 <p>Demand usually finds you: community waiting lists, the association's own grapevine, local car club groups, and RV/boat owner forums. Good tenants stay years — moving a car collection is a project nobody repeats casually.</p>
 <h2>What can go wrong</h2>
 <p>The short list: a tenant running an unauthorized business that violates zoning; uninsured contents losses becoming your problem; associations tightening lease rules after you buy (get the current rules in writing); and vacancy in thin markets. None of these are exotic — they're the standard landlord homework, minus the toilets.</p>
-<p>Thinking of buying a unit to lease? <a href="../states.html">Compare communities and pricing in your state</a>, or if you already own one and want it in front of buyers instead, <a href="../list-your-condo.html">list it with us</a>.</p>`
+<p>Thinking of buying a unit to lease? <a href="../states">Compare communities and pricing in your state</a>, or if you already own one and want it in front of buyers instead, <a href="../list-your-condo">list it with us</a>.</p>`
 },
 {
 slug: 'garage-condo-vs-storage-unit',
@@ -318,7 +318,7 @@ html: `
 </ul>
 <h2>The break-even intuition</h2>
 <p>For multi-vehicle owners paying $1,000+/month in premium storage, ownership has historically broken even somewhere in years 4–7 once equity, appreciation, and rent avoidance are netted against carrying costs — faster in appreciating markets, slower where prices are flat. Run your own numbers with local storage quotes and real dues from a community you'd actually buy in.</p>
-<p>See what ownership costs in your market: <a href="../states.html">browse communities by state</a>, then read <a href="car-condo-cost-guide.html">the full cost guide</a> and <a href="how-to-finance-a-garage-condo.html">financing options</a>.</p>`
+<p>See what ownership costs in your market: <a href="../states">browse communities by state</a>, then read <a href="car-condo-cost-guide">the full cost guide</a> and <a href="how-to-finance-a-garage-condo">financing options</a>.</p>`
 },
 {
 slug: 'best-states-for-garage-condos',
@@ -335,21 +335,21 @@ faq: [
 html: `
 <p>We track <strong>270+ garage condo communities across 42 states</strong> — selling, resale-only, under construction, and planned. That dataset gives a pretty clear picture of where this market actually lives. Here's the 2026 landscape.</p>
 <h2>Tier 1: Florida — the capital</h2>
-<p>Around <a href="../states/florida.html">100 communities</a>, from $180K resale bays in Punta Gorda to $2M+ trackside units at Tampa's Motor Enclave. Southwest Florida (Naples–Fort Myers–Punta Gorda) is the deepest sub-market in America; Tampa Bay carries the highest medians; and the pipeline is enormous — including a planned 400-unit motorsport resort in Naples. Deep resale liquidity, real price history, and real competition among developers.</p>
+<p>Around <a href="../states/florida">100 communities</a>, from $180K resale bays in Punta Gorda to $2M+ trackside units at Tampa's Motor Enclave. Southwest Florida (Naples–Fort Myers–Punta Gorda) is the deepest sub-market in America; Tampa Bay carries the highest medians; and the pipeline is enormous — including a planned 400-unit motorsport resort in Naples. Deep resale liquidity, real price history, and real competition among developers.</p>
 <h2>Tier 2: Texas and Arizona — the growth engines</h2>
-<p><a href="../states/texas.html">Texas</a> (30+ communities) is the platform-builder state: Garages of America alone operates 14 locations across DFW, Houston, and Austin, with COTA trackside condos topping $1.25M. <a href="../states/arizona.html">Arizona</a> (20+) is brand country too — Toy Barn's nine Phoenix-area locations, LuxeLocker's buy-or-rent model, and new luxury projects in Scottsdale. Both states add projects quarterly.</p>
+<p><a href="../states/texas">Texas</a> (30+ communities) is the platform-builder state: Garages of America alone operates 14 locations across DFW, Houston, and Austin, with COTA trackside condos topping $1.25M. <a href="../states/arizona">Arizona</a> (20+) is brand country too — Toy Barn's nine Phoenix-area locations, LuxeLocker's buy-or-rent model, and new luxury projects in Scottsdale. Both states add projects quarterly.</p>
 <h2>Tier 3: Established regional hubs</h2>
 <ul>
-<li><strong><a href="../states/minnesota.html">Minnesota</a> / <a href="../states/wisconsin.html">Wisconsin</a>:</strong> where the category was born — AutoMotorPlex Chanhassen remains the spiritual home, with new phases in Medina and projects in Lakeville and Big Lake.</li>
-<li><strong><a href="../states/illinois.html">Illinois</a>:</strong> Chicago's suburbs are busy — Iron Gate Naperville, plus new builds in Barrington, Lake Zurich, and Mundelein.</li>
-<li><strong><a href="../states/michigan.html">Michigan</a>:</strong> M1 Concourse's 250+ units beside a private track, with Motorsports Gateway Howell under construction.</li>
-<li><strong><a href="../states/colorado.html">Colorado</a> / <a href="../states/idaho.html">Idaho</a> / <a href="../states/washington.html">Washington</a>:</strong> steady mountain-west growth from Denver's metro clusters to Boise, Spokane, and a 100-unit motor-and-yacht project on Seattle's Salmon Bay.</li>
+<li><strong><a href="../states/minnesota">Minnesota</a> / <a href="../states/wisconsin">Wisconsin</a>:</strong> where the category was born — AutoMotorPlex Chanhassen remains the spiritual home, with new phases in Medina and projects in Lakeville and Big Lake.</li>
+<li><strong><a href="../states/illinois">Illinois</a>:</strong> Chicago's suburbs are busy — Iron Gate Naperville, plus new builds in Barrington, Lake Zurich, and Mundelein.</li>
+<li><strong><a href="../states/michigan">Michigan</a>:</strong> M1 Concourse's 250+ units beside a private track, with Motorsports Gateway Howell under construction.</li>
+<li><strong><a href="../states/colorado">Colorado</a> / <a href="../states/idaho">Idaho</a> / <a href="../states/washington">Washington</a>:</strong> steady mountain-west growth from Denver's metro clusters to Boise, Spokane, and a 100-unit motor-and-yacht project on Seattle's Salmon Bay.</li>
 <li><strong>The Carolinas &amp; Georgia:</strong> racing country delivers — Charlotte's speedway corridor, Storage Caves' multi-state expansion, Atlanta Motorsports Park trackside units.</li>
 </ul>
 <h2>The sleepers</h2>
 <p>Two surprises from the data: <strong>Alaska</strong> — Anchorage alone has five communities (long winters, big toys); and <strong>New Hampshire's lake country</strong>, with three communities serving boat-season storage demand. Meanwhile, genuinely underbuilt territory remains: Las Vegas proper, Southern California's inland metros, Nashville, and most of the Northeast outside New Jersey — markets with the car culture and the money, but hardly any product. Developers, take note.</p>
 <h2>How to use this</h2>
-<p>Pick your state on <a href="../map.html">the map</a>, compare communities by status and price, and remember the pattern that holds everywhere: the best-located communities sell out, go resale-only, and appreciate. The buyers who do best get into good locations early. Start here: <a href="../states.html">all 42 states</a>.</p>`
+<p>Pick your state on <a href="../map">the map</a>, compare communities by status and price, and remember the pattern that holds everywhere: the best-located communities sell out, go resale-only, and appreciate. The buyers who do best get into good locations early. Start here: <a href="../states">all 42 states</a>.</p>`
 },
 {
 slug: 'garage-condo-buildout-ideas',
@@ -383,10 +383,10 @@ html: `
 <p>The signature garage condo move. A steel mezzanine with code stairs and railing typically starts around $20K–$40K installed before finishes; a finished lounge above (flooring, drywall, HVAC extension, furniture, A/V) takes it well past $75K. Permits and association approval are nearly always required — mezzanines are structural. Done right, it roughly doubles your usable square footage, and the market pays for documented, permitted space.</p>
 <h2>What returns money — and what doesn't</h2>
 <p><strong>Pays back:</strong> climate control, bathrooms, permitted mezzanines, electrical capacity, lifts (negotiable but valued), quality floors and lighting. These make the unit more capable for any future owner.</p>
-<p><strong>Doesn't:</strong> team-branded theming, built-in memorabilia displays, exotic finishes, and anything unpermitted. Build the showpiece if it makes you happy — just know those dollars are consumption, not investment. (More on that logic in <a href="are-garage-condos-a-good-investment.html">our investment guide</a>.)</p>
+<p><strong>Doesn't:</strong> team-branded theming, built-in memorabilia displays, exotic finishes, and anything unpermitted. Build the showpiece if it makes you happy — just know those dollars are consumption, not investment. (More on that logic in <a href="are-garage-condos-a-good-investment">our investment guide</a>.)</p>
 <h2>Sequence it like a pro</h2>
 <p>Floors → electrical → climate → lift/air → mezzanine → finishes. Every owner who did it backwards (mezzanine first, floors last) has a story about moving nine tons of steel to epoxy underneath it.</p>
-<p>Still shopping for the shell itself? Check ceiling heights and door specs before you fall in love — our <a href="buying-a-car-condo-guide.html">9-point buying checklist</a> covers what to verify, and the <a href="../states.html">directory</a> covers where to look.</p>`
+<p>Still shopping for the shell itself? Check ceiling heights and door specs before you fall in love — our <a href="buying-a-car-condo-guide">9-point buying checklist</a> covers what to verify, and the <a href="../states">directory</a> covers where to look.</p>`
 },
 {
 slug: "garage-condos-michigan",
@@ -681,17 +681,17 @@ for (const post of POSTS) {
     "description":post.desc,"datePublished":"2026-11-06",
     "author":{"@type":"Organization","name":"AutomotiveCondos.com"},
     "publisher":{"@type":"Organization","name":"AutomotiveCondos.com","url":"https://automotivecondos.com"},
-    "mainEntityOfPage":`https://automotivecondos.com/blog/${post.slug}.html`
+    "mainEntityOfPage":`https://automotivecondos.com/blog/${post.slug}`
   })}</scr`+`ipt>`;
   fs.writeFileSync(path.join(ROOT, 'blog', post.slug + '.html'), page({
     title: `${post.title} | AutomotiveCondos.com`,
     desc: post.desc,
-    canonical: `https://automotivecondos.com/blog/${post.slug}.html`,
+    canonical: `https://automotivecondos.com/blog/${post.slug}`,
     depth: 1,
     body: `${articleLd}${faqLd}
 <section class="block">
   <div class="wrap">
-    <div class="breadcrumbs" style="max-width:820px;margin:0 auto 14px"><a href="/">Home</a> / <a href="../blog.html">Blog</a> / ${post.title}</div>
+    <div class="breadcrumbs" style="max-width:820px;margin:0 auto 14px"><a href="/">Home</a> / <a href="../blog">Blog</a> / ${post.title}</div>
     <article class="post">
       <h1>${post.title}</h1>
       <div class="post-meta">${post.date} · AutomotiveCondos.com</div>
@@ -705,14 +705,14 @@ for (const post of POSTS) {
   <div class="wrap">
     <h2>Browse every car condo <span class="lightblue">in America</span></h2>
     <p>Every community, organized by state — status, unit counts, and pricing.</p>
-    <a class="btn" href="../states.html">Browse by State</a>
+    <a class="btn" href="../states">Browse by State</a>
   </div>
 </section>`
   }));
 }
 
 // blog index
-const cards = POSTS.map(p=>`<a class="card post-card" href="blog/${p.slug}.html" style="display:block">
+const cards = POSTS.map(p=>`<a class="card post-card" href="blog/${p.slug}" style="display:block">
   <span class="tag gray">${p.tag}</span>
   <h3>${p.title}</h3>
   <div class="meta">${p.teaser}</div>
@@ -722,7 +722,7 @@ const cards = POSTS.map(p=>`<a class="card post-card" href="blog/${p.slug}.html"
 fs.writeFileSync(path.join(ROOT, 'blog.html'), page({
   title: 'Car Condo Blog — Guides, Pricing & Market Intel | AutomotiveCondos.com',
   desc: 'In-depth guides on buying, selling, and owning car condos: pricing, checklists, market trends, and community spotlights.',
-  canonical: 'https://automotivecondos.com/blog.html',
+  canonical: 'https://automotivecondos.com/blog',
   depth: 0,
   body: `
 <section class="block">

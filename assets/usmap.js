@@ -102,7 +102,7 @@
         return '<span class="chip">' + esc(c.status) + '</span>';
       }
       var rows = shown.map(function (c) {
-        return '<a class="rowi" href="' + base + 'communities/' + (c.slug || '') + '.html">' +
+        return '<a class="rowi" href="' + base + 'communities/' + (c.slug || '') + '">' +
           '<div class="rn"><span>' + esc(c.name) + '</span>' + chip(c) + '</div>' +
           '<div class="rm">' + esc(c.city) + ', ' + st + (c.units ? ' · ' + c.units + ' units' : '') + '</div>' +
           ((c.priceNote && c.priceNote !== 'Inquire') ? '<div class="rp">' + esc(c.priceNote) + '</div>' : '') +
@@ -112,7 +112,7 @@
         '<div class="side-head"><h3>' + name + ' — ' + shown.length + ' communit' + (shown.length === 1 ? 'y' : 'ies') + '</h3>' +
         '<div class="sub">Click any community to inquire</div></div>' +
         '<div class="side-list">' + (rows || '<p style="padding:16px;color:#6B7280;font-size:13.5px">No communities match these filters here yet.</p>') + '</div>' +
-        '<div class="side-foot"><a href="' + base + 'states/' + slug(name) + '.html">Full ' + name + ' directory →</a></div>';
+        '<div class="side-foot"><a href="' + base + 'states/' + slug(name) + '">Full ' + name + ' directory →</a></div>';
     }
   };
 })();
