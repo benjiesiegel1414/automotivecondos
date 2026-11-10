@@ -412,3 +412,7 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .expA .call{position:absolute;background:rgba(255,255,255,.95);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.2);display:flex;align-items:center;gap:7px}
 .expA .call:before{content:"";width:9px;height:9px;border-radius:99px;background:#FFD23F;box-shadow:0 0 0 4px rgba(255,210,63,.35)}
 @media(max-width:860px){.expA .lay{grid-template-columns:1fr}.expA .facts{grid-template-columns:1fr}.expA h2{font-size:30px}.expA .pic img{height:300px}}
+
+/* Gold call-to-action button (matches the yellow Advertise nav link) */
+.btn.btn-gold{background:#FFD23F;color:#111!important;border-color:#FFD23F;box-shadow:0 10px 26px rgba(255,210,63,.35)}
+.btn.btn-gold:hover{background:#FFC400;border-color:#FFC400;text-decoration:none}

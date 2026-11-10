@@ -39,7 +39,7 @@ function page({title, desc, canonical, body, depth}) {
       <a href="${p}states.html">Browse by State</a>
       <a href="${p}blog.html">Blog</a>
       <a href="${p}about.html">About</a>
-      <a class="nav-adv" href="${p}advertise.html">Advertise</a>
+      <a class="nav-adv" href="/advertise">Advertise</a>
       <a class="btn" href="${p}list-your-condo.html">List Your Condo</a>
     </nav>
   </div>
@@ -57,7 +57,7 @@ ${body}
         <a href="${p}map.html">Map</a>
         <a href="${p}states.html">Browse by State</a>
         <a href="${p}list-your-condo.html">List Your Condo</a>
-        <a href="${p}advertise.html">Advertise</a>
+        <a href="/advertise">Advertise</a>
       </div>
       <div>
         <h4>Learn</h4>
@@ -682,7 +682,7 @@ ${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement"
 }
 
 // --- sitemap ---
-const urls = [...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise.html',
+const urls = [...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`),
