@@ -363,3 +363,21 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .bento-card{display:flex;flex-direction:column}
 .b-fine{margin-top:auto;padding-top:10px}
 .b-search .ticker{flex:1;height:auto;min-height:230px}
+
+/* Featured communities showcase (homepage) */
+.featC{background:linear-gradient(135deg,#0054A6,#0A3D78);padding:54px 0;color:#fff}
+.featC .kick{font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#FFD23F}
+.featC h2{color:#fff;margin:8px 0 0}.featC .sec-head .sub a{color:#CFE3F8}
+.featC .lay{display:grid;grid-template-columns:1.6fr 1fr;gap:18px;margin-top:22px}
+.featC .stack{display:grid;gap:18px}
+.featC .fc{position:relative;display:block;border-radius:18px;overflow:hidden;background-size:cover;background-position:center;min-height:200px;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.28);transition:transform .2s}
+.featC .fc.big{min-height:418px}
+.featC .fc:hover{transform:scale(1.015)}
+.featC .fc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.82))}
+.featC .badge{position:absolute;top:14px;left:14px;z-index:2;background:#FFD23F;color:#111;font-weight:800;font-size:12px;padding:5px 11px;border-radius:999px}
+.featC .tx{position:absolute;left:20px;right:20px;bottom:18px;z-index:2}
+.featC h3{color:#fff;margin:0 0 4px;font-size:20px}.featC .big h3{font-size:30px}
+.featC .meta{color:#E3E8EF;font-size:14px;line-height:1.45}
+.featC .go{display:inline-block;margin-top:12px;background:#fff;color:#0054A6;font-weight:800;font-size:14px;padding:9px 14px;border-radius:10px}
+.featC .note{color:#CFE3F8;font-size:13px;margin-top:16px}.featC .note a{color:#FFD23F}
+@media(max-width:760px){.featC .lay{grid-template-columns:1fr}.featC .fc.big{min-height:300px}}
