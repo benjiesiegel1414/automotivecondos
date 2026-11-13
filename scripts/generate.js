@@ -64,6 +64,8 @@ ${body}
         <a href="${p}blog">Blog</a>
         <a href="${p}blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="${p}blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="${p}best/best-car-condos-texas">Best Car Condos in Texas</a>
+        <a href="${p}best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>
       <div>
         <h4>Company</h4>
@@ -121,6 +123,21 @@ function unitSection(list, pre, heading){
 
 function ld(obj){ return '<script type="application/ld+json">' + JSON.stringify(obj).replace(/</g,'\\u003c') + '</script>'; }
 
+// --- researched details + "best of" rankings ---
+const DET = fs.existsSync(path.join(ROOT,'data','details.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT,'data','details.json'),'utf8')) : {details:{}};
+const DETAILS = DET.details || {};
+const BEST = fs.existsSync(path.join(ROOT,'data','best.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT,'data','best.json'),'utf8')).pages : [];
+const BY_SLUG = {}; DATA.communities.forEach(c=>{ BY_SLUG[c.slug]=c; });
+const BEST_RANK = {}; const BEST_BY_STATE = {};
+BEST.forEach(b=>{ BEST_BY_STATE[b.state]=b; b.picks.forEach((pk,i)=>{ BEST_RANK[pk.slug]={rank:i+1, award:pk.award, page:b}; }); });
+function specRows(d){
+  return [['Units',d.units],['Unit sizes',d.size],['Ceilings',d.ceilings],['Doors',d.doors],['Pricing',d.price],['Developer',d.developer],['Location',d.address],['Timeline',d.timeline]]
+    .filter(r=>r[1]).map(r=>`<tr><th>${r[0]}</th><td>${esc(r[1])}</td></tr>`).join('');
+}
+function sourcesHtml(d){
+  return (d.sources&&d.sources.length) ? `<p class="src-note">Sources: ${d.sources.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener nofollow">${esc(x[0])}</a>`).join(' · ')}. Last checked ${esc(DET.checked||'2026')}.</p>` : '';
+}
+
 // --- states index ---
 const indexCards = states.map(st => {
   const list = byState[st];
@@ -174,6 +191,7 @@ for (const st of states) {
     ${ld({"@context":"https://schema.org","@type":"ItemList","name":`Car condo communities in ${name}`,"numberOfItems":list.length,"itemListElement":list.map((c,i)=>({"@type":"ListItem","position":i+1,"url":`https://automotivecondos.com/communities/${c.slug}`,"name":c.name}))})}
     <div style="margin:18px 0 10px">${[...new Set(cities.map(cleanCity))].map(c=>{const cp=cityByKey[c+'|'+st]; return cp ? `<a class="pill" href="../cities/${cp.slug}">${esc(c)} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>` : `<span class="pill" style="cursor:default">${esc(c)}</span>`;}).join('')}</div>
     <p style="font-size:14px;margin:0 0 14px">${byState[st].length >= 5 ? `<a href="../for-sale/garage-condos-for-sale-${slug(name)}">${name} garage condos for sale →</a> · ` : ''}${STATE_GUIDES[st] ? `<a href="../blog/${STATE_GUIDES[st]}">${name} market guide →</a> · ` : ''}<a href="../car-condos-for-rent">Car condos for rent →</a></p>
+    ${BEST_BY_STATE[st] ? `<a class="best-banner" href="../best/${BEST_BY_STATE[st].slug}"><span class="bb-tag">Ranked</span><span class="bb-txt"><strong>The ${BEST_BY_STATE[st].picks.length} best car condos in ${name}</strong> Specs, ceilings, prices and amenities compared</span><span class="bb-go">See the list →</span></a>` : ''}
     ${unitSection(LISTINGS.filter(l=>l.state===st), '../', `Units for sale &amp; rent in ${name}`)}
     <div style="margin:${LISTINGS.some(l=>l.state===st)?'26px':'0'} 0 18px" id="offer-toggle">
       <button class="btn" data-f="all" style="margin-right:8px">All</button>
@@ -277,6 +295,7 @@ for (const c of DATA.communities) {
   const agg = stateAgg[c.state];
   const offer = c.offer === 'both' ? 'For sale or for rent' : 'For sale / resale';
   const nearby = DATA.communities.filter(x => x.state === c.state && x.slug !== c.slug).slice(0, 6);
+  const det = DETAILS[c.slug];
   const kc = KIND_COPY[kindOf(c)];
   const myNums = priceNums(c.priceNote);
   const pageUrl = `https://automotivecondos.com/communities/${c.slug}`;
@@ -340,12 +359,16 @@ for (const c of DATA.communities) {
 
     <div class="detail-cols">
       <div class="detail-main">
+        ${BEST_RANK[c.slug] ? `<a class="rank-badge" href="../best/${BEST_RANK[c.slug].page.slug}">#${BEST_RANK[c.slug].rank} in Best Car Condos in ${STATE_NAMES[BEST_RANK[c.slug].page.state]} · ${esc(BEST_RANK[c.slug].award)} →</a>` : ''}
         <h2>About this community</h2>
+        ${det && det.summary ? `<p>${esc(det.summary)}</p>` : ''}
         <p>${esc(about)}</p>
-
+        ${det && specRows(det) ? `<h2>Specs at a glance</h2><div class="table-scroll"><table class="spec-table">${specRows(det)}</table></div>` : ''}
+        ${det && det.amenities ? `<h2>Amenities and features</h2><ul class="feat-list">${det.amenities.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>` : `
         <h2>What communities like this offer</h2>
         <p class="meta" style="font-size:13.5px;margin-bottom:8px">Typical of the ${esc(kc.label.replace("community","communities"))} we track — confirm specifics for ${esc(c.name)} via the listing info request.</p>
-        <ul class="feat-list">${kc.feats.map(f=>`<li>${f}</li>`).join('')}</ul>
+        <ul class="feat-list">${kc.feats.map(f=>`<li>${f}</li>`).join('')}</ul>`}
+        ${det ? sourcesHtml(det) : ''}
 
         <h2>The ${stName} market at a glance</h2>
         <ul class="feat-list ctx">${ctx.map(x=>`<li>${x}</li>`).join('')}</ul>
@@ -681,8 +704,71 @@ ${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement"
   }));
 }
 
+// --- "best of" ranking pages ---
+fs.mkdirSync(path.join(ROOT,'best'),{recursive:true});
+for (const b of BEST) {
+  const stName = STATE_NAMES[b.state];
+  const url = `https://automotivecondos.com/best/${b.slug}`;
+  const picks = b.picks.map(pk=>({...pk, c: BY_SLUG[pk.slug], d: DETAILS[pk.slug]||{}})).filter(x=>x.c);
+  const short = (v,n)=> v ? (v.length>n ? v.slice(0,n).replace(/[ ,;(]+[^ ]*$/,'')+'…' : v) : '—';
+  const cut = v => v ? String(v).split(/ \(| plus|; |, each|, with|\. /)[0].replace(/[ ,;]+$/,'') : '—';
+  const cmpRows = picks.map((x,i)=>`<tr data-href="../communities/${x.c.slug}"><td>${i+1}</td><td><a href="#pick-${i+1}"><strong>${esc(x.c.name)}</strong></a><div class="meta">${esc(x.award)}</div></td><td>${esc(x.c.city)}</td><td>${esc(x.c.priceNote && x.c.priceNote!=='Inquire' ? x.c.priceNote : cut(x.d.price))}</td><td>${esc(cut(x.d.size))}</td><td>${esc(x.c.status)}</td></tr>`).join('');
+  const cards = picks.map((x,i)=>`
+  <article class="best-pick" id="pick-${i+1}">
+    <div class="bp-head"><div class="bp-rank">${i+1}</div><div><div class="bp-award">${esc(x.award)}</div><h2><a href="../communities/${x.c.slug}">${esc(x.c.name)}</a></h2><div class="meta">${esc(x.c.city)}, ${b.state} · ${esc(x.c.status)}${x.c.units?` · ${x.c.units} units`:''}</div></div></div>
+    ${x.d.summary?`<p>${esc(x.d.summary)}</p>`:''}
+    <div class="bp-cols">
+      <div><h3>Why it made the list</h3><p>${esc(x.why)}</p><h3>Worth knowing</h3><p>${esc(x.watch)}</p></div>
+      <div>${specRows(x.d) ? `<table class="spec-table">${specRows(x.d)}</table>` : `<table class="spec-table"><tr><th>Pricing</th><td>${esc(x.c.priceNote||'Inquire')}</td></tr></table>`}</div>
+    </div>
+    ${x.d.amenities?`<h3>Amenities</h3><ul class="feat-list two">${x.d.amenities.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>`:''}
+    <div class="bp-foot"><a class="btn" href="../communities/${x.c.slug}">Full details &amp; listing info</a>${x.d.sources?`<span class="src-note">Sources: ${x.d.sources.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener nofollow">${esc(s[0])}</a>`).join(' · ')}</span>`:''}</div>
+  </article>`).join('');
+  const budget = (b.budget||[]).map(([label,sl])=>`<div class="card"><h3 style="font-size:16px">${esc(label)}</h3><ul class="feat-list">${sl.filter(s=>BY_SLUG[s]).map(s=>`<li><a href="../communities/${s}">${esc(BY_SLUG[s].name)}</a> <span class="meta">${esc(BY_SLUG[s].priceNote && BY_SLUG[s].priceNote!=='Inquire' ? BY_SLUG[s].priceNote : cut(DETAILS[s]&&DETAILS[s].price))}</span></li>`).join('')}</ul></div>`).join('');
+  const total = byState[b.state].length;
+  const other = BEST.filter(x=>x!==b);
+  fs.writeFileSync(path.join(ROOT,'best',b.slug+'.html'), page({
+    title: b.title.length>70 ? b.title.replace(/: .*$/,'') + ' | AutomotiveCondos.com' : b.title,
+    desc: b.desc, canonical: url, depth: 1,
+    body: `
+${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":stName,"item":`https://automotivecondos.com/states/${slug(stName)}`},{"@type":"ListItem","position":3,"name":b.h1,"item":url}]})}
+${ld({"@context":"https://schema.org","@type":"ItemList","name":b.h1,"itemListOrder":"https://schema.org/ItemListOrderAscending","numberOfItems":picks.length,"itemListElement":picks.map((x,i)=>({"@type":"ListItem","position":i+1,"name":x.c.name,"url":`https://automotivecondos.com/communities/${x.c.slug}`}))})}
+${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":b.faq.map(f=>({"@type":"Question","name":f[0],"acceptedAnswer":{"@type":"Answer","text":f[1]}}))})}
+<section class="block best-hero">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="../states/${slug(stName)}">${stName}</a> / Best car condos</div>
+    <div class="bh-kicker">2026 Rankings · Updated ${esc(DET.checked||'2026')}</div>
+    <h1>${esc(b.h1)}</h1>
+    <p class="bh-lede">${esc(b.intro)}</p>
+    <div class="bh-stats"><div><strong>${total}</strong><span>${stName} communities tracked</span></div><div><strong>${picks.length}</strong><span>Picks, each for a different buyer</span></div><div><strong>${picks.filter(x=>x.d.sources).length}</strong><span>Picks with sourced specs</span></div></div>
+  </div>
+</section>
+<section class="block" style="padding-top:10px">
+  <div class="wrap">
+    <h2 style="font-size:22px">Quick comparison</h2>
+    <div class="table-scroll"><table class="data best-cmp"><thead><tr><th>#</th><th>Community</th><th>City</th><th>Pricing</th><th>Unit sizes</th><th>Status</th></tr></thead><tbody>${cmpRows}</tbody></table></div>
+    <div class="how-we-pick"><h3>How we picked</h3><p>We went through all ${total} ${stName} communities in our directory. We weighed build quality and specs (ceiling height, door size, construction), amenities and clubhouse, track access, location, price per square foot, developer track record and whether you can actually buy in today. No community paid to be on this list. Specs and prices come from developer materials, listings and local reporting, and the sources are linked under each pick. Prices move fast, so confirm the current numbers before you buy.</p></div>
+    ${cards}
+    <h2 style="font-size:22px;margin-top:40px">Best ${stName} car condos by budget</h2>
+    <div class="grid c3">${budget}</div>
+    <h2 style="font-size:22px;margin-top:40px">Frequently asked questions</h2>
+    ${b.faq.map(f=>`<h3 class="faq-q">${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join('')}
+    <p style="margin-top:26px;font-size:15px"><a href="../states/${slug(stName)}">See all ${total} ${stName} communities →</a>${STATE_GUIDES[b.state]?` · <a href="../blog/${STATE_GUIDES[b.state]}">${stName} market guide →</a>`:''}${byState[b.state].length>=5?` · <a href="../for-sale/garage-condos-for-sale-${slug(stName)}">${stName} garage condos for sale →</a>`:''}${other.map(o=>` · <a href="${o.slug}">${esc(o.h1)} →</a>`).join('')}</p>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Run a ${stName} community?</h2>
+    <p>Put your community in front of the buyers reading this list. Featured spots are limited.</p>
+    <a class="btn btn-gold" href="/advertise">See Packages</a>
+  </div>
+</section>
+<script>document.querySelectorAll('table.best-cmp tbody tr').forEach(function(tr){tr.style.cursor='pointer';tr.addEventListener('click',function(e){if(e.target.closest('a'))return;location.href=tr.getAttribute('data-href');});});</script>`
+  }));
+}
+
 // --- sitemap ---
-const urls = [...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
+const urls = [...BEST.map(b=>`best/${b.slug}.html`), ...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`),
