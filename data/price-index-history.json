@@ -2,15 +2,15 @@
  "snapshots": [
   {
    "month": "2026-11",
-   "n": 243,
-   "median": 255000,
-   "newMedian": 250000,
+   "n": 245,
+   "median": 256000,
+   "newMedian": 252500,
    "resaleMedian": 275000,
    "communities": 613,
    "states": {
     "CA": {
      "n": 7,
-     "median": 750000
+     "median": 731000
     },
     "TX": {
      "n": 15,
@@ -37,7 +37,7 @@
      "median": 245000
     },
     "CO": {
-     "n": 11,
+     "n": 13,
      "median": 240000
     },
     "GA": {

@@ -11,8 +11,25 @@
    "doors": "Glass garage doors facing the interior concourse",
    "price": "About $650 per sq ft, roughly $650K to $1.3M+; concourse-facing units add about $200K",
    "timeline": "Opening spring 2026",
-   "amenities": ["13,000 sq ft two-story members lounge", "60,000 sq ft open-air concourse for shows and private events", "Steel mezzanine and staircase in every unit", "App-controlled HVAC and full utilities per unit", "On-site service center, detailing and paint correction", "Window tint, PPF and bodywork on site", "Professional photo studio"],
-   "sources": [["Dallas Innovates", "https://dallasinnovates.com/plano-company-plans-garage-condo-lifestyle-venue-for-supercar-owners/"], ["CandysDirt", "https://candysdirt.com/2025/02/02/new-luxury-garage-promises-premier-facility-amenities/"]]
+   "amenities": [
+    "13,000 sq ft two-story members lounge",
+    "60,000 sq ft open-air concourse for shows and private events",
+    "Steel mezzanine and staircase in every unit",
+    "App-controlled HVAC and full utilities per unit",
+    "On-site service center, detailing and paint correction",
+    "Window tint, PPF and bodywork on site",
+    "Professional photo studio"
+   ],
+   "sources": [
+    [
+     "Dallas Innovates",
+     "https://dallasinnovates.com/plano-company-plans-garage-condo-lifestyle-venue-for-supercar-owners/"
+    ],
+    [
+     "CandysDirt",
+     "https://candysdirt.com/2025/02/02/new-luxury-garage-promises-premier-facility-amenities/"
+    ]
+   ]
   },
   "t11-car-condos-at-cota-tx": {
    "summary": "T11 sits at Turn 11 of Circuit of the Americas, the Formula 1 track southeast of Austin, and is built by the circuit itself. Owners get a private race viewing platform and dedicated track time, which no other Texas garage condo can match.",
@@ -22,8 +39,24 @@
    "size": "1,500 to 6,000 sq ft, each with a ground-floor garage and mezzanine",
    "price": "From about $465K; large finished units run $2M+",
    "timeline": "First units sold in early 2026",
-   "amenities": ["Private race viewing platform at Turn 11", "Dedicated owner track time", "Clubhouse with pool, outdoor lounge and grills", "Club room and conference rooms", "Showers and on-site management office", "Four finish-out packages with Thermador or Gaggenau appliances"],
-   "sources": [["Edgewise Realty project page", "https://edgewiserealty.com/projects/t11-car-condos"], ["The Real Deal", "https://therealdeal.com/texas/austin/2026/02/13/cota-car-condo-project-in-austin-sells-first-units"]]
+   "amenities": [
+    "Private race viewing platform at Turn 11",
+    "Dedicated owner track time",
+    "Clubhouse with pool, outdoor lounge and grills",
+    "Club room and conference rooms",
+    "Showers and on-site management office",
+    "Four finish-out packages with Thermador or Gaggenau appliances"
+   ],
+   "sources": [
+    [
+     "Edgewise Realty project page",
+     "https://edgewiserealty.com/projects/t11-car-condos"
+    ],
+    [
+     "The Real Deal",
+     "https://therealdeal.com/texas/austin/2026/02/13/cota-car-condo-project-in-austin-sells-first-units"
+    ]
+   ]
   },
   "garages-of-the-americas-tx": {
    "summary": "Garages of the Americas is an 18-acre campus directly across from Circuit of the Americas, developed by racer Tim Myers. It is the volume play near COTA: around 200 climate-controlled units, with about half already sold and several buyers taking multiple units.",
@@ -33,8 +66,19 @@
    "size": "25x50 and 30x50 ft units are common; mezzanines sit 14 ft above the floor",
    "ceilings": "Tall enough for a 14 ft-high mezzanine with trailer parking and lifts underneath",
    "price": "Inquire; resales list regularly",
-   "amenities": ["Across the street from COTA", "Climate-controlled units", "Room for trailers and car lifts under the mezzanine", "Detailers and trackside service providers", "Professional racing coach on site"],
-   "sources": [["The Real Deal", "https://therealdeal.com/texas/austin/2026/02/13/cota-car-condo-project-in-austin-sells-first-units"]]
+   "amenities": [
+    "Across the street from COTA",
+    "Climate-controlled units",
+    "Room for trailers and car lifts under the mezzanine",
+    "Detailers and trackside service providers",
+    "Professional racing coach on site"
+   ],
+   "sources": [
+    [
+     "The Real Deal",
+     "https://therealdeal.com/texas/austin/2026/02/13/cota-car-condo-project-in-austin-sells-first-units"
+    ]
+   ]
   },
   "toy-cave-luxury-garages-tx": {
    "summary": "Toy Cave puts 56 large garages just inside the Houston core, off W. 12th Street near the Galleria and Memorial. Every unit comes finished with its own HVAC, and the 3,400 sq ft clubhouse has an F1 racing simulator, bar and private rooms.",
@@ -44,8 +88,21 @@
    "size": "About 1,500 sq ft (30 ft wide x 50 ft deep) plus a roughly 500 sq ft mezzanine",
    "price": "$839K to $865K",
    "timeline": "Garages expected fall 2026",
-   "amenities": ["3,400 sq ft clubhouse open 24/7", "F1 racing simulator, billiards, bar and kitchen", "Private rooms plus outdoor patio and grill", "Car detailing center", "Individual HVAC with Wi-Fi thermostat in each unit", "EV-charger-ready electrical", "Gated access with CCTV"],
-   "sources": [["Community Impact", "https://communityimpact.com/heights-river-oaks-montrose/business/new-luxury-car-garage-coming-to-houston-will-give-classic-car-owners-a-space-to-safely-store-vehicles/"]]
+   "amenities": [
+    "3,400 sq ft clubhouse open 24/7",
+    "F1 racing simulator, billiards, bar and kitchen",
+    "Private rooms plus outdoor patio and grill",
+    "Car detailing center",
+    "Individual HVAC with Wi-Fi thermostat in each unit",
+    "EV-charger-ready electrical",
+    "Gated access with CCTV"
+   ],
+   "sources": [
+    [
+     "Community Impact",
+     "https://communityimpact.com/heights-river-oaks-montrose/business/new-luxury-car-garage-coming-to-houston-will-give-classic-car-owners-a-space-to-safely-store-vehicles/"
+    ]
+   ]
   },
   "garages-of-america-plano-tx": {
    "summary": "Garages of America (formerly Garages of Texas) is the most proven garage condo builder in the state. It has opened 13 communities across Texas and sold about 850 garages since its Plano flagship broke ground in 2014. That first site sold all 69 units before construction finished.",
@@ -53,8 +110,18 @@
    "units": "69 at the Plano flagship; about 850 sold across 13 Texas communities",
    "size": "800 to 1,750 sq ft, fully customizable",
    "price": "Resales across the brand commonly list from the mid $300Ks to $1.3M+",
-   "amenities": ["13 locations across DFW, Houston and Austin", "Owner HOAs that host events", "Monthly first-Saturday car showcase at the Carrollton site", "Units built out as lounges, gyms and wet bars by owners"],
-   "sources": [["D CEO Magazine", "https://www.dmagazine.com/publications/d-ceo/2026/september-2026-dceo/garages-of-america-luxury-car-storage-plano/"]]
+   "amenities": [
+    "13 locations across DFW, Houston and Austin",
+    "Owner HOAs that host events",
+    "Monthly first-Saturday car showcase at the Carrollton site",
+    "Units built out as lounges, gyms and wet bars by owners"
+   ],
+   "sources": [
+    [
+     "D CEO Magazine",
+     "https://www.dmagazine.com/publications/d-ceo/2026/september-2026-dceo/garages-of-america-luxury-car-storage-plano/"
+    ]
+   ]
   },
   "dominion-motor-club-tx": {
    "summary": "Dominion Motor Club in far north San Antonio pairs tall, climate-controlled garages with a clubhouse that has indoor and outdoor gathering space. Resales here are known for high-end finish-outs, with bars, full baths and finished mezzanines. A second location with about 50 units is under construction.",
@@ -64,8 +131,21 @@
    "ceilings": "21 ft (per resale listing)",
    "price": "Example 2023-built resale listed at $395K; $5K reserves a 2.0 unit",
    "timeline": "2.0 completion targeted around February 2027",
-   "amenities": ["Gated, climate-controlled, 24-hour access", "Clubhouse with indoor and outdoor gathering spaces", "Owners commonly add full baths, bars and finished mezzanines"],
-   "sources": [["KW San Antonio listing", "https://www.kwsanantonioportfolio.com/7231-stonewall-bend-3112-san-antonio-tx-78256"], ["Only Garage Condos, June 2026 update", "https://onlygaragecondos.substack.com/p/garage-condo-development-update-june"]]
+   "amenities": [
+    "Gated, climate-controlled, 24-hour access",
+    "Clubhouse with indoor and outdoor gathering spaces",
+    "Owners commonly add full baths, bars and finished mezzanines"
+   ],
+   "sources": [
+    [
+     "KW San Antonio listing",
+     "https://www.kwsanantonioportfolio.com/7231-stonewall-bend-3112-san-antonio-tx-78256"
+    ],
+    [
+     "Only Garage Condos, June 2026 update",
+     "https://onlygaragecondos.substack.com/p/garage-condo-development-update-june"
+    ]
+   ]
   },
   "trailblazer-garages-las-colinas-tx": {
    "summary": "Trailblazer's Las Colinas community sits on N. Star Drive in Irving, minutes from DFW Airport and Love Field. Units are sold as blank-canvas shells with a 450 sq ft mezzanine, so you build exactly what you want, and the gated site shares a clubhouse with showers and a car wash.",
@@ -75,16 +155,41 @@
    "size": "1,825 sq ft (including a 450 sq ft mezzanine) and 2,160 sq ft; units can be combined",
    "doors": "Motorized coiling garage doors",
    "price": "Launched at about $275/sq ft: $501,875 (1,825 sq ft) and $594,000 (2,160 sq ft)",
-   "amenities": ["Gated with video surveillance", "Clubhouse with meeting area, restrooms and showers", "Community car wash station and RV dump station", "Insulated, climate-controlled units", "Wi-Fi throughout"],
-   "sources": [["Dallas Innovates", "https://dallasinnovates.com/luxury-car-condos-coming-to-irving-and-mckinney-to-give-fine-rides-a-swanky-home/"], ["CandysDirt", "https://candysdirt.com/?p=323433"]]
+   "amenities": [
+    "Gated with video surveillance",
+    "Clubhouse with meeting area, restrooms and showers",
+    "Community car wash station and RV dump station",
+    "Insulated, climate-controlled units",
+    "Wi-Fi throughout"
+   ],
+   "sources": [
+    [
+     "Dallas Innovates",
+     "https://dallasinnovates.com/luxury-car-condos-coming-to-irving-and-mckinney-to-give-fine-rides-a-swanky-home/"
+    ],
+    [
+     "CandysDirt",
+     "https://candysdirt.com/?p=323433"
+    ]
+   ]
   },
   "g2-motorsports-park-garage-condos-tx": {
    "summary": "G2 Motorsports Park is a private road course on 180 acres in Anna, north of McKinney. Its garage condos come with a mezzanine and an outdoor balcony that looks over the track, plus access to a 20,000 sq ft members clubhouse.",
    "address": "Fast Ln, Anna, TX",
    "size": "1,200 to 2,200 sq ft base level, plus mezzanine and track-view balcony",
    "price": "Example listing: 1,260 sq ft at $495K (about $393/sq ft)",
-   "amenities": ["Trackside location on a private road course", "Initial track design by Tilke, final by Bob Barnard", "20,000 sq ft two-story clubhouse and event center", "Access to paddock garages during track events"],
-   "sources": [["Crexi listing", "https://www.crexi.com/properties/1654848/texas-g2-motorsports-park-luxury-garage"]]
+   "amenities": [
+    "Trackside location on a private road course",
+    "Initial track design by Tilke, final by Bob Barnard",
+    "20,000 sq ft two-story clubhouse and event center",
+    "Access to paddock garages during track events"
+   ],
+   "sources": [
+    [
+     "Crexi listing",
+     "https://www.crexi.com/properties/1654848/texas-g2-motorsports-park-luxury-garage"
+    ]
+   ]
   },
   "shavano-garage-condos-tx": {
    "summary": "Shavano Garage Condominiums is a 39-unit community off Lockhill-Selma Road in north San Antonio, built for cars, bikes and boats. It is one of the lowest entry prices in Texas for a garage condo with a real clubhouse.",
@@ -94,8 +199,18 @@
    "size": "About 1,000 to 2,000 sq ft",
    "price": "From about $269K",
    "timeline": "Soft-opened December 2025",
-   "amenities": ["Clubhouse with kitchen, bar and restrooms", "Indoor and outdoor entertainment areas", "Climate control and plumbing in units", "Optional mezzanines and lifts"],
-   "sources": [["Community Impact", "https://beta2.communityimpact.com/san-antonio/north-san-antonio/business/2026/01/15/new-luxury-car-storage-center-features-clubhouse-and-more-in-north-san-antonio"]]
+   "amenities": [
+    "Clubhouse with kitchen, bar and restrooms",
+    "Indoor and outdoor entertainment areas",
+    "Climate control and plumbing in units",
+    "Optional mezzanines and lifts"
+   ],
+   "sources": [
+    [
+     "Community Impact",
+     "https://beta2.communityimpact.com/san-antonio/north-san-antonio/business/2026/01/15/new-luxury-car-storage-center-features-clubhouse-and-more-in-north-san-antonio"
+    ]
+   ]
   },
   "big-tex-garage-condos-tx": {
    "summary": "Big Tex Garage Condos in Tomball, northwest of Houston, is one of the most affordable ways to own a garage condo in a major Texas metro, with Phase 2 units priced under $190K.",
@@ -113,8 +228,23 @@
    "units": "About 300 private garages",
    "size": "Small car suites up to units large enough for RVs and trailers; many include bath and kitchenette",
    "price": "Launched from about $180K; resales now start in the high $300Ks",
-   "amenities": ["1.5-mile private performance track", "About 200 acres near I-4 and I-75", "42,000 sq ft of event space", "Large units fit RVs and trailers", "Sister communities planned in Sarasota and Orlando"],
-   "sources": [["FOX 13", "https://www.fox13news.com/news/car-condos-complete-with-test-track-coming-to-tampa"], ["Only Garage Condos, June 2026 update", "https://onlygaragecondos.substack.com/p/garage-condo-development-update-june"]]
+   "amenities": [
+    "1.5-mile private performance track",
+    "About 200 acres near I-4 and I-75",
+    "42,000 sq ft of event space",
+    "Large units fit RVs and trailers",
+    "Sister communities planned in Sarasota and Orlando"
+   ],
+   "sources": [
+    [
+     "FOX 13",
+     "https://www.fox13news.com/news/car-condos-complete-with-test-track-coming-to-tampa"
+    ],
+    [
+     "Only Garage Condos, June 2026 update",
+     "https://onlygaragecondos.substack.com/p/garage-condo-development-update-june"
+    ]
+   ]
   },
   "circuit-florida-car-condos-fl": {
    "summary": "Circuit Florida in Auburndale, between Tampa and Orlando, is a true live-at-the-track community. Its 75 townhome-style garage condos are zoned for full-time living and line a 1.7-mile, 14-turn road course with more than 40 feet of elevation change, which is rare in Florida.",
@@ -122,8 +252,20 @@
    "units": "75 townhome-style garage condos",
    "size": "838 sq ft (Monza loft) up to 2,688 sq ft (Le Mans, 2 bed / 2 bath)",
    "price": "About $475K to $1.8M, fully furnished; club initiation about $80K plus about $800/month dues",
-   "amenities": ["1.7-mile, 14-turn private road course", "About 160 member track days a year", "Zoned for full-time residence", "Two clubhouses including a spa and restaurant", "Sim rigs, coaching and on-site mechanics", "Lifts can double capacity up to 12 cars per unit"],
-   "sources": [["CarBuzz", "https://carbuzz.com/features/circuit-florida-is-a-paradise-for-wealthy-car-lovers"]]
+   "amenities": [
+    "1.7-mile, 14-turn private road course",
+    "About 160 member track days a year",
+    "Zoned for full-time residence",
+    "Two clubhouses including a spa and restaurant",
+    "Sim rigs, coaching and on-site mechanics",
+    "Lifts can double capacity up to 12 cars per unit"
+   ],
+   "sources": [
+    [
+     "CarBuzz",
+     "https://carbuzz.com/features/circuit-florida-is-a-paradise-for-wealthy-car-lovers"
+    ]
+   ]
   },
   "p1-motor-club-fl": {
    "summary": "P1 Motor Club is the biggest motorsports country club being built in Florida: 650 acres in St. Lucie County with a 3-mile track, a planned 4.5-mile circuit and almost 10 miles of driving surface at full build-out. Garage townhomes put car space downstairs and living space upstairs, overlooking the track.",
@@ -131,8 +273,19 @@
    "units": "About 200 residences planned (68 sold so far)",
    "price": "Real estate about $1.4M (members only); membership from about $192K plus annual dues",
    "timeline": "First track opening late 2026; real estate construction around early 2027",
-   "amenities": ["3-mile track, with a 4.5-mile circuit planned", "Karting, rally, drift and off-road areas", "Clubhouse with rooftop bar, pool and courts", "Mercedes-AMG partner fleet for members", "About 280 members"],
-   "sources": [["CBS12", "https://cbs12.com/news/local/race-then-head-home-inside-st-lucie-countys-p1-motor-club-september-30-2026"]]
+   "amenities": [
+    "3-mile track, with a 4.5-mile circuit planned",
+    "Karting, rally, drift and off-road areas",
+    "Clubhouse with rooftop bar, pool and courts",
+    "Mercedes-AMG partner fleet for members",
+    "About 280 members"
+   ],
+   "sources": [
+    [
+     "CBS12",
+     "https://cbs12.com/news/local/race-then-head-home-inside-st-lucie-countys-p1-motor-club-september-30-2026"
+    ]
+   ]
   },
   "sebring-motor-garages-fl": {
    "summary": "Sebring Motor Garages is the official motor condominium partner of Sebring International Raceway, home of the 12 Hours of Sebring. The gated, 15-acre community is less than a mile from the track, and owners can get up to 25 track days a year through the Sebring Driving Club.",
@@ -143,8 +296,19 @@
    "doors": "14 ft overhead doors",
    "ceilings": "Mezzanine clearance of 10 or 14 ft (fits motorhomes and lifts)",
    "price": "Phase 1 condos from the $300Ks built out; townhomes just over $1M",
-   "amenities": ["Under a mile from Sebring International Raceway", "Up to 25 track days a year via Sebring Driving Club", "3,000 sq ft clubhouse with heated pool, bar and sim room", "Daily concierge, parcel room and rental desk", "Units zoned for overnight stays, with bath and three-phase power"],
-   "sources": [["IMSA", "https://imsa.com/news/2024/07/01/sebring-motor-garages-becomes-official-luxury-motor-condominium-and-townhome-partner-of-sebring-international-raceway"]]
+   "amenities": [
+    "Under a mile from Sebring International Raceway",
+    "Up to 25 track days a year via Sebring Driving Club",
+    "3,000 sq ft clubhouse with heated pool, bar and sim room",
+    "Daily concierge, parcel room and rental desk",
+    "Units zoned for overnight stays, with bath and three-phase power"
+   ],
+   "sources": [
+    [
+     "IMSA",
+     "https://imsa.com/news/2024/07/01/sebring-motor-garages-becomes-official-luxury-motor-condominium-and-townhome-partner-of-sebring-international-raceway"
+    ]
+   ]
   },
   "collectionsuites-miami-fl": {
    "summary": "CollectionSuites in Doral is Miami's ultra-luxury option: 38 private suites of 2,000+ sq ft with staffed security around the clock. It is built as much for watches, art and wine as for cars, and each suite has its own fire suppression and remote camera access.",
@@ -153,8 +317,19 @@
    "units": "38 suites",
    "size": "2,000+ sq ft, with optional bath, closet, wet bar and loft",
    "price": "Launched from about $700K; current suites from about $1.1M",
-   "amenities": ["24/7 staffed security and management", "Gated compound with app-based owner access", "In-suite cameras viewable remotely", "Per-suite fire suppression and CO2 alerts", "Custom finishes such as Italian ceramic or wood floors"],
-   "sources": [["The Manual", "https://themanual.com/auto/collection-suites-offers-luxury-condos-just-for-storing-your-car-collection"]]
+   "amenities": [
+    "24/7 staffed security and management",
+    "Gated compound with app-based owner access",
+    "In-suite cameras viewable remotely",
+    "Per-suite fire suppression and CO2 alerts",
+    "Custom finishes such as Italian ceramic or wood floors"
+   ],
+   "sources": [
+    [
+     "The Manual",
+     "https://themanual.com/auto/collection-suites-offers-luxury-condos-just-for-storing-your-car-collection"
+    ]
+   ]
   },
   "naples-auto-vault-fl": {
    "summary": "Naples Auto Vault is the Lutgert Companies' entry into collector condos, a name Naples buyers already know from luxury homebuilding. The deeded units are built inland and away from storm surge, with oversized doors and layered security, and the finishes are previewed at Clive Daniel Home.",
@@ -163,8 +338,18 @@
    "doors": "Oversized doors for specialty and tall vehicles",
    "price": "From about $850K",
    "timeline": "Phase I vertical construction underway; completion planned Q4 2026",
-   "amenities": ["Inland location away from coastal surge", "Climate-controlled private units", "Layered security", "Built out as galleries, lounges or tasting rooms"],
-   "sources": [["Naples Illustrated", "https://www.naplesillustrated.com/naples-auto-vault-takes-shape-as-phase-i-moves-into-vertical-construction/"]]
+   "amenities": [
+    "Inland location away from coastal surge",
+    "Climate-controlled private units",
+    "Layered security",
+    "Built out as galleries, lounges or tasting rooms"
+   ],
+   "sources": [
+    [
+     "Naples Illustrated",
+     "https://www.naplesillustrated.com/naples-auto-vault-takes-shape-as-phase-i-moves-into-vertical-construction/"
+    ]
+   ]
   },
   "auto-clubhouse-palm-beach-fl": {
    "summary": "Auto ClubHouse Palm Beach in Jupiter is a 19-unit garage condo community in the Palm Beach Park of Commerce. Units have 22 ft clear ceilings and are built to South Florida hurricane standards. The brand plans 15+ locations nationally, and only a few of the original Jupiter units remain.",
@@ -174,8 +359,24 @@
    "ceilings": "22 ft clear",
    "doors": "15 x 15 ft roll-up",
    "price": "Listings around $615K to $650K",
-   "amenities": ["Hurricane-rated doors and windows (Dade County standards)", "CBS block demising walls and steel roof deck", "Roof-mounted HVAC included", "Bath stub-ups with shower and domestic water", "150 amp panel and floor drain for motorhomes", "Gated, climate-controlled community"],
-   "sources": [["Raveis listing", "https://www.raveis.com/property/flyer/21298444"], ["Only Garage Condos, August 2026 update", "https://onlygaragecondos.substack.com/p/garage-condo-development-update-august"]]
+   "amenities": [
+    "Hurricane-rated doors and windows (Dade County standards)",
+    "CBS block demising walls and steel roof deck",
+    "Roof-mounted HVAC included",
+    "Bath stub-ups with shower and domestic water",
+    "150 amp panel and floor drain for motorhomes",
+    "Gated, climate-controlled community"
+   ],
+   "sources": [
+    [
+     "Raveis listing",
+     "https://www.raveis.com/property/flyer/21298444"
+    ],
+    [
+     "Only Garage Condos, August 2026 update",
+     "https://onlygaragecondos.substack.com/p/garage-condo-development-update-august"
+    ]
+   ]
   },
   "indian-river-motorhaus-3-0-fl": {
    "summary": "Indian River MotorHaus 3.0 is the fourth phase from the Vero Beach team that already sold out Vero Autohaus, MotorHaus and the 92-unit MotorHaus 2.0. It uses 7-inch tilt-wall concrete designed to double as a hurricane shelter, at prices well below most Florida luxury garages.",
@@ -187,8 +388,19 @@
    "doors": "12 x 14 or 14 x 14 ft storm-resistant automatic doors",
    "price": "$249,900 to $389,900",
    "timeline": "First deliveries planned mid-2026",
-   "amenities": ["7-inch tilt-wall concrete built to hurricane-shelter standards", "Optional backup generators, lifts and mezzanines", "Pre-plumbed for bath with shower, pre-ducted for A/C", "Gated campus with pond, wetlands and preserved oaks and palms", "RV-capable electrical"],
-   "sources": [["Vero News", "https://veronews.info/?p=213473"]]
+   "amenities": [
+    "7-inch tilt-wall concrete built to hurricane-shelter standards",
+    "Optional backup generators, lifts and mezzanines",
+    "Pre-plumbed for bath with shower, pre-ducted for A/C",
+    "Gated campus with pond, wetlands and preserved oaks and palms",
+    "RV-capable electrical"
+   ],
+   "sources": [
+    [
+     "Vero News",
+     "https://veronews.info/?p=213473"
+    ]
+   ]
   },
   "paddock1-premium-garage-condos-fl": {
    "summary": "Paddock1 is an urban Tampa garage condo at Adamo Drive and 34th Street, minutes from downtown and Ybor City. Every unit has a finished bathroom and is engineered for a loft and lifts. It was 80% presold before vertical construction started.",
@@ -197,8 +409,18 @@
    "units": "61",
    "size": "1,000 to 1,400 sq ft",
    "price": "Launched from about $255K; recent listings $435K to $600K",
-   "amenities": ["Finished bathroom in every unit", "Pre-engineered for second-floor loft", "Car lift ready", "Climate controlled"],
-   "sources": [["Tampa Bay Business & Wealth", "https://tbbwmag.com/2022/08/09/great-places-and-spaces-update-on-paddock1-renderings/"]]
+   "amenities": [
+    "Finished bathroom in every unit",
+    "Pre-engineered for second-floor loft",
+    "Car lift ready",
+    "Climate controlled"
+   ],
+   "sources": [
+    [
+     "Tampa Bay Business & Wealth",
+     "https://tbbwmag.com/2022/08/09/great-places-and-spaces-update-on-paddock1-renderings/"
+    ]
+   ]
   },
   "motocave-luxury-car-condos-fl": {
    "summary": "Motocave puts 43 car condos and a pool clubhouse in a 55,000 sq ft gated building on Gandy Boulevard in St. Petersburg. It sold more than half its units during construction and was nearly sold out by mid-2026.",
@@ -207,8 +429,22 @@
    "units": "43 (7 remaining as of mid-2026)",
    "size": "918 to 1,591 sq ft",
    "price": "About $350K+ ($275 to $375 per sq ft); recent listings to about $520K",
-   "amenities": ["Clubhouse with pool, TVs and games", "Bathroom in every unit", "Options for kitchen, wet bar, shower and mezzanine", "Fully fenced with automatic gate"],
-   "sources": [["I Love the Burg", "https://ilovetheburg.com/motocave-tampa-bay/"], ["Only Garage Condos, August 2026 update", "https://onlygaragecondos.substack.com/p/garage-condo-development-update-august"]]
+   "amenities": [
+    "Clubhouse with pool, TVs and games",
+    "Bathroom in every unit",
+    "Options for kitchen, wet bar, shower and mezzanine",
+    "Fully fenced with automatic gate"
+   ],
+   "sources": [
+    [
+     "I Love the Burg",
+     "https://ilovetheburg.com/motocave-tampa-bay/"
+    ],
+    [
+     "Only Garage Condos, August 2026 update",
+     "https://onlygaragecondos.substack.com/p/garage-condo-development-update-august"
+    ]
+   ]
   },
   "collection-674-fl": {
    "summary": "Collection 674 in Oviedo is Central Florida's first purpose-built luxury car condo community: 34 gated, deeded units on Aloma Avenue east of SR 417. The specs are strong for the price, with 21 ft clear ceilings, 14 ft doors and a clubhouse with racing simulators.",
@@ -220,8 +456,23 @@
    "doors": "14 ft automated roll-up",
    "price": "Low $300Ks to upper $400Ks",
    "timeline": "Groundbreaking October 2026; completion targeted 2027",
-   "amenities": ["1,300 sq ft clubhouse with racing simulators", "Detail and wash bay", "24/7 monitored perimeter security", "200 amp panels, fire sprinklers and A/C", "Plumbing stubbed for private restrooms"],
-   "sources": [["Jared Jones Real Estate", "https://jaredjones.com/2026/07/24/collection-674-luxury-car-condos-oviedo/"], ["GrowthSpotter", "https://www.growthspotter.com/2026/07/23/central-floridas-first-luxury-car-condo-development-plans-october-groundbreaking-in-oviedo/"]]
+   "amenities": [
+    "1,300 sq ft clubhouse with racing simulators",
+    "Detail and wash bay",
+    "24/7 monitored perimeter security",
+    "200 amp panels, fire sprinklers and A/C",
+    "Plumbing stubbed for private restrooms"
+   ],
+   "sources": [
+    [
+     "Jared Jones Real Estate",
+     "https://jaredjones.com/2026/07/24/collection-674-luxury-car-condos-oviedo/"
+    ],
+    [
+     "GrowthSpotter",
+     "https://www.growthspotter.com/2026/07/23/central-floridas-first-luxury-car-condo-development-plans-october-groundbreaking-in-oviedo/"
+    ]
+   ]
   },
   "vehicle-fortress-fl": {
    "summary": "Vehicle Fortress in south Fort Myers is built for big rigs as well as cars. Doors run 15 to 20 ft wide with a 65 ft clear approach, and units combine up to 8,000 sq ft. That makes it one of the best Florida options for motorhomes, boats and large collections at a reasonable price.",
@@ -230,8 +481,489 @@
    "size": "From 21 x 50 ft; combinable to 2,000 to 8,000 sq ft",
    "doors": "15 to 20 ft wide, with a 65 ft clear driveway approach",
    "price": "About $182K to $370K",
-   "amenities": ["Individual A/C and insulation", "50 amp RV outlet and water in each unit", "Shared laundry, showers and meeting area", "127,000 sq ft Phase 2 building"],
-   "sources": [["Gulfshore Business", "https://www.gulfshorebusiness.com/gb_daily/vehicle-fortress-storage-facility-to-begin-construction-of-phase-2-in-south-fort-myers"]]
+   "amenities": [
+    "Individual A/C and insulation",
+    "50 amp RV outlet and water in each unit",
+    "Shared laundry, showers and meeting area",
+    "127,000 sq ft Phase 2 building"
+   ],
+   "sources": [
+    [
+     "Gulfshore Business",
+     "https://www.gulfshorebusiness.com/gb_daily/vehicle-fortress-storage-facility-to-begin-construction-of-phase-2-in-south-fort-myers"
+    ]
+   ]
+  },
+  "toy-barn-north-scottsdale-az": {
+   "summary": "Toy Barn's ninth Valley location is planned for Mack Innovation Park at Loop 101 and Bell Road. It is the company's flagship: 64 suites in phase one, about 135 at build-out, and Toy Barn's first members-only rooftop lounge, with views of the McDowell and Camelback Mountains. Toy Barn has built 543 units across 700,000 sq ft since 2010, and its first seven locations sold out.",
+   "developer": "Toy Barn (co-founder Jason Phillips)",
+   "units": "64 suites in phase one (98,000 sq ft); about 135 planned at build-out",
+   "ceilings": "20 ft minimum",
+   "doors": "Heavy-duty overhead garage doors",
+   "price": "Reservations open; pricing by location",
+   "timeline": "Construction expected to start 2026 to 2027",
+   "amenities": [
+    "Members-only rooftop lounge with mountain views",
+    "Clubhouse with kitchen and gathering areas",
+    "Climate control, Wi-Fi and plumbing",
+    "Options for mezzanine lofts, cabinetry, bathrooms and custom floors",
+    "Owner association with CC&Rs"
+   ],
+   "sources": [
+    [
+     "KTAR",
+     "https://ktar.com/arizona-news/toy-barn-north-scottsdale"
+    ],
+    [
+     "Orion Properties",
+     "https://www.orionprop.com/?p=32293"
+    ],
+    [
+     "AZ Big Media",
+     "https://azbigmedia.com/real-estate/toy-barn-breaks-ground-on-8th-valley-location"
+    ]
+   ]
+  },
+  "toy-barn-dove-valley-az": {
+   "summary": "Toy Barn Dove Valley is the brand's eighth Valley location: 91 owner suites on Cave Creek Road south of Carefree Highway. It was largely sold before completion, which is typical for Toy Barn, the most established luxury garage builder in metro Phoenix.",
+   "developer": "Toy Barn",
+   "units": "91",
+   "ceilings": "18 ft minimum",
+   "doors": "Heavy-duty overhead doors plus entry doors",
+   "amenities": [
+    "Climate control, Wi-Fi and plumbing",
+    "Options for lofts, built-in kitchens and bathrooms",
+    "Individually owned, condo-style ownership"
+   ],
+   "sources": [
+    [
+     "AZ Big Media",
+     "https://azbigmedia.com/real-estate/toy-barn-breaks-ground-on-8th-valley-location"
+    ]
+   ]
+  },
+  "motor-vault-fountain-hills-az": {
+   "summary": "Motor Vault Fountain Hills is a boutique, 30-suite community built by enthusiasts, including the head of the Ford GT Forum. Suites have 19 ft clear height and doors up to 18 ft wide, and a members-only clubhouse with a rooftop patio overlooks the park across the street.",
+   "developer": "Vern Haugen and partners",
+   "units": "30 suites (46,102 sq ft)",
+   "size": "1,032 to 2,176 sq ft (most about 1,500)",
+   "ceilings": "19 ft",
+   "doors": "Electric, 14 ft high by 16 to 18 ft wide",
+   "price": "Recent resales about $799K to $899K",
+   "amenities": [
+    "1,200 sq ft members clubhouse with rooftop patio",
+    "Wash area with deionized water",
+    "Plumbing, climate control and insulation in every unit",
+    "50 amp RV outlet and individual meter",
+    "Gated, video security, 24/7 access",
+    "Site leveled to protect low front spoilers"
+   ],
+   "sources": [
+    [
+     "Fountain Hills Times",
+     "https://www.fhtimes.com/fountain-hills-independent/stories/motor-vault-to-offer-high-end-hangout-for-enthusiasts,426866"
+    ]
+   ]
+  },
+  "apex-motor-club-az": {
+   "summary": "APEX Motor Club is a private motorsports country club on 280 acres near Maricopa, south of Phoenix, with a 2.27-mile road course and a second track planned that links to it for a 4+ mile circuit. Its garage condos sit directly behind pit lane.",
+   "units": "48 garage condos planned across four buildings",
+   "size": "About 1,250 sq ft with a hospitality mezzanine",
+   "price": "Membership-based; inquire",
+   "amenities": [
+    "2.27-mile road course, second track planned",
+    "Premium units directly behind pit lane",
+    "Planned 10,000 sq ft clubhouse with restaurant over pit lane",
+    "Pool, fitness center and locker rooms (planned)",
+    "About 250 members"
+   ],
+   "sources": [
+    [
+     "InMaricopa",
+     "https://www.inmaricopa.com/apex-motor-club-drives-economy-growth-maricopa/"
+    ]
+   ]
+  },
+  "the-hideaway-luxury-garages-az": {
+   "summary": "The Hideaway is a 70-unit gated garage condo community planned for Desert Ridge in north Phoenix, near Loop 101 and Cave Creek Road. Its specs are near the top of the Valley, with 24 to 26 ft interior clearance and 16 x 14 ft doors, plus a three-story owners clubhouse.",
+   "units": "70 deeded units",
+   "size": "1,250 to 1,800 sq ft",
+   "ceilings": "24 to 26 ft",
+   "doors": "16 ft wide x 14 ft tall",
+   "price": "Pre-construction pricing by reservation",
+   "timeline": "Reservations opened August 2026",
+   "amenities": [
+    "Three-story owners clubhouse",
+    "24/7 gated and monitored entry",
+    "Pre-construction add-ons: mezzanine, epoxy floors, bathroom"
+   ],
+   "sources": [
+    [
+     "IPS News",
+     "https://ipsnews.net/business/?p=249199"
+    ]
+   ]
+  },
+  "elite-garages-scottsdale-az": {
+   "summary": "Elite Garages Scottsdale is a 32-suite boutique project from Platinum Advisors, a developer with 29 projects in the Scottsdale Airpark. Every suite comes with a 5-ton HVAC system and 200 amp service, which are unusually strong standard specs.",
+   "developer": "Platinum Advisors (Jim Riggs)",
+   "units": "32",
+   "ceilings": "About 22 ft clear",
+   "doors": "Insulated, smart-enabled automatic overhead doors",
+   "price": "Reservations open",
+   "timeline": "Construction expected December 2026; completion Q3 2027",
+   "amenities": [
+    "5-ton HVAC in every suite",
+    "200 amp service with water and sewer stub-outs",
+    "Clubhouse with kitchen, restrooms and event space",
+    "Mezzanine options on every plan",
+    "Options for lifts, epoxy floors and private restrooms"
+   ],
+   "sources": [
+    [
+     "AZ Big Media",
+     "https://azbigmedia.com/real-estate/commercial-real-estate/elite-garages-scottsdale-announces-new-luxury-garage-project/"
+    ]
+   ]
+  },
+  "luxelocker-goodyear-az": {
+   "summary": "LuxeLocker is the Arizona option for people who want to rent first or buy outright. Its Goodyear site near the airport mixes 145 rental units with 61 condos for sale, and the brand reports that most of its premium units presell before construction finishes.",
+   "units": "206 total (61 condo units for sale, 145 rentals)",
+   "size": "Averages about 750 sq ft",
+   "doors": "14 ft powered overhead doors",
+   "price": "Buy or rent; inquire",
+   "amenities": [
+    "Gated with Avigilon security",
+    "Climate-controlled storage",
+    "Wash bay, RV dump station and air compressor",
+    "On-site restrooms"
+   ],
+   "sources": [
+    [
+     "AZ Big Media",
+     "https://azbigmedia.com/real-estate/18-5-million-luxelocker-storage-facility-in-goodyear-breaks-ground/"
+    ]
+   ]
+  },
+  "citadel-luxury-garages-co": {
+   "summary": "Citadel Luxury Garages in Glenwood Springs has some of the best standard specs in Colorado. Every unit comes with 23 ft clear ceilings, an oversized 14 x 18 ft door, installed HVAC and a private bathroom, which most communities charge extra for.",
+   "address": "301 Center Dr, Glenwood Springs, CO",
+   "size": "1,000 and 1,500 sq ft (1,500s include a mezzanine)",
+   "ceilings": "23 ft clear",
+   "doors": "14 x 18 ft overhead with awning",
+   "price": "From about $449K; roughly $450 per sq ft",
+   "timeline": "Units close at project completion",
+   "amenities": [
+    "Installed HVAC in every unit",
+    "Private bathroom, utility sink and floor drain",
+    "Fire sprinklers and 125 amp service",
+    "Options for mezzanine, HVLS fan, EV charger, epoxy floors",
+    "Deeded ownership with owners association"
+   ],
+   "sources": [
+    [
+     "LoopNet listing",
+     "https://www.loopnet.ca/Listing/301-Center-Dr-Glenwood-Springs-CO/37834684"
+    ]
+   ]
+  },
+  "garage-point-colorado-co": {
+   "summary": "Garage Point Colorado is an 89-unit gated campus in Morrison, on the Denver side of the foothills. It includes an owners clubhouse and a row of retail-approved storefront units, which is unusual for a garage condo community.",
+   "address": "4285 S Eldridge St, Morrison, CO",
+   "units": "89",
+   "ceilings": "About 20 ft clear, engineered for mezzanines",
+   "doors": "Insulated overhead doors",
+   "price": "About $220K to $435K; storefront units listed higher",
+   "amenities": [
+    "Owners clubhouse",
+    "Gated, 24/7 secured access",
+    "3-phase power, fire sprinklers and metered HVAC",
+    "Restroom rough-in",
+    "Nine retail-approved storefronts in Building A"
+   ],
+   "sources": [
+    [
+     "LoopNet listing",
+     "https://www.loopnet.com/Listing/4285-S-Eldridge-St-Morrison-CO/40631732/"
+    ]
+   ]
+  },
+  "the-garage-society-co": {
+   "summary": "The Garage Society in Commerce City gives you a real clubhouse at an entry price that is rare in metro Denver, about $240 per sq ft. Phase 1 sold out, and the clubhouse includes a lounge, meeting room and kitchen.",
+   "address": "9658 Havana St, Commerce City, CO",
+   "size": "1,100 to 1,500 sq ft (B units add 450 sq ft of pocket space)",
+   "doors": "14 x 14 or 12 x 14 ft automatic overhead",
+   "price": "About $264K to $369K (about $240 per sq ft)",
+   "amenities": [
+    "Clubhouse with lounge, meeting room and kitchen",
+    "Fully insulated with natural gas heat",
+    "Gated, 24/7 access",
+    "RV dump station and water hookup"
+   ],
+   "sources": [
+    [
+     "LoopNet listing",
+     "https://www.loopnet.com/Listing/9658-Havana-St-Commerce-City-CO/24755869/"
+    ]
+   ]
+  },
+  "titan-car-condos-co": {
+   "summary": "Titan Car Condos in southwest Littleton is built for lifts. Units have 27 ft clear height at center, enough for a stacker plus a 425 sq ft mezzanine, and gas and water in the unit.",
+   "address": "9740 Titan Ct, Littleton, CO",
+   "units": "72",
+   "size": "About 1,650 sq ft including a 425 sq ft mezzanine (49 x 25.5 ft footprint)",
+   "ceilings": "27 ft clear at center",
+   "doors": "14 x 14 ft overhead",
+   "price": "Example listing about $505K; HOA about $280/month",
+   "amenities": [
+    "Room for stackers and lifts",
+    "Water and gas in each unit",
+    "Built 2023"
+   ],
+   "sources": [
+    [
+     "CommercialCafe listing",
+     "https://www.commercialcafe.com/commercial-property/us/co/littleton/titan-car-condos/"
+    ]
+   ]
+  },
+  "playground-garages-centennial-co": {
+   "summary": "Playground Garages Centennial is a 62-unit gated community near I-25 and Arapahoe Road. Ceilings run 18 to 24 ft and owners buy both the unit and the land underneath it.",
+   "address": "7020 S Kenton St, Centennial, CO",
+   "units": "62 in five buildings",
+   "ceilings": "18 to 24 ft",
+   "price": "About $206K to $528K; early reservations up to 10% off",
+   "timeline": "Groundbreaking late 2026; move-in fall 2027",
+   "amenities": [
+    "Gated with wide drive aisles",
+    "Options for mezzanine and restroom",
+    "No ground lease"
+   ],
+   "sources": [
+    [
+     "Crexi listing",
+     "https://www.crexi.com/properties/2476975/colorado-centennial-garages"
+    ]
+   ]
+  },
+  "automotorplex-chanhassen-mn": {
+   "summary": "AutoMotorPlex is the community that started the car condo trend in Minnesota. Founder Bruno Silikowski, a former Polaris executive, opened in Chanhassen during the Great Recession, and its 146 units have been full for years with hundreds of people on the waitlist. Owners have built out bars, golf simulators, wine cellars and movie rooms.",
+   "developer": "Bruno Silikowski",
+   "units": "146 (165,000 sq ft)",
+   "size": "From about 1,200 sq ft",
+   "price": "Launched from $169K; resales only now",
+   "amenities": [
+    "Heated floors and floor drains",
+    "Fire suppression",
+    "Rough-ins for bath, wet bar and entertaining space",
+    "Owners add bars, sims, wine rooms and lifts",
+    "300+ person waitlist reported"
+   ],
+   "sources": [
+    [
+     "Twin Cities Business",
+     "https://tcbmag.com/pimp-my-garage/"
+    ]
+   ]
+  },
+  "automotorplex-medina-mn": {
+   "summary": "AutoMotorPlex Medina is the follow-up to the original Chanhassen community, with about 160 units on the west side of the Twin Cities. It is the realistic way to buy into the AutoMotorPlex name without waiting for a Chanhassen resale.",
+   "developer": "Bruno Silikowski",
+   "units": "About 160",
+   "price": "Phase 3 selling; inquire",
+   "amenities": [
+    "Same heated-floor, fire-suppressed build as Chanhassen",
+    "Rough-ins for bath and wet bar"
+   ],
+   "sources": [
+    [
+     "Twin Cities Business",
+     "https://tcbmag.com/pimp-my-garage/"
+    ]
+   ]
+  },
+  "the-hideout-mn": {
+   "summary": "The Hideout in St. Michael is a 2024-built, concrete-and-block community planned for about 150 units, with 25 ft ceilings and 14 ft doors. Unfinished units start around $290K, and finished suites with mezzanines, showers and three-level lifts have listed for up to $1.7M.",
+   "address": "5000 Odessa Ave NE, St. Michael, MN",
+   "units": "About 150 planned",
+   "size": "About 1,300 sq ft and up; combined units to 3,500+ sq ft",
+   "ceilings": "25 ft",
+   "doors": "14 ft overhead",
+   "price": "From about $290K unfinished; finished units $485K to $1.7M",
+   "amenities": [
+    "Concrete and block construction",
+    "Room for concrete mezzanines and triple-stack lifts",
+    "Bathrooms with showers in finished units"
+   ],
+   "sources": [
+    [
+     "LoopNet listing",
+     "https://loopnet.com/Listing/5000-Odessa-NE-ave-Saint-Michael-MN/33151192"
+    ]
+   ]
+  },
+  "park-place-storage-cottage-grove-mn": {
+   "summary": "Park Place Storage is Minnesota's largest garage condo operator, with communities across the Twin Cities. Units are heated, owners buy rather than rent, and sizes run from 300 to 15,000 sq ft, so it works for anything from a single car to a full collection.",
+   "developer": "Paul Jorgensen",
+   "size": "300 to 15,000 sq ft",
+   "amenities": [
+    "Heated buildings with large doors",
+    "Wash bay",
+    "Association-maintained grounds and snow removal"
+   ],
+   "sources": [
+    [
+     "Inside Self Storage",
+     "https://www.insideselfstorage.com/companies-and-products/park-place-storage-condominiums-build-facility-vehicles-and-big-toys-cottage"
+    ]
+   ]
+  },
+  "m1-concourse-mi": {
+   "summary": "M1 Concourse in Pontiac is one of the largest private garage communities in the world: about 250 garages on 87 acres around the 1.5-mile Champion Motor Speedway. It is also Metro Detroit's busiest car venue, hosting Motor Bella, Roadkill Nights and weekly Cars and Coffee.",
+   "developer": "M1 Concourse (CEO Jordan Zlotoff)",
+   "units": "About 250 private garages",
+   "price": "Resales from about $399K",
+   "amenities": [
+    "1.5-mile Champion Motor Speedway",
+    "Event center and restaurant overlooking Turn 10B",
+    "Motorsport Club with track access",
+    "Major annual events and Cars and Coffee"
+   ],
+   "sources": [
+    [
+     "Henry Payne",
+     "https://henrypayne.com/?p=26743"
+    ]
+   ]
+  },
+  "motorsports-gateway-howell-mi": {
+   "summary": "Motorsports Gateway is a $100M+ automotive country club on about 273 acres south of downtown Howell, with two tracks that combine into roughly 3 miles of raceway. Its garage condos look out over the track.",
+   "developer": "Jordan Dick and family",
+   "units": "68",
+   "price": "From $599,990",
+   "amenities": [
+    "Two tracks combining for about 3 miles",
+    "Track-view garage condos",
+    "Automotive innovation park",
+    "Members-style clubhouse space"
+   ],
+   "sources": [
+    [
+     "CBS Detroit",
+     "https://www.cbsnews.com/amp/detroit/news/major-motorsports-development-howell-to-soft-launch-this-summer"
+    ]
+   ]
+  },
+  "terminal-one-motor-yacht-club-wa": {
+   "summary": "Terminal One Motor + Yacht Club is the Northwest's first combined collector garage and superyacht marina, on a remediated former fuel terminal on Seattle's Salmon Bay near the Ballard Locks. It is designed by Olson Kundig and is the region's most ambitious garage project.",
+   "developer": "Cantera Group",
+   "units": "100",
+   "price": "From the mid $600Ks",
+   "timeline": "Sales launched June 2026; first occupancy targeted summer 2027",
+   "amenities": [
+    "Gated collector garages",
+    "Superyacht marina on Salmon Bay",
+    "Architecture by Olson Kundig"
+   ],
+   "sources": [
+    [
+     "The Registry",
+     "https://news.theregistryps.com/cantera-group-launches-sales-for-100-unit-terminal-one-motor-yacht-club-on-seattles-salmon-bay/"
+    ]
+   ]
+  },
+  "torque-motor-suites-blue-ash-oh": {
+   "summary": "Torque Motor Suites Blue Ash opened in summer 2026 with 30 deeded garage suites north of Cincinnati, and another 20 are planned. It is built by Neyer Properties, and four-time Indy 500 winner Helio Castroneves is a future owner and partner.",
+   "address": "4310 Glendale Milford Rd, Blue Ash, OH",
+   "developer": "Neyer Properties",
+   "units": "30 (Phase II adds 20)",
+   "size": "1,200 to 1,600 sq ft including up to 400 sq ft mezzanine",
+   "ceilings": "18 ft minimum",
+   "doors": "16 x 12 ft insulated (14 ft high in select units)",
+   "price": "From $399,900",
+   "amenities": [
+    "Outdoor patio and grilling area",
+    "Bar cabinetry with sink",
+    "Bathrooms with showers in select units",
+    "Gated with cameras and coded entry"
+   ],
+   "sources": [
+    [
+     "The Shop Magazine",
+     "https://theshopmag.com/news/torque-motor-suites-luxury-garage-complex-opens-in-blue-ash-ohio/"
+    ]
+   ]
+  },
+  "horsepower-farms-oh": {
+   "summary": "Horsepower Farms in Powell, north of Columbus, was built by Chip Vance of Auto Assets and opened in 2020. A 67-unit expansion broke ground in 2024 and will more than double it, and owners share a clubhouse with pond views.",
+   "address": "4301 Home Rd, Powell, OH",
+   "developer": "Chip Vance (Auto Assets)",
+   "units": "92 (67-unit expansion underway)",
+   "price": "About $156K to $290K",
+   "amenities": [
+    "Members-only clubhouse with pond views",
+    "Climate control and mezzanines",
+    "Reinforced concrete floors",
+    "High security"
+   ],
+   "sources": [
+    [
+     "1808 Delaware",
+     "https://1808delaware.com/?p=24405"
+    ]
+   ]
+  },
+  "grand-prix-auto-club-san-diego-ca": {
+   "summary": "Grand Prix Auto Club San Diego is a capped, private-inquiry-only club with 26 fully customizable residences. Prices start around $731K for about 1,000 sq ft and reach about $3M for the 3,825 sq ft flagship suite, so it sits squarely at the top of the California market.",
+   "units": "26",
+   "size": "920 to 3,825 sq ft; some with 663 sq ft mezzanines",
+   "price": "About $731K to $3.04M",
+   "amenities": [
+    "Members-only shared club spaces",
+    "Fully customizable units",
+    "Ownership permanently capped",
+    "Private access, no public events"
+   ],
+   "sources": [
+    [
+     "Fast Lane Drive",
+     "https://fastlanedrive.com/?p=32060"
+    ]
+   ]
+  },
+  "finish-line-auto-club-ca": {
+   "summary": "Finish Line Auto Club Costa Mesa, near John Wayne Airport, is Southern California's best-known collector club building. It has about 40 garage condos and a rooftop bar and lounge that look over the runway, and members fly in from Hawaii, Montana and Mexico City.",
+   "developer": "Rick and Tony Principe (T.R. Funding)",
+   "units": "About 40",
+   "price": "About $750K to $3.5M",
+   "amenities": [
+    "Rooftop bar and open-air lounge over the airport",
+    "Elevator with direct roof access",
+    "Event venue for marque gatherings",
+    "Sister clubs in Westlake Village and Calabasas"
+   ],
+   "sources": [
+    [
+     "Orange County Business Journal",
+     "https://www.ocbj.com/automobiles/finish-line-auto-club-in-costa-mesa-expands-footprint/"
+    ]
+   ]
+  },
+  "the-thermal-club-ca": {
+   "summary": "The Thermal Club is the country's best-known motorsports residential community: about 426 acres in the Coachella Valley with multiple private tracks, where owning a property is how you get track access. Villas come with garages large enough for serious collections.",
+   "price": "Residences have ranged from about $2.5M to $12M+",
+   "amenities": [
+    "Multiple private racetracks",
+    "On-site mechanics and driving coaches",
+    "Clubhouse, restaurant and observation tower",
+    "Brand facilities from BMW and others on site"
+   ],
+   "sources": [
+    [
+     "The Real Deal",
+     "https://therealdeal.com/la/2019/07/09/high-end-neighborhood-in-coachella-valley-is-a-motorsport-buffs-dream"
+    ]
+   ]
   }
  }
 }

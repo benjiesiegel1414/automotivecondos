@@ -8,24 +8,116 @@
    "desc": "Our 2026 ranking of the best car condos and garage condos in Texas: Maranello, T11 at COTA, Toy Cave, Garages of America and more, with sizes, ceilings, prices and amenities compared.",
    "intro": "Texas has more than 60 car condo communities, more than any state except Florida and Arizona. They range from $185K shells in Tomball to $2M+ track suites at Circuit of the Americas. We went through every Texas community we track and pulled specs, pricing and amenities from developer materials, listings and local reporting. These are the ten we'd look at first, each for a different kind of buyer.",
    "picks": [
-    {"slug": "maranello-luxury-auto-garages-tx", "award": "Best overall", "why": "Nothing else in Texas combines a 60,000 sq ft show concourse, a 13,000 sq ft lounge and on-site detailing, PPF and paint correction under one roof. If you want your garage to also be your social club, this is it.", "watch": "You pay for it: about $650 per sq ft, roughly double many DFW alternatives."},
-    {"slug": "t11-car-condos-at-cota-tx", "award": "Best track access", "why": "It is the only Texas garage condo built by an F1 circuit, with a private viewing platform at Turn 11 and dedicated owner track time. Units also scale from 1,500 to 6,000 sq ft.", "watch": "It is 20+ minutes from central Austin, and large finished suites run well into seven figures."},
-    {"slug": "toy-cave-luxury-garages-tx", "award": "Best clubhouse", "why": "The 24/7 clubhouse has an F1 simulator, bar, billiards and a detail center, and the location is just inside Houston's core near the Galleria. Units arrive finished with their own HVAC.", "watch": "Prices start around $839K and the first garages deliver in fall 2026."},
-    {"slug": "garages-of-america-plano-tx", "award": "Most proven builder", "why": "13 Texas communities and about 850 garages sold. If you want a deep resale market and an HOA that already runs events, Garages of America has the longest track record in the state.", "watch": "Most locations are resale only now, so inventory depends on what owners list."},
-    {"slug": "garages-of-the-americas-tx", "award": "Best value near COTA", "why": "It is right across from Circuit of the Americas with about 200 units, tall mezzanines that clear trailers and lifts, plus detailers and a racing coach on site, usually at a lower price than living inside the circuit.", "watch": "It is a large, busy campus, so it feels less exclusive than a 40-unit boutique."},
-    {"slug": "trailblazer-garages-las-colinas-tx", "award": "Best for DFW travelers", "why": "Minutes from DFW and Love Field, with blank-canvas units, a built-in 450 sq ft mezzanine, and a clubhouse with showers and a car wash. It launched at about $275 per sq ft.", "watch": "Units come as shells, so budget for finish-out on top of the purchase price."},
-    {"slug": "dominion-motor-club-tx", "award": "Best in San Antonio", "why": "21 ft ceilings, a real clubhouse and some of the best-finished resale units in the state. A second, 50-unit phase gives new buyers a way in.", "watch": "Original-campus inventory is resale only, and 2.0 won't deliver until about 2027."},
-    {"slug": "g2-motorsports-park-garage-condos-tx", "award": "Best trackside in North Texas", "why": "This is a private road course on 180 acres in Anna, and the garages have balconies overlooking the track and a 20,000 sq ft clubhouse. It is the closest you can get to living at a track in DFW.", "watch": "Anna is about 45 minutes north of Dallas."},
-    {"slug": "shavano-garage-condos-tx", "award": "Best entry price with a clubhouse", "why": "From about $269K you get a 1,000 to 2,000 sq ft unit in north San Antonio with a clubhouse, kitchen and bar. Few communities with that amenity level start this low.", "watch": "Only 39 units, and about two-thirds were already sold by mid-2026."},
-    {"slug": "big-tex-garage-condos-tx", "award": "Best budget pick (Houston)", "why": "Phase 2 units under $190K make this one of the cheapest ways to own a garage condo near a major Texas city.", "watch": "This is a storage-style community without luxury amenities, so it's best for pure car storage or a workshop."}
+    {
+     "slug": "maranello-luxury-auto-garages-tx",
+     "award": "Best overall",
+     "why": "Nothing else in Texas combines a 60,000 sq ft show concourse, a 13,000 sq ft lounge and on-site detailing, PPF and paint correction under one roof. If you want your garage to also be your social club, this is it.",
+     "watch": "You pay for it: about $650 per sq ft, roughly double many DFW alternatives."
+    },
+    {
+     "slug": "t11-car-condos-at-cota-tx",
+     "award": "Best track access",
+     "why": "It is the only Texas garage condo built by an F1 circuit, with a private viewing platform at Turn 11 and dedicated owner track time. Units also scale from 1,500 to 6,000 sq ft.",
+     "watch": "It is 20+ minutes from central Austin, and large finished suites run well into seven figures."
+    },
+    {
+     "slug": "toy-cave-luxury-garages-tx",
+     "award": "Best clubhouse",
+     "why": "The 24/7 clubhouse has an F1 simulator, bar, billiards and a detail center, and the location is just inside Houston's core near the Galleria. Units arrive finished with their own HVAC.",
+     "watch": "Prices start around $839K and the first garages deliver in fall 2026."
+    },
+    {
+     "slug": "garages-of-america-plano-tx",
+     "award": "Most proven builder",
+     "why": "13 Texas communities and about 850 garages sold. If you want a deep resale market and an HOA that already runs events, Garages of America has the longest track record in the state.",
+     "watch": "Most locations are resale only now, so inventory depends on what owners list."
+    },
+    {
+     "slug": "garages-of-the-americas-tx",
+     "award": "Best value near COTA",
+     "why": "It is right across from Circuit of the Americas with about 200 units, tall mezzanines that clear trailers and lifts, plus detailers and a racing coach on site, usually at a lower price than living inside the circuit.",
+     "watch": "It is a large, busy campus, so it feels less exclusive than a 40-unit boutique."
+    },
+    {
+     "slug": "trailblazer-garages-las-colinas-tx",
+     "award": "Best for DFW travelers",
+     "why": "Minutes from DFW and Love Field, with blank-canvas units, a built-in 450 sq ft mezzanine, and a clubhouse with showers and a car wash. It launched at about $275 per sq ft.",
+     "watch": "Units come as shells, so budget for finish-out on top of the purchase price."
+    },
+    {
+     "slug": "dominion-motor-club-tx",
+     "award": "Best in San Antonio",
+     "why": "21 ft ceilings, a real clubhouse and some of the best-finished resale units in the state. A second, 50-unit phase gives new buyers a way in.",
+     "watch": "Original-campus inventory is resale only, and 2.0 won't deliver until about 2027."
+    },
+    {
+     "slug": "g2-motorsports-park-garage-condos-tx",
+     "award": "Best trackside in North Texas",
+     "why": "This is a private road course on 180 acres in Anna, and the garages have balconies overlooking the track and a 20,000 sq ft clubhouse. It is the closest you can get to living at a track in DFW.",
+     "watch": "Anna is about 45 minutes north of Dallas."
+    },
+    {
+     "slug": "shavano-garage-condos-tx",
+     "award": "Best entry price with a clubhouse",
+     "why": "From about $269K you get a 1,000 to 2,000 sq ft unit in north San Antonio with a clubhouse, kitchen and bar. Few communities with that amenity level start this low.",
+     "watch": "Only 39 units, and about two-thirds were already sold by mid-2026."
+    },
+    {
+     "slug": "big-tex-garage-condos-tx",
+     "award": "Best budget pick (Houston)",
+     "why": "Phase 2 units under $190K make this one of the cheapest ways to own a garage condo near a major Texas city.",
+     "watch": "This is a storage-style community without luxury amenities, so it's best for pure car storage or a workshop."
+    }
    ],
-   "budget": [["Under $300K", ["big-tex-garage-condos-tx", "garage-werks-tx", "shavano-garage-condos-tx"]], ["$300K to $700K", ["dominion-motor-club-tx", "garages-of-the-americas-tx", "trailblazer-garages-las-colinas-tx", "g2-motorsports-park-garage-condos-tx", "garages-of-america-plano-tx"]], ["$700K and up", ["toy-cave-luxury-garages-tx", "maranello-luxury-auto-garages-tx", "t11-car-condos-at-cota-tx"]]],
+   "budget": [
+    [
+     "Under $300K",
+     [
+      "big-tex-garage-condos-tx",
+      "garage-werks-tx",
+      "shavano-garage-condos-tx"
+     ]
+    ],
+    [
+     "$300K to $700K",
+     [
+      "dominion-motor-club-tx",
+      "garages-of-the-americas-tx",
+      "trailblazer-garages-las-colinas-tx",
+      "g2-motorsports-park-garage-condos-tx",
+      "garages-of-america-plano-tx"
+     ]
+    ],
+    [
+     "$700K and up",
+     [
+      "toy-cave-luxury-garages-tx",
+      "maranello-luxury-auto-garages-tx",
+      "t11-car-condos-at-cota-tx"
+     ]
+    ]
+   ],
    "faq": [
-    ["What is the best car condo in Texas?", "For an all-around luxury experience we rank Maranello in Plano first, for its 60,000 sq ft concourse, lounge and on-site services. For track access, T11 at Circuit of the Americas is the clear pick. For value, look at Shavano in San Antonio or Big Tex in Tomball."],
-    ["How much does a car condo cost in Texas?", "Texas car condos we track run from about $185K for storage-style units near Houston to $2M+ for large finished suites at COTA. Most luxury units in DFW, Houston and Austin trade between $350K and $900K."],
-    ["Where are most car condos in Texas?", "Dallas-Fort Worth has the most, led by the Garages of America communities in Plano, Frisco, Allen, Carrollton and beyond. Houston and Austin are the next biggest markets, followed by San Antonio."],
-    ["Can you live in a Texas car condo?", "Generally no. Most Texas garage condos are zoned commercial or industrial, so overnight stays aren't allowed, even though many owners add bathrooms, bars and lounges."],
-    ["Are there Texas car condos with a race track?", "Yes. T11 and Garages of the Americas are at or across from Circuit of the Americas in Austin, and G2 Motorsports Park in Anna has garages on a private road course."]
+    [
+     "What is the best car condo in Texas?",
+     "For an all-around luxury experience we rank Maranello in Plano first, for its 60,000 sq ft concourse, lounge and on-site services. For track access, T11 at Circuit of the Americas is the clear pick. For value, look at Shavano in San Antonio or Big Tex in Tomball."
+    ],
+    [
+     "How much does a car condo cost in Texas?",
+     "Texas car condos we track run from about $185K for storage-style units near Houston to $2M+ for large finished suites at COTA. Most luxury units in DFW, Houston and Austin trade between $350K and $900K."
+    ],
+    [
+     "Where are most car condos in Texas?",
+     "Dallas-Fort Worth has the most, led by the Garages of America communities in Plano, Frisco, Allen, Carrollton and beyond. Houston and Austin are the next biggest markets, followed by San Antonio."
+    ],
+    [
+     "Can you live in a Texas car condo?",
+     "Generally no. Most Texas garage condos are zoned commercial or industrial, so overnight stays aren't allowed, even though many owners add bathrooms, bars and lounges."
+    ],
+    [
+     "Are there Texas car condos with a race track?",
+     "Yes. T11 and Garages of the Americas are at or across from Circuit of the Americas in Austin, and G2 Motorsports Park in Anna has garages on a private road course."
+    ]
    ]
   },
   {
@@ -36,26 +128,923 @@
    "desc": "Our 2026 ranking of the best car condos and garage condos in Florida: The Motor Enclave, Circuit Florida, P1 Motor Club, Sebring Motor Garages, CollectionSuites and more, with specs, prices and amenities compared.",
    "intro": "Florida is the biggest car condo market in the country, with more than 100 communities from Jacksonville to Naples. It is also the market where build quality matters most, because hurricane-rated doors, concrete walls and inland locations are not optional here. We went through every Florida community we track and pulled specs, pricing and amenities from developer materials, listings and local reporting. These are the twelve we'd look at first, each for a different kind of buyer.",
    "picks": [
-    {"slug": "the-motor-enclave-fl", "award": "Best overall", "why": "It has 200 acres, a 1.5-mile private track, about 300 garages and 42,000 sq ft of event space. The Motor Enclave is the most complete car community in Florida, and a deep resale market makes it easy to get in.", "watch": "New inventory is gone, and resales start in the high $300Ks."},
-    {"slug": "circuit-florida-car-condos-fl", "award": "Best place to live at the track", "why": "It is the rare Florida garage condo zoned for full-time living, on a 1.7-mile, 14-turn course with real elevation change. Members get about 160 track days a year, two clubhouses and on-site mechanics.", "watch": "Expect about an $80K initiation and roughly $800 a month in dues on top of the unit price."},
-    {"slug": "p1-motor-club-fl", "award": "Biggest motorsports country club", "why": "650 acres, a 3-mile track with a 4.5-mile circuit coming, karting, drift and off-road areas, plus garage townhomes over the track. Nothing else in the Southeast is being built at this scale.", "watch": "Membership starts around $192K, residences are about $1.4M, and the real estate is still years from completion."},
-    {"slug": "sebring-motor-garages-fl", "award": "Best racing heritage", "why": "It is the official condo partner of Sebring International Raceway, under a mile from the track, with up to 25 track days a year, a pool clubhouse and concierge. Units with 14 ft doors fit motorhomes.", "watch": "Sebring is a small town, about 90 minutes from Tampa and Orlando."},
-    {"slug": "collectionsuites-miami-fl", "award": "Best ultra-luxury", "why": "It has 24/7 staffed security, per-suite fire suppression and cameras, and 2,000+ sq ft suites finished like a gallery. This is where Miami collectors keep cars, watches and art together.", "watch": "It is the most expensive per sq ft in the state, from about $1.1M."},
-    {"slug": "naples-auto-vault-fl", "award": "Best new build in Naples", "why": "Built by the Lutgert Companies, a Naples name buyers already trust, in an inland location away from storm surge, with units from 1,000 to 3,000+ sq ft.", "watch": "It starts around $850K and Phase I isn't complete until late 2026."},
-    {"slug": "auto-clubhouse-palm-beach-fl", "award": "Best in Palm Beach County", "why": "22 ft clear ceilings, 15 x 15 ft doors and hurricane-rated construction in Jupiter, with HVAC and bath rough-ins included.", "watch": "Only 19 units, and few remain from the original release."},
-    {"slug": "indian-river-motorhaus-3-0-fl", "award": "Best hurricane-built value", "why": "7-inch tilt-wall concrete built to hurricane-shelter standards, 20 ft+ ceilings and doors up to 14 x 14 ft, from about $250K. The developers have sold out three earlier phases in Vero Beach.", "watch": "This is a storage-forward campus, not a clubhouse community."},
-    {"slug": "collection-674-fl", "award": "Best new option for Orlando", "why": "Central Florida's first purpose-built luxury car condos, with 21 ft clear ceilings, 14 ft doors, a sim-racing clubhouse and a wash bay, from the low $300Ks.", "watch": "It breaks ground in October 2026, so delivery is a 2027 event."},
-    {"slug": "paddock1-premium-garage-condos-fl", "award": "Best urban Tampa location", "why": "Minutes from downtown Tampa and Ybor City, with a finished bathroom in every unit and structure ready for a loft and lifts.", "watch": "Units are on the smaller side at 1,000 to 1,400 sq ft."},
-    {"slug": "motocave-luxury-car-condos-fl", "award": "Best small community (St. Pete)", "why": "A gated, 43-unit building with a pool clubhouse and a bath in every unit, a short drive from downtown St. Petersburg and the Gandy Bridge.", "watch": "It was nearly sold out by mid-2026, so expect resale pricing."},
-    {"slug": "vehicle-fortress-fl", "award": "Best for RVs and big rigs", "why": "Doors up to 20 ft wide, a 65 ft clear approach, 50 amp RV power and combinable units up to 8,000 sq ft, at prices from about $182K.", "watch": "This is a utility-first facility, so it's light on luxury finishes."}
+    {
+     "slug": "the-motor-enclave-fl",
+     "award": "Best overall",
+     "why": "It has 200 acres, a 1.5-mile private track, about 300 garages and 42,000 sq ft of event space. The Motor Enclave is the most complete car community in Florida, and a deep resale market makes it easy to get in.",
+     "watch": "New inventory is gone, and resales start in the high $300Ks."
+    },
+    {
+     "slug": "circuit-florida-car-condos-fl",
+     "award": "Best place to live at the track",
+     "why": "It is the rare Florida garage condo zoned for full-time living, on a 1.7-mile, 14-turn course with real elevation change. Members get about 160 track days a year, two clubhouses and on-site mechanics.",
+     "watch": "Expect about an $80K initiation and roughly $800 a month in dues on top of the unit price."
+    },
+    {
+     "slug": "p1-motor-club-fl",
+     "award": "Biggest motorsports country club",
+     "why": "650 acres, a 3-mile track with a 4.5-mile circuit coming, karting, drift and off-road areas, plus garage townhomes over the track. Nothing else in the Southeast is being built at this scale.",
+     "watch": "Membership starts around $192K, residences are about $1.4M, and the real estate is still years from completion."
+    },
+    {
+     "slug": "sebring-motor-garages-fl",
+     "award": "Best racing heritage",
+     "why": "It is the official condo partner of Sebring International Raceway, under a mile from the track, with up to 25 track days a year, a pool clubhouse and concierge. Units with 14 ft doors fit motorhomes.",
+     "watch": "Sebring is a small town, about 90 minutes from Tampa and Orlando."
+    },
+    {
+     "slug": "collectionsuites-miami-fl",
+     "award": "Best ultra-luxury",
+     "why": "It has 24/7 staffed security, per-suite fire suppression and cameras, and 2,000+ sq ft suites finished like a gallery. This is where Miami collectors keep cars, watches and art together.",
+     "watch": "It is the most expensive per sq ft in the state, from about $1.1M."
+    },
+    {
+     "slug": "naples-auto-vault-fl",
+     "award": "Best new build in Naples",
+     "why": "Built by the Lutgert Companies, a Naples name buyers already trust, in an inland location away from storm surge, with units from 1,000 to 3,000+ sq ft.",
+     "watch": "It starts around $850K and Phase I isn't complete until late 2026."
+    },
+    {
+     "slug": "auto-clubhouse-palm-beach-fl",
+     "award": "Best in Palm Beach County",
+     "why": "22 ft clear ceilings, 15 x 15 ft doors and hurricane-rated construction in Jupiter, with HVAC and bath rough-ins included.",
+     "watch": "Only 19 units, and few remain from the original release."
+    },
+    {
+     "slug": "indian-river-motorhaus-3-0-fl",
+     "award": "Best hurricane-built value",
+     "why": "7-inch tilt-wall concrete built to hurricane-shelter standards, 20 ft+ ceilings and doors up to 14 x 14 ft, from about $250K. The developers have sold out three earlier phases in Vero Beach.",
+     "watch": "This is a storage-forward campus, not a clubhouse community."
+    },
+    {
+     "slug": "collection-674-fl",
+     "award": "Best new option for Orlando",
+     "why": "Central Florida's first purpose-built luxury car condos, with 21 ft clear ceilings, 14 ft doors, a sim-racing clubhouse and a wash bay, from the low $300Ks.",
+     "watch": "It breaks ground in October 2026, so delivery is a 2027 event."
+    },
+    {
+     "slug": "paddock1-premium-garage-condos-fl",
+     "award": "Best urban Tampa location",
+     "why": "Minutes from downtown Tampa and Ybor City, with a finished bathroom in every unit and structure ready for a loft and lifts.",
+     "watch": "Units are on the smaller side at 1,000 to 1,400 sq ft."
+    },
+    {
+     "slug": "motocave-luxury-car-condos-fl",
+     "award": "Best small community (St. Pete)",
+     "why": "A gated, 43-unit building with a pool clubhouse and a bath in every unit, a short drive from downtown St. Petersburg and the Gandy Bridge.",
+     "watch": "It was nearly sold out by mid-2026, so expect resale pricing."
+    },
+    {
+     "slug": "vehicle-fortress-fl",
+     "award": "Best for RVs and big rigs",
+     "why": "Doors up to 20 ft wide, a 65 ft clear approach, 50 amp RV power and combinable units up to 8,000 sq ft, at prices from about $182K.",
+     "watch": "This is a utility-first facility, so it's light on luxury finishes."
+    }
    ],
-   "budget": [["Under $300K", ["vehicle-fortress-fl", "indian-river-motorhaus-3-0-fl"]], ["$300K to $700K", ["collection-674-fl", "motocave-luxury-car-condos-fl", "paddock1-premium-garage-condos-fl", "sebring-motor-garages-fl", "auto-clubhouse-palm-beach-fl", "the-motor-enclave-fl"]], ["$700K and up", ["naples-auto-vault-fl", "collectionsuites-miami-fl", "circuit-florida-car-condos-fl", "p1-motor-club-fl"]]],
+   "budget": [
+    [
+     "Under $300K",
+     [
+      "vehicle-fortress-fl",
+      "indian-river-motorhaus-3-0-fl"
+     ]
+    ],
+    [
+     "$300K to $700K",
+     [
+      "collection-674-fl",
+      "motocave-luxury-car-condos-fl",
+      "paddock1-premium-garage-condos-fl",
+      "sebring-motor-garages-fl",
+      "auto-clubhouse-palm-beach-fl",
+      "the-motor-enclave-fl"
+     ]
+    ],
+    [
+     "$700K and up",
+     [
+      "naples-auto-vault-fl",
+      "collectionsuites-miami-fl",
+      "circuit-florida-car-condos-fl",
+      "p1-motor-club-fl"
+     ]
+    ]
+   ],
    "faq": [
-    ["What is the best car condo in Florida?", "We rank The Motor Enclave in Tampa first overall for its private track, scale and event space. If you want to live at the track, Circuit Florida in Auburndale is the pick. For ultra-luxury collector storage, CollectionSuites in Doral leads."],
-    ["How much does a car condo cost in Florida?", "Florida car condos we track run from under $200K for storage-style units in Fort Myers and Punta Gorda to $1M+ in Miami and Naples. Most luxury units trade between $350K and $700K."],
-    ["Are Florida car condos hurricane proof?", "No building is hurricane proof, but the better Florida communities use concrete or tilt-wall construction, hurricane-rated doors and inland sites. Indian River MotorHaus 3.0, for example, is built with 7-inch tilt-wall concrete to hurricane-shelter standards. Always ask for the wind rating of the doors."],
-    ["Can you live in a car condo in Florida?", "Most Florida garage condos don't allow overnight stays. Exceptions include Circuit Florida, which is zoned for full-time residence, Sebring Motor Garages, which allows overnight stays, and garage townhomes at P1 Motor Club."],
-    ["Where are most car condos in Florida?", "Southwest Florida leads, with Naples, Fort Myers, Sarasota and Punta Gorda. Tampa Bay, the Treasure Coast and Palm Beach County follow."]
+    [
+     "What is the best car condo in Florida?",
+     "We rank The Motor Enclave in Tampa first overall for its private track, scale and event space. If you want to live at the track, Circuit Florida in Auburndale is the pick. For ultra-luxury collector storage, CollectionSuites in Doral leads."
+    ],
+    [
+     "How much does a car condo cost in Florida?",
+     "Florida car condos we track run from under $200K for storage-style units in Fort Myers and Punta Gorda to $1M+ in Miami and Naples. Most luxury units trade between $350K and $700K."
+    ],
+    [
+     "Are Florida car condos hurricane proof?",
+     "No building is hurricane proof, but the better Florida communities use concrete or tilt-wall construction, hurricane-rated doors and inland sites. Indian River MotorHaus 3.0, for example, is built with 7-inch tilt-wall concrete to hurricane-shelter standards. Always ask for the wind rating of the doors."
+    ],
+    [
+     "Can you live in a car condo in Florida?",
+     "Most Florida garage condos don't allow overnight stays. Exceptions include Circuit Florida, which is zoned for full-time residence, Sebring Motor Garages, which allows overnight stays, and garage townhomes at P1 Motor Club."
+    ],
+    [
+     "Where are most car condos in Florida?",
+     "Southwest Florida leads, with Naples, Fort Myers, Sarasota and Punta Gorda. Tampa Bay, the Treasure Coast and Palm Beach County follow."
+    ]
+   ]
+  },
+  {
+   "state": "AZ",
+   "slug": "best-car-condos-arizona",
+   "title": "Best Car Condos in Arizona (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Arizona",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Arizona: Toy Barn North Scottsdale, The Hideaway, Motor Vault, APEX Motor Club and more, with specs, prices and amenities compared.",
+   "intro": "Arizona has more than 70 car condo communities, the second-most in the country, and the market splits in two. Metro Phoenix and Scottsdale are home to some of the best-built luxury garages in the US, with tall ceilings, clubhouses and real collector communities. Lake Havasu City has about 20 storage-style communities built for boats, RVs and side-by-sides. We went through every Arizona community we track and pulled specs, pricing and amenities from developer materials, listings and local reporting. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "toy-barn-north-scottsdale-az",
+     "award": "Best overall builder",
+     "why": "Toy Barn has built 543 units across its Valley locations since 2010 and sold out its first seven. The north Scottsdale flagship adds 20 ft ceilings and the brand's first rooftop lounge. No Arizona builder has a longer track record.",
+     "watch": "It is a pre-construction reservation, so delivery is years out. For something sooner, look at Toy Barn resales in Scottsdale, Chandler and Cave Creek."
+    },
+    {
+     "slug": "the-hideaway-luxury-garages-az",
+     "award": "Best specs",
+     "why": "24 to 26 ft interior clearance and 16 x 14 ft doors are near the top of any garage condo in the country. You also get a three-story owners clubhouse in Desert Ridge.",
+     "watch": "Reservations only opened in August 2026, and pricing isn't published."
+    },
+    {
+     "slug": "motor-vault-fountain-hills-az",
+     "award": "Best boutique community",
+     "why": "Just 30 suites with 19 ft ceilings, doors up to 18 ft wide, a rooftop-patio clubhouse and a deionized wash bay. It was built by car people and it shows.",
+     "watch": "Resales run about $800K to $900K, and inventory is thin with only 30 owners."
+    },
+    {
+     "slug": "apex-motor-club-az",
+     "award": "Best track access",
+     "why": "It is the only Arizona pick on a private road course: a 2.27-mile track with a second circuit planned, and garage condos directly behind pit lane.",
+     "watch": "Membership comes first, and Maricopa is about 45 minutes from Scottsdale."
+    },
+    {
+     "slug": "elite-garages-scottsdale-az",
+     "award": "Best standard package",
+     "why": "A 5-ton HVAC system and 200 amp service come standard in every suite, plus 22 ft ceilings and a clubhouse, from a developer with 29 Scottsdale Airpark projects.",
+     "watch": "Construction doesn't start until December 2026, with completion around Q3 2027."
+    },
+    {
+     "slug": "garagetown-chandler-stellar-airpark-az",
+     "award": "Best for pilots",
+     "why": "This GarageTown community sits in Chandler's Stellar Airpark, where homes have their own hangars. Resales have traded around $275K to $285K.",
+     "watch": "Older stock, so check each unit's HVAC and finish-out before buying."
+    },
+    {
+     "slug": "luxelocker-goodyear-az",
+     "award": "Best rent-or-buy option",
+     "why": "LuxeLocker lets you rent first or buy outright, at a large gated site with a wash bay and RV dump. That is a low-commitment way into the West Valley.",
+     "watch": "Units average about 750 sq ft, smaller than the luxury picks above."
+    },
+    {
+     "slug": "golf-view-garages-az",
+     "award": "Best value (Lake Havasu)",
+     "why": "New units from about $145K in America's busiest boat-and-toy storage market. Lake Havasu City has about 20 storage condo communities, and Golf View is one that is selling new.",
+     "watch": "This is a storage-style community, not a luxury clubhouse."
+    }
+   ],
+   "budget": [
+    [
+     "Under $300K",
+     [
+      "golf-view-garages-az",
+      "garagetown-chandler-stellar-airpark-az",
+      "luxelocker-goodyear-az"
+     ]
+    ],
+    [
+     "$300K to $700K",
+     [
+      "the-hideaway-luxury-garages-az",
+      "elite-garages-scottsdale-az",
+      "toy-barn-north-scottsdale-az"
+     ]
+    ],
+    [
+     "$700K and up",
+     [
+      "motor-vault-fountain-hills-az",
+      "apex-motor-club-az"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Arizona?",
+     "For an established builder, Toy Barn leads Arizona with 543 units built since 2010. For specs, The Hideaway in north Phoenix offers 24 to 26 ft ceilings. For track access, APEX Motor Club near Maricopa has garage condos behind pit lane."
+    ],
+    [
+     "How much does a car condo cost in Arizona?",
+     "Arizona has the widest price spread we track. Lake Havasu City storage condos can resell under $100K, metro Phoenix luxury garages typically run $275K to $600K, and boutique Scottsdale communities like Motor Vault have resold around $800K to $900K."
+    ],
+    [
+     "Why are there so many garage condos in Lake Havasu City?",
+     "Lake Havasu is a boating and off-road town where HOAs limit what you can park at home, so owners buy deeded storage condos for boats, RVs and side-by-sides. We track about 20 communities there."
+    ],
+    [
+     "Do Arizona car condos have air conditioning?",
+     "The luxury communities do. Elite Garages includes a 5-ton HVAC in every suite, and Toy Barn and Motor Vault units are climate controlled. Many storage-style condos are only insulated, so confirm before you buy if you plan to spend time in the unit in summer."
+    ],
+    [
+     "Are there car condos on a race track in Arizona?",
+     "Yes. APEX Motor Club near Maricopa has garage condos behind pit lane on its private 2.27-mile road course."
+    ]
+   ]
+  },
+  {
+   "state": "CO",
+   "slug": "best-car-condos-colorado",
+   "title": "Best Car Condos in Colorado (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Colorado",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Colorado: Citadel Luxury Garages, Titan Car Condos, Garage Point Colorado, The Garage Society and more, with specs, prices and amenities compared.",
+   "intro": "Colorado has nearly 60 garage condo communities, most of them along the Front Range between Fort Collins and Colorado Springs. Prices are lower than you'd expect for a market this strong, with many metro Denver units under $350K. The best communities stand out on build quality: tall ceilings for lifts, real heat and clubhouses. We went through every Colorado community we track and pulled specs and pricing from developer materials and listings. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "citadel-luxury-garages-co",
+     "award": "Best specs",
+     "why": "23 ft clear ceilings, 14 x 18 ft doors, installed HVAC and a private bathroom come standard. Most Colorado communities charge extra for half of that.",
+     "watch": "Glenwood Springs is a mountain-town location about 2.5 hours from Denver."
+    },
+    {
+     "slug": "titan-car-condos-co",
+     "award": "Best for lifts",
+     "why": "27 ft of clear height at center fits a stacker and a 425 sq ft mezzanine, with gas and water in the unit, in southwest Littleton.",
+     "watch": "HOA runs about $280 a month, and listings show inconsistent square footage, so confirm with the broker."
+    },
+    {
+     "slug": "garage-point-colorado-co",
+     "award": "Best near the foothills",
+     "why": "An 89-unit gated campus in Morrison with an owners clubhouse, 20 ft ceilings engineered for mezzanines, and rare retail-approved storefront units.",
+     "watch": "Storefront units list far above the standard garages."
+    },
+    {
+     "slug": "the-garage-society-co",
+     "award": "Best value with a clubhouse",
+     "why": "About $240 per sq ft for 1,100 to 1,500 sq ft units, plus a clubhouse with lounge, meeting room and kitchen. That is hard to beat in metro Denver.",
+     "watch": "Commerce City is on the north side, so check the commute from the south suburbs."
+    },
+    {
+     "slug": "playground-garages-centennial-co",
+     "award": "Best new build (south metro)",
+     "why": "62 units off I-25 and Arapahoe Road with 18 to 24 ft ceilings, priced from about $206K. Early reservations are up to 10% off.",
+     "watch": "Move-in isn't until fall 2027."
+    },
+    {
+     "slug": "garagetown-ken-caryl-ranch-co",
+     "award": "Most established",
+     "why": "With 143 units, GarageTown Ken Caryl is one of the biggest and longest-running communities in Colorado, so resales come up regularly.",
+     "watch": "Resale only, so you're buying an older unit and its finish-out."
+    },
+    {
+     "slug": "mygarage-northcrest-co",
+     "award": "Best in Colorado Springs",
+     "why": "71 units selling now from about $175K to $258K. It is the most accessible new-build option in the Springs.",
+     "watch": "A storage-forward community without a big clubhouse."
+    },
+    {
+     "slug": "grand-garages-co",
+     "award": "Best on the Western Slope",
+     "why": "A 50-unit Grand Junction community with a 20 x 35 ft unit around $206K, at about $275 to $295 per sq ft.",
+     "watch": "Smaller units than the Front Range luxury picks."
+    }
+   ],
+   "budget": [
+    [
+     "Under $300K",
+     [
+      "mygarage-northcrest-co",
+      "grand-garages-co",
+      "playground-garages-centennial-co",
+      "the-garage-society-co"
+     ]
+    ],
+    [
+     "$300K to $500K",
+     [
+      "garage-point-colorado-co",
+      "citadel-luxury-garages-co",
+      "titan-car-condos-co"
+     ]
+    ],
+    [
+     "Resale only",
+     [
+      "garagetown-ken-caryl-ranch-co"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Colorado?",
+     "For specs, Citadel Luxury Garages in Glenwood Springs includes 23 ft ceilings, 14 x 18 ft doors, HVAC and a private bath standard. In metro Denver, Titan Car Condos (27 ft ceilings) and Garage Point Colorado (clubhouse, 89 units) are our top picks."
+    ],
+    [
+     "How much does a garage condo cost in Colorado?",
+     "Most Colorado garage condos we track start between $175K and $450K. Our price index puts the Colorado median entry price near $240K, well below the national median."
+    ],
+    [
+     "Where are most garage condos in Colorado?",
+     "Along the Front Range: the south Denver suburbs (Littleton, Centennial, Castle Rock, Parker), the north corridor (Longmont, Loveland, Windsor, Johnstown) and Colorado Springs."
+    ],
+    [
+     "Are Colorado garage condos heated?",
+     "Many are, but not all. The Garage Society uses natural gas heat, Citadel includes installed HVAC, and Titan units have gas in the unit. Always confirm heat before buying in Colorado."
+    ],
+    [
+     "Can you live in a Colorado garage condo?",
+     "Generally no. They are zoned commercial or industrial, so overnight stays aren't allowed even when a unit has a bathroom."
+    ]
+   ]
+  },
+  {
+   "state": "MN",
+   "slug": "best-car-condos-minnesota",
+   "title": "Best Car Condos in Minnesota (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Minnesota",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Minnesota: AutoMotorPlex Chanhassen, The Hideout, AutoMotorPlex Medina, Garage Solution and more, with specs, prices and amenities compared.",
+   "intro": "Minnesota is one of the most developed garage condo markets in the country, with 40+ communities. The reason is simple: long winters and HOAs that limit home garages mean a lot of cars, boats and toys need a heated place to live. The Twin Cities suburbs have everything from the original AutoMotorPlex to 300+ unit storage campuses. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "automotorplex-chanhassen-mn",
+     "award": "Best overall",
+     "why": "The community that started the Minnesota car condo trend. It has 146 units with heated floors and fire suppression, owners who've built bars, sims and wine rooms, and a waitlist reported in the hundreds.",
+     "watch": "Resale only, and units rarely come up."
+    },
+    {
+     "slug": "the-hideout-mn",
+     "award": "Best specs",
+     "why": "2024-built concrete and block construction with 25 ft ceilings and 14 ft doors. Finished suites include mezzanines, showers and three-level lifts.",
+     "watch": "Finished suites run $485K to $1.7M. Unfinished units start around $290K."
+    },
+    {
+     "slug": "automotorplex-medina-mn",
+     "award": "Best way into AutoMotorPlex",
+     "why": "About 160 units built to the same standard as Chanhassen, with Phase 3 selling now. You don't have to wait on the Chanhassen waitlist.",
+     "watch": "Pricing is by inquiry."
+    },
+    {
+     "slug": "garage-solution-condominiums-mn",
+     "award": "Widest range of sizes",
+     "why": "148 units in Columbus with 2026 sales from about $250K to $861K, so there is room to start small or go big.",
+     "watch": "North of the metro, convenient to the I-35 corridor."
+    },
+    {
+     "slug": "park-place-storage-minnetrista-mn",
+     "award": "Largest community",
+     "why": "369 units, the biggest community we track in Minnesota, from the state's largest garage condo operator. 2026 sales ran about $195K to $450K.",
+     "watch": "A storage-campus feel rather than a boutique club."
+    },
+    {
+     "slug": "midwest-flexspace-lakeville-mn",
+     "award": "Best new-build value",
+     "why": "98 units under construction from about $185K in the south metro, with sister sites in Rosemount and White Bear Lake.",
+     "watch": "Flex-space style units with fewer luxury amenities."
+    },
+    {
+     "slug": "brink-4-luxury-condos-mn",
+     "award": "Best south metro resale",
+     "why": "59 units in Lakeville with resales from about $283K to $345K.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "bir-luxury-garages-mn",
+     "award": "Best track access",
+     "why": "Garages planned at Brainerd International Raceway, Minnesota's best-known track. Only 12 units are planned.",
+     "watch": "Still planned, and Brainerd is about 2.5 hours north of the Twin Cities."
+    }
+   ],
+   "budget": [
+    [
+     "Under $250K",
+     [
+      "midwest-flexspace-lakeville-mn",
+      "park-place-storage-minnetrista-mn"
+     ]
+    ],
+    [
+     "$250K to $400K",
+     [
+      "garage-solution-condominiums-mn",
+      "brink-4-luxury-condos-mn",
+      "the-hideout-mn"
+     ]
+    ],
+    [
+     "Hard to get / premium",
+     [
+      "automotorplex-chanhassen-mn",
+      "automotorplex-medina-mn",
+      "bir-luxury-garages-mn"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Minnesota?",
+     "AutoMotorPlex in Chanhassen is the original and best-known, though it rarely has resales. The Hideout in St. Michael has the best specs (25 ft ceilings, concrete construction), and AutoMotorPlex Medina is the realistic way to buy into the brand."
+    ],
+    [
+     "How much does a garage condo cost in Minnesota?",
+     "Our price index puts the Minnesota median entry price near $195K. Most Twin Cities units trade between $185K and $450K, with fully finished luxury suites going higher."
+    ],
+    [
+     "Are Minnesota garage condos heated?",
+     "The good ones are. AutoMotorPlex uses heated floors, and Park Place Storage buildings are heated. Always confirm, because heat is the single most important feature in a Minnesota winter."
+    ],
+    [
+     "Why are garage condos so popular in Minnesota?",
+     "Long winters, lake culture and HOA rules that limit what you can store at home. Owners keep cars, boats, snowmobiles and RVs in a heated, deeded space close to home."
+    ]
+   ]
+  },
+  {
+   "state": "MI",
+   "slug": "best-car-condos-michigan",
+   "title": "Best Car Condos in Michigan (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Michigan",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Michigan: M1 Concourse, Motorsports Gateway, Grand Haven Storage, ClearSpace and more, with specs, prices and amenities compared.",
+   "intro": "Michigan has 35 garage condo communities and two of the most important car country clubs in the US. The market splits between Metro Detroit's motorsport clubs and the Lake Michigan shoreline, where storage condos for boats and summer toys are a way of life. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "m1-concourse-mi",
+     "award": "Best overall",
+     "why": "About 250 private garages on 87 acres around a 1.5-mile track in Pontiac. It is also Metro Detroit's busiest car venue, home to Motor Bella and Roadkill Nights.",
+     "watch": "Resales start around $399K, and the best track-facing units cost much more."
+    },
+    {
+     "slug": "motorsports-gateway-howell-mi",
+     "award": "Best new track community",
+     "why": "A $100M+ country club on 273 acres with two tracks combining into about 3 miles, and garage condos overlooking the circuit.",
+     "watch": "From about $600K, and the project is still building out."
+    },
+    {
+     "slug": "grand-haven-storage-mi",
+     "award": "Best on Lake Michigan",
+     "why": "81 units in Grand Haven, where 2026 resales ran from about $285K to $1.1M (median around $585K). That is about as premium as lakeshore storage gets.",
+     "watch": "Resale only, at prices well above typical storage condos."
+    },
+    {
+     "slug": "clearspace-mi",
+     "award": "Best in Ludington",
+     "why": "A newer 24-unit community selling around $325K in one of Michigan's favorite summer towns.",
+     "watch": "Small community, so inventory is limited."
+    },
+    {
+     "slug": "the-dune-lockers-mi",
+     "award": "Best for dune toys",
+     "why": "68 units at Silver Lake, the only place in Michigan where you can drive the dunes. Built for side-by-sides, buggies and trucks.",
+     "watch": "Seasonal destination and pricing by inquiry."
+    },
+    {
+     "slug": "st-clair-storage-condos-mi",
+     "award": "Best near Detroit for boats and toys",
+     "why": "A 90-unit selling community in St. Clair County, convenient to Lake St. Clair and the Thumb.",
+     "watch": "Storage-style community; pricing by inquiry."
+    },
+    {
+     "slug": "storage-condos-of-michigan-mi",
+     "award": "Best Oakland County option",
+     "why": "63 units in Waterford, minutes from the lakes of north Oakland County.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "riley-condominium-mi",
+     "award": "Best value",
+     "why": "2026 sales from about $160K to $192K in Zeeland, near Holland and Grand Rapids.",
+     "watch": "Storage-focused units without clubhouse amenities."
+    }
+   ],
+   "budget": [
+    [
+     "Under $250K",
+     [
+      "riley-condominium-mi"
+     ]
+    ],
+    [
+     "$250K to $500K",
+     [
+      "clearspace-mi",
+      "m1-concourse-mi",
+      "grand-haven-storage-mi"
+     ]
+    ],
+    [
+     "$500K and up",
+     [
+      "motorsports-gateway-howell-mi"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Michigan?",
+     "M1 Concourse in Pontiac is Michigan's flagship, with about 250 garages around a private 1.5-mile track and major annual events. Motorsports Gateway in Howell is the newer track-based alternative."
+    ],
+    [
+     "How much does a garage condo cost in Michigan?",
+     "Our price index puts the Michigan median entry price near $188K. Storage condos along Lake Michigan often trade under $300K, while M1 Concourse and Motorsports Gateway units start around $400K to $600K."
+    ],
+    [
+     "Are there car condos with a track in Michigan?",
+     "Yes, two: M1 Concourse (Champion Motor Speedway, 1.5 miles) in Pontiac and Motorsports Gateway in Howell (about 3 miles combined)."
+    ],
+    [
+     "Why are there so many storage condos on Lake Michigan?",
+     "Summer towns like Grand Haven, Holland and Ludington have strict rules on storing boats and toys at home, so owners buy deeded storage condos close to the water."
+    ]
+   ]
+  },
+  {
+   "state": "WA",
+   "slug": "best-car-condos-washington",
+   "title": "Best Car Condos in Washington (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Washington",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Washington: Terminal One, Monster Garage Condos, Chelan Luxury Garages, GarageTown Spokane Valley and more, with specs, prices and amenities compared.",
+   "intro": "Washington has more than 25 garage condo communities spread across very different markets: Seattle's new marina-side collector project, mountain getaways in Cle Elum and Chelan, Spokane and the Tri-Cities, and a cluster of resort-area storage condos around Quincy and the Columbia River Gorge. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "terminal-one-motor-yacht-club-wa",
+     "award": "Best overall",
+     "why": "The Northwest's first combined collector garage and superyacht marina, on Salmon Bay near the Ballard Locks, with architecture by Olson Kundig. Nothing else in the region compares.",
+     "watch": "Priced from the mid $600Ks, with first occupancy targeted for summer 2027."
+    },
+    {
+     "slug": "monster-garage-condos-wa",
+     "award": "Best mountain getaway",
+     "why": "116 units in Cle Elum, the gateway to Suncadia and Snoqualmie Pass. Larger units have listed around $415K.",
+     "watch": "About 80 miles east of Seattle, so it's a second-home play for most."
+    },
+    {
+     "slug": "chelan-luxury-garages-wa",
+     "award": "Best lake town",
+     "why": "58 luxury garages under construction in Lake Chelan, Washington's top summer lake destination.",
+     "watch": "Pre-construction pricing."
+    },
+    {
+     "slug": "garagetown-spokane-valley-wa",
+     "award": "Best in Spokane",
+     "why": "91 units from GarageTown, one of the most established names in the category, with resales around $314K.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "fat-cat-garages-tri-cities-wa",
+     "award": "Best in the Tri-Cities",
+     "why": "38 units in Richland selling around $356K to $365K.",
+     "watch": "Smaller community, so inventory goes quickly."
+    },
+    {
+     "slug": "flexspace-north-wa",
+     "award": "Best near Bellingham",
+     "why": "40 units in Ferndale selling around $328K to $335K, close to I-5 and the Canadian border.",
+     "watch": "Flex-space units with fewer luxury amenities."
+    },
+    {
+     "slug": "garages-at-the-vineyard-wa",
+     "award": "Best Columbia River resort pick",
+     "why": "47 units near Quincy and Crescent Bar selling around $349K, built for the boats and toys of the Gorge.",
+     "watch": "A long drive from western Washington."
+    },
+    {
+     "slug": "crescent-bar-garage-condominiums-wa",
+     "award": "Best value",
+     "why": "64 units from about $107K, one of the lowest entry prices in the state.",
+     "watch": "Storage-style units, not luxury garages."
+    }
+   ],
+   "budget": [
+    [
+     "Under $250K",
+     [
+      "crescent-bar-garage-condominiums-wa"
+     ]
+    ],
+    [
+     "$250K to $450K",
+     [
+      "garagetown-spokane-valley-wa",
+      "flexspace-north-wa",
+      "garages-at-the-vineyard-wa",
+      "fat-cat-garages-tri-cities-wa",
+      "monster-garage-condos-wa"
+     ]
+    ],
+    [
+     "$450K and up",
+     [
+      "terminal-one-motor-yacht-club-wa"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Washington?",
+     "Terminal One Motor + Yacht Club in Seattle is the most ambitious project in the state, pairing collector garages with a superyacht marina. Outside Seattle, Monster Garage Condos in Cle Elum and GarageTown Spokane Valley are strong picks."
+    ],
+    [
+     "Are there car condos in Seattle?",
+     "Yes. Terminal One Motor + Yacht Club on Salmon Bay is selling 100 units from the mid $600Ks, with occupancy targeted for 2027. Most other Washington communities are east of the Cascades or north toward Bellingham."
+    ],
+    [
+     "How much does a garage condo cost in Washington?",
+     "Our price index puts the Washington median entry price near $248K. Units range from about $100K in resort storage communities to $650K+ in Seattle."
+    ]
+   ]
+  },
+  {
+   "state": "OH",
+   "slug": "best-car-condos-ohio",
+   "title": "Best Car Condos in Ohio (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Ohio",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Ohio: Torque Motor Suites Blue Ash, The Motor Enclave New Albany, Resolute Motorsports Club, Horsepower Farms and more, with specs, prices and amenities compared.",
+   "intro": "Ohio has more than 25 garage condo communities, and the market is changing fast. Cincinnati and Columbus are getting purpose-built luxury car suites, and the Lake Erie islands near Port Clinton have one of the largest concentrations of boat and storage condos in the Midwest. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "torque-motor-suites-blue-ash-oh",
+     "award": "Best overall",
+     "why": "30 deeded suites that opened in summer 2026 with 18 ft ceilings, mezzanines, a patio and grilling area, from Neyer Properties with Helio Castroneves as a partner.",
+     "watch": "From $399,900, at the high end for Ohio."
+    },
+    {
+     "slug": "the-motor-enclave-new-albany-oh",
+     "award": "Best Columbus luxury project",
+     "why": "A planned 165-unit Motor Enclave community in New Albany, with pricing planned from about $160K to $550K.",
+     "watch": "Still planned, so timing is uncertain."
+    },
+    {
+     "slug": "resolute-motorsports-club-oh",
+     "award": "Best track access",
+     "why": "A planned 250-unit private motorsports club with a track in Delaware County, north of Columbus.",
+     "watch": "Pre-construction."
+    },
+    {
+     "slug": "horsepower-farms-oh",
+     "award": "Best clubhouse in Columbus",
+     "why": "92 units in Powell with a members-only clubhouse overlooking a pond, and a 67-unit expansion underway. Prices from about $156K to $290K.",
+     "watch": "Expansion units are still being built."
+    },
+    {
+     "slug": "executive-storage-estates-oh",
+     "award": "Largest in central Ohio",
+     "why": "117 units in Plain City with resales around $370K.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "mega-storage-condominiums-oh",
+     "award": "Best near Cleveland",
+     "why": "107 units selling in Twinsburg, between Cleveland and Akron.",
+     "watch": "Storage-style, pricing by inquiry."
+    },
+    {
+     "slug": "safe-harbor-storage-condos-oh",
+     "award": "Best on Lake Erie",
+     "why": "185 units in Marblehead with 2026 sales from about $90K to $330K, built for Lake Erie boating season.",
+     "watch": "Lake-focused storage rather than car-club luxury."
+    },
+    {
+     "slug": "hudson-pointe-oh",
+     "award": "Best boutique",
+     "why": "Just 9 units in Hudson selling around $216K to $263K.",
+     "watch": "Very limited inventory."
+    }
+   ],
+   "budget": [
+    [
+     "Under $250K",
+     [
+      "horsepower-farms-oh",
+      "safe-harbor-storage-condos-oh",
+      "hudson-pointe-oh"
+     ]
+    ],
+    [
+     "$250K to $400K",
+     [
+      "executive-storage-estates-oh",
+      "torque-motor-suites-blue-ash-oh"
+     ]
+    ],
+    [
+     "Coming soon",
+     [
+      "the-motor-enclave-new-albany-oh",
+      "resolute-motorsports-club-oh"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Ohio?",
+     "Torque Motor Suites in Blue Ash, north of Cincinnati, is our top pick: 30 deeded suites with 18 ft ceilings and mezzanines that opened in 2026. In Columbus, Horsepower Farms in Powell has a members clubhouse, and The Motor Enclave is planned for New Albany."
+    ],
+    [
+     "How much does a garage condo cost in Ohio?",
+     "Our price index puts the Ohio median entry price near $130K, pulled down by Lake Erie storage condos. Luxury car suites in Cincinnati and Columbus run about $300K to $550K."
+    ],
+    [
+     "Are there car condos with a race track in Ohio?",
+     "Resolute Motorsports Club is planned in Delaware County with about 250 units. It is pre-construction."
+    ]
+   ]
+  },
+  {
+   "state": "WI",
+   "slug": "best-car-condos-wisconsin",
+   "title": "Best Car Condos in Wisconsin (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in Wisconsin",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in Wisconsin: Woodfield Court Motor Condos, Trackside Road Garage Condos, P2 Auto Vault, Troy Condo Garages and more, with specs, prices and amenities compared.",
+   "intro": "Wisconsin has 26 garage condo communities, with most clustered around Green Bay, Milwaukee, Madison and the St. Croix River towns near the Twin Cities. Prices are some of the lowest in the country, and Elkhart Lake gives the state one of America's great trackside options at Road America. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "woodfield-court-motor-condos-wi",
+     "award": "Best overall",
+     "why": "101 units selling in Suamico, north of Green Bay, from about $171K to $360K. It is one of the largest communities selling in Wisconsin.",
+     "watch": "Green Bay area only, so it's a drive from Milwaukee or Madison."
+    },
+    {
+     "slug": "trackside-road-garage-condos-wi",
+     "award": "Best track access",
+     "why": "Garage condos in Elkhart Lake, a short drive from Road America, one of the most famous road courses in North America.",
+     "watch": "Resale only, and inventory is rare."
+    },
+    {
+     "slug": "p2-auto-vault-business-condos-wi",
+     "award": "Best near Milwaukee",
+     "why": "133 units in Grafton, north of Milwaukee, priced from about $148K to $311K.",
+     "watch": "Mixed business and vehicle condos."
+    },
+    {
+     "slug": "troy-condo-garages-wi",
+     "award": "Best for Twin Cities buyers",
+     "why": "30 units in Hudson, just across the St. Croix from the Twin Cities, around $200K.",
+     "watch": "Small community."
+    },
+    {
+     "slug": "nr-garage-condos-wi",
+     "award": "Best value near the St. Croix",
+     "why": "60 units in New Richmond around $159K.",
+     "watch": "Storage-style units."
+    },
+    {
+     "slug": "indigo-storage-condos-wi",
+     "award": "Best in Door County",
+     "why": "A 10-unit Egg Harbor community around $170K to $200K, for Door County summer homes.",
+     "watch": "Very limited inventory."
+    },
+    {
+     "slug": "newville-garage-condominium-wi",
+     "award": "Best value near Madison",
+     "why": "58 units near Edgerton with 2026 sales from about $120K to $148K.",
+     "watch": "Storage-focused, no clubhouse."
+    },
+    {
+     "slug": "overdrive-motor-condos-wi",
+     "award": "Best new project",
+     "why": "A planned 22-unit motor condo community in De Pere, near Green Bay.",
+     "watch": "Still planned."
+    }
+   ],
+   "budget": [
+    [
+     "Under $175K",
+     [
+      "newville-garage-condominium-wi",
+      "nr-garage-condos-wi",
+      "p2-auto-vault-business-condos-wi"
+     ]
+    ],
+    [
+     "$175K to $400K",
+     [
+      "woodfield-court-motor-condos-wi",
+      "troy-condo-garages-wi",
+      "indigo-storage-condos-wi"
+     ]
+    ],
+    [
+     "Trackside or coming soon",
+     [
+      "trackside-road-garage-condos-wi",
+      "overdrive-motor-condos-wi"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in Wisconsin?",
+     "Woodfield Court Motor Condos in Suamico (101 units) is our top overall pick. For track access, Trackside Road Garage Condos in Elkhart Lake sits near Road America."
+    ],
+    [
+     "How much does a garage condo cost in Wisconsin?",
+     "Wisconsin is one of the most affordable markets we track. Our price index puts the median entry price near $148K, and many units sell between $120K and $360K."
+    ],
+    [
+     "Are there garage condos near Road America?",
+     "Yes. Trackside Road Garage Condos in Elkhart Lake is near Road America. Units are resale only and rarely listed."
+    ]
+   ]
+  },
+  {
+   "state": "CA",
+   "slug": "best-car-condos-california",
+   "title": "Best Car Condos in California (2026): 8 Top Garage Condo Communities Ranked",
+   "h1": "The Best Car Condos in California",
+   "desc": "Our 2026 ranking of the best car condos and garage condos in California: Finish Line Auto Club, The Thermal Club, Grand Prix Auto Club, Monterey Motorsport Park and more, with specs, prices and amenities compared.",
+   "intro": "California is the most expensive car condo market in the country. Our price index puts the median entry price near $750K, about three times the national median. Inventory is scarce, so the best communities in Orange County, Los Angeles, San Diego and Monterey operate more like private clubs than storage. These are the eight we'd look at first.",
+   "picks": [
+    {
+     "slug": "finish-line-auto-club-ca",
+     "award": "Best overall",
+     "why": "Costa Mesa's collector club has about 40 garage condos and a rooftop bar and lounge overlooking John Wayne Airport. Members fly in from Hawaii, Montana and Mexico City.",
+     "watch": "Roughly $750K to $3.5M."
+    },
+    {
+     "slug": "the-thermal-club-ca",
+     "award": "Best track community",
+     "why": "About 426 acres of private tracks in the Coachella Valley, with on-site mechanics and coaches. The best-known motorsports residential community in America.",
+     "watch": "These are full residences, typically $2.5M to $12M+, not garage condos."
+    },
+    {
+     "slug": "grand-prix-auto-club-san-diego-ca",
+     "award": "Most exclusive",
+     "why": "26 capped, fully customizable residences from about 920 to 3,825 sq ft, sold by private inquiry only.",
+     "watch": "About $731K to $3M+."
+    },
+    {
+     "slug": "monterey-motorsport-park-ca",
+     "award": "Best for Car Week",
+     "why": "86 trackside units in Monterey, home of Monterey Car Week and Laguna Seca.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "finish-line-auto-storage-westlake-village-ca",
+     "award": "Best in Los Angeles",
+     "why": "The original Finish Line club in Westlake Village, about $606K to $1.2M, with a sister club in Calabasas.",
+     "watch": "LA-level pricing."
+    },
+    {
+     "slug": "lavery-court-car-condos-ca",
+     "award": "Best Ventura County option",
+     "why": "31 units in Newbury Park with resales around $775K.",
+     "watch": "Resale only."
+    },
+    {
+     "slug": "the-caves-ca",
+     "award": "Best new Inland Empire project",
+     "why": "120 units planned in Murrieta from the $300s, far below coastal pricing.",
+     "watch": "Pre-construction."
+    },
+    {
+     "slug": "hobby-condos-el-dorado-hills-ca",
+     "award": "Best near Sacramento",
+     "why": "43 units in El Dorado Hills, priced around $350 per sq ft.",
+     "watch": "Pricing quoted per sq ft; confirm totals."
+    }
+   ],
+   "budget": [
+    [
+     "Under $500K",
+     [
+      "the-caves-ca",
+      "hobby-condos-el-dorado-hills-ca"
+     ]
+    ],
+    [
+     "$500K to $1M",
+     [
+      "finish-line-auto-storage-westlake-village-ca",
+      "lavery-court-car-condos-ca",
+      "grand-prix-auto-club-san-diego-ca"
+     ]
+    ],
+    [
+     "$1M and up",
+     [
+      "finish-line-auto-club-ca",
+      "the-thermal-club-ca"
+     ]
+    ]
+   ],
+   "faq": [
+    [
+     "What is the best car condo in California?",
+     "Finish Line Auto Club in Costa Mesa is our top pick for a collector garage, and The Thermal Club is the top track-based community. Grand Prix Auto Club San Diego is the most exclusive, with only 26 capped residences."
+    ],
+    [
+     "How much does a car condo cost in California?",
+     "California is the most expensive market we track, with a median entry price near $750K. Coastal clubs commonly run $750K to $3M+, while Inland Empire projects like The Caves start in the $300s."
+    ],
+    [
+     "Are there car condos with a track in California?",
+     "Yes. The Thermal Club in the Coachella Valley has multiple private tracks, and Monterey Motorsport Park has trackside units in Monterey."
+    ]
    ]
   }
  ]

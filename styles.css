@@ -521,3 +521,8 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .dir-filters .chk input{accent-color:#0054A6}
 .df-count{margin-left:auto;font-size:13px;color:var(--muted);font-weight:600}
 @media (max-width:560px){.dir-filters .field{flex:1 1 45%}.df-count{margin-left:0;width:100%}}
+.best-hub-card{display:block;border-top:4px solid #FFD23F}
+.best-hub-card:hover{text-decoration:none;box-shadow:0 6px 20px rgba(16,24,40,.08)}
+.best-hub-card .bh-st{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--blue)}
+.best-hub-card h3{font-size:18px;margin:6px 0;color:var(--ink)}
+.best-hub-card .bb-go2{font-weight:700;font-size:14px;color:var(--blue)}

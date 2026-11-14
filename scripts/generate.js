@@ -67,7 +67,7 @@ ${body}
         <a href="${p}blog/car-condo-cost-guide">Cost Guide</a>
         <a href="/price-index">Car Condo Price Index</a>
         <a href="${p}best/best-car-condos-texas">Best Car Condos in Texas</a>
-        <a href="${p}best/best-car-condos-florida">Best Car Condos in Florida</a>
+        <a href="/best/">Best Car Condos by State</a>
       </div>
       <div>
         <h4>Company</h4>
@@ -169,6 +169,8 @@ fs.writeFileSync(path.join(ROOT, 'states.html'), page({
     <div class="grid c3" style="margin-top:26px">${indexCards}</div>
     <div class="sec-head" style="margin-top:40px"><h2 style="font-size:22px">Popular car condo cities</h2></div>
     <div style="margin-top:12px">${cityPages.slice(0,40).map(cp=>`<a class="pill" href="cities/${cp.slug}">${esc(cp.city)}, ${cp.st} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>`).join('')}</div>
+    <div class="sec-head" style="margin-top:40px"><h2 style="font-size:22px">Best car condos by state</h2></div>
+    <div style="margin-top:12px">${BEST.map(b=>`<a class="pill" href="best/${b.slug}">★ Best in ${STATE_NAMES[b.state]}</a>`).join('')}<a class="pill" href="best/">All rankings</a><a class="pill" href="price-index">Price Index</a></div>
     <div class="sec-head" style="margin-top:40px"><h2 style="font-size:22px">Garage condos for sale by state</h2></div>
     <div style="margin-top:12px">${states.filter(st=>byState[st].length>=5).map(st=>`<a class="pill" href="for-sale/garage-condos-for-sale-${slug(STATE_NAMES[st])}">${STATE_NAMES[st]} <span style="color:var(--muted);font-weight:500">(${byState[st].length})</span></a>`).join('')}<a class="pill" href="car-condos-for-rent">Car condos for rent</a></div>
   </div>
@@ -196,7 +198,7 @@ for (const st of states) {
     ${ld({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://automotivecondos.com/"},{"@type":"ListItem","position":2,"name":"By State","item":"https://automotivecondos.com/states"},{"@type":"ListItem","position":3,"name":name,"item":`https://automotivecondos.com/states/${slug(name)}`}]})}
     ${ld({"@context":"https://schema.org","@type":"ItemList","name":`Car condo communities in ${name}`,"numberOfItems":list.length,"itemListElement":list.map((c,i)=>({"@type":"ListItem","position":i+1,"url":`https://automotivecondos.com/communities/${c.slug}`,"name":c.name}))})}
     <div style="margin:18px 0 10px">${[...new Set(cities.map(cleanCity))].map(c=>{const cp=cityByKey[c+'|'+st]; return cp ? `<a class="pill" href="../cities/${cp.slug}">${esc(c)} <span style="color:var(--muted);font-weight:500">(${cp.list.length})</span></a>` : `<span class="pill" style="cursor:default">${esc(c)}</span>`;}).join('')}</div>
-    <p style="font-size:14px;margin:0 0 14px">${byState[st].length >= 5 ? `<a href="../for-sale/garage-condos-for-sale-${slug(name)}">${name} garage condos for sale →</a> · ` : ''}${STATE_GUIDES[st] ? `<a href="../blog/${STATE_GUIDES[st]}">${name} market guide →</a> · ` : ''}<a href="../car-condos-for-rent">Car condos for rent →</a></p>
+    <p style="font-size:14px;margin:0 0 14px">${byState[st].length >= 5 ? `<a href="../for-sale/garage-condos-for-sale-${slug(name)}">${name} garage condos for sale →</a> · ` : ''}${STATE_GUIDES[st] ? `<a href="../blog/${STATE_GUIDES[st]}">${name} market guide →</a> · ` : ''}<a href="../car-condos-for-rent">Car condos for rent →</a> · <a href="../price-index">Price index →</a></p>
     ${BEST_BY_STATE[st] ? `<a class="best-banner" href="../best/${BEST_BY_STATE[st].slug}"><span class="bb-tag">Ranked</span><span class="bb-txt"><strong>The ${BEST_BY_STATE[st].picks.length} best car condos in ${name}</strong> Specs, ceilings, prices and amenities compared</span><span class="bb-go">See the list →</span></a>` : ''}
     ${unitSection(LISTINGS.filter(l=>l.state===st), '../', `Units for sale &amp; rent in ${name}`)}
     <div class="dir-filters" id="dir-filters" style="margin-top:${LISTINGS.some(l=>l.state===st)?'26px':'0'}">
@@ -785,6 +787,27 @@ ${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":b.faq.map(f
 }
 
 
+
+// best-of hub
+{
+  const cards = [...BEST].sort((a,b)=>byState[b.state].length-byState[a.state].length).map(b=>{ const top=BY_SLUG[b.picks[0].slug];
+    return `<a class="card best-hub-card" href="${b.slug}"><div class="bh-st">${STATE_NAMES[b.state]}</div><h3>The ${b.picks.length} best car condos in ${STATE_NAMES[b.state]}</h3><p class="meta">#1: ${esc(top?top.name:'')} · ${byState[b.state].length} communities tracked</p><span class="bb-go2">See the ranking →</span></a>`; }).join('');
+  fs.writeFileSync(path.join(ROOT,'best','index.html'), page({
+    title: 'Best Car Condos by State (2026 Rankings) | AutomotiveCondos.com',
+    desc: `Our 2026 rankings of the best car condos and garage condos in ${BEST.length} states, with specs, ceilings, door sizes, prices and amenities compared.`,
+    canonical: 'https://automotivecondos.com/best/', depth: 1,
+    body: `
+<section class="block best-hero"><div class="wrap">
+  <div class="breadcrumbs"><a href="/">Home</a> / Best car condos by state</div>
+  <div class="bh-kicker">2026 Rankings</div>
+  <h1>The Best Car Condos, State by State</h1>
+  <p class="bh-lede">We ranked the top car condo and garage condo communities in the ${BEST.length} biggest markets in the US, using developer materials, listings and local reporting. Each pick is chosen for a specific kind of buyer, and no community paid to be on these lists.</p>
+</div></section>
+<section class="block"><div class="wrap"><div class="grid c3">${cards}</div>
+<p style="margin-top:24px"><a href="../price-index">See what car condos cost in every state: the Car Condo Price Index →</a></p></div></section>`
+  }));
+}
+
 // --- Car Condo Price Index ---
 {
   const { parsePrice } = require('./prices');
@@ -901,7 +924,7 @@ ${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq.map(f=>
 }
 
 // --- sitemap ---
-const urls = ['price-index.html', ...BEST.map(b=>`best/${b.slug}.html`), ...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
+const urls = ['price-index.html', 'best/', ...BEST.map(b=>`best/${b.slug}.html`), ...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`),
