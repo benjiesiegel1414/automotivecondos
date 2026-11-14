@@ -93,6 +93,11 @@
         var o = c.offer || 'buy';
         if (offer === 'buy' && !(o === 'buy' || o === 'both')) return false;
         if (offer === 'rent' && o !== 'both') return false;
+        var g = function (id) { var el = id && document.getElementById(id); return el ? (el.type === 'checkbox' ? el.checked : el.value) : ''; };
+        var pr = g(opts.priceSel), sz = g(opts.sizeSel), tr = g(opts.trackSel);
+        if (pr) { var r = pr.split('-').map(Number); if (!c.priceLow || c.priceLow < r[0] || c.priceLow >= r[1]) return false; }
+        if (sz) { var z = sz.split('-').map(Number); if (!c.units || c.units < z[0] || c.units > z[1]) return false; }
+        if (tr && !c.track) return false;
         return true;
       });
       var name = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'}[st] || st;

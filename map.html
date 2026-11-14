@@ -21,6 +21,7 @@
     <nav class="main">
       <a href="map">Map</a>
       <a href="states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="blog">Blog</a>
       <a href="about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -47,6 +48,21 @@
         <option value="buy">For Sale</option>
         <option value="rent">For Rent</option>
       </select>
+      <select id="f-price" class="field" style="width:auto;margin:0" aria-label="Price">
+        <option value="">Any price</option>
+        <option value="0-150000">Under $150K</option>
+        <option value="150000-300000">$150K–$300K</option>
+        <option value="300000-500000">$300K–$500K</option>
+        <option value="500000-1000000">$500K–$1M</option>
+        <option value="1000000-1e12">$1M+</option>
+      </select>
+      <select id="f-size" class="field" style="width:auto;margin:0" aria-label="Community size">
+        <option value="">Any size</option>
+        <option value="0-39">Boutique (under 40 units)</option>
+        <option value="40-100">Mid-size (40–100)</option>
+        <option value="101-100000">Large (100+)</option>
+      </select>
+      <label class="chk" style="display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;cursor:pointer"><input type="checkbox" id="f-track" style="accent-color:#0054A6"> Track access</label>
     </div>
     <div class="map-flex">
       <div class="acmap-col"><div id="usmap"></div></div>
@@ -88,9 +104,10 @@
 
 <script src="assets/usmap.js"></script>
 <script>
-ACMap.init({map:'usmap', panel:'state-panel', statusSel:'f-status', offerSel:'f-offer', base:''});
+ACMap.init({map:'usmap', panel:'state-panel', statusSel:'f-status', offerSel:'f-offer', priceSel:'f-price', sizeSel:'f-size', trackSel:'f-track', base:''});
 document.getElementById('f-status').addEventListener('change', function(){ACMap.refresh();});
 document.getElementById('f-offer').addEventListener('change', function(){ACMap.refresh();});
+['f-price','f-size','f-track'].forEach(function(id){document.getElementById(id).addEventListener('change', function(){ACMap.refresh();});});
 </script>
 </body>
 </html>

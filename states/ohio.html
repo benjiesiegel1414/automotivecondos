@@ -21,6 +21,7 @@
     <nav class="main">
       <a href="../map">Map</a>
       <a href="../states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="../blog">Blog</a>
       <a href="../about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -40,55 +41,66 @@
     <p style="font-size:14px;margin:0 0 14px"><a href="../for-sale/garage-condos-for-sale-ohio">Ohio garage condos for sale →</a> · <a href="../blog/car-condos-ohio">Ohio market guide →</a> · <a href="../car-condos-for-rent">Car condos for rent →</a></p>
     
     
-    <div style="margin:0 0 18px" id="offer-toggle">
-      <button class="btn" data-f="all" style="margin-right:8px">All</button>
-      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
-      <button class="btn ghost" data-f="rent">For Rent</button>
+    <div class="dir-filters" id="dir-filters" style="margin-top:0">
+      <select data-k="price" class="field" aria-label="Price"><option value="">Any price</option><option value="0-150000">Under $150K</option><option value="150000-300000">$150K–$300K</option><option value="300000-500000">$300K–$500K</option><option value="500000-1000000">$500K–$1M</option><option value="1000000-1e12">$1M+</option></select>
+      <select data-k="status" class="field" aria-label="Status"><option value="">Any status</option><option value="Selling">Selling now</option><option value="new">Pre-construction</option><option value="Resale only">Resale only</option><option value="Established">Established</option></select>
+      <select data-k="offer" class="field" aria-label="Buy or rent"><option value="">Buy &amp; rent</option><option value="buy">For sale</option><option value="rent">For rent</option></select>
+      <select data-k="size" class="field" aria-label="Community size"><option value="">Any size</option><option value="0-39">Boutique (under 40 units)</option><option value="40-100">Mid-size (40–100)</option><option value="101-100000">Large (100+)</option></select>
+      <label class="chk"><input type="checkbox" data-k="track"> Track access</label>
+      
+      <span class="df-count" id="df-count">Showing 26 of 26</span>
     </div>
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy" data-href="../communities/avon-storage-condos-oh"><td><strong>Avon Storage Condos</strong></td><td>Avon</td><td>Selling</td><td>62</td><td>From ~$120K</td><td><a href="../communities/avon-storage-condos-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/avon-lake-office-storage-condos-oh"><td><strong>Avon Lake Office &amp; Storage Condos</strong></td><td>Avon Lake</td><td>Resale only</td><td>90</td><td>$85K–$195K</td><td><a href="../communities/avon-lake-office-storage-condos-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/torque-motor-suites-blue-ash-oh"><td><strong>Torque Motor Suites Blue Ash</strong></td><td>Blue Ash</td><td>Selling</td><td>30</td><td>From $399,900</td><td><a href="../communities/torque-motor-suites-blue-ash-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/torque-motor-suites-oakley-oh"><td><strong>Torque Motor Suites Oakley</strong></td><td>Cincinnati</td><td>Established</td><td>—</td><td>From $300K</td><td><a href="../communities/torque-motor-suites-oakley-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/buckeye-storage-condominiums-oh"><td><strong>Buckeye Storage Condominiums</strong></td><td>Columbia Station</td><td>Resale only</td><td>40</td><td>Resales ~$75K</td><td><a href="../communities/buckeye-storage-condominiums-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/storage-stache-oh"><td><strong>Storage Stache</strong></td><td>Columbia Station</td><td>Planned</td><td>12</td><td>Pre-construction</td><td><a href="../communities/storage-stache-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/resolute-motorsports-club-oh"><td><strong>Resolute Motorsports Club</strong></td><td>Delaware</td><td>Planned</td><td>250</td><td>Pre-construction</td><td><a href="../communities/resolute-motorsports-club-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/hudson-pointe-oh"><td><strong>Hudson Pointe</strong></td><td>Hudson</td><td>Selling</td><td>9</td><td>$216K–$263K</td><td><a href="../communities/hudson-pointe-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/forrer-pointe-oh"><td><strong>Forrer Pointe</strong></td><td>Kettering</td><td>Selling</td><td>54</td><td>Inquire</td><td><a href="../communities/forrer-pointe-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/east-harbor-condominium-storage-oh"><td><strong>East Harbor Condominium Storage</strong></td><td>Lakeside Marblehead</td><td>Resale only</td><td>86</td><td>Resales ~$97K–$134K</td><td><a href="../communities/east-harbor-condominium-storage-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/shoreline-storage-suites-oh"><td><strong>Shoreline Storage Suites</strong></td><td>Lakeside Marblehead</td><td>Selling</td><td>56</td><td>2026 sales $140K–$200K</td><td><a href="../communities/shoreline-storage-suites-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/park-place-storage-condominiums-oh"><td><strong>Park Place Storage Condominiums</strong></td><td>Lebanon</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/park-place-storage-condominiums-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/safe-harbor-storage-condos-oh"><td><strong>Safe Harbor Storage Condos</strong></td><td>Marblehead</td><td>Selling</td><td>185</td><td>2026 sales $90K–$330K</td><td><a href="../communities/safe-harbor-storage-condos-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/marysville-executive-storage-condos-oh"><td><strong>Marysville Executive Storage Condos</strong></td><td>Marysville</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/marysville-executive-storage-condos-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garage-condos-at-mason-pointe-oh"><td><strong>Garage Condos at Mason Pointe</strong></td><td>Mason</td><td>Selling</td><td>9</td><td>Inquire</td><td><a href="../communities/garage-condos-at-mason-pointe-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/biz-caves-oh"><td><strong>Biz Caves</strong></td><td>Medina</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/biz-caves-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/store-with-us-storage-condominiums-oh"><td><strong>Store-With-Us Storage Condominiums</strong></td><td>Medina</td><td>Resale only</td><td>340</td><td>Resales; inquire</td><td><a href="../communities/store-with-us-storage-condominiums-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/tin-man-storage-center-oh"><td><strong>Tin Man Storage Center</strong></td><td>Mentor</td><td>Selling</td><td>113</td><td>Inquire</td><td><a href="../communities/tin-man-storage-center-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/the-motor-enclave-new-albany-oh"><td><strong>The Motor Enclave New Albany</strong></td><td>New Albany</td><td>Planned</td><td>165</td><td>$160K–$550K planned</td><td><a href="../communities/the-motor-enclave-new-albany-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/executive-storage-estates-oh"><td><strong>Executive Storage Estates</strong></td><td>Plain City</td><td>Resale only</td><td>117</td><td>Resales ~$370K</td><td><a href="../communities/executive-storage-estates-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/catawba-storage-condominiums-i-vi-oh"><td><strong>Catawba Storage Condominiums (I–VI)</strong></td><td>Port Clinton</td><td>Established</td><td>379</td><td>Resales ~$66K–$194K; phase VI under construction</td><td><a href="../communities/catawba-storage-condominiums-i-vi-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/island-landings-business-storage-condos-oh"><td><strong>Island Landings Business &amp; Storage Condos</strong></td><td>Port Clinton</td><td>Selling</td><td>32</td><td>~$180K</td><td><a href="../communities/island-landings-business-storage-condos-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/northcoast-storage-condominium-oh"><td><strong>NorthCoast Storage Condominium</strong></td><td>Port Clinton</td><td>Resale only</td><td>96</td><td>Resales ~$70K–$100K</td><td><a href="../communities/northcoast-storage-condominium-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/west-bay-storage-condominiums-oh"><td><strong>West Bay Storage Condominiums</strong></td><td>Port Clinton</td><td>Resale only</td><td>48</td><td>Resales ~$80K</td><td><a href="../communities/west-bay-storage-condominiums-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/horsepower-farms-oh"><td><strong>Horsepower Farms</strong></td><td>Powell</td><td>Selling</td><td>92</td><td>$156K–$290K</td><td><a href="../communities/horsepower-farms-oh">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/mega-storage-condominiums-oh"><td><strong>Mega Storage Condominiums</strong></td><td>Twinsburg</td><td>Selling</td><td>107</td><td>Inquire</td><td><a href="../communities/mega-storage-condominiums-oh">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-price="120000" data-status="Selling" data-units="62" data-track="" data-specs="" data-href="../communities/avon-storage-condos-oh"><td><strong>Avon Storage Condos</strong></td><td>Avon</td><td>Selling</td><td>62</td><td>From ~$120K</td><td><a href="../communities/avon-storage-condos-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="85000" data-status="Resale only" data-units="90" data-track="" data-specs="" data-href="../communities/avon-lake-office-storage-condos-oh"><td><strong>Avon Lake Office &amp; Storage Condos</strong></td><td>Avon Lake</td><td>Resale only</td><td>90</td><td>$85K–$195K</td><td><a href="../communities/avon-lake-office-storage-condos-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="399900" data-status="Selling" data-units="30" data-track="" data-specs="" data-href="../communities/torque-motor-suites-blue-ash-oh"><td><strong>Torque Motor Suites Blue Ash</strong></td><td>Blue Ash</td><td>Selling</td><td>30</td><td>From $399,900</td><td><a href="../communities/torque-motor-suites-blue-ash-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="300000" data-status="Established" data-units="" data-track="" data-specs="" data-href="../communities/torque-motor-suites-oakley-oh"><td><strong>Torque Motor Suites Oakley</strong></td><td>Cincinnati</td><td>Established</td><td>—</td><td>From $300K</td><td><a href="../communities/torque-motor-suites-oakley-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="75000" data-status="Resale only" data-units="40" data-track="" data-specs="" data-href="../communities/buckeye-storage-condominiums-oh"><td><strong>Buckeye Storage Condominiums</strong></td><td>Columbia Station</td><td>Resale only</td><td>40</td><td>Resales ~$75K</td><td><a href="../communities/buckeye-storage-condominiums-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="12" data-track="" data-specs="" data-href="../communities/storage-stache-oh"><td><strong>Storage Stache</strong></td><td>Columbia Station</td><td>Planned</td><td>12</td><td>Pre-construction</td><td><a href="../communities/storage-stache-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="250" data-track="1" data-specs="" data-href="../communities/resolute-motorsports-club-oh"><td><strong>Resolute Motorsports Club</strong></td><td>Delaware</td><td>Planned</td><td>250</td><td>Pre-construction</td><td><a href="../communities/resolute-motorsports-club-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="216000" data-status="Selling" data-units="9" data-track="" data-specs="" data-href="../communities/hudson-pointe-oh"><td><strong>Hudson Pointe</strong></td><td>Hudson</td><td>Selling</td><td>9</td><td>$216K–$263K</td><td><a href="../communities/hudson-pointe-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="54" data-track="" data-specs="" data-href="../communities/forrer-pointe-oh"><td><strong>Forrer Pointe</strong></td><td>Kettering</td><td>Selling</td><td>54</td><td>Inquire</td><td><a href="../communities/forrer-pointe-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="97000" data-status="Resale only" data-units="86" data-track="" data-specs="" data-href="../communities/east-harbor-condominium-storage-oh"><td><strong>East Harbor Condominium Storage</strong></td><td>Lakeside Marblehead</td><td>Resale only</td><td>86</td><td>Resales ~$97K–$134K</td><td><a href="../communities/east-harbor-condominium-storage-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="140000" data-status="Selling" data-units="56" data-track="" data-specs="" data-href="../communities/shoreline-storage-suites-oh"><td><strong>Shoreline Storage Suites</strong></td><td>Lakeside Marblehead</td><td>Selling</td><td>56</td><td>2026 sales $140K–$200K</td><td><a href="../communities/shoreline-storage-suites-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/park-place-storage-condominiums-oh"><td><strong>Park Place Storage Condominiums</strong></td><td>Lebanon</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/park-place-storage-condominiums-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="90000" data-status="Selling" data-units="185" data-track="" data-specs="" data-href="../communities/safe-harbor-storage-condos-oh"><td><strong>Safe Harbor Storage Condos</strong></td><td>Marblehead</td><td>Selling</td><td>185</td><td>2026 sales $90K–$330K</td><td><a href="../communities/safe-harbor-storage-condos-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/marysville-executive-storage-condos-oh"><td><strong>Marysville Executive Storage Condos</strong></td><td>Marysville</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/marysville-executive-storage-condos-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="9" data-track="" data-specs="" data-href="../communities/garage-condos-at-mason-pointe-oh"><td><strong>Garage Condos at Mason Pointe</strong></td><td>Mason</td><td>Selling</td><td>9</td><td>Inquire</td><td><a href="../communities/garage-condos-at-mason-pointe-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/biz-caves-oh"><td><strong>Biz Caves</strong></td><td>Medina</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/biz-caves-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="340" data-track="" data-specs="" data-href="../communities/store-with-us-storage-condominiums-oh"><td><strong>Store-With-Us Storage Condominiums</strong></td><td>Medina</td><td>Resale only</td><td>340</td><td>Resales; inquire</td><td><a href="../communities/store-with-us-storage-condominiums-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="113" data-track="" data-specs="" data-href="../communities/tin-man-storage-center-oh"><td><strong>Tin Man Storage Center</strong></td><td>Mentor</td><td>Selling</td><td>113</td><td>Inquire</td><td><a href="../communities/tin-man-storage-center-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="160000" data-status="Planned" data-units="165" data-track="" data-specs="" data-href="../communities/the-motor-enclave-new-albany-oh"><td><strong>The Motor Enclave New Albany</strong></td><td>New Albany</td><td>Planned</td><td>165</td><td>$160K–$550K planned</td><td><a href="../communities/the-motor-enclave-new-albany-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="370000" data-status="Resale only" data-units="117" data-track="" data-specs="" data-href="../communities/executive-storage-estates-oh"><td><strong>Executive Storage Estates</strong></td><td>Plain City</td><td>Resale only</td><td>117</td><td>Resales ~$370K</td><td><a href="../communities/executive-storage-estates-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="66000" data-status="Established" data-units="379" data-track="" data-specs="" data-href="../communities/catawba-storage-condominiums-i-vi-oh"><td><strong>Catawba Storage Condominiums (I–VI)</strong></td><td>Port Clinton</td><td>Established</td><td>379</td><td>Resales ~$66K–$194K; phase VI under construction</td><td><a href="../communities/catawba-storage-condominiums-i-vi-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="180000" data-status="Selling" data-units="32" data-track="" data-specs="" data-href="../communities/island-landings-business-storage-condos-oh"><td><strong>Island Landings Business &amp; Storage Condos</strong></td><td>Port Clinton</td><td>Selling</td><td>32</td><td>~$180K</td><td><a href="../communities/island-landings-business-storage-condos-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="70000" data-status="Resale only" data-units="96" data-track="" data-specs="" data-href="../communities/northcoast-storage-condominium-oh"><td><strong>NorthCoast Storage Condominium</strong></td><td>Port Clinton</td><td>Resale only</td><td>96</td><td>Resales ~$70K–$100K</td><td><a href="../communities/northcoast-storage-condominium-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="80000" data-status="Resale only" data-units="48" data-track="" data-specs="" data-href="../communities/west-bay-storage-condominiums-oh"><td><strong>West Bay Storage Condominiums</strong></td><td>Port Clinton</td><td>Resale only</td><td>48</td><td>Resales ~$80K</td><td><a href="../communities/west-bay-storage-condominiums-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="156000" data-status="Selling" data-units="92" data-track="" data-specs="" data-href="../communities/horsepower-farms-oh"><td><strong>Horsepower Farms</strong></td><td>Powell</td><td>Selling</td><td>92</td><td>$156K–$290K</td><td><a href="../communities/horsepower-farms-oh">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="107" data-track="" data-specs="" data-href="../communities/mega-storage-condominiums-oh"><td><strong>Mega Storage Condominiums</strong></td><td>Twinsburg</td><td>Selling</td><td>107</td><td>Inquire</td><td><a href="../communities/mega-storage-condominiums-oh">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
     (function(){
-      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
-      wrap.addEventListener('click', function(e){
-        var b = e.target.closest('button'); if(!b) return;
-        var f = b.getAttribute('data-f');
-        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
-        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
-          var o = tr.getAttribute('data-offer')||'buy';
-          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
-          tr.style.display = show ? '' : 'none';
+      var wrap = document.getElementById('dir-filters'); if(!wrap) return;
+      var rows = document.querySelectorAll('table.data tbody tr');
+      function apply(){
+        var v = {}; wrap.querySelectorAll('[data-k]').forEach(function(el){ v[el.getAttribute('data-k')] = el.type==='checkbox' ? el.checked : el.value; });
+        var n = 0;
+        rows.forEach(function(tr){
+          var d = tr.dataset, ok = true;
+          if (v.price){ var r=v.price.split('-').map(Number), p=+d.price; ok = ok && !!d.price && p>=r[0] && p<r[1]; }
+          if (v.status){ ok = ok && (v.status==='new' ? (d.status==='Planned'||d.status==='Under construction') : d.status===v.status); }
+          if (v.offer){ var o=d.offer||'buy'; ok = ok && (v.offer==='buy' ? (o==='buy'||o==='both') : o==='both'); }
+          if (v.size){ var s=v.size.split('-').map(Number), u=+d.units; ok = ok && !!d.units && u>=s[0] && u<=s[1]; }
+          if (v.track) ok = ok && d.track==='1';
+          if (v.specs) ok = ok && d.specs==='1';
+          tr.style.display = ok ? '' : 'none'; if (ok) n++;
         });
-      });
+        document.getElementById('df-count').textContent = 'Showing ' + n + ' of ' + rows.length + (n===0 ? ' (try fewer filters)' : '');
+      }
+      wrap.addEventListener('change', apply);
     })();
     document.querySelectorAll('tr[data-href]').forEach(function(r){
       r.style.cursor='pointer';
@@ -124,6 +136,7 @@
         <a href="../blog">Blog</a>
         <a href="../blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="../blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="/price-index">Car Condo Price Index</a>
         <a href="../best/best-car-condos-texas">Best Car Condos in Texas</a>
         <a href="../best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>

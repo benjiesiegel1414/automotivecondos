@@ -31,6 +31,7 @@ function page({title, desc, canonical, body, depth}) {
     <nav class="main">
       <a href="${p}map">Map</a>
       <a href="${p}states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="${p}blog">Blog</a>
       <a href="${p}about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -58,6 +59,9 @@ ${body}
         <a href="${p}blog">Blog</a>
         <a href="${p}blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="${p}blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="/price-index">Car Condo Price Index</a>
+        <a href="/best/best-car-condos-texas">Best Car Condos in Texas</a>
+        <a href="/best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>
       <div>
         <h4>Company</h4>

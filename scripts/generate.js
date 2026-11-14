@@ -37,6 +37,7 @@ function page({title, desc, canonical, body, depth}) {
     <nav class="main">
       <a href="${p}map">Map</a>
       <a href="${p}states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="${p}blog">Blog</a>
       <a href="${p}about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -64,6 +65,7 @@ ${body}
         <a href="${p}blog">Blog</a>
         <a href="${p}blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="${p}blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="/price-index">Car Condo Price Index</a>
         <a href="${p}best/best-car-condos-texas">Best Car Condos in Texas</a>
         <a href="${p}best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>
@@ -81,6 +83,10 @@ ${body}
 }
 
 // group by state
+// derived numeric price for filters + map (written back to communities.json)
+{ const { parsePrice } = require('./prices'); let changed=false;
+  DATA.communities.forEach(c=>{ const pp=parsePrice(c.priceNote); const v=(pp&&pp.low)?Math.round(pp.low):null; if((c.priceLow??null)!==v){ if(v==null) delete c.priceLow; else c.priceLow=v; changed=true; } });
+  if(changed) fs.writeFileSync(path.join(ROOT,'data','communities.json'), JSON.stringify(DATA,null,1)); }
 const byState = {};
 for (const c of DATA.communities) (byState[c.state] ||= []).push(c);
 const states = Object.keys(byState).sort((a,b)=>STATE_NAMES[a].localeCompare(STATE_NAMES[b]));
@@ -175,7 +181,7 @@ for (const st of states) {
   const name = STATE_NAMES[st];
   const list = byState[st].slice().sort((a,b)=>a.city.localeCompare(b.city)||a.name.localeCompare(b.name));
   const cities = [...new Set(list.map(c=>c.city))].sort();
-  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}" data-href="../communities/${c.slug}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../communities/${c.slug}">Details →</a></td></tr>`).join('\n');
+  const rows = list.map(c=>`<tr data-offer="${c.offer||'buy'}" data-price="${c.priceLow||''}" data-status="${esc(c.status)}" data-units="${c.units||''}" data-track="${c.track?1:''}" data-specs="${DETAILS[c.slug]?1:''}" data-href="../communities/${c.slug}"><td><strong>${esc(c.name)}</strong></td><td>${esc(c.city)}</td><td>${esc(c.status)}</td><td>${c.units??'—'}</td><td>${esc(c.priceNote||'Inquire')}</td><td><a href="../communities/${c.slug}">Details →</a></td></tr>`).join('\n');
   fs.writeFileSync(path.join(ROOT, 'states', slug(name)+'.html'), page({
     title: `Car Condos in ${name}: Communities & Listings | AutomotiveCondos.com`,
     desc: `${list.length} car condo communities in ${name} across ${cities.length} cities — status, unit counts and pricing, plus how to buy or sell a unit.`,
@@ -193,10 +199,14 @@ for (const st of states) {
     <p style="font-size:14px;margin:0 0 14px">${byState[st].length >= 5 ? `<a href="../for-sale/garage-condos-for-sale-${slug(name)}">${name} garage condos for sale →</a> · ` : ''}${STATE_GUIDES[st] ? `<a href="../blog/${STATE_GUIDES[st]}">${name} market guide →</a> · ` : ''}<a href="../car-condos-for-rent">Car condos for rent →</a></p>
     ${BEST_BY_STATE[st] ? `<a class="best-banner" href="../best/${BEST_BY_STATE[st].slug}"><span class="bb-tag">Ranked</span><span class="bb-txt"><strong>The ${BEST_BY_STATE[st].picks.length} best car condos in ${name}</strong> Specs, ceilings, prices and amenities compared</span><span class="bb-go">See the list →</span></a>` : ''}
     ${unitSection(LISTINGS.filter(l=>l.state===st), '../', `Units for sale &amp; rent in ${name}`)}
-    <div style="margin:${LISTINGS.some(l=>l.state===st)?'26px':'0'} 0 18px" id="offer-toggle">
-      <button class="btn" data-f="all" style="margin-right:8px">All</button>
-      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
-      <button class="btn ghost" data-f="rent">For Rent</button>
+    <div class="dir-filters" id="dir-filters" style="margin-top:${LISTINGS.some(l=>l.state===st)?'26px':'0'}">
+      <select data-k="price" class="field" aria-label="Price"><option value="">Any price</option><option value="0-150000">Under $150K</option><option value="150000-300000">$150K–$300K</option><option value="300000-500000">$300K–$500K</option><option value="500000-1000000">$500K–$1M</option><option value="1000000-1e12">$1M+</option></select>
+      <select data-k="status" class="field" aria-label="Status"><option value="">Any status</option><option value="Selling">Selling now</option><option value="new">Pre-construction</option><option value="Resale only">Resale only</option><option value="Established">Established</option></select>
+      <select data-k="offer" class="field" aria-label="Buy or rent"><option value="">Buy &amp; rent</option><option value="buy">For sale</option><option value="rent">For rent</option></select>
+      <select data-k="size" class="field" aria-label="Community size"><option value="">Any size</option><option value="0-39">Boutique (under 40 units)</option><option value="40-100">Mid-size (40–100)</option><option value="101-100000">Large (100+)</option></select>
+      ${list.some(c=>c.track)?'<label class="chk"><input type="checkbox" data-k="track"> Track access</label>':''}
+      ${list.some(c=>DETAILS[c.slug])?'<label class="chk"><input type="checkbox" data-k="specs"> Full specs</label>':''}
+      <span class="df-count" id="df-count">Showing ${list.length} of ${list.length}</span>
     </div>
     <div class="table-scroll">
     <table class="data">
@@ -206,17 +216,24 @@ for (const st of states) {
     </div>
     <script>
     (function(){
-      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
-      wrap.addEventListener('click', function(e){
-        var b = e.target.closest('button'); if(!b) return;
-        var f = b.getAttribute('data-f');
-        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
-        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
-          var o = tr.getAttribute('data-offer')||'buy';
-          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
-          tr.style.display = show ? '' : 'none';
+      var wrap = document.getElementById('dir-filters'); if(!wrap) return;
+      var rows = document.querySelectorAll('table.data tbody tr');
+      function apply(){
+        var v = {}; wrap.querySelectorAll('[data-k]').forEach(function(el){ v[el.getAttribute('data-k')] = el.type==='checkbox' ? el.checked : el.value; });
+        var n = 0;
+        rows.forEach(function(tr){
+          var d = tr.dataset, ok = true;
+          if (v.price){ var r=v.price.split('-').map(Number), p=+d.price; ok = ok && !!d.price && p>=r[0] && p<r[1]; }
+          if (v.status){ ok = ok && (v.status==='new' ? (d.status==='Planned'||d.status==='Under construction') : d.status===v.status); }
+          if (v.offer){ var o=d.offer||'buy'; ok = ok && (v.offer==='buy' ? (o==='buy'||o==='both') : o==='both'); }
+          if (v.size){ var s=v.size.split('-').map(Number), u=+d.units; ok = ok && !!d.units && u>=s[0] && u<=s[1]; }
+          if (v.track) ok = ok && d.track==='1';
+          if (v.specs) ok = ok && d.specs==='1';
+          tr.style.display = ok ? '' : 'none'; if (ok) n++;
         });
-      });
+        document.getElementById('df-count').textContent = 'Showing ' + n + ' of ' + rows.length + (n===0 ? ' (try fewer filters)' : '');
+      }
+      wrap.addEventListener('change', apply);
     })();
     document.querySelectorAll('tr[data-href]').forEach(function(r){
       r.style.cursor='pointer';
@@ -767,8 +784,124 @@ ${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":b.faq.map(f
   }));
 }
 
+
+// --- Car Condo Price Index ---
+{
+  const { parsePrice } = require('./prices');
+  const MONTH = new Date().toISOString().slice(0,7);
+  const monthName = new Date(MONTH+'-15').toLocaleString('en-US',{month:'long',year:'numeric'});
+  const med = a => { if(!a.length) return null; const b=[...a].sort((x,y)=>x-y); const m=Math.floor(b.length/2); return b.length%2?b[m]:(b[m-1]+b[m])/2; };
+  const fmt = v => v==null?'—':(v>=1e6?'$'+(v/1e6).toFixed(v>=1e7?0:2).replace(/\.?0+$/,'')+'M':'$'+Math.round(v/1e3)+'K');
+  const priced = DATA.communities.map(c=>({c,p:parsePrice(c.priceNote)})).filter(x=>x.p&&x.p.low);
+  const lows = priced.map(x=>x.p.low);
+  const nat = { n: priced.length, median: med(lows), mean: lows.reduce((a,b)=>a+b,0)/lows.length,
+    newMed: med(priced.filter(x=>!x.p.resale).map(x=>x.p.low)), resaleMed: med(priced.filter(x=>x.p.resale).map(x=>x.p.low)),
+    newN: priced.filter(x=>!x.p.resale).length, resaleN: priced.filter(x=>x.p.resale).length };
+  const buckets = [['Under $100K',0,1e5],['$100K–$250K',1e5,2.5e5],['$250K–$500K',2.5e5,5e5],['$500K–$1M',5e5,1e6],['$1M and up',1e6,1e12]]
+    .map(([l,a,b])=>({l, n: lows.filter(v=>v>=a&&v<b).length}));
+  const stRows = Object.keys(byState).map(st=>{ const xs=priced.filter(x=>x.c.state===st); const l=xs.map(x=>x.p.low);
+    return {st, name:STATE_NAMES[st], total:byState[st].length, n:xs.length, median:med(l), min:l.length?Math.min(...l):null, max:xs.length?Math.max(...xs.map(x=>x.p.high||x.p.low)):null}; })
+    .filter(r=>r.n>=4).sort((a,b)=>b.median-a.median);
+  const metroMap = {}; priced.forEach(x=>{ const k=x.c.city+', '+x.c.state; (metroMap[k]=metroMap[k]||[]).push(x.p.low); });
+  const cities = Object.entries(metroMap).filter(([k,v])=>v.length>=3).map(([k,v])=>({k,n:v.length,median:med(v)})).sort((a,b)=>b.median-a.median);
+  const cheapest = [...priced].sort((a,b)=>a.p.low-b.p.low).filter(x=>x.p.low>=50000).slice(0,10);
+  const priciest = [...priced].sort((a,b)=>b.p.low-a.p.low).slice(0,10);
+  const perSf = priced.filter(x=>x.p.perSf).map(x=>x.p.perSf);
+
+  // history (one snapshot per month, current month overwritten)
+  const HF = path.join(ROOT,'data','price-index-history.json');
+  const hist = fs.existsSync(HF) ? JSON.parse(fs.readFileSync(HF,'utf8')) : {snapshots:[]};
+  const snap = { month: MONTH, n: nat.n, median: nat.median, newMedian: nat.newMed, resaleMedian: nat.resaleMed, communities: DATA.communities.length,
+    states: Object.fromEntries(stRows.map(r=>[r.st,{n:r.n,median:r.median}])) };
+  hist.snapshots = hist.snapshots.filter(x=>x.month!==MONTH).concat([snap]).sort((a,b)=>a.month.localeCompare(b.month));
+  fs.writeFileSync(HF, JSON.stringify(hist,null,1));
+  const prev = hist.snapshots.length>1 ? hist.snapshots[hist.snapshots.length-2] : null;
+  const chg = (cur,old) => (old&&cur) ? ((cur-old)/old*100) : null;
+  const chgTxt = v => v==null ? '<span class="pi-new">First reading</span>' : `<span class="${v>=0?'pi-up':'pi-down'}">${v>=0?'▲':'▼'} ${Math.abs(v).toFixed(1)}%</span>`;
+  const natChg = prev ? chg(nat.median, prev.median) : null;
+
+  // horizontal bar chart (single series, one hue)
+  const maxM = Math.max(...stRows.map(r=>r.median));
+  const chart = `<div class="pi-rows" role="img" aria-label="Median entry price by state">${stRows.map(r=>`<div class="pi-row" title="${r.name}: median entry price ${fmt(r.median)} (${r.n} priced communities)"><div class="pr-l">${r.name}</div><div class="pr-t"><div class="pr-b" style="width:${(r.median/maxM*82).toFixed(1)}%"></div><span class="pr-v">${fmt(r.median)}</span></div></div>`).join('')}</div>`;
+  const maxB = Math.max(...buckets.map(b=>b.n));
+  const dist = `<div class="pi-dist">${buckets.map(b=>`<div class="pd-col" title="${b.l}: ${b.n} communities"><div class="pd-n">${b.n}</div><div class="pd-bar" style="height:${Math.max(4,b.n/maxB*150)}px"></div><div class="pd-l">${b.l}</div><div class="pd-pct">${Math.round(b.n/nat.n*100)}%</div></div>`).join('')}</div>`;
+  const stTable = stRows.map((r,i)=>`<tr><td>${i+1}</td><td><a href="states/${slug(r.name)}">${r.name}</a></td><td><strong>${fmt(r.median)}</strong></td><td>${fmt(r.min)} – ${fmt(r.max)}</td><td>${r.n} of ${r.total}</td><td>${prev&&prev.states[r.st]?chgTxt(chg(r.median,prev.states[r.st].median)):chgTxt(null)}</td></tr>`).join('');
+  const cityTable = cities.map(r=>{ const [city,st]=r.k.split(', '); return `<tr><td><a href="cities/${slug(city)}-${st.toLowerCase()}">${esc(city)}</a>, ${st}</td><td><strong>${fmt(r.median)}</strong></td><td>${r.n}</td></tr>`; }).join('');
+  const li = xs => xs.map(x=>`<li><a href="communities/${x.c.slug}">${esc(x.c.name)}</a> <span class="meta">${esc(x.c.city)}, ${x.c.state} · ${esc(x.c.priceNote)}</span></li>`).join('');
+  const top = stRows[0], bottom = stRows[stRows.length-1];
+  const url = 'https://automotivecondos.com/price-index';
+  const faq = [
+    ['How much does a car condo cost in the US?', `As of ${monthName}, the median entry price across the ${nat.n} car condo communities with published pricing in our directory is ${fmt(nat.median)}. Half of communities start below that and half above it. Entry prices range from under $50K for small storage-style units to more than $1M for luxury and trackside suites.`],
+    ['Which state has the most expensive car condos?', `Among states with at least four priced communities, ${top.name} has the highest median entry price at ${fmt(top.median)}.`],
+    ['Which state has the cheapest car condos?', `${bottom.name} has the lowest median entry price at ${fmt(bottom.median)} among states with at least four priced communities.`],
+    ['Are new car condos more expensive than resales?', `New and pre-construction communities in our data have a median starting price of ${fmt(nat.newMed)} (${nat.newN} communities), versus ${fmt(nat.resaleMed)} for resale-only listings (${nat.resaleN} communities). Newer projects tend to be larger and more amenitized, which explains much of the gap.`],
+    ['How often is the Car Condo Price Index updated?', 'Monthly. Each update is saved as a dated snapshot, so the index builds a price history for every state over time.']
+  ];
+  fs.writeFileSync(path.join(ROOT,'price-index.html'), page({
+    title: `Car Condo Price Index (${monthName}): What Car Condos Cost by State`,
+    desc: `The ${monthName} Car Condo Price Index: median car condo and garage condo prices nationally and in ${stRows.length} states, from ${nat.n} priced communities. Cheapest and priciest markets, new vs resale, updated monthly.`,
+    canonical: url, depth: 0,
+    body: `
+${ld({"@context":"https://schema.org","@type":"Dataset","name":"Car Condo Price Index","description":`Median entry prices for car condo and garage condo communities in the United States, by state and city, from ${nat.n} communities with published pricing.`,"url":url,"creator":{"@type":"Organization","name":"AutomotiveCondos.com","url":"https://automotivecondos.com/"},"temporalCoverage":hist.snapshots[0].month+"/"+MONTH,"spatialCoverage":"United States","dateModified":new Date().toISOString().slice(0,10),"isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/"})}
+${ld({"@context":"https://schema.org","@type":"FAQPage","mainEntity":faq.map(f=>({"@type":"Question","name":f[0],"acceptedAnswer":{"@type":"Answer","text":f[1]}}))})}
+<section class="block best-hero">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="/">Home</a> / Car Condo Price Index</div>
+    <div class="bh-kicker">Updated monthly · ${monthName}</div>
+    <h1>The Car Condo Price Index</h1>
+    <p class="bh-lede">What car condos and garage condos actually cost across the US. Built from published pricing for ${nat.n} of the ${DATA.communities.length} communities in our directory, and updated every month so you can watch each market move.</p>
+    <div class="pi-hero">
+      <div class="pi-big"><span>National median entry price</span><strong>${fmt(nat.median)}</strong><em>${chgTxt(natChg)}</em></div>
+      <div class="bh-stats" style="margin-top:0">
+        <div><strong>${fmt(nat.newMed)}</strong><span>New / pre-construction median</span></div>
+        <div><strong>${fmt(nat.resaleMed)}</strong><span>Resale median</span></div>
+        <div><strong>${nat.n}</strong><span>Priced communities</span></div>
+        <div><strong>${stRows.length}</strong><span>States indexed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block" style="padding-top:26px">
+  <div class="wrap">
+    <div class="pi-key">
+      <div><strong>Most expensive state</strong><span>${top.name} · ${fmt(top.median)} median</span></div>
+      <div><strong>Most affordable state</strong><span>${bottom.name} · ${fmt(bottom.median)} median</span></div>
+      <div><strong>Under $250K</strong><span>${Math.round((buckets[0].n+buckets[1].n)/nat.n*100)}% of communities start below $250K</span></div>
+      <div><strong>$1M+ entry</strong><span>${buckets[4].n} communities start at $1M or more</span></div>
+    </div>
+
+    <h2 class="pi-h2">Median entry price by state</h2>
+    <p class="meta">States with at least four communities with published pricing. Hover or tap a bar for the sample size.</p>
+    <div class="pi-chart-wrap">${chart}</div>
+
+    <h2 class="pi-h2">State by state</h2>
+    <div class="table-scroll"><table class="data"><thead><tr><th>#</th><th>State</th><th>Median entry</th><th>Range</th><th>Priced communities</th><th>vs last month</th></tr></thead><tbody>${stTable}</tbody></table></div>
+
+    <h2 class="pi-h2">How entry prices are spread</h2>
+    <p class="meta">Number of communities by starting price, nationwide.</p>
+    ${dist}
+
+    ${cities.length?`<h2 class="pi-h2">Cities with the most priced communities</h2><p class="meta">Cities with three or more communities with published pricing.</p><div class="table-scroll"><table class="data"><thead><tr><th>City</th><th>Median entry</th><th>Communities</th></tr></thead><tbody>${cityTable}</tbody></table></div>`:''}
+
+    <div class="grid c2" style="margin-top:34px">
+      <div class="card"><h3>Lowest entry prices</h3><p class="meta">Cheapest starting prices we track (excluding units under $50K)</p><ul class="feat-list">${li(cheapest)}</ul></div>
+      <div class="card"><h3>Highest entry prices</h3><p class="meta">Communities with the highest starting prices</p><ul class="feat-list">${li(priciest)}</ul></div>
+    </div>
+    ${perSf.length>=5?`<p class="meta" style="margin-top:16px">Where developers quote price per square foot (${perSf.length} communities), the median is $${Math.round(med(perSf))}/sq ft.</p>`:''}
+
+    <div class="how-we-pick" style="margin-top:34px"><h3>Methodology</h3><p>The index uses the lowest published price for each community in our directory: the developer's "from" price for new and pre-construction projects, and the lowest recent asking or sold price for resale-only communities. Rentals, deposits and per-square-foot quotes are left out of the medians. We use the median rather than the average because a handful of $1M+ suites would pull an average far above what most buyers pay. States need at least four priced communities to be ranked. Prices come from developer sites, MLS and commercial listings, and local reporting. The index is rebuilt monthly and each month is saved as a snapshot, so changes over time reflect both price moves and new communities entering the data. Free to cite with a link to AutomotiveCondos.com.</p></div>
+
+    <h2 class="pi-h2">Frequently asked questions</h2>
+    ${faq.map(f=>`<h3 class="faq-q">${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join('')}
+    <p style="margin-top:22px"><a href="blog/car-condo-cost-guide">Full car condo cost guide →</a> · <a href="best/best-car-condos-texas">Best car condos in Texas →</a> · <a href="best/best-car-condos-florida">Best car condos in Florida →</a></p>
+  </div>
+</section>`
+  }));
+  console.log('Price index:', nat.n, 'priced, median', fmt(nat.median), stRows.length, 'states,', cities.length, 'cities');
+}
+
 // --- sitemap ---
-const urls = [...BEST.map(b=>`best/${b.slug}.html`), ...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
+const urls = ['price-index.html', ...BEST.map(b=>`best/${b.slug}.html`), ...LISTINGS.map(l=>`listings/${l.pageSlug}.html`), 'submit-listing.html', 'car-condos-for-rent.html', ...saleStates.map(st=>`for-sale/${saleSlug(st)}.html`),'', 'map.html', 'states.html', 'blog.html', 'about.html', 'list-your-condo.html', 'advertise',
   ...fs.readdirSync(path.join(ROOT,'blog')).filter(f=>f.endsWith('.html')).map(f=>'blog/'+f),
   ...states.map(st=>`states/${slug(STATE_NAMES[st])}.html`),
   ...DATA.communities.map(c=>`communities/${c.slug}.html`),

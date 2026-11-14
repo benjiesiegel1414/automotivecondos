@@ -21,6 +21,7 @@
     <nav class="main">
       <a href="../map">Map</a>
       <a href="../states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="../blog">Blog</a>
       <a href="../about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -40,56 +41,67 @@
     <p style="font-size:14px;margin:0 0 14px"><a href="../for-sale/garage-condos-for-sale-washington">Washington garage condos for sale →</a> · <a href="../blog/garage-condos-washington">Washington market guide →</a> · <a href="../car-condos-for-rent">Car condos for rent →</a></p>
     
     
-    <div style="margin:0 0 18px" id="offer-toggle">
-      <button class="btn" data-f="all" style="margin-right:8px">All</button>
-      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
-      <button class="btn ghost" data-f="rent">For Rent</button>
+    <div class="dir-filters" id="dir-filters" style="margin-top:0">
+      <select data-k="price" class="field" aria-label="Price"><option value="">Any price</option><option value="0-150000">Under $150K</option><option value="150000-300000">$150K–$300K</option><option value="300000-500000">$300K–$500K</option><option value="500000-1000000">$500K–$1M</option><option value="1000000-1e12">$1M+</option></select>
+      <select data-k="status" class="field" aria-label="Status"><option value="">Any status</option><option value="Selling">Selling now</option><option value="new">Pre-construction</option><option value="Resale only">Resale only</option><option value="Established">Established</option></select>
+      <select data-k="offer" class="field" aria-label="Buy or rent"><option value="">Buy &amp; rent</option><option value="buy">For sale</option><option value="rent">For rent</option></select>
+      <select data-k="size" class="field" aria-label="Community size"><option value="">Any size</option><option value="0-39">Boutique (under 40 units)</option><option value="40-100">Mid-size (40–100)</option><option value="101-100000">Large (100+)</option></select>
+      
+      
+      <span class="df-count" id="df-count">Showing 27 of 27</span>
     </div>
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy" data-href="../communities/carolina-business-park-condominium-wa"><td><strong>Carolina Business Park Condominium</strong></td><td>Bellingham</td><td>Selling</td><td>44</td><td>Inquire</td><td><a href="../communities/carolina-business-park-condominium-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/irongate-redispace-condominium-wa"><td><strong>Irongate RediSpace Condominium</strong></td><td>Bellingham</td><td>Selling</td><td>51</td><td>$246K–$340K</td><td><a href="../communities/irongate-redispace-condominium-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/my-garage-at-birch-bay-wa"><td><strong>My Garage at Birch Bay</strong></td><td>Blaine</td><td>Resale only</td><td>43</td><td>$160K–$170K</td><td><a href="../communities/my-garage-at-birch-bay-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/sunset-storage-condos-chattaroy-wa"><td><strong>Sunset Storage Condos Chattaroy</strong></td><td>Chattaroy</td><td>Planned</td><td>122</td><td>Pre-construction</td><td><a href="../communities/sunset-storage-condos-chattaroy-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/chelan-luxury-garages-wa"><td><strong>Chelan Luxury Garages</strong></td><td>Chelan</td><td>Under construction</td><td>58</td><td>Pre-construction</td><td><a href="../communities/chelan-luxury-garages-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/cle-elum-garage-condos-wa"><td><strong>Cle Elum Garage Condos</strong></td><td>Cle Elum</td><td>Selling</td><td>—</td><td>From ~$209K</td><td><a href="../communities/cle-elum-garage-condos-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/monster-garage-condos-wa"><td><strong>Monster Garage Condos</strong></td><td>Cle Elum</td><td>Selling</td><td>116</td><td>$415K–$420K</td><td><a href="../communities/monster-garage-condos-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagetown-federal-way-wa"><td><strong>GarageTown Federal Way</strong></td><td>Federal Way</td><td>Established</td><td>67</td><td>Resales</td><td><a href="../communities/garagetown-federal-way-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/flexspace-north-wa"><td><strong>Flexspace North</strong></td><td>Ferndale</td><td>Selling</td><td>40</td><td>$328K–$335K</td><td><a href="../communities/flexspace-north-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/pioneer-flexspace-wa"><td><strong>Pioneer Flexspace</strong></td><td>Ferndale</td><td>Resale only</td><td>108</td><td>$279K–$290K</td><td><a href="../communities/pioneer-flexspace-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/gold-bar-garage-condominiums-wa"><td><strong>Gold Bar Garage Condominiums</strong></td><td>Gold Bar</td><td>Resale only</td><td>23</td><td>Resales; inquire</td><td><a href="../communities/gold-bar-garage-condominiums-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagetown-kennewick-wa"><td><strong>GarageTown Kennewick</strong></td><td>Kennewick</td><td>Resale only</td><td>71</td><td>Resales</td><td><a href="../communities/garagetown-kennewick-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagetown-liberty-lake-wa"><td><strong>GarageTown Liberty Lake</strong></td><td>Liberty Lake</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/garagetown-liberty-lake-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagetown-pasco-wa"><td><strong>GarageTown Pasco</strong></td><td>Pasco</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/garagetown-pasco-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagemahal-pullman-wa"><td><strong>GarageMahal Pullman</strong></td><td>Pullman</td><td>Resale only</td><td>20</td><td>Resales ~$92K</td><td><a href="../communities/garagemahal-pullman-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/crescent-bar-garage-condominiums-wa"><td><strong>Crescent Bar Garage Condominiums</strong></td><td>Quincy</td><td>Selling</td><td>64</td><td>From ~$107K</td><td><a href="../communities/crescent-bar-garage-condominiums-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garages-at-crescent-ridge-ranch-wa"><td><strong>Garages at Crescent Ridge Ranch</strong></td><td>Quincy</td><td>Resale only</td><td>51</td><td>$160K–$237K</td><td><a href="../communities/garages-at-crescent-ridge-ranch-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garages-at-the-vineyard-wa"><td><strong>Garages at The Vineyard</strong></td><td>Quincy</td><td>Selling</td><td>47</td><td>Around $349K</td><td><a href="../communities/garages-at-the-vineyard-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/trinidad-garages-wa"><td><strong>Trinidad Garages</strong></td><td>Quincy</td><td>Selling</td><td>39</td><td>$130K–$132K</td><td><a href="../communities/trinidad-garages-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/fat-cat-garages-tri-cities-wa"><td><strong>Fat Cat Garages Tri-Cities</strong></td><td>Richland</td><td>Selling</td><td>38</td><td>$356K–$365K</td><td><a href="../communities/fat-cat-garages-tri-cities-wa">Details →</a></td></tr>
-<tr data-offer="both" data-href="../communities/luxelocker-richland-wa"><td><strong>LuxeLocker Richland</strong></td><td>Richland</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-richland-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/terminal-one-motor-yacht-club-wa"><td><strong>Terminal One Motor + Yacht Club</strong></td><td>Seattle</td><td>Under construction</td><td>100</td><td>From mid-$600Ks</td><td><a href="../communities/terminal-one-motor-yacht-club-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/fat-cat-garages-spokane-wa"><td><strong>Fat Cat Garages Spokane</strong></td><td>Spokane</td><td>Selling</td><td>40</td><td>Inquire</td><td><a href="../communities/fat-cat-garages-spokane-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/fat-cat-of-spokane-wa"><td><strong>Fat Cat of Spokane</strong></td><td>Spokane</td><td>Selling</td><td>29</td><td>Around $200K</td><td><a href="../communities/fat-cat-of-spokane-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garage-lodge-storage-condos-wa"><td><strong>Garage Lodge Storage Condos</strong></td><td>Spokane</td><td>Selling</td><td>—</td><td>From ~$250K</td><td><a href="../communities/garage-lodge-storage-condos-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/garagetown-spokane-valley-wa"><td><strong>GarageTown Spokane Valley</strong></td><td>Spokane Valley</td><td>Resale only</td><td>91</td><td>Resales ~$314K</td><td><a href="../communities/garagetown-spokane-valley-wa">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/rv-home-storage-condominiums-wa"><td><strong>RV Home Storage Condominiums</strong></td><td>Sultan</td><td>Resale only</td><td>35</td><td>Deeded RV garages</td><td><a href="../communities/rv-home-storage-condominiums-wa">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-price="" data-status="Selling" data-units="44" data-track="" data-specs="" data-href="../communities/carolina-business-park-condominium-wa"><td><strong>Carolina Business Park Condominium</strong></td><td>Bellingham</td><td>Selling</td><td>44</td><td>Inquire</td><td><a href="../communities/carolina-business-park-condominium-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="246000" data-status="Selling" data-units="51" data-track="" data-specs="" data-href="../communities/irongate-redispace-condominium-wa"><td><strong>Irongate RediSpace Condominium</strong></td><td>Bellingham</td><td>Selling</td><td>51</td><td>$246K–$340K</td><td><a href="../communities/irongate-redispace-condominium-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="160000" data-status="Resale only" data-units="43" data-track="" data-specs="" data-href="../communities/my-garage-at-birch-bay-wa"><td><strong>My Garage at Birch Bay</strong></td><td>Blaine</td><td>Resale only</td><td>43</td><td>$160K–$170K</td><td><a href="../communities/my-garage-at-birch-bay-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="122" data-track="" data-specs="" data-href="../communities/sunset-storage-condos-chattaroy-wa"><td><strong>Sunset Storage Condos Chattaroy</strong></td><td>Chattaroy</td><td>Planned</td><td>122</td><td>Pre-construction</td><td><a href="../communities/sunset-storage-condos-chattaroy-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Under construction" data-units="58" data-track="" data-specs="" data-href="../communities/chelan-luxury-garages-wa"><td><strong>Chelan Luxury Garages</strong></td><td>Chelan</td><td>Under construction</td><td>58</td><td>Pre-construction</td><td><a href="../communities/chelan-luxury-garages-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="209000" data-status="Selling" data-units="" data-track="" data-specs="" data-href="../communities/cle-elum-garage-condos-wa"><td><strong>Cle Elum Garage Condos</strong></td><td>Cle Elum</td><td>Selling</td><td>—</td><td>From ~$209K</td><td><a href="../communities/cle-elum-garage-condos-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="415000" data-status="Selling" data-units="116" data-track="" data-specs="" data-href="../communities/monster-garage-condos-wa"><td><strong>Monster Garage Condos</strong></td><td>Cle Elum</td><td>Selling</td><td>116</td><td>$415K–$420K</td><td><a href="../communities/monster-garage-condos-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Established" data-units="67" data-track="" data-specs="" data-href="../communities/garagetown-federal-way-wa"><td><strong>GarageTown Federal Way</strong></td><td>Federal Way</td><td>Established</td><td>67</td><td>Resales</td><td><a href="../communities/garagetown-federal-way-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="328000" data-status="Selling" data-units="40" data-track="" data-specs="" data-href="../communities/flexspace-north-wa"><td><strong>Flexspace North</strong></td><td>Ferndale</td><td>Selling</td><td>40</td><td>$328K–$335K</td><td><a href="../communities/flexspace-north-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="279000" data-status="Resale only" data-units="108" data-track="" data-specs="" data-href="../communities/pioneer-flexspace-wa"><td><strong>Pioneer Flexspace</strong></td><td>Ferndale</td><td>Resale only</td><td>108</td><td>$279K–$290K</td><td><a href="../communities/pioneer-flexspace-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="23" data-track="" data-specs="" data-href="../communities/gold-bar-garage-condominiums-wa"><td><strong>Gold Bar Garage Condominiums</strong></td><td>Gold Bar</td><td>Resale only</td><td>23</td><td>Resales; inquire</td><td><a href="../communities/gold-bar-garage-condominiums-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="71" data-track="" data-specs="" data-href="../communities/garagetown-kennewick-wa"><td><strong>GarageTown Kennewick</strong></td><td>Kennewick</td><td>Resale only</td><td>71</td><td>Resales</td><td><a href="../communities/garagetown-kennewick-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/garagetown-liberty-lake-wa"><td><strong>GarageTown Liberty Lake</strong></td><td>Liberty Lake</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/garagetown-liberty-lake-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/garagetown-pasco-wa"><td><strong>GarageTown Pasco</strong></td><td>Pasco</td><td>Planned</td><td>—</td><td>Coming soon</td><td><a href="../communities/garagetown-pasco-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="92000" data-status="Resale only" data-units="20" data-track="" data-specs="" data-href="../communities/garagemahal-pullman-wa"><td><strong>GarageMahal Pullman</strong></td><td>Pullman</td><td>Resale only</td><td>20</td><td>Resales ~$92K</td><td><a href="../communities/garagemahal-pullman-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="107000" data-status="Selling" data-units="64" data-track="" data-specs="" data-href="../communities/crescent-bar-garage-condominiums-wa"><td><strong>Crescent Bar Garage Condominiums</strong></td><td>Quincy</td><td>Selling</td><td>64</td><td>From ~$107K</td><td><a href="../communities/crescent-bar-garage-condominiums-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="160000" data-status="Resale only" data-units="51" data-track="" data-specs="" data-href="../communities/garages-at-crescent-ridge-ranch-wa"><td><strong>Garages at Crescent Ridge Ranch</strong></td><td>Quincy</td><td>Resale only</td><td>51</td><td>$160K–$237K</td><td><a href="../communities/garages-at-crescent-ridge-ranch-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="349000" data-status="Selling" data-units="47" data-track="" data-specs="" data-href="../communities/garages-at-the-vineyard-wa"><td><strong>Garages at The Vineyard</strong></td><td>Quincy</td><td>Selling</td><td>47</td><td>Around $349K</td><td><a href="../communities/garages-at-the-vineyard-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="130000" data-status="Selling" data-units="39" data-track="" data-specs="" data-href="../communities/trinidad-garages-wa"><td><strong>Trinidad Garages</strong></td><td>Quincy</td><td>Selling</td><td>39</td><td>$130K–$132K</td><td><a href="../communities/trinidad-garages-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="356000" data-status="Selling" data-units="38" data-track="" data-specs="" data-href="../communities/fat-cat-garages-tri-cities-wa"><td><strong>Fat Cat Garages Tri-Cities</strong></td><td>Richland</td><td>Selling</td><td>38</td><td>$356K–$365K</td><td><a href="../communities/fat-cat-garages-tri-cities-wa">Details →</a></td></tr>
+<tr data-offer="both" data-price="" data-status="Selling" data-units="" data-track="" data-specs="" data-href="../communities/luxelocker-richland-wa"><td><strong>LuxeLocker Richland</strong></td><td>Richland</td><td>Selling</td><td>—</td><td>Buy or rent</td><td><a href="../communities/luxelocker-richland-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="600000" data-status="Under construction" data-units="100" data-track="" data-specs="" data-href="../communities/terminal-one-motor-yacht-club-wa"><td><strong>Terminal One Motor + Yacht Club</strong></td><td>Seattle</td><td>Under construction</td><td>100</td><td>From mid-$600Ks</td><td><a href="../communities/terminal-one-motor-yacht-club-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="40" data-track="" data-specs="" data-href="../communities/fat-cat-garages-spokane-wa"><td><strong>Fat Cat Garages Spokane</strong></td><td>Spokane</td><td>Selling</td><td>40</td><td>Inquire</td><td><a href="../communities/fat-cat-garages-spokane-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="200000" data-status="Selling" data-units="29" data-track="" data-specs="" data-href="../communities/fat-cat-of-spokane-wa"><td><strong>Fat Cat of Spokane</strong></td><td>Spokane</td><td>Selling</td><td>29</td><td>Around $200K</td><td><a href="../communities/fat-cat-of-spokane-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="250000" data-status="Selling" data-units="" data-track="" data-specs="" data-href="../communities/garage-lodge-storage-condos-wa"><td><strong>Garage Lodge Storage Condos</strong></td><td>Spokane</td><td>Selling</td><td>—</td><td>From ~$250K</td><td><a href="../communities/garage-lodge-storage-condos-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="314000" data-status="Resale only" data-units="91" data-track="" data-specs="" data-href="../communities/garagetown-spokane-valley-wa"><td><strong>GarageTown Spokane Valley</strong></td><td>Spokane Valley</td><td>Resale only</td><td>91</td><td>Resales ~$314K</td><td><a href="../communities/garagetown-spokane-valley-wa">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="35" data-track="" data-specs="" data-href="../communities/rv-home-storage-condominiums-wa"><td><strong>RV Home Storage Condominiums</strong></td><td>Sultan</td><td>Resale only</td><td>35</td><td>Deeded RV garages</td><td><a href="../communities/rv-home-storage-condominiums-wa">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
     (function(){
-      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
-      wrap.addEventListener('click', function(e){
-        var b = e.target.closest('button'); if(!b) return;
-        var f = b.getAttribute('data-f');
-        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
-        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
-          var o = tr.getAttribute('data-offer')||'buy';
-          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
-          tr.style.display = show ? '' : 'none';
+      var wrap = document.getElementById('dir-filters'); if(!wrap) return;
+      var rows = document.querySelectorAll('table.data tbody tr');
+      function apply(){
+        var v = {}; wrap.querySelectorAll('[data-k]').forEach(function(el){ v[el.getAttribute('data-k')] = el.type==='checkbox' ? el.checked : el.value; });
+        var n = 0;
+        rows.forEach(function(tr){
+          var d = tr.dataset, ok = true;
+          if (v.price){ var r=v.price.split('-').map(Number), p=+d.price; ok = ok && !!d.price && p>=r[0] && p<r[1]; }
+          if (v.status){ ok = ok && (v.status==='new' ? (d.status==='Planned'||d.status==='Under construction') : d.status===v.status); }
+          if (v.offer){ var o=d.offer||'buy'; ok = ok && (v.offer==='buy' ? (o==='buy'||o==='both') : o==='both'); }
+          if (v.size){ var s=v.size.split('-').map(Number), u=+d.units; ok = ok && !!d.units && u>=s[0] && u<=s[1]; }
+          if (v.track) ok = ok && d.track==='1';
+          if (v.specs) ok = ok && d.specs==='1';
+          tr.style.display = ok ? '' : 'none'; if (ok) n++;
         });
-      });
+        document.getElementById('df-count').textContent = 'Showing ' + n + ' of ' + rows.length + (n===0 ? ' (try fewer filters)' : '');
+      }
+      wrap.addEventListener('change', apply);
     })();
     document.querySelectorAll('tr[data-href]').forEach(function(r){
       r.style.cursor='pointer';
@@ -125,6 +137,7 @@
         <a href="../blog">Blog</a>
         <a href="../blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="../blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="/price-index">Car Condo Price Index</a>
         <a href="../best/best-car-condos-texas">Best Car Condos in Texas</a>
         <a href="../best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>

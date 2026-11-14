@@ -38,7 +38,8 @@
    "lat": 61.11,
    "lng": -149.86,
    "offer": "buy",
-   "slug": "oceanview-garage-condos-ak"
+   "slug": "oceanview-garage-condos-ak",
+   "priceLow": 550000
   },
   {
    "name": "The Garage at Lake Otis",
@@ -51,7 +52,8 @@
    "lat": 61.16,
    "lng": -149.84,
    "offer": "buy",
-   "slug": "the-garage-at-lake-otis-ak"
+   "slug": "the-garage-at-lake-otis-ak",
+   "priceLow": 255000
   },
   {
    "name": "Mat Valley Man Caves",
@@ -77,7 +79,9 @@
    "lat": 33.55,
    "lng": -86.54,
    "offer": "buy",
-   "slug": "torque-motor-suites-at-barber-al"
+   "slug": "torque-motor-suites-at-barber-al",
+   "track": true,
+   "priceLow": 399500
   },
   {
    "name": "Marque Collection Suites",
@@ -90,7 +94,8 @@
    "lat": 36.33,
    "lng": -94.12,
    "offer": "buy",
-   "slug": "marque-collection-suites-ar"
+   "slug": "marque-collection-suites-ar",
+   "priceLow": 325000
   },
   {
    "name": "Toy Barn Dove Valley",
@@ -246,7 +251,8 @@
    "lat": 34.47,
    "lng": -114.33,
    "offer": "buy",
-   "slug": "desert-storage-of-lake-havasu-az"
+   "slug": "desert-storage-of-lake-havasu-az",
+   "priceLow": 82000
   },
   {
    "name": "LuxeLocker Lake Havasu City",
@@ -271,7 +277,8 @@
    "lat": 33.06,
    "lng": -112.05,
    "offer": "buy",
-   "slug": "apex-motor-club-az"
+   "slug": "apex-motor-club-az",
+   "track": true
   },
   {
    "name": "GarageTown USA Mesa",
@@ -336,7 +343,8 @@
    "lat": 34.56,
    "lng": -112.45,
    "offer": "buy",
-   "slug": "prescott-luxury-rv-storage-az"
+   "slug": "prescott-luxury-rv-storage-az",
+   "priceLow": 135000
   },
   {
    "name": "Elite Garages Scottsdale",
@@ -466,7 +474,8 @@
    "lat": 33.68,
    "lng": -117.88,
    "offer": "buy",
-   "slug": "finish-line-auto-club-ca"
+   "slug": "finish-line-auto-club-ca",
+   "priceLow": 750000
   },
   {
    "name": "Hobby Condos El Dorado Hills",
@@ -518,7 +527,8 @@
    "lat": 36.59,
    "lng": -121.85,
    "offer": "buy",
-   "slug": "monterey-motorsport-park-ca"
+   "slug": "monterey-motorsport-park-ca",
+   "track": true
   },
   {
    "name": "Napa Vault Garage Condos",
@@ -570,7 +580,8 @@
    "lat": 32.83,
    "lng": -117.15,
    "offer": "buy",
-   "slug": "grand-prix-auto-club-san-diego-ca"
+   "slug": "grand-prix-auto-club-san-diego-ca",
+   "priceLow": 1250000
   },
   {
    "name": "Club Auto Sport",
@@ -596,7 +607,8 @@
    "lat": 36.97,
    "lng": -122.03,
    "offer": "buy",
-   "slug": "garage-unlimited-of-santa-cruz-ca"
+   "slug": "garage-unlimited-of-santa-cruz-ca",
+   "priceLow": 475000
   },
   {
    "name": "The Thermal Club",
@@ -609,7 +621,8 @@
    "lat": 33.64,
    "lng": -116.14,
    "offer": "buy",
-   "slug": "the-thermal-club-ca"
+   "slug": "the-thermal-club-ca",
+   "track": true
   },
   {
    "name": "Grand Prix Auto Club Torrance",
@@ -622,7 +635,8 @@
    "lat": 33.84,
    "lng": -118.34,
    "offer": "buy",
-   "slug": "grand-prix-auto-club-torrance-ca"
+   "slug": "grand-prix-auto-club-torrance-ca",
+   "priceLow": 1400000
   },
   {
    "name": "Finish Line Auto Storage Westlake Village",
@@ -635,7 +649,8 @@
    "lat": 34.15,
    "lng": -118.81,
    "offer": "buy",
-   "slug": "finish-line-auto-storage-westlake-village-ca"
+   "slug": "finish-line-auto-storage-westlake-village-ca",
+   "priceLow": 606000
   },
   {
    "name": "Depot Hill Garage Condos",
@@ -648,7 +663,8 @@
    "lat": 39.92,
    "lng": -105.06,
    "offer": "buy",
-   "slug": "depot-hill-garage-condos-co"
+   "slug": "depot-hill-garage-condos-co",
+   "priceLow": 390000
   },
   {
    "name": "The Garage Den",
@@ -687,7 +703,8 @@
    "lat": 38.95,
    "lng": -104.82,
    "offer": "buy",
-   "slug": "mygarage-northcrest-co"
+   "slug": "mygarage-northcrest-co",
+   "priceLow": 175000
   },
   {
    "name": "Playground Garages Colorado Springs",
@@ -713,7 +730,8 @@
    "lat": 39.87,
    "lng": -104.86,
    "offer": "buy",
-   "slug": "the-garage-society-co"
+   "slug": "the-garage-society-co",
+   "priceLow": 242000
   },
   {
    "name": "Dove Valley Storage",
@@ -726,7 +744,8 @@
    "lat": 39.65,
    "lng": -104.99,
    "offer": "buy",
-   "slug": "dove-valley-storage-co"
+   "slug": "dove-valley-storage-co",
+   "priceLow": 55000
   },
   {
    "name": "ManCaves at Dove Valley",
@@ -739,7 +758,8 @@
    "lat": 39.63,
    "lng": -104.99,
    "offer": "buy",
-   "slug": "mancaves-at-dove-valley-co"
+   "slug": "mancaves-at-dove-valley-co",
+   "priceLow": 295000
   },
   {
    "name": "Windmill Creek Storage Condos",
@@ -752,7 +772,8 @@
    "lat": 39.64,
    "lng": -104.98,
    "offer": "buy",
-   "slug": "windmill-creek-storage-condos-co"
+   "slug": "windmill-creek-storage-condos-co",
+   "priceLow": 172000
   },
   {
    "name": "Personal Warehouses Fort Collins",
@@ -778,7 +799,8 @@
    "lat": 39.55,
    "lng": -107.32,
    "offer": "buy",
-   "slug": "citadel-luxury-garages-co"
+   "slug": "citadel-luxury-garages-co",
+   "priceLow": 449000
   },
   {
    "name": "44th Storage Condominiums",
@@ -804,7 +826,8 @@
    "lat": 39.75,
    "lng": -105.21,
    "offer": "buy",
-   "slug": "canyon-view-warehouse-condos-co"
+   "slug": "canyon-view-warehouse-condos-co",
+   "priceLow": 300000
   },
   {
    "name": "Golden Garages by Playground",
@@ -830,7 +853,8 @@
    "lat": 39.74,
    "lng": -105.2,
    "offer": "buy",
-   "slug": "indiana-street-rv-plaza-condos-co"
+   "slug": "indiana-street-rv-plaza-condos-co",
+   "priceLow": 240000
   },
   {
    "name": "Garage Condos by My Dream Storage",
@@ -869,7 +893,8 @@
    "lat": 39.65,
    "lng": -105.19,
    "offer": "buy",
-   "slug": "garage-point-colorado-co"
+   "slug": "garage-point-colorado-co",
+   "priceLow": 220000
   },
   {
    "name": "Circuit Florida Car Condos",
@@ -882,7 +907,9 @@
    "lng": -81.79,
    "offer": "buy",
    "slug": "circuit-florida-car-condos-fl",
-   "website": "https://circuitflorida.com"
+   "website": "https://circuitflorida.com",
+   "track": true,
+   "priceLow": 475000
   },
   {
    "name": "Bonita Breeze Auto Condos",
@@ -920,7 +947,8 @@
    "lat": 26.34,
    "lng": -81.78,
    "offer": "buy",
-   "slug": "naples-motor-condos-race-track-rd-fl"
+   "slug": "naples-motor-condos-race-track-rd-fl",
+   "priceLow": 400000
   },
   {
    "name": "The Paddock at The Bonita Foundry",
@@ -945,7 +973,8 @@
    "lat": 27.5,
    "lng": -82.57,
    "offer": "buy",
-   "slug": "sr-64-executive-storage-fl"
+   "slug": "sr-64-executive-storage-fl",
+   "priceLow": 259000
   },
   {
    "name": "The Caves of Cape Coral",
@@ -957,7 +986,8 @@
    "lat": 26.56,
    "lng": -81.95,
    "offer": "buy",
-   "slug": "the-caves-of-cape-coral-fl"
+   "slug": "the-caves-of-cape-coral-fl",
+   "priceLow": 190000
   },
   {
    "name": "Daytona Toy Storage",
@@ -996,7 +1026,8 @@
    "lat": 30.72,
    "lng": -86.12,
    "offer": "buy",
-   "slug": "emerald-coast-motor-club-fl"
+   "slug": "emerald-coast-motor-club-fl",
+   "track": true
   },
   {
    "name": "The Paddock of Delray",
@@ -1021,7 +1052,8 @@
    "lat": 25.81,
    "lng": -80.36,
    "offer": "buy",
-   "slug": "collectionsuites-miami-fl"
+   "slug": "collectionsuites-miami-fl",
+   "priceLow": 1100000
   },
   {
    "name": "Florida Garage Condos of Englewood",
@@ -1034,7 +1066,8 @@
    "lat": 26.96,
    "lng": -82.35,
    "offer": "buy",
-   "slug": "florida-garage-condos-of-englewood-fl"
+   "slug": "florida-garage-condos-of-englewood-fl",
+   "priceLow": 250000
   },
   {
    "name": "Florida Garage Condos of Englewood II",
@@ -1047,7 +1080,8 @@
    "lat": 26.96,
    "lng": -82.35,
    "offer": "buy",
-   "slug": "florida-garage-condos-of-englewood-ii-fl"
+   "slug": "florida-garage-condos-of-englewood-ii-fl",
+   "priceLow": 200000
   },
   {
    "name": "Estero Motorplex",
@@ -1085,7 +1119,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "classic-estates-fl"
+   "slug": "classic-estates-fl",
+   "priceLow": 375000
   },
   {
    "name": "Classic Ultra Storage Condos",
@@ -1097,7 +1132,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "classic-ultra-storage-condos-fl"
+   "slug": "classic-ultra-storage-condos-fl",
+   "priceLow": 425000
   },
   {
    "name": "Excalibur Motor Condominiums",
@@ -1109,7 +1145,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "excalibur-motor-condominiums-fl"
+   "slug": "excalibur-motor-condominiums-fl",
+   "priceLow": 374000
   },
   {
    "name": "Island Storage Suites",
@@ -1121,7 +1158,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "island-storage-suites-fl"
+   "slug": "island-storage-suites-fl",
+   "priceLow": 354000
   },
   {
    "name": "Lakeside Storage Suites",
@@ -1133,7 +1171,8 @@
    "lat": 26.64,
    "lng": -81.87,
    "offer": "buy",
-   "slug": "lakeside-storage-suites-fl"
+   "slug": "lakeside-storage-suites-fl",
+   "priceLow": 390000
   },
   {
    "name": "My ITEC Place",
@@ -1171,7 +1210,8 @@
    "lng": -81.87,
    "offer": "buy",
    "slug": "toy-vault-condo-fl",
-   "website": "https://www.crexi.com/properties/2557802/florida-17860-toy-vault-ln-803-fort-myers-fl-33967"
+   "website": "https://www.crexi.com/properties/2557802/florida-17860-toy-vault-ln-803-fort-myers-fl-33967",
+   "priceLow": 175000
   },
   {
    "name": "Vehicle Fortress",
@@ -1184,7 +1224,8 @@
    "lng": -81.87,
    "offer": "buy",
    "slug": "vehicle-fortress-fl",
-   "website": "https://vehiclefortress.com"
+   "website": "https://vehiclefortress.com",
+   "priceLow": 182000
   },
   {
    "name": "Treasure Coast Vault",
@@ -1197,7 +1238,8 @@
    "lng": -80.33,
    "offer": "buy",
    "slug": "treasure-coast-vault-fl",
-   "website": "https://treasurecoastvault.com"
+   "website": "https://treasurecoastvault.com",
+   "priceLow": 232000
   },
   {
    "name": "Hobe Sound Auto Vault",
@@ -1210,7 +1252,8 @@
    "lng": -80.14,
    "offer": "buy",
    "slug": "hobe-sound-auto-vault-fl",
-   "website": "https://www.loopnet.com/Listing/7040-SE-Federal-Hwy-Hobe-Sound-FL/38928327/"
+   "website": "https://www.loopnet.com/Listing/7040-SE-Federal-Hwy-Hobe-Sound-FL/38928327/",
+   "priceLow": 390000
   },
   {
    "name": "Extreme Toy Garage",
@@ -1271,7 +1314,8 @@
    "lat": 30.33,
    "lng": -81.66,
    "offer": "buy",
-   "slug": "the-shed-fl"
+   "slug": "the-shed-fl",
+   "priceLow": 275000
   },
   {
    "name": "WheelHouse San Pablo",
@@ -1295,7 +1339,8 @@
    "lat": 27.25,
    "lng": -80.23,
    "offer": "buy",
-   "slug": "jensen-beach-auto-vault-fl"
+   "slug": "jensen-beach-auto-vault-fl",
+   "priceLow": 435000
   },
   {
    "name": "Auto ClubHouse Palm Beach",
@@ -1307,7 +1352,8 @@
    "lat": 26.93,
    "lng": -80.09,
    "offer": "buy",
-   "slug": "auto-clubhouse-palm-beach-fl"
+   "slug": "auto-clubhouse-palm-beach-fl",
+   "priceLow": 615000
   },
   {
    "name": "Exotic Auto Vault",
@@ -1319,7 +1365,8 @@
    "lat": 26.93,
    "lng": -80.09,
    "offer": "buy",
-   "slug": "exotic-auto-vault-fl"
+   "slug": "exotic-auto-vault-fl",
+   "priceLow": 799000
   },
   {
    "name": "The Collectors Vault",
@@ -1432,7 +1479,8 @@
    "lat": 26.14,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "hyper-club-naples-racing-resort-fl"
+   "slug": "hyper-club-naples-racing-resort-fl",
+   "track": true
   },
   {
    "name": "Jetport Motor Suites",
@@ -1458,7 +1506,8 @@
    "lat": 26.14,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "naples-auto-vault-fl"
+   "slug": "naples-auto-vault-fl",
+   "priceLow": 850000
   },
   {
    "name": "Naples Luxury Motor Suites",
@@ -1470,7 +1519,8 @@
    "lat": 26.14,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "naples-luxury-motor-suites-fl"
+   "slug": "naples-luxury-motor-suites-fl",
+   "priceLow": 930000
   },
   {
    "name": "Naples Motor Condos — Livingston Rd",
@@ -1532,7 +1582,8 @@
    "lat": 26.14,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "the-hideout-elite-motor-storage-fl"
+   "slug": "the-hideout-elite-motor-storage-fl",
+   "priceLow": 650000
   },
   {
    "name": "Ultimate Garages",
@@ -1584,7 +1635,8 @@
    "lat": 28.67,
    "lng": -81.21,
    "offer": "buy",
-   "slug": "collection-674-fl"
+   "slug": "collection-674-fl",
+   "priceLow": 300000
   },
   {
    "name": "The Auto Ranch (formerly Hargrove Car Club)",
@@ -1635,7 +1687,8 @@
    "lat": 30.24,
    "lng": -81.39,
    "offer": "buy",
-   "slug": "wheelhouse-west-end-fl"
+   "slug": "wheelhouse-west-end-fl",
+   "priceLow": 310000
   },
   {
    "name": "WheelHouse Ponte Vedra",
@@ -1661,7 +1714,9 @@
    "lat": 27.27,
    "lng": -80.35,
    "offer": "buy",
-   "slug": "p1-motor-club-fl"
+   "slug": "p1-motor-club-fl",
+   "track": true,
+   "priceLow": 1400000
   },
   {
    "name": "Airport Storage Units",
@@ -1686,7 +1741,8 @@
    "lat": 26.93,
    "lng": -82.05,
    "offer": "buy",
-   "slug": "isles-coach-caves-rv-storage-fl"
+   "slug": "isles-coach-caves-rv-storage-fl",
+   "priceLow": 240000
   },
   {
    "name": "Scenic View III",
@@ -1699,7 +1755,8 @@
    "lat": 26.93,
    "lng": -82.05,
    "offer": "buy",
-   "slug": "scenic-view-iii-fl"
+   "slug": "scenic-view-iii-fl",
+   "priceLow": 200000
   },
   {
    "name": "Scenic View IV",
@@ -1724,7 +1781,8 @@
    "lat": 26.93,
    "lng": -82.05,
    "offer": "buy",
-   "slug": "scenic-view-storage-fl"
+   "slug": "scenic-view-storage-fl",
+   "priceLow": 180000
   },
   {
    "name": "Scenic View Storage II",
@@ -1737,7 +1795,8 @@
    "lat": 26.93,
    "lng": -82.05,
    "offer": "buy",
-   "slug": "scenic-view-storage-ii-fl"
+   "slug": "scenic-view-storage-ii-fl",
+   "priceLow": 240000
   },
   {
    "name": "The Hangar",
@@ -1749,7 +1808,8 @@
    "lat": 26.78,
    "lng": -80.07,
    "offer": "buy",
-   "slug": "the-hangar-fl"
+   "slug": "the-hangar-fl",
+   "priceLow": 950000
   },
   {
    "name": "Grande Storage Condos",
@@ -1761,7 +1821,8 @@
    "lat": 26.88,
    "lng": -82.26,
    "offer": "buy",
-   "slug": "grande-storage-condos-fl"
+   "slug": "grande-storage-condos-fl",
+   "priceLow": 269000
   },
   {
    "name": "Sunset Storage Condos",
@@ -1824,7 +1885,8 @@
    "lat": 27.34,
    "lng": -82.53,
    "offer": "buy",
-   "slug": "car-collective-fl"
+   "slug": "car-collective-fl",
+   "priceLow": 510000
   },
   {
    "name": "LDG Waterside",
@@ -1849,7 +1911,8 @@
    "lat": 27.34,
    "lng": -82.53,
    "offer": "buy",
-   "slug": "luxe-dream-garage-fl"
+   "slug": "luxe-dream-garage-fl",
+   "priceLow": 510000
   },
   {
    "name": "The Motor Enclave Sarasota",
@@ -1874,7 +1937,8 @@
    "lat": 27.34,
    "lng": -82.53,
    "offer": "buy",
-   "slug": "wheel-base-premium-garage-condos-fl"
+   "slug": "wheel-base-premium-garage-condos-fl",
+   "priceLow": 238000
   },
   {
    "name": "Sebring Motor Garages",
@@ -1887,7 +1951,9 @@
    "lng": -81.44,
    "offer": "buy",
    "slug": "sebring-motor-garages-fl",
-   "website": "https://www.sebringresorts.com"
+   "website": "https://www.sebringresorts.com",
+   "track": true,
+   "priceLow": 395000
   },
   {
    "name": "Motown Luxury Storage",
@@ -1937,7 +2003,8 @@
    "lat": 27.77,
    "lng": -82.64,
    "offer": "buy",
-   "slug": "motocave-luxury-car-condos-fl"
+   "slug": "motocave-luxury-car-condos-fl",
+   "priceLow": 385000
   },
   {
    "name": "Florida Premier Garage Condos — Sumterville",
@@ -1963,7 +2030,8 @@
    "lng": -82.46,
    "offer": "buy",
    "slug": "paddock1-premium-garage-condos-fl",
-   "website": "https://www.loopnet.com/Listing/1111-N-34th-St-Tampa-FL/39492913/"
+   "website": "https://www.loopnet.com/Listing/1111-N-34th-St-Tampa-FL/39492913/",
+   "priceLow": 435000
   },
   {
    "name": "The Motor Enclave",
@@ -1975,7 +2043,9 @@
    "lat": 27.95,
    "lng": -82.46,
    "offer": "buy",
-   "slug": "the-motor-enclave-fl"
+   "slug": "the-motor-enclave-fl",
+   "track": true,
+   "priceLow": 300000
   },
   {
    "name": "The Caves Auto Condos",
@@ -2052,7 +2122,8 @@
    "lng": -80.4,
    "offer": "buy",
    "slug": "indian-river-motorhaus-3-0-fl",
-   "website": "https://indianrivermotorhaus.com"
+   "website": "https://indianrivermotorhaus.com",
+   "priceLow": 249900
   },
   {
    "name": "Vero Autohaus",
@@ -2127,7 +2198,8 @@
    "lat": 34.07,
    "lng": -84.68,
    "offer": "buy",
-   "slug": "garage-lofts-at-acworth-summit-ga"
+   "slug": "garage-lofts-at-acworth-summit-ga",
+   "priceLow": 225000
   },
   {
    "name": "Seven Hills Car Condos",
@@ -2153,7 +2225,8 @@
    "lat": 34.08,
    "lng": -84.29,
    "offer": "buy",
-   "slug": "alpharetta-personal-warehouse-ga"
+   "slug": "alpharetta-personal-warehouse-ga",
+   "priceLow": 375000
   },
   {
    "name": "Ball Ground Garage Condos",
@@ -2166,7 +2239,8 @@
    "lat": 34.34,
    "lng": -84.38,
    "offer": "buy",
-   "slug": "ball-ground-garage-condos-ga"
+   "slug": "ball-ground-garage-condos-ga",
+   "priceLow": 325000
   },
   {
    "name": "Garage Lofts at Mall of Georgia",
@@ -2192,7 +2266,8 @@
    "lat": 34.12,
    "lng": -84,
    "offer": "buy",
-   "slug": "storage-caves-buford-ga"
+   "slug": "storage-caves-buford-ga",
+   "priceLow": 98000
   },
   {
    "name": "Atlanta Motorsports Park Trackside Garage Condos",
@@ -2205,7 +2280,9 @@
    "lat": 34.42,
    "lng": -84.12,
    "offer": "buy",
-   "slug": "atlanta-motorsports-park-trackside-garage-condos-ga"
+   "slug": "atlanta-motorsports-park-trackside-garage-condos-ga",
+   "track": true,
+   "priceLow": 225000
   },
   {
    "name": "The Toy Barn of Dillard",
@@ -2218,7 +2295,8 @@
    "lat": 34.97,
    "lng": -83.38,
    "offer": "buy",
-   "slug": "the-toy-barn-of-dillard-ga"
+   "slug": "the-toy-barn-of-dillard-ga",
+   "priceLow": 295000
   },
   {
    "name": "Park Court Garage Condos",
@@ -2244,7 +2322,8 @@
    "lat": 34.92,
    "lng": -85.11,
    "offer": "buy",
-   "slug": "homebase-flex-garage-condos-ga"
+   "slug": "homebase-flex-garage-condos-ga",
+   "priceLow": 150000
   },
   {
    "name": "Waukee Garage Condos",
@@ -2322,7 +2401,8 @@
    "lat": 43.69,
    "lng": -116.28,
    "offer": "buy",
-   "slug": "eagle-storage-condos-id"
+   "slug": "eagle-storage-condos-id",
+   "priceLow": 218000
   },
   {
    "name": "LuxeLocker Magic Valley",
@@ -2348,7 +2428,8 @@
    "lat": 42.15,
    "lng": -88.14,
    "offer": "buy",
-   "slug": "motorcave-suites-il"
+   "slug": "motorcave-suites-il",
+   "priceLow": 410000
   },
   {
    "name": "Crystal Lake Car Condos",
@@ -2374,7 +2455,8 @@
    "lat": 41.53,
    "lng": -88.08,
    "offer": "buy",
-   "slug": "autobahn-country-club-garages-il"
+   "slug": "autobahn-country-club-garages-il",
+   "track": true
   },
   {
    "name": "Luxe Corsa Car Condos",
@@ -2387,7 +2469,8 @@
    "lat": 42.2,
    "lng": -88.09,
    "offer": "buy",
-   "slug": "luxe-corsa-car-condos-il"
+   "slug": "luxe-corsa-car-condos-il",
+   "priceLow": 549000
   },
   {
    "name": "Big Door Garage Condos",
@@ -2426,7 +2509,8 @@
    "lat": 39.77,
    "lng": -86.16,
    "offer": "buy",
-   "slug": "automotorplex-indianapolis-in"
+   "slug": "automotorplex-indianapolis-in",
+   "priceLow": 200000
   },
   {
    "name": "Motor District",
@@ -2452,7 +2536,8 @@
    "lat": 38.72,
    "lng": -94.72,
    "offer": "buy",
-   "slug": "all-purpose-garage-storage-ks"
+   "slug": "all-purpose-garage-storage-ks",
+   "priceLow": 440000
   },
   {
    "name": "Carriage Houses of Johnson County",
@@ -2465,7 +2550,8 @@
    "lat": 38.98,
    "lng": -94.97,
    "offer": "buy",
-   "slug": "carriage-houses-of-johnson-county-ks"
+   "slug": "carriage-houses-of-johnson-county-ks",
+   "priceLow": 247000
   },
   {
    "name": "My Extra Garage Derby",
@@ -2478,7 +2564,8 @@
    "lat": 37.55,
    "lng": -97.27,
    "offer": "buy",
-   "slug": "my-extra-garage-derby-ks"
+   "slug": "my-extra-garage-derby-ks",
+   "priceLow": 75000
   },
   {
    "name": "Flex Space KS",
@@ -2504,7 +2591,8 @@
    "lat": 37.8,
    "lng": -97.28,
    "offer": "buy",
-   "slug": "mammoth-storage-garage-condominiums-ks"
+   "slug": "mammoth-storage-garage-condominiums-ks",
+   "priceLow": 125000
   },
   {
    "name": "The Foundry",
@@ -2556,7 +2644,8 @@
    "lat": 37.75,
    "lng": -97.22,
    "offer": "buy",
-   "slug": "greenlight-garagedominiums-ks"
+   "slug": "greenlight-garagedominiums-ks",
+   "priceLow": 299000
   },
   {
    "name": "Greenwich Garage Condos",
@@ -2608,7 +2697,8 @@
    "lat": 36.97,
    "lng": -86.48,
    "offer": "buy",
-   "slug": "red-squirrel-street-garage-condos-ky"
+   "slug": "red-squirrel-street-garage-condos-ky",
+   "priceLow": 279900
   },
   {
    "name": "The Car Vault",
@@ -2621,7 +2711,8 @@
    "lat": 42.35,
    "lng": -71.1,
    "offer": "buy",
-   "slug": "the-car-vault-ma"
+   "slug": "the-car-vault-ma",
+   "priceLow": 200000
   },
   {
    "name": "Motor Toys Luxury Vehicle Storage",
@@ -2634,7 +2725,8 @@
    "lat": 43.91,
    "lng": -69.97,
    "offer": "buy",
-   "slug": "motor-toys-luxury-vehicle-storage-me"
+   "slug": "motor-toys-luxury-vehicle-storage-me",
+   "priceLow": 165000
   },
   {
    "name": "Motorsports Gateway Howell",
@@ -2647,7 +2739,9 @@
    "lat": 42.61,
    "lng": -83.93,
    "offer": "buy",
-   "slug": "motorsports-gateway-howell-mi"
+   "slug": "motorsports-gateway-howell-mi",
+   "track": true,
+   "priceLow": 599990
   },
   {
    "name": "M1 Concourse",
@@ -2660,7 +2754,9 @@
    "lat": 42.64,
    "lng": -83.29,
    "offer": "buy",
-   "slug": "m1-concourse-mi"
+   "slug": "m1-concourse-mi",
+   "track": true,
+   "priceLow": 399000
   },
   {
    "name": "Big Lake Car Condos",
@@ -2712,7 +2808,8 @@
    "lat": 44.65,
    "lng": -93.24,
    "offer": "buy",
-   "slug": "midwest-flexspace-lakeville-mn"
+   "slug": "midwest-flexspace-lakeville-mn",
+   "priceLow": 185000
   },
   {
    "name": "AutoMotorPlex Medina",
@@ -2738,7 +2835,8 @@
    "lat": 38.01,
    "lng": -92.74,
    "offer": "buy",
-   "slug": "sunny-slope-drive-garages-mo"
+   "slug": "sunny-slope-drive-garages-mo",
+   "priceLow": 25000
   },
   {
    "name": "The Place in Chesterfield Valley",
@@ -2777,7 +2875,8 @@
    "lat": 38.2,
    "lng": -92.64,
    "offer": "buy",
-   "slug": "the-toybox-condominiums-mo"
+   "slug": "the-toybox-condominiums-mo",
+   "priceLow": 426000
   },
   {
    "name": "GKR Paddock Club",
@@ -2790,7 +2889,9 @@
    "lat": 38.72,
    "lng": -92.09,
    "offer": "buy",
-   "slug": "gkr-paddock-club-mo"
+   "slug": "gkr-paddock-club-mo",
+   "track": true,
+   "priceLow": 205000
   },
   {
    "name": "Bayside Luxury Garage Condos",
@@ -2803,7 +2904,8 @@
    "lat": 30.41,
    "lng": -88.89,
    "offer": "buy",
-   "slug": "bayside-luxury-garage-condos-ms"
+   "slug": "bayside-luxury-garage-condos-ms",
+   "priceLow": 139000
   },
   {
    "name": "The Paddock Ocean Springs",
@@ -2855,7 +2957,8 @@
    "lat": 48.29,
    "lng": -114.26,
    "offer": "buy",
-   "slug": "big-toy-condos-mt"
+   "slug": "big-toy-condos-mt",
+   "priceLow": 249000
   },
   {
    "name": "Village Point Landing",
@@ -2920,7 +3023,8 @@
    "lat": 35.35,
    "lng": -80.68,
    "offer": "buy",
-   "slug": "ten-tenths-motor-club-nc"
+   "slug": "ten-tenths-motor-club-nc",
+   "track": true
   },
   {
    "name": "Chartown Drive Showroom Condos",
@@ -2946,7 +3050,8 @@
    "lat": 35.63,
    "lng": -80.52,
    "offer": "buy",
-   "slug": "race-city-motorpark-social-club-nc"
+   "slug": "race-city-motorpark-social-club-nc",
+   "track": true
   },
   {
    "name": "Storage Caves Lake Norman",
@@ -2972,7 +3077,8 @@
    "lat": 35.58,
    "lng": -80.81,
    "offer": "buy",
-   "slug": "the-garages-at-lkn-nc"
+   "slug": "the-garages-at-lkn-nc",
+   "priceLow": 360000
   },
   {
    "name": "Carolina Exotic Car Club",
@@ -2998,7 +3104,8 @@
    "lat": 35.43,
    "lng": -79.59,
    "offer": "buy",
-   "slug": "autoport-luxury-driving-resort-nc"
+   "slug": "autoport-luxury-driving-resort-nc",
+   "track": true
   },
   {
    "name": "Luxstor Garage Condos",
@@ -3037,7 +3144,8 @@
    "lat": 43.61,
    "lng": -71.79,
    "offer": "buy",
-   "slug": "newfound-toy-vault-nh"
+   "slug": "newfound-toy-vault-nh",
+   "priceLow": 209000
   },
   {
    "name": "Lake Shore Storage Condominiums",
@@ -3063,7 +3171,8 @@
    "lat": 43.66,
    "lng": -71.5,
    "offer": "buy",
-   "slug": "carriage-house-storage-nh"
+   "slug": "carriage-house-storage-nh",
+   "priceLow": 350000
   },
   {
    "name": "NJMP Exotic Car Garages",
@@ -3076,7 +3185,8 @@
    "lat": 39.4,
    "lng": -75.04,
    "offer": "buy",
-   "slug": "njmp-exotic-car-garages-nj"
+   "slug": "njmp-exotic-car-garages-nj",
+   "track": true
   },
   {
    "name": "Brielle Avenue Car Condos",
@@ -3089,7 +3199,8 @@
    "lat": 40.25,
    "lng": -74.04,
    "offer": "buy",
-   "slug": "brielle-avenue-car-condos-nj"
+   "slug": "brielle-avenue-car-condos-nj",
+   "priceLow": 1200000
   },
   {
    "name": "LuxeLocker Albuquerque",
@@ -3141,7 +3252,8 @@
    "lat": 36.04,
    "lng": -114.98,
    "offer": "buy",
-   "slug": "the-stack-auto-lofts-nv"
+   "slug": "the-stack-auto-lofts-nv",
+   "priceLow": 900000
   },
   {
    "name": "South Jones Storage Condominiums",
@@ -3180,7 +3292,8 @@
    "lat": 36.18,
    "lng": -115.91,
    "offer": "buy",
-   "slug": "spring-mountain-motor-resort-garage-condos-nv"
+   "slug": "spring-mountain-motor-resort-garage-condos-nv",
+   "track": true
   },
   {
    "name": "LuxeLocker Reno",
@@ -3219,7 +3332,8 @@
    "lat": 41.66,
    "lng": -74.69,
    "offer": "buy",
-   "slug": "monticello-motor-club-trackside-garages-ny"
+   "slug": "monticello-motor-club-trackside-garages-ny",
+   "track": true
   },
   {
    "name": "Avon Storage Condos",
@@ -3232,7 +3346,8 @@
    "lat": 41.45,
    "lng": -82.04,
    "offer": "buy",
-   "slug": "avon-storage-condos-oh"
+   "slug": "avon-storage-condos-oh",
+   "priceLow": 120000
   },
   {
    "name": "Avon Lake Office & Storage Condos",
@@ -3245,7 +3360,8 @@
    "lat": 41.51,
    "lng": -82.03,
    "offer": "buy",
-   "slug": "avon-lake-office-storage-condos-oh"
+   "slug": "avon-lake-office-storage-condos-oh",
+   "priceLow": 85000
   },
   {
    "name": "Torque Motor Suites Blue Ash",
@@ -3258,7 +3374,8 @@
    "lat": 39.23,
    "lng": -84.38,
    "offer": "buy",
-   "slug": "torque-motor-suites-blue-ash-oh"
+   "slug": "torque-motor-suites-blue-ash-oh",
+   "priceLow": 399900
   },
   {
    "name": "Torque Motor Suites Oakley",
@@ -3271,7 +3388,8 @@
    "lat": 39.16,
    "lng": -84.43,
    "offer": "buy",
-   "slug": "torque-motor-suites-oakley-oh"
+   "slug": "torque-motor-suites-oakley-oh",
+   "priceLow": 300000
   },
   {
    "name": "Resolute Motorsports Club",
@@ -3284,7 +3402,8 @@
    "lat": 40.3,
    "lng": -83.07,
    "offer": "buy",
-   "slug": "resolute-motorsports-club-oh"
+   "slug": "resolute-motorsports-club-oh",
+   "track": true
   },
   {
    "name": "Hudson Pointe",
@@ -3297,7 +3416,8 @@
    "lat": 41.24,
    "lng": -81.44,
    "offer": "buy",
-   "slug": "hudson-pointe-oh"
+   "slug": "hudson-pointe-oh",
+   "priceLow": 216000
   },
   {
    "name": "Forrer Pointe",
@@ -3388,7 +3508,8 @@
    "lat": 40.08,
    "lng": -82.81,
    "offer": "buy",
-   "slug": "the-motor-enclave-new-albany-oh"
+   "slug": "the-motor-enclave-new-albany-oh",
+   "priceLow": 160000
   },
   {
    "name": "Executive Storage Estates",
@@ -3401,7 +3522,8 @@
    "lat": 40.11,
    "lng": -83.27,
    "offer": "buy",
-   "slug": "executive-storage-estates-oh"
+   "slug": "executive-storage-estates-oh",
+   "priceLow": 370000
   },
   {
    "name": "Horsepower Farms",
@@ -3414,7 +3536,8 @@
    "lat": 40.16,
    "lng": -83.08,
    "offer": "buy",
-   "slug": "horsepower-farms-oh"
+   "slug": "horsepower-farms-oh",
+   "priceLow": 156000
   },
   {
    "name": "Mega Storage Condominiums",
@@ -3466,7 +3589,8 @@
    "lat": 35.55,
    "lng": -97.53,
    "offer": "buy",
-   "slug": "wilshire-point-executive-garage-condos-ok"
+   "slug": "wilshire-point-executive-garage-condos-ok",
+   "priceLow": 388000
   },
   {
    "name": "Garage Condos Enclave",
@@ -3531,7 +3655,8 @@
    "lat": 41.58,
    "lng": -71.54,
    "offer": "buy",
-   "slug": "south-trail-commerce-center-ri"
+   "slug": "south-trail-commerce-center-ri",
+   "priceLow": 245000
   },
   {
    "name": "Awendaw Garage Condos",
@@ -3557,7 +3682,8 @@
    "lat": 32.24,
    "lng": -80.86,
    "offer": "buy",
-   "slug": "carvillage-usa-sc"
+   "slug": "carvillage-usa-sc",
+   "priceLow": 550000
   },
   {
    "name": "The Vault Luxury Motor Condos — Daniel Island",
@@ -3570,7 +3696,8 @@
    "lat": 32.86,
    "lng": -79.9,
    "offer": "buy",
-   "slug": "the-vault-luxury-motor-condos-daniel-island-sc"
+   "slug": "the-vault-luxury-motor-condos-daniel-island-sc",
+   "priceLow": 450000
   },
   {
    "name": "Storage Caves Fort Mill",
@@ -3596,7 +3723,8 @@
    "lat": 34.85,
    "lng": -82.39,
    "offer": "buy",
-   "slug": "the-vault-luxury-motor-condos-greenville-sc"
+   "slug": "the-vault-luxury-motor-condos-greenville-sc",
+   "priceLow": 335000
   },
   {
    "name": "Motor District",
@@ -3609,7 +3737,8 @@
    "lat": 32.69,
    "lng": -80.1,
    "offer": "buy",
-   "slug": "motor-district-sc"
+   "slug": "motor-district-sc",
+   "priceLow": 395000
   },
   {
    "name": "The Vault Luxury Motor Condos — Mount Pleasant",
@@ -3622,7 +3751,8 @@
    "lat": 32.83,
    "lng": -79.82,
    "offer": "buy",
-   "slug": "the-vault-luxury-motor-condos-mount-pleasant-sc"
+   "slug": "the-vault-luxury-motor-condos-mount-pleasant-sc",
+   "priceLow": 395000
   },
   {
    "name": "Motor-Vault Lakeside at Lake Keowee",
@@ -3635,7 +3765,8 @@
    "lat": 34.8,
    "lng": -82.82,
    "offer": "buy",
-   "slug": "motor-vault-lakeside-at-lake-keowee-sc"
+   "slug": "motor-vault-lakeside-at-lake-keowee-sc",
+   "priceLow": 285000
   },
   {
    "name": "605 Storage Condos",
@@ -3648,7 +3779,8 @@
    "lat": 43.54,
    "lng": -96.73,
    "offer": "buy",
-   "slug": "605-storage-condos-sd"
+   "slug": "605-storage-condos-sd",
+   "priceLow": 169000
   },
   {
    "name": "RallyPoint Motor Condos",
@@ -3674,7 +3806,8 @@
    "lat": 35.87,
    "lng": -84.68,
    "offer": "buy",
-   "slug": "flatrock-motorclub-garage-lofts-tn"
+   "slug": "flatrock-motorclub-garage-lofts-tn",
+   "track": true
   },
   {
    "name": "Garages of America — Allen",
@@ -3700,7 +3833,8 @@
    "lat": 29.17,
    "lng": -95.43,
    "offer": "buy",
-   "slug": "msr-houston-garages-tx"
+   "slug": "msr-houston-garages-tx",
+   "track": true
   },
   {
    "name": "G2 Motorsports Park Garage Condos",
@@ -3713,7 +3847,9 @@
    "lat": 33.35,
    "lng": -96.55,
    "offer": "buy",
-   "slug": "g2-motorsports-park-garage-condos-tx"
+   "slug": "g2-motorsports-park-garage-condos-tx",
+   "track": true,
+   "priceLow": 495000
   },
   {
    "name": "LuxeLocker Austin",
@@ -3739,7 +3875,9 @@
    "lat": 30.13,
    "lng": -97.64,
    "offer": "buy",
-   "slug": "t11-car-condos-at-cota-tx"
+   "slug": "t11-car-condos-at-cota-tx",
+   "track": true,
+   "priceLow": 465000
   },
   {
    "name": "Garages of America — Carrollton",
@@ -3791,7 +3929,8 @@
    "lat": 32.53,
    "lng": -97.62,
    "offer": "buy",
-   "slug": "motorsport-ranch-tx"
+   "slug": "motorsport-ranch-tx",
+   "track": true
   },
   {
    "name": "Garage Werks",
@@ -3804,7 +3943,8 @@
    "lat": 29.97,
    "lng": -95.7,
    "offer": "buy",
-   "slug": "garage-werks-tx"
+   "slug": "garage-werks-tx",
+   "priceLow": 192500
   },
   {
    "name": "Garages of America — Dallas",
@@ -3843,7 +3983,8 @@
    "lat": 30.13,
    "lng": -97.62,
    "offer": "buy",
-   "slug": "garages-of-the-americas-tx"
+   "slug": "garages-of-the-americas-tx",
+   "track": true
   },
   {
    "name": "Storage Caves Forney",
@@ -3934,7 +4075,8 @@
    "lat": 32.89,
    "lng": -96.95,
    "offer": "buy",
-   "slug": "trailblazer-garages-las-colinas-tx"
+   "slug": "trailblazer-garages-las-colinas-tx",
+   "priceLow": 500000
   },
   {
    "name": "Garages of America — Katy",
@@ -4025,7 +4167,8 @@
    "lat": 33.02,
    "lng": -96.7,
    "offer": "buy",
-   "slug": "garages-of-america-plano-tx"
+   "slug": "garages-of-america-plano-tx",
+   "priceLow": 340000
   },
   {
    "name": "The Garage x Dennis Collins",
@@ -4051,7 +4194,8 @@
    "lat": 33,
    "lng": -97.23,
    "offer": "buy",
-   "slug": "garages-of-america-roanoke-tx"
+   "slug": "garages-of-america-roanoke-tx",
+   "priceLow": 475000
   },
   {
    "name": "Garages of America — Rockwall",
@@ -4090,7 +4234,8 @@
    "lat": 29.64,
    "lng": -98.61,
    "offer": "buy",
-   "slug": "dominion-motor-club-tx"
+   "slug": "dominion-motor-club-tx",
+   "priceLow": 395000
   },
   {
    "name": "Dream Garage Condos",
@@ -4116,7 +4261,8 @@
    "lat": 29.56,
    "lng": -98.55,
    "offer": "buy",
-   "slug": "shavano-garage-condos-tx"
+   "slug": "shavano-garage-condos-tx",
+   "priceLow": 269000
   },
   {
    "name": "Garages of America — Woodlands",
@@ -4142,7 +4288,8 @@
    "lat": 40.65,
    "lng": -111.5,
    "offer": "buy",
-   "slug": "park-east-ii-iii-business-condominiums-ut"
+   "slug": "park-east-ii-iii-business-condominiums-ut",
+   "priceLow": 1450000
   },
   {
    "name": "Hobby Hut RV Garages",
@@ -4155,7 +4302,8 @@
    "lat": 37.03,
    "lng": -113.62,
    "offer": "buy",
-   "slug": "hobby-hut-rv-garages-ut"
+   "slug": "hobby-hut-rv-garages-ut",
+   "priceLow": 395000
   },
   {
    "name": "Dominion Lux",
@@ -4168,7 +4316,8 @@
    "lat": 38.39,
    "lng": -77.43,
    "offer": "buy",
-   "slug": "dominion-lux-va"
+   "slug": "dominion-lux-va",
+   "track": true
   },
   {
    "name": "Carolina Business Park Condominium",
@@ -4194,7 +4343,8 @@
    "lat": 48.75,
    "lng": -122.48,
    "offer": "buy",
-   "slug": "irongate-redispace-condominium-wa"
+   "slug": "irongate-redispace-condominium-wa",
+   "priceLow": 246000
   },
   {
    "name": "My Garage at Birch Bay",
@@ -4207,7 +4357,8 @@
    "lat": 48.99,
    "lng": -122.75,
    "offer": "buy",
-   "slug": "my-garage-at-birch-bay-wa"
+   "slug": "my-garage-at-birch-bay-wa",
+   "priceLow": 160000
   },
   {
    "name": "Sunset Storage Condos Chattaroy",
@@ -4246,7 +4397,8 @@
    "lat": 47.2,
    "lng": -120.94,
    "offer": "buy",
-   "slug": "cle-elum-garage-condos-wa"
+   "slug": "cle-elum-garage-condos-wa",
+   "priceLow": 209000
   },
   {
    "name": "Monster Garage Condos",
@@ -4259,7 +4411,8 @@
    "lat": 47.2,
    "lng": -120.95,
    "offer": "buy",
-   "slug": "monster-garage-condos-wa"
+   "slug": "monster-garage-condos-wa",
+   "priceLow": 415000
   },
   {
    "name": "GarageTown Federal Way",
@@ -4285,7 +4438,8 @@
    "lat": 48.85,
    "lng": -122.59,
    "offer": "buy",
-   "slug": "flexspace-north-wa"
+   "slug": "flexspace-north-wa",
+   "priceLow": 328000
   },
   {
    "name": "Pioneer Flexspace",
@@ -4298,7 +4452,8 @@
    "lat": 48.84,
    "lng": -122.6,
    "offer": "buy",
-   "slug": "pioneer-flexspace-wa"
+   "slug": "pioneer-flexspace-wa",
+   "priceLow": 279000
   },
   {
    "name": "Gold Bar Garage Condominiums",
@@ -4363,7 +4518,8 @@
    "lat": 46.73,
    "lng": -117.18,
    "offer": "buy",
-   "slug": "garagemahal-pullman-wa"
+   "slug": "garagemahal-pullman-wa",
+   "priceLow": 92000
   },
   {
    "name": "Crescent Bar Garage Condominiums",
@@ -4376,7 +4532,8 @@
    "lat": 47.23,
    "lng": -119.87,
    "offer": "buy",
-   "slug": "crescent-bar-garage-condominiums-wa"
+   "slug": "crescent-bar-garage-condominiums-wa",
+   "priceLow": 107000
   },
   {
    "name": "Garages at Crescent Ridge Ranch",
@@ -4389,7 +4546,8 @@
    "lat": 47.23,
    "lng": -119.85,
    "offer": "buy",
-   "slug": "garages-at-crescent-ridge-ranch-wa"
+   "slug": "garages-at-crescent-ridge-ranch-wa",
+   "priceLow": 160000
   },
   {
    "name": "Garages at The Vineyard",
@@ -4402,7 +4560,8 @@
    "lat": 47.24,
    "lng": -119.86,
    "offer": "buy",
-   "slug": "garages-at-the-vineyard-wa"
+   "slug": "garages-at-the-vineyard-wa",
+   "priceLow": 349000
   },
   {
    "name": "Trinidad Garages",
@@ -4415,7 +4574,8 @@
    "lat": 47.22,
    "lng": -119.84,
    "offer": "buy",
-   "slug": "trinidad-garages-wa"
+   "slug": "trinidad-garages-wa",
+   "priceLow": 130000
   },
   {
    "name": "Fat Cat Garages Tri-Cities",
@@ -4428,7 +4588,8 @@
    "lat": 46.29,
    "lng": -119.29,
    "offer": "buy",
-   "slug": "fat-cat-garages-tri-cities-wa"
+   "slug": "fat-cat-garages-tri-cities-wa",
+   "priceLow": 356000
   },
   {
    "name": "LuxeLocker Richland",
@@ -4454,7 +4615,8 @@
    "lat": 47.67,
    "lng": -122.4,
    "offer": "buy",
-   "slug": "terminal-one-motor-yacht-club-wa"
+   "slug": "terminal-one-motor-yacht-club-wa",
+   "priceLow": 600000
   },
   {
    "name": "Fat Cat of Spokane",
@@ -4467,7 +4629,8 @@
    "lat": 47.63,
    "lng": -117.5,
    "offer": "buy",
-   "slug": "fat-cat-of-spokane-wa"
+   "slug": "fat-cat-of-spokane-wa",
+   "priceLow": 200000
   },
   {
    "name": "Garage Lodge Storage Condos",
@@ -4480,7 +4643,8 @@
    "lat": 47.63,
    "lng": -117.53,
    "offer": "buy",
-   "slug": "garage-lodge-storage-condos-wa"
+   "slug": "garage-lodge-storage-condos-wa",
+   "priceLow": 250000
   },
   {
    "name": "GarageTown Spokane Valley",
@@ -4493,7 +4657,8 @@
    "lat": 47.67,
    "lng": -117.24,
    "offer": "buy",
-   "slug": "garagetown-spokane-valley-wa"
+   "slug": "garagetown-spokane-valley-wa",
+   "priceLow": 314000
   },
   {
    "name": "RV Home Storage Condominiums",
@@ -4545,7 +4710,8 @@
    "lat": 43.83,
    "lng": -88.02,
    "offer": "buy",
-   "slug": "trackside-road-garage-condos-wi"
+   "slug": "trackside-road-garage-condos-wi",
+   "track": true
   },
   {
    "name": "P2 Auto Vault & Business Condos",
@@ -4558,7 +4724,8 @@
    "lat": 43.32,
    "lng": -87.95,
    "offer": "buy",
-   "slug": "p2-auto-vault-business-condos-wi"
+   "slug": "p2-auto-vault-business-condos-wi",
+   "priceLow": 148000
   },
   {
    "name": "Hobart Storage Condominiums",
@@ -4571,7 +4738,8 @@
    "lat": 44.5,
    "lng": -88.16,
    "offer": "buy",
-   "slug": "hobart-storage-condominiums-wi"
+   "slug": "hobart-storage-condominiums-wi",
+   "priceLow": 98000
   },
   {
    "name": "Fox Valley Man Caves and She Sheds",
@@ -4610,7 +4778,8 @@
    "lat": 44.63,
    "lng": -88.04,
    "offer": "buy",
-   "slug": "woodfield-court-motor-condos-wi"
+   "slug": "woodfield-court-motor-condos-wi",
+   "priceLow": 171000
   },
   {
    "name": "3rd Space Garages",
@@ -4649,7 +4818,8 @@
    "lat": 43.47,
    "lng": -110.79,
    "offer": "buy",
-   "slug": "deer-drive-luxury-garage-condos-wy"
+   "slug": "deer-drive-luxury-garage-condos-wy",
+   "priceLow": 526000
   },
   {
    "name": "The Caves",
@@ -4662,7 +4832,8 @@
    "lat": 33.5539,
    "lng": -117.2139,
    "offer": "buy",
-   "slug": "the-caves-ca"
+   "slug": "the-caves-ca",
+   "priceLow": 300000
   },
   {
    "name": "Finish Line Auto Club Palm Desert",
@@ -4688,7 +4859,8 @@
    "lat": 34.1847,
    "lng": -118.912,
    "offer": "buy",
-   "slug": "lavery-court-car-condos-ca"
+   "slug": "lavery-court-car-condos-ca",
+   "priceLow": 775000
   },
   {
    "name": "Chaparral AeroLofts",
@@ -4714,7 +4886,8 @@
    "lat": 33.062,
    "lng": -96.766,
    "offer": "buy",
-   "slug": "maranello-luxury-auto-garages-tx"
+   "slug": "maranello-luxury-auto-garages-tx",
+   "priceLow": 650000
   },
   {
    "name": "Dominion Motor Club 2.0",
@@ -4740,7 +4913,8 @@
    "lat": 29.791,
    "lng": -95.446,
    "offer": "buy",
-   "slug": "toy-cave-luxury-garages-tx"
+   "slug": "toy-cave-luxury-garages-tx",
+   "priceLow": 839000
   },
   {
    "name": "Garage Ultimate Spring Branch",
@@ -4792,7 +4966,8 @@
    "lat": 29.966,
    "lng": -95.655,
    "offer": "buy",
-   "slug": "showcase-luxury-garages-tx"
+   "slug": "showcase-luxury-garages-tx",
+   "priceLow": 225000
   },
   {
    "name": "The Hideaway Luxury Garages",
@@ -4818,7 +4993,8 @@
    "lat": 35.175,
    "lng": -114.566,
    "offer": "buy",
-   "slug": "hideaway-haus-az"
+   "slug": "hideaway-haus-az",
+   "priceLow": 360000
   },
   {
    "name": "Finish Line Auto Club Scottsdale",
@@ -4844,7 +5020,8 @@
    "lat": 33.616,
    "lng": -111.723,
    "offer": "buy",
-   "slug": "motor-vault-fountain-hills-az"
+   "slug": "motor-vault-fountain-hills-az",
+   "priceLow": 799000
   },
   {
    "name": "Motor Vault Deer Valley",
@@ -4857,7 +5034,8 @@
    "lat": 33.709,
    "lng": -112.1,
    "offer": "buy",
-   "slug": "motor-vault-deer-valley-az"
+   "slug": "motor-vault-deer-valley-az",
+   "priceLow": 255000
   },
   {
    "name": "Motor Vault Queen Creek",
@@ -4870,7 +5048,8 @@
    "lat": 33.248,
    "lng": -111.634,
    "offer": "buy",
-   "slug": "motor-vault-queen-creek-az"
+   "slug": "motor-vault-queen-creek-az",
+   "priceLow": 271900
   },
   {
    "name": "Motor Vault Peoria – 303 & Happy Valley",
@@ -4935,7 +5114,8 @@
    "lat": 33.306,
    "lng": -111.841,
    "offer": "buy",
-   "slug": "falcon-storage-condos-az"
+   "slug": "falcon-storage-condos-az",
+   "priceLow": 256000
   },
   {
    "name": "GarageTown Chandler (Stellar Airpark)",
@@ -4948,7 +5128,8 @@
    "lat": 33.299,
    "lng": -111.91,
    "offer": "buy",
-   "slug": "garagetown-chandler-stellar-airpark-az"
+   "slug": "garagetown-chandler-stellar-airpark-az",
+   "priceLow": 275000
   },
   {
    "name": "Paradyme Havasu Storage",
@@ -4961,7 +5142,8 @@
    "lat": 34.495,
    "lng": -114.322,
    "offer": "buy",
-   "slug": "paradyme-havasu-storage-az"
+   "slug": "paradyme-havasu-storage-az",
+   "priceLow": 126000
   },
   {
    "name": "Golf View Garages",
@@ -4974,7 +5156,8 @@
    "lat": 34.47,
    "lng": -114.33,
    "offer": "buy",
-   "slug": "golf-view-garages-az"
+   "slug": "golf-view-garages-az",
+   "priceLow": 145000
   },
   {
    "name": "Showplace Storage Lake Havasu",
@@ -4987,7 +5170,8 @@
    "lat": 34.48,
    "lng": -114.33,
    "offer": "buy",
-   "slug": "showplace-storage-lake-havasu-az"
+   "slug": "showplace-storage-lake-havasu-az",
+   "priceLow": 265000
   },
   {
    "name": "Sun N Sand Storage Condominiums",
@@ -5000,7 +5184,8 @@
    "lat": 34.49,
    "lng": -114.31,
    "offer": "buy",
-   "slug": "sun-n-sand-storage-condominiums-az"
+   "slug": "sun-n-sand-storage-condominiums-az",
+   "priceLow": 50000
   },
   {
    "name": "Fly-Hi Storage Condos",
@@ -5013,7 +5198,8 @@
    "lat": 34.57,
    "lng": -114.36,
    "offer": "buy",
-   "slug": "fly-hi-storage-condos-az"
+   "slug": "fly-hi-storage-condos-az",
+   "priceLow": 225000
   },
   {
    "name": "Toy Storage at the Foothills",
@@ -5026,7 +5212,8 @@
    "lat": 34.45,
    "lng": -114.27,
    "offer": "buy",
-   "slug": "toy-storage-at-the-foothills-az"
+   "slug": "toy-storage-at-the-foothills-az",
+   "priceLow": 285000
   },
   {
    "name": "Premier Storage Condominiums – Lake Havasu",
@@ -5039,7 +5226,8 @@
    "lat": 34.5,
    "lng": -114.33,
    "offer": "buy",
-   "slug": "premier-storage-condominiums-lake-havasu-az"
+   "slug": "premier-storage-condominiums-lake-havasu-az",
+   "priceLow": 38000
   },
   {
    "name": "Empire Storage Condominiums",
@@ -5052,7 +5240,8 @@
    "lat": 34.5,
    "lng": -114.32,
    "offer": "buy",
-   "slug": "empire-storage-condominiums-az"
+   "slug": "empire-storage-condominiums-az",
+   "priceLow": 77000
   },
   {
    "name": "Lock and Leave R.V. Condominiums",
@@ -5065,7 +5254,8 @@
    "lat": 34.49,
    "lng": -114.32,
    "offer": "buy",
-   "slug": "lock-and-leave-r-v-condominiums-az"
+   "slug": "lock-and-leave-r-v-condominiums-az",
+   "priceLow": 78000
   },
   {
    "name": "Sweetwater Storage",
@@ -5078,7 +5268,8 @@
    "lat": 34.5,
    "lng": -114.34,
    "offer": "buy",
-   "slug": "sweetwater-storage-az"
+   "slug": "sweetwater-storage-az",
+   "priceLow": 50000
   },
   {
    "name": "Absolute Boat & RV Storage",
@@ -5091,7 +5282,8 @@
    "lat": 34.51,
    "lng": -114.34,
    "offer": "buy",
-   "slug": "absolute-boat-rv-storage-az"
+   "slug": "absolute-boat-rv-storage-az",
+   "priceLow": 82000
   },
   {
    "name": "Winners Circle Motorsports Garages",
@@ -5104,7 +5296,8 @@
    "lat": 34.47,
    "lng": -114.34,
    "offer": "buy",
-   "slug": "winners-circle-motorsports-garages-az"
+   "slug": "winners-circle-motorsports-garages-az",
+   "priceLow": 200000
   },
   {
    "name": "Lakeview Storage Condominiums",
@@ -5117,7 +5310,8 @@
    "lat": 34.48,
    "lng": -114.35,
    "offer": "buy",
-   "slug": "lakeview-storage-condominiums-az"
+   "slug": "lakeview-storage-condominiums-az",
+   "priceLow": 78000
   },
   {
    "name": "Dave's Boat & RV Storage Condominiums",
@@ -5182,7 +5376,8 @@
    "lat": 32.665,
    "lng": -114.555,
    "offer": "buy",
-   "slug": "premier-storage-condominiums-of-yuma-i-ii-az"
+   "slug": "premier-storage-condominiums-of-yuma-i-ii-az",
+   "priceLow": 30000
   },
   {
    "name": "Toy Shack Storage",
@@ -5195,7 +5390,8 @@
    "lat": 35.13,
    "lng": -114.57,
    "offer": "buy",
-   "slug": "toy-shack-storage-az"
+   "slug": "toy-shack-storage-az",
+   "priceLow": 84000
   },
   {
    "name": "RV-BT Condos RV & Boat Storage",
@@ -5208,7 +5404,8 @@
    "lat": 34.93,
    "lng": -114.59,
    "offer": "buy",
-   "slug": "rv-bt-condos-rv-boat-storage-az"
+   "slug": "rv-bt-condos-rv-boat-storage-az",
+   "priceLow": 60000
   },
   {
    "name": "99th Ave Big Boys Toys Storage Condominium",
@@ -5221,7 +5418,8 @@
    "lat": 33.655,
    "lng": -112.273,
    "offer": "buy",
-   "slug": "99th-ave-big-boys-toys-storage-condominium-az"
+   "slug": "99th-ave-big-boys-toys-storage-condominium-az",
+   "priceLow": 95000
   },
   {
    "name": "Superstition Big Boys Toys Storage Condominium",
@@ -5247,7 +5445,8 @@
    "lat": 33.68,
    "lng": -112.08,
    "offer": "buy",
-   "slug": "red-hawk-garage-suites-az"
+   "slug": "red-hawk-garage-suites-az",
+   "priceLow": 340000
   },
   {
    "name": "Red Hawk Garage Suites Glendale",
@@ -5286,7 +5485,8 @@
    "lat": 33.56,
    "lng": -112.07,
    "offer": "buy",
-   "slug": "north-central-garage-club-az"
+   "slug": "north-central-garage-club-az",
+   "priceLow": 91000
   },
   {
    "name": "Premier Storage Condos – North Phoenix",
@@ -5299,7 +5499,8 @@
    "lat": 33.67,
    "lng": -112.08,
    "offer": "buy",
-   "slug": "premier-storage-condos-north-phoenix-az"
+   "slug": "premier-storage-condos-north-phoenix-az",
+   "priceLow": 120000
   },
   {
    "name": "Silverleaf Auto Garages",
@@ -5312,7 +5513,8 @@
    "lat": 33.61,
    "lng": -111.91,
    "offer": "buy",
-   "slug": "silverleaf-auto-garages-az"
+   "slug": "silverleaf-auto-garages-az",
+   "priceLow": 874000
   },
   {
    "name": "Arcadia Motor Club",
@@ -5403,7 +5605,8 @@
    "lat": 43.06,
    "lng": -86.23,
    "offer": "buy",
-   "slug": "grand-haven-storage-mi"
+   "slug": "grand-haven-storage-mi",
+   "priceLow": 285000
   },
   {
    "name": "Channel Side Storage Condos (I–III)",
@@ -5416,7 +5619,8 @@
    "lat": 43.08,
    "lng": -86.22,
    "offer": "buy",
-   "slug": "channel-side-storage-condos-i-iii-mi"
+   "slug": "channel-side-storage-condos-i-iii-mi",
+   "priceLow": 98000
   },
   {
    "name": "Riley Condominium",
@@ -5429,7 +5633,8 @@
    "lat": 42.81,
    "lng": -86.02,
    "offer": "buy",
-   "slug": "riley-condominium-mi"
+   "slug": "riley-condominium-mi",
+   "priceLow": 160000
   },
   {
    "name": "Port Sheldon Storage Condos",
@@ -5442,7 +5647,8 @@
    "lat": 42.86,
    "lng": -85.87,
    "offer": "buy",
-   "slug": "port-sheldon-storage-condos-mi"
+   "slug": "port-sheldon-storage-condos-mi",
+   "priceLow": 188000
   },
   {
    "name": "Verhoeks Street Storage Condos",
@@ -5455,7 +5661,8 @@
    "lat": 43.05,
    "lng": -86.21,
    "offer": "buy",
-   "slug": "verhoeks-street-storage-condos-mi"
+   "slug": "verhoeks-street-storage-condos-mi",
+   "priceLow": 275000
   },
   {
    "name": "ClearSpace",
@@ -5468,7 +5675,8 @@
    "lat": 43.96,
    "lng": -86.45,
    "offer": "buy",
-   "slug": "clearspace-mi"
+   "slug": "clearspace-mi",
+   "priceLow": 325000
   },
   {
    "name": "Indian River Storage Condos",
@@ -5481,7 +5689,8 @@
    "lat": 45.41,
    "lng": -84.61,
    "offer": "buy",
-   "slug": "indian-river-storage-condos-mi"
+   "slug": "indian-river-storage-condos-mi",
+   "priceLow": 120000
   },
   {
    "name": "Zeeland South Storage Condominium",
@@ -5494,7 +5703,8 @@
    "lat": 42.8,
    "lng": -86.01,
    "offer": "buy",
-   "slug": "zeeland-south-storage-condominium-mi"
+   "slug": "zeeland-south-storage-condominium-mi",
+   "priceLow": 95000
   },
   {
    "name": "Toy Box Luxury Storage Units",
@@ -5806,7 +6016,8 @@
    "lat": 41.69,
    "lng": -85.08,
    "offer": "buy",
-   "slug": "big-boyz-toys-jimmerson-lake-in"
+   "slug": "big-boyz-toys-jimmerson-lake-in",
+   "priceLow": 39900
   },
   {
    "name": "Toyshed Storage Condominiums",
@@ -5819,7 +6030,8 @@
    "lat": 41.11,
    "lng": -85.06,
    "offer": "both",
-   "slug": "toyshed-storage-condominiums-in"
+   "slug": "toyshed-storage-condominiums-in",
+   "priceLow": 100000
   },
   {
    "name": "Alta Garage",
@@ -5832,7 +6044,8 @@
    "lat": 41.23,
    "lng": -85.17,
    "offer": "buy",
-   "slug": "alta-garage-in"
+   "slug": "alta-garage-in",
+   "priceLow": 200000
   },
   {
    "name": "Sunlight Drive Flex Condos",
@@ -5845,7 +6058,8 @@
    "lat": 39.96,
    "lng": -86.01,
    "offer": "buy",
-   "slug": "sunlight-drive-flex-condos-in"
+   "slug": "sunlight-drive-flex-condos-in",
+   "priceLow": 350000
   },
   {
    "name": "Southpark Drive Warehouse Condos",
@@ -5858,7 +6072,8 @@
    "lat": 40.03,
    "lng": -86.13,
    "offer": "buy",
-   "slug": "southpark-drive-warehouse-condos-in"
+   "slug": "southpark-drive-warehouse-condos-in",
+   "priceLow": 103000
   },
   {
    "name": "Torque Motor Suites Westmont",
@@ -5884,7 +6099,8 @@
    "lat": 42.1,
    "lng": -88.37,
    "offer": "buy",
-   "slug": "bespoke-motor-union-il"
+   "slug": "bespoke-motor-union-il",
+   "priceLow": 390000
   },
   {
    "name": "Safe Harbor Storage Condos",
@@ -5897,7 +6113,8 @@
    "lat": 41.53,
    "lng": -82.73,
    "offer": "buy",
-   "slug": "safe-harbor-storage-condos-oh"
+   "slug": "safe-harbor-storage-condos-oh",
+   "priceLow": 90000
   },
   {
    "name": "Shoreline Storage Suites",
@@ -5910,7 +6127,8 @@
    "lat": 41.54,
    "lng": -82.77,
    "offer": "buy",
-   "slug": "shoreline-storage-suites-oh"
+   "slug": "shoreline-storage-suites-oh",
+   "priceLow": 140000
   },
   {
    "name": "Catawba Storage Condominiums (I–VI)",
@@ -5923,7 +6141,8 @@
    "lat": 41.54,
    "lng": -82.85,
    "offer": "buy",
-   "slug": "catawba-storage-condominiums-i-vi-oh"
+   "slug": "catawba-storage-condominiums-i-vi-oh",
+   "priceLow": 66000
   },
   {
    "name": "NorthCoast Storage Condominium",
@@ -5936,7 +6155,8 @@
    "lat": 41.51,
    "lng": -82.94,
    "offer": "buy",
-   "slug": "northcoast-storage-condominium-oh"
+   "slug": "northcoast-storage-condominium-oh",
+   "priceLow": 70000
   },
   {
    "name": "East Harbor Condominium Storage",
@@ -5949,7 +6169,8 @@
    "lat": 41.55,
    "lng": -82.8,
    "offer": "buy",
-   "slug": "east-harbor-condominium-storage-oh"
+   "slug": "east-harbor-condominium-storage-oh",
+   "priceLow": 97000
   },
   {
    "name": "Island Landings Business & Storage Condos",
@@ -5962,7 +6183,8 @@
    "lat": 41.5,
    "lng": -82.93,
    "offer": "buy",
-   "slug": "island-landings-business-storage-condos-oh"
+   "slug": "island-landings-business-storage-condos-oh",
+   "priceLow": 180000
   },
   {
    "name": "West Bay Storage Condominiums",
@@ -5975,7 +6197,8 @@
    "lat": 41.51,
    "lng": -82.96,
    "offer": "buy",
-   "slug": "west-bay-storage-condominiums-oh"
+   "slug": "west-bay-storage-condominiums-oh",
+   "priceLow": 80000
   },
   {
    "name": "Buckeye Storage Condominiums",
@@ -5988,7 +6211,8 @@
    "lat": 41.31,
    "lng": -81.94,
    "offer": "buy",
-   "slug": "buckeye-storage-condominiums-oh"
+   "slug": "buckeye-storage-condominiums-oh",
+   "priceLow": 75000
   },
   {
    "name": "Park Place Storage Condominiums",
@@ -6014,7 +6238,8 @@
    "lat": 44.94,
    "lng": -93.72,
    "offer": "buy",
-   "slug": "park-place-storage-minnetrista-mn"
+   "slug": "park-place-storage-minnetrista-mn",
+   "priceLow": 195000
   },
   {
    "name": "Park Place Storage – Prior Lake",
@@ -6027,7 +6252,8 @@
    "lat": 44.71,
    "lng": -93.42,
    "offer": "buy",
-   "slug": "park-place-storage-prior-lake-mn"
+   "slug": "park-place-storage-prior-lake-mn",
+   "priceLow": 112000
   },
   {
    "name": "Park Place Storage – Corcoran",
@@ -6040,7 +6266,8 @@
    "lat": 45.1,
    "lng": -93.55,
    "offer": "buy",
-   "slug": "park-place-storage-corcoran-mn"
+   "slug": "park-place-storage-corcoran-mn",
+   "priceLow": 135000
   },
   {
    "name": "Park Place Storage – Woodbury",
@@ -6053,7 +6280,8 @@
    "lat": 44.92,
    "lng": -92.96,
    "offer": "buy",
-   "slug": "park-place-storage-woodbury-mn"
+   "slug": "park-place-storage-woodbury-mn",
+   "priceLow": 118000
   },
   {
    "name": "Garage Solution Condominiums",
@@ -6066,7 +6294,8 @@
    "lat": 45.27,
    "lng": -93.05,
    "offer": "buy",
-   "slug": "garage-solution-condominiums-mn"
+   "slug": "garage-solution-condominiums-mn",
+   "priceLow": 250000
   },
   {
    "name": "The Hideout",
@@ -6079,7 +6308,8 @@
    "lat": 45.21,
    "lng": -93.66,
    "offer": "buy",
-   "slug": "the-hideout-mn"
+   "slug": "the-hideout-mn",
+   "priceLow": 345000
   },
   {
    "name": "Brink 4 Luxury Condos",
@@ -6092,7 +6322,8 @@
    "lat": 44.65,
    "lng": -93.24,
    "offer": "buy",
-   "slug": "brink-4-luxury-condos-mn"
+   "slug": "brink-4-luxury-condos-mn",
+   "priceLow": 283000
   },
   {
    "name": "Midwest FlexSpace – White Bear Lake",
@@ -6105,7 +6336,8 @@
    "lat": 45.08,
    "lng": -93.01,
    "offer": "buy",
-   "slug": "midwest-flexspace-white-bear-lake-mn"
+   "slug": "midwest-flexspace-white-bear-lake-mn",
+   "priceLow": 195000
   },
   {
    "name": "Midwest FlexSpace – Rosemount",
@@ -6118,7 +6350,8 @@
    "lat": 44.74,
    "lng": -93.13,
    "offer": "buy",
-   "slug": "midwest-flexspace-rosemount-mn"
+   "slug": "midwest-flexspace-rosemount-mn",
+   "priceLow": 195000
   },
   {
    "name": "Mesenbrink Storage Condos",
@@ -6131,7 +6364,8 @@
    "lat": 44.72,
    "lng": -93.44,
    "offer": "buy",
-   "slug": "mesenbrink-storage-condos-mn"
+   "slug": "mesenbrink-storage-condos-mn",
+   "priceLow": 275000
   },
   {
    "name": "Valley View Storage & Garage Condos",
@@ -6144,7 +6378,8 @@
    "lat": 44.67,
    "lng": -93.63,
    "offer": "buy",
-   "slug": "valley-view-storage-garage-condos-mn"
+   "slug": "valley-view-storage-garage-condos-mn",
+   "priceLow": 300000
   },
   {
    "name": "Eagan Condo Garages",
@@ -6157,7 +6392,8 @@
    "lat": 44.8,
    "lng": -93.17,
    "offer": "buy",
-   "slug": "eagan-condo-garages-mn"
+   "slug": "eagan-condo-garages-mn",
+   "priceLow": 190000
   },
   {
    "name": "Stor Smart North",
@@ -6170,7 +6406,8 @@
    "lat": 45.97,
    "lng": -95.29,
    "offer": "buy",
-   "slug": "stor-smart-north-mn"
+   "slug": "stor-smart-north-mn",
+   "priceLow": 45000
   },
   {
    "name": "West End Autoplex",
@@ -6209,7 +6446,8 @@
    "lat": 46.42,
    "lng": -94.28,
    "offer": "buy",
-   "slug": "bir-luxury-garages-mn"
+   "slug": "bir-luxury-garages-mn",
+   "track": true
   },
   {
    "name": "Condo Suites Otsego",
@@ -6248,7 +6486,8 @@
    "lat": 45.59,
    "lng": -94.17,
    "offer": "buy",
-   "slug": "404-garage-condos-mn"
+   "slug": "404-garage-condos-mn",
+   "priceLow": 256000
   },
   {
    "name": "Points North Garage Condos",
@@ -6313,7 +6552,8 @@
    "lat": 42.87,
    "lng": -89.02,
    "offer": "buy",
-   "slug": "newville-garage-condominium-wi"
+   "slug": "newville-garage-condominium-wi",
+   "priceLow": 120000
   },
   {
    "name": "NR Garage Condos",
@@ -6326,7 +6566,8 @@
    "lat": 45.12,
    "lng": -92.54,
    "offer": "buy",
-   "slug": "nr-garage-condos-wi"
+   "slug": "nr-garage-condos-wi",
+   "priceLow": 159000
   },
   {
    "name": "B&J Storage Condos",
@@ -6339,7 +6580,8 @@
    "lat": 42.78,
    "lng": -88.94,
    "offer": "buy",
-   "slug": "b-j-storage-condos-wi"
+   "slug": "b-j-storage-condos-wi",
+   "priceLow": 98000
   },
   {
    "name": "Indigo Storage Condos",
@@ -6352,7 +6594,8 @@
    "lat": 45.05,
    "lng": -87.29,
    "offer": "buy",
-   "slug": "indigo-storage-condos-wi"
+   "slug": "indigo-storage-condos-wi",
+   "priceLow": 170000
   },
   {
    "name": "Park Place Storage Condominiums – Houlton",
@@ -6365,7 +6608,8 @@
    "lat": 45.06,
    "lng": -92.76,
    "offer": "buy",
-   "slug": "park-place-storage-condominiums-houlton-wi"
+   "slug": "park-place-storage-condominiums-houlton-wi",
+   "priceLow": 122000
   },
   {
    "name": "Troy Condo Garages",
@@ -6378,7 +6622,8 @@
    "lat": 44.95,
    "lng": -92.74,
    "offer": "buy",
-   "slug": "troy-condo-garages-wi"
+   "slug": "troy-condo-garages-wi",
+   "priceLow": 200000
   },
   {
    "name": "St Croix Garage Condos",
@@ -6521,7 +6766,8 @@
    "lat": 40.1107,
    "lng": -77.0336,
    "offer": "buy",
-   "slug": "premier-garages-of-america-pa"
+   "slug": "premier-garages-of-america-pa",
+   "priceLow": 215000
   },
   {
    "name": "Lime Rock Park Trackside Garage Condos",
@@ -6534,7 +6780,8 @@
    "lat": 41.9282,
    "lng": -73.3809,
    "offer": "buy",
-   "slug": "lime-rock-park-trackside-garage-condos-ct"
+   "slug": "lime-rock-park-trackside-garage-condos-ct",
+   "track": true
   },
   {
    "name": "Newport Car Vaults",
@@ -6547,7 +6794,8 @@
    "lat": 41.5125,
    "lng": -71.2869,
    "offer": "both",
-   "slug": "newport-car-vaults-ri"
+   "slug": "newport-car-vaults-ri",
+   "priceLow": 400000
   },
   {
    "name": "Torque Motor Suites — Nolensville",
@@ -6599,7 +6847,8 @@
    "lat": 36.95,
    "lng": -86.42,
    "offer": "both",
-   "slug": "ncm-motorsports-park-garages-ky"
+   "slug": "ncm-motorsports-park-garages-ky",
+   "track": true
   },
   {
    "name": "Virginia International Raceway Villas & Garages",
@@ -6612,7 +6861,8 @@
    "lat": 36.56,
    "lng": -79.21,
    "offer": "both",
-   "slug": "virginia-international-raceway-villas-garages-va"
+   "slug": "virginia-international-raceway-villas-garages-va",
+   "track": true
   },
   {
    "name": "Falcon Storage Condos Bend",
@@ -6625,7 +6875,8 @@
    "lat": 44.0935,
    "lng": -121.2946,
    "offer": "buy",
-   "slug": "falcon-storage-condos-bend-or"
+   "slug": "falcon-storage-condos-bend-or",
+   "priceLow": 475000
   },
   {
    "name": "Oregon Raceway Park Trackside Garages",
@@ -6638,7 +6889,8 @@
    "lat": 45.3605,
    "lng": -120.7426,
    "offer": "both",
-   "slug": "oregon-raceway-park-trackside-garages-or"
+   "slug": "oregon-raceway-park-trackside-garages-or",
+   "track": true
   },
   {
    "name": "Falcon Storage Condos St. George",
@@ -6677,7 +6929,8 @@
    "lat": 43.646,
    "lng": -116.425,
    "offer": "buy",
-   "slug": "ten-mile-storage-condos-id"
+   "slug": "ten-mile-storage-condos-id",
+   "priceLow": 270000
   },
   {
    "name": "Locked and Loaded Garage Condos",
@@ -6690,7 +6943,8 @@
    "lat": 47.71,
    "lng": -117,
    "offer": "buy",
-   "slug": "locked-and-loaded-garage-condos-id"
+   "slug": "locked-and-loaded-garage-condos-id",
+   "priceLow": 250000
   },
   {
    "name": "Falcon Storage Condos Boise",
@@ -6781,7 +7035,8 @@
    "lat": 39.0919,
    "lng": -108.6015,
    "offer": "buy",
-   "slug": "grand-garages-co"
+   "slug": "grand-garages-co",
+   "priceLow": 206000
   },
   {
    "name": "Bozeman Personal Warehouse",
@@ -6794,7 +7049,8 @@
    "lat": 45.674,
    "lng": -111.186,
    "offer": "both",
-   "slug": "bozeman-personal-warehouse-mt"
+   "slug": "bozeman-personal-warehouse-mt",
+   "priceLow": 692000
   },
   {
    "name": "Big Tex Garage Condos",
@@ -6807,7 +7063,8 @@
    "lat": 30.013,
    "lng": -95.669,
    "offer": "buy",
-   "slug": "big-tex-garage-condos-tx"
+   "slug": "big-tex-garage-condos-tx",
+   "priceLow": 184500
   },
   {
    "name": "Weekend Drive Garage",
@@ -6885,7 +7142,8 @@
    "lat": 29.605,
    "lng": -98.272,
    "offer": "buy",
-   "slug": "platform-warehouse-suites-tx"
+   "slug": "platform-warehouse-suites-tx",
+   "priceLow": 780000
   },
   {
    "name": "SIDE BY SIDE (Shaver Rd)",
@@ -6898,7 +7156,8 @@
    "lat": 27.925,
    "lng": -97.123,
    "offer": "buy",
-   "slug": "side-by-side-shaver-rd-tx"
+   "slug": "side-by-side-shaver-rd-tx",
+   "priceLow": 519400
   },
   {
    "name": "Stones Throw Storage Condominium",
@@ -6911,7 +7170,8 @@
    "lat": 43.395,
    "lng": -95.218,
    "offer": "buy",
-   "slug": "stones-throw-storage-condominium-ia"
+   "slug": "stones-throw-storage-condominium-ia",
+   "priceLow": 120000
   },
   {
    "name": "Pelican Bay Storage Condominiums",
@@ -6924,7 +7184,8 @@
    "lat": 43.345,
    "lng": -95.163,
    "offer": "buy",
-   "slug": "pelican-bay-storage-condominiums-ia"
+   "slug": "pelican-bay-storage-condominiums-ia",
+   "priceLow": 69900
   },
   {
    "name": "Liberty Storage Condominiums",
@@ -6937,7 +7198,8 @@
    "lat": 43.357,
    "lng": -95.157,
    "offer": "buy",
-   "slug": "liberty-storage-condominiums-ia"
+   "slug": "liberty-storage-condominiums-ia",
+   "priceLow": 110000
   },
   {
    "name": "Storage City Condominiums",
@@ -6950,7 +7212,8 @@
    "lat": 43.41,
    "lng": -95.111,
    "offer": "buy",
-   "slug": "storage-city-condominiums-ia"
+   "slug": "storage-city-condominiums-ia",
+   "priceLow": 189000
   },
   {
    "name": "Motorsport Park Hastings Trackside Car Condos (Showboat)",
@@ -6963,7 +7226,9 @@
    "lat": 40.615,
    "lng": -98.345,
    "offer": "buy",
-   "slug": "motorsport-park-hastings-trackside-car-condos-showboat-ne"
+   "slug": "motorsport-park-hastings-trackside-car-condos-showboat-ne",
+   "track": true,
+   "priceLow": 378000
   },
   {
    "name": "Harvest Heights Hobby Condos",
@@ -6976,7 +7241,8 @@
    "lat": 41.287,
    "lng": -96.286,
    "offer": "buy",
-   "slug": "harvest-heights-hobby-condos-ne"
+   "slug": "harvest-heights-hobby-condos-ne",
+   "priceLow": 385000
   },
   {
    "name": "Runway 29",
@@ -6989,7 +7255,8 @@
    "lat": 46.779,
    "lng": -100.752,
    "offer": "buy",
-   "slug": "runway-29-nd"
+   "slug": "runway-29-nd",
+   "priceLow": 154800
   },
   {
    "name": "The Toy Box (Bagnell Dam Blvd)",
@@ -7015,7 +7282,8 @@
    "lat": 43.554,
    "lng": -71.383,
    "offer": "buy",
-   "slug": "the-toy-box-toy-box-2-glendale-place-nh"
+   "slug": "the-toy-box-toy-box-2-glendale-place-nh",
+   "priceLow": 325000
   },
   {
    "name": "Corsa Car Condos (Shore Car Club)",
@@ -7028,7 +7296,8 @@
    "lat": 40.252,
    "lng": -74.058,
    "offer": "both",
-   "slug": "corsa-car-condos-shore-car-club-nj"
+   "slug": "corsa-car-condos-shore-car-club-nj",
+   "priceLow": 1200000
   },
   {
    "name": "The Hangar in the Hamptons",
@@ -7054,7 +7323,8 @@
    "lat": 40.08,
    "lng": -75.19,
    "offer": "both",
-   "slug": "5-star-garages-pa"
+   "slug": "5-star-garages-pa",
+   "priceLow": 315000
   },
   {
    "name": "Stoney Acres Barns II",
@@ -7067,7 +7337,8 @@
    "lat": 44.58,
    "lng": -85.54,
    "offer": "buy",
-   "slug": "stoney-acres-barns-ii-mi"
+   "slug": "stoney-acres-barns-ii-mi",
+   "priceLow": 99000
   },
   {
    "name": "Big Toy Condos Sandpoint",
@@ -7080,7 +7351,8 @@
    "lat": 48.28,
    "lng": -116.55,
    "offer": "buy",
-   "slug": "big-toy-condos-sandpoint-id"
+   "slug": "big-toy-condos-sandpoint-id",
+   "priceLow": 245000
   },
   {
    "name": "Luxury Garage Condos of Athol",
@@ -7093,7 +7365,8 @@
    "lat": 47.95,
    "lng": -116.71,
    "offer": "buy",
-   "slug": "luxury-garage-condos-of-athol-id"
+   "slug": "luxury-garage-condos-of-athol-id",
+   "priceLow": 94500
   },
   {
    "name": "Go To My Garage Cascade",
@@ -7119,7 +7392,8 @@
    "lat": 45.78,
    "lng": -108.5,
    "offer": "buy",
-   "slug": "ridgeview-condo-shop-mt"
+   "slug": "ridgeview-condo-shop-mt",
+   "priceLow": 97500
   },
   {
    "name": "Avalanche Storage Condos",
@@ -7132,7 +7406,8 @@
    "lat": 44.8,
    "lng": -106.96,
    "offer": "buy",
-   "slug": "avalanche-storage-condos-wy"
+   "slug": "avalanche-storage-condos-wy",
+   "priceLow": 325000
   },
   {
    "name": "Outlaw Garages Condominiums",
@@ -7158,7 +7433,8 @@
    "lat": 30.19,
    "lng": -98.09,
    "offer": "both",
-   "slug": "dripping-springs-personal-warehouse-tx"
+   "slug": "dripping-springs-personal-warehouse-tx",
+   "priceLow": 414000
   },
   {
    "name": "Redline Auto Suites",
@@ -7171,7 +7447,8 @@
    "lat": 26.25,
    "lng": -81.77,
    "offer": "buy",
-   "slug": "redline-auto-suites-fl"
+   "slug": "redline-auto-suites-fl",
+   "priceLow": 650000
   },
   {
    "name": "My Other Place",
@@ -7184,7 +7461,8 @@
    "lat": 26.27,
    "lng": -81.79,
    "offer": "buy",
-   "slug": "my-other-place-fl"
+   "slug": "my-other-place-fl",
+   "priceLow": 539000
   },
   {
    "name": "Classic & Antique Restorers Square",
@@ -7197,7 +7475,8 @@
    "lat": 26.15,
    "lng": -81.77,
    "offer": "buy",
-   "slug": "classic-antique-restorers-square-fl"
+   "slug": "classic-antique-restorers-square-fl",
+   "priceLow": 729000
   },
   {
    "name": "Porsche Design Concours Dallas",

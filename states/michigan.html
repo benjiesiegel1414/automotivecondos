@@ -21,6 +21,7 @@
     <nav class="main">
       <a href="../map">Map</a>
       <a href="../states">Browse by State</a>
+      <a href="/price-index">Price Index</a>
       <a href="../blog">Blog</a>
       <a href="../about">About</a>
       <a class="nav-adv" href="/advertise">Advertise</a>
@@ -40,64 +41,75 @@
     <p style="font-size:14px;margin:0 0 14px"><a href="../for-sale/garage-condos-for-sale-michigan">Michigan garage condos for sale →</a> · <a href="../blog/garage-condos-michigan">Michigan market guide →</a> · <a href="../car-condos-for-rent">Car condos for rent →</a></p>
     
     
-    <div style="margin:0 0 18px" id="offer-toggle">
-      <button class="btn" data-f="all" style="margin-right:8px">All</button>
-      <button class="btn ghost" data-f="buy" style="margin-right:8px">For Sale</button>
-      <button class="btn ghost" data-f="rent">For Rent</button>
+    <div class="dir-filters" id="dir-filters" style="margin-top:0">
+      <select data-k="price" class="field" aria-label="Price"><option value="">Any price</option><option value="0-150000">Under $150K</option><option value="150000-300000">$150K–$300K</option><option value="300000-500000">$300K–$500K</option><option value="500000-1000000">$500K–$1M</option><option value="1000000-1e12">$1M+</option></select>
+      <select data-k="status" class="field" aria-label="Status"><option value="">Any status</option><option value="Selling">Selling now</option><option value="new">Pre-construction</option><option value="Resale only">Resale only</option><option value="Established">Established</option></select>
+      <select data-k="offer" class="field" aria-label="Buy or rent"><option value="">Buy &amp; rent</option><option value="buy">For sale</option><option value="rent">For rent</option></select>
+      <select data-k="size" class="field" aria-label="Community size"><option value="">Any size</option><option value="0-39">Boutique (under 40 units)</option><option value="40-100">Mid-size (40–100)</option><option value="101-100000">Large (100+)</option></select>
+      <label class="chk"><input type="checkbox" data-k="track"> Track access</label>
+      
+      <span class="df-count" id="df-count">Showing 35 of 35</span>
     </div>
     <div class="table-scroll">
     <table class="data">
       <thead><tr><th>Community</th><th>City</th><th>Status</th><th>Units</th><th>Pricing</th><th></th></tr></thead>
-      <tbody><tr data-offer="buy" data-href="../communities/allen-park-storage-condos-mi"><td><strong>Allen Park Storage Condos</strong></td><td>Allendale</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/allen-park-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/crystal-lake-storage-barns-mi"><td><strong>Crystal Lake Storage Barns</strong></td><td>Benzonia</td><td>Selling</td><td>21</td><td>Inquire</td><td><a href="../communities/crystal-lake-storage-barns-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/st-clair-storage-condos-mi"><td><strong>St. Clair Storage Condos</strong></td><td>Casco Township</td><td>Selling</td><td>90</td><td>Inquire</td><td><a href="../communities/st-clair-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/diamond-garage-condos-mi"><td><strong>Diamond Garage Condos</strong></td><td>Cassopolis</td><td>Selling</td><td>12</td><td>Inquire</td><td><a href="../communities/diamond-garage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/toy-box-luxury-storage-units-mi"><td><strong>Toy Box Luxury Storage Units</strong></td><td>Charlevoix (Hayes Twp)</td><td>Selling</td><td>10</td><td>Inquire</td><td><a href="../communities/toy-box-luxury-storage-units-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/channel-side-storage-condos-i-iii-mi"><td><strong>Channel Side Storage Condos (I–III)</strong></td><td>Ferrysburg</td><td>Resale only</td><td>49</td><td>2026 resales ~$98K–$295K</td><td><a href="../communities/channel-side-storage-condos-i-iii-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/hollywood-garage-condos-mi"><td><strong>HollyWood Garage Condos</strong></td><td>Grand Blanc</td><td>Selling</td><td>28</td><td>Inquire</td><td><a href="../communities/hollywood-garage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/grand-haven-storage-mi"><td><strong>Grand Haven Storage</strong></td><td>Grand Haven</td><td>Resale only</td><td>81</td><td>2026 resales $285K–$1.1M (median $585K)</td><td><a href="../communities/grand-haven-storage-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/grand-haven-storage-condos-kooiman-place-mi"><td><strong>Grand Haven Storage Condos (Kooiman Place)</strong></td><td>Grand Haven</td><td>Under construction</td><td>12</td><td>Inquire</td><td><a href="../communities/grand-haven-storage-condos-kooiman-place-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/verhoeks-street-storage-condos-mi"><td><strong>Verhoeks Street Storage Condos</strong></td><td>Grand Haven</td><td>Resale only</td><td>24</td><td>2026 resale ~$275K</td><td><a href="../communities/verhoeks-street-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/toybox-storage-suites-mi"><td><strong>ToyBox Storage Suites</strong></td><td>Hart</td><td>Selling</td><td>9</td><td>Inquire</td><td><a href="../communities/toybox-storage-suites-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/holland-storage-condos-mi"><td><strong>Holland Storage Condos</strong></td><td>Holland</td><td>Selling</td><td>11</td><td>Inquire</td><td><a href="../communities/holland-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/james-street-storage-condominium-mi"><td><strong>James Street Storage Condominium</strong></td><td>Holland</td><td>Selling</td><td>16</td><td>Inquire</td><td><a href="../communities/james-street-storage-condominium-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/motorsports-gateway-howell-mi"><td><strong>Motorsports Gateway Howell</strong></td><td>Howell</td><td>Under construction</td><td>68</td><td>From $599,990</td><td><a href="../communities/motorsports-gateway-howell-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/indian-river-storage-condos-mi"><td><strong>Indian River Storage Condos</strong></td><td>Indian River</td><td>Selling</td><td>53</td><td>~$120K</td><td><a href="../communities/indian-river-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/port-sheldon-storage-condos-mi"><td><strong>Port Sheldon Storage Condos</strong></td><td>Jenison (Georgetown Twp)</td><td>Selling</td><td>11</td><td>2026 sales $188K–$353K</td><td><a href="../communities/port-sheldon-storage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/stoney-acres-barns-ii-mi"><td><strong>Stoney Acres Barns II</strong></td><td>Kingsley</td><td>Selling</td><td>—</td><td>From $99K</td><td><a href="../communities/stoney-acres-barns-ii-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/clearspace-mi"><td><strong>ClearSpace</strong></td><td>Ludington</td><td>Selling</td><td>24</td><td>~$325K</td><td><a href="../communities/clearspace-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/the-dune-lockers-mi"><td><strong>The Dune Lockers</strong></td><td>Mears (Silver Lake Dunes)</td><td>Selling</td><td>68</td><td>Inquire</td><td><a href="../communities/the-dune-lockers-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/white-lake-garage-condos-mi"><td><strong>White Lake Garage Condos</strong></td><td>Montague</td><td>Resale only</td><td>14</td><td>Inquire</td><td><a href="../communities/white-lake-garage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/sherman-flex-suites-condominium-mi"><td><strong>Sherman Flex Suites Condominium</strong></td><td>Muskegon</td><td>Selling</td><td>24</td><td>Inquire</td><td><a href="../communities/sherman-flex-suites-condominium-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/suite-space-mi"><td><strong>Suite Space</strong></td><td>Muskegon</td><td>Selling</td><td>12</td><td>Inquire</td><td><a href="../communities/suite-space-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/3rd-stall-storage-mi"><td><strong>3rd Stall Storage</strong></td><td>Norton Shores</td><td>Resale only</td><td>47</td><td>Inquire</td><td><a href="../communities/3rd-stall-storage-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/lakeview-storage-condominiums-mi"><td><strong>Lakeview Storage Condominiums</strong></td><td>Onsted (Irish Hills)</td><td>Selling</td><td>38</td><td>Inquire</td><td><a href="../communities/lakeview-storage-condominiums-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/hearthside-grove-luxury-garages-mi"><td><strong>Hearthside Grove Luxury Garages</strong></td><td>Petoskey</td><td>Selling</td><td>60</td><td>Inquire</td><td><a href="../communities/hearthside-grove-luxury-garages-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/m1-concourse-mi"><td><strong>M1 Concourse</strong></td><td>Pontiac</td><td>Established</td><td>250</td><td>Resales from ~$399K</td><td><a href="../communities/m1-concourse-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/higgins-lake-houghton-lake-storage-condominiums-mi"><td><strong>Higgins Lake–Houghton Lake Storage Condominiums</strong></td><td>Roscommon</td><td>Under construction</td><td>48</td><td>Inquire</td><td><a href="../communities/higgins-lake-houghton-lake-storage-condominiums-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/blair-valley-business-center-mi"><td><strong>Blair Valley Business Center</strong></td><td>Traverse City</td><td>Resale only</td><td>14</td><td>Resales; inquire</td><td><a href="../communities/blair-valley-business-center-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/m37-round-about-barns-mi"><td><strong>M37 Round About Barns</strong></td><td>Traverse City</td><td>Selling</td><td>43</td><td>Inquire</td><td><a href="../communities/m37-round-about-barns-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/silver-lake-storage-barns-mi"><td><strong>Silver Lake Storage Barns</strong></td><td>Traverse City</td><td>Selling</td><td>50</td><td>Inquire</td><td><a href="../communities/silver-lake-storage-barns-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/storage-condos-of-michigan-mi"><td><strong>Storage Condos of Michigan</strong></td><td>Waterford</td><td>Resale only</td><td>63</td><td>Inquire</td><td><a href="../communities/storage-condos-of-michigan-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/port-sheldon-garage-condos-mi"><td><strong>Port Sheldon Garage Condos</strong></td><td>West Olive</td><td>Resale only</td><td>12</td><td>Inquire</td><td><a href="../communities/port-sheldon-garage-condos-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/west-olive-storage-condominiums-mi"><td><strong>West Olive Storage Condominiums</strong></td><td>West Olive</td><td>Resale only</td><td>10</td><td>Inquire</td><td><a href="../communities/west-olive-storage-condominiums-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/riley-condominium-mi"><td><strong>Riley Condominium</strong></td><td>Zeeland</td><td>Selling</td><td>40</td><td>2026 sales $160K–$192K</td><td><a href="../communities/riley-condominium-mi">Details →</a></td></tr>
-<tr data-offer="buy" data-href="../communities/zeeland-south-storage-condominium-mi"><td><strong>Zeeland South Storage Condominium</strong></td><td>Zeeland</td><td>Selling</td><td>24</td><td>~$95K</td><td><a href="../communities/zeeland-south-storage-condominium-mi">Details →</a></td></tr></tbody>
+      <tbody><tr data-offer="buy" data-price="" data-status="Planned" data-units="" data-track="" data-specs="" data-href="../communities/allen-park-storage-condos-mi"><td><strong>Allen Park Storage Condos</strong></td><td>Allendale</td><td>Planned</td><td>—</td><td>Inquire</td><td><a href="../communities/allen-park-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="21" data-track="" data-specs="" data-href="../communities/crystal-lake-storage-barns-mi"><td><strong>Crystal Lake Storage Barns</strong></td><td>Benzonia</td><td>Selling</td><td>21</td><td>Inquire</td><td><a href="../communities/crystal-lake-storage-barns-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="90" data-track="" data-specs="" data-href="../communities/st-clair-storage-condos-mi"><td><strong>St. Clair Storage Condos</strong></td><td>Casco Township</td><td>Selling</td><td>90</td><td>Inquire</td><td><a href="../communities/st-clair-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="12" data-track="" data-specs="" data-href="../communities/diamond-garage-condos-mi"><td><strong>Diamond Garage Condos</strong></td><td>Cassopolis</td><td>Selling</td><td>12</td><td>Inquire</td><td><a href="../communities/diamond-garage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="10" data-track="" data-specs="" data-href="../communities/toy-box-luxury-storage-units-mi"><td><strong>Toy Box Luxury Storage Units</strong></td><td>Charlevoix (Hayes Twp)</td><td>Selling</td><td>10</td><td>Inquire</td><td><a href="../communities/toy-box-luxury-storage-units-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="98000" data-status="Resale only" data-units="49" data-track="" data-specs="" data-href="../communities/channel-side-storage-condos-i-iii-mi"><td><strong>Channel Side Storage Condos (I–III)</strong></td><td>Ferrysburg</td><td>Resale only</td><td>49</td><td>2026 resales ~$98K–$295K</td><td><a href="../communities/channel-side-storage-condos-i-iii-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="28" data-track="" data-specs="" data-href="../communities/hollywood-garage-condos-mi"><td><strong>HollyWood Garage Condos</strong></td><td>Grand Blanc</td><td>Selling</td><td>28</td><td>Inquire</td><td><a href="../communities/hollywood-garage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="285000" data-status="Resale only" data-units="81" data-track="" data-specs="" data-href="../communities/grand-haven-storage-mi"><td><strong>Grand Haven Storage</strong></td><td>Grand Haven</td><td>Resale only</td><td>81</td><td>2026 resales $285K–$1.1M (median $585K)</td><td><a href="../communities/grand-haven-storage-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Under construction" data-units="12" data-track="" data-specs="" data-href="../communities/grand-haven-storage-condos-kooiman-place-mi"><td><strong>Grand Haven Storage Condos (Kooiman Place)</strong></td><td>Grand Haven</td><td>Under construction</td><td>12</td><td>Inquire</td><td><a href="../communities/grand-haven-storage-condos-kooiman-place-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="275000" data-status="Resale only" data-units="24" data-track="" data-specs="" data-href="../communities/verhoeks-street-storage-condos-mi"><td><strong>Verhoeks Street Storage Condos</strong></td><td>Grand Haven</td><td>Resale only</td><td>24</td><td>2026 resale ~$275K</td><td><a href="../communities/verhoeks-street-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="9" data-track="" data-specs="" data-href="../communities/toybox-storage-suites-mi"><td><strong>ToyBox Storage Suites</strong></td><td>Hart</td><td>Selling</td><td>9</td><td>Inquire</td><td><a href="../communities/toybox-storage-suites-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="11" data-track="" data-specs="" data-href="../communities/holland-storage-condos-mi"><td><strong>Holland Storage Condos</strong></td><td>Holland</td><td>Selling</td><td>11</td><td>Inquire</td><td><a href="../communities/holland-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="16" data-track="" data-specs="" data-href="../communities/james-street-storage-condominium-mi"><td><strong>James Street Storage Condominium</strong></td><td>Holland</td><td>Selling</td><td>16</td><td>Inquire</td><td><a href="../communities/james-street-storage-condominium-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="599990" data-status="Under construction" data-units="68" data-track="1" data-specs="" data-href="../communities/motorsports-gateway-howell-mi"><td><strong>Motorsports Gateway Howell</strong></td><td>Howell</td><td>Under construction</td><td>68</td><td>From $599,990</td><td><a href="../communities/motorsports-gateway-howell-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="120000" data-status="Selling" data-units="53" data-track="" data-specs="" data-href="../communities/indian-river-storage-condos-mi"><td><strong>Indian River Storage Condos</strong></td><td>Indian River</td><td>Selling</td><td>53</td><td>~$120K</td><td><a href="../communities/indian-river-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="188000" data-status="Selling" data-units="11" data-track="" data-specs="" data-href="../communities/port-sheldon-storage-condos-mi"><td><strong>Port Sheldon Storage Condos</strong></td><td>Jenison (Georgetown Twp)</td><td>Selling</td><td>11</td><td>2026 sales $188K–$353K</td><td><a href="../communities/port-sheldon-storage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="99000" data-status="Selling" data-units="" data-track="" data-specs="" data-href="../communities/stoney-acres-barns-ii-mi"><td><strong>Stoney Acres Barns II</strong></td><td>Kingsley</td><td>Selling</td><td>—</td><td>From $99K</td><td><a href="../communities/stoney-acres-barns-ii-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="325000" data-status="Selling" data-units="24" data-track="" data-specs="" data-href="../communities/clearspace-mi"><td><strong>ClearSpace</strong></td><td>Ludington</td><td>Selling</td><td>24</td><td>~$325K</td><td><a href="../communities/clearspace-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="68" data-track="" data-specs="" data-href="../communities/the-dune-lockers-mi"><td><strong>The Dune Lockers</strong></td><td>Mears (Silver Lake Dunes)</td><td>Selling</td><td>68</td><td>Inquire</td><td><a href="../communities/the-dune-lockers-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="14" data-track="" data-specs="" data-href="../communities/white-lake-garage-condos-mi"><td><strong>White Lake Garage Condos</strong></td><td>Montague</td><td>Resale only</td><td>14</td><td>Inquire</td><td><a href="../communities/white-lake-garage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="24" data-track="" data-specs="" data-href="../communities/sherman-flex-suites-condominium-mi"><td><strong>Sherman Flex Suites Condominium</strong></td><td>Muskegon</td><td>Selling</td><td>24</td><td>Inquire</td><td><a href="../communities/sherman-flex-suites-condominium-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="12" data-track="" data-specs="" data-href="../communities/suite-space-mi"><td><strong>Suite Space</strong></td><td>Muskegon</td><td>Selling</td><td>12</td><td>Inquire</td><td><a href="../communities/suite-space-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="47" data-track="" data-specs="" data-href="../communities/3rd-stall-storage-mi"><td><strong>3rd Stall Storage</strong></td><td>Norton Shores</td><td>Resale only</td><td>47</td><td>Inquire</td><td><a href="../communities/3rd-stall-storage-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="38" data-track="" data-specs="" data-href="../communities/lakeview-storage-condominiums-mi"><td><strong>Lakeview Storage Condominiums</strong></td><td>Onsted (Irish Hills)</td><td>Selling</td><td>38</td><td>Inquire</td><td><a href="../communities/lakeview-storage-condominiums-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="60" data-track="" data-specs="" data-href="../communities/hearthside-grove-luxury-garages-mi"><td><strong>Hearthside Grove Luxury Garages</strong></td><td>Petoskey</td><td>Selling</td><td>60</td><td>Inquire</td><td><a href="../communities/hearthside-grove-luxury-garages-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="399000" data-status="Established" data-units="250" data-track="1" data-specs="" data-href="../communities/m1-concourse-mi"><td><strong>M1 Concourse</strong></td><td>Pontiac</td><td>Established</td><td>250</td><td>Resales from ~$399K</td><td><a href="../communities/m1-concourse-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Under construction" data-units="48" data-track="" data-specs="" data-href="../communities/higgins-lake-houghton-lake-storage-condominiums-mi"><td><strong>Higgins Lake–Houghton Lake Storage Condominiums</strong></td><td>Roscommon</td><td>Under construction</td><td>48</td><td>Inquire</td><td><a href="../communities/higgins-lake-houghton-lake-storage-condominiums-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="14" data-track="" data-specs="" data-href="../communities/blair-valley-business-center-mi"><td><strong>Blair Valley Business Center</strong></td><td>Traverse City</td><td>Resale only</td><td>14</td><td>Resales; inquire</td><td><a href="../communities/blair-valley-business-center-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="43" data-track="" data-specs="" data-href="../communities/m37-round-about-barns-mi"><td><strong>M37 Round About Barns</strong></td><td>Traverse City</td><td>Selling</td><td>43</td><td>Inquire</td><td><a href="../communities/m37-round-about-barns-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Selling" data-units="50" data-track="" data-specs="" data-href="../communities/silver-lake-storage-barns-mi"><td><strong>Silver Lake Storage Barns</strong></td><td>Traverse City</td><td>Selling</td><td>50</td><td>Inquire</td><td><a href="../communities/silver-lake-storage-barns-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="63" data-track="" data-specs="" data-href="../communities/storage-condos-of-michigan-mi"><td><strong>Storage Condos of Michigan</strong></td><td>Waterford</td><td>Resale only</td><td>63</td><td>Inquire</td><td><a href="../communities/storage-condos-of-michigan-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="12" data-track="" data-specs="" data-href="../communities/port-sheldon-garage-condos-mi"><td><strong>Port Sheldon Garage Condos</strong></td><td>West Olive</td><td>Resale only</td><td>12</td><td>Inquire</td><td><a href="../communities/port-sheldon-garage-condos-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="" data-status="Resale only" data-units="10" data-track="" data-specs="" data-href="../communities/west-olive-storage-condominiums-mi"><td><strong>West Olive Storage Condominiums</strong></td><td>West Olive</td><td>Resale only</td><td>10</td><td>Inquire</td><td><a href="../communities/west-olive-storage-condominiums-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="160000" data-status="Selling" data-units="40" data-track="" data-specs="" data-href="../communities/riley-condominium-mi"><td><strong>Riley Condominium</strong></td><td>Zeeland</td><td>Selling</td><td>40</td><td>2026 sales $160K–$192K</td><td><a href="../communities/riley-condominium-mi">Details →</a></td></tr>
+<tr data-offer="buy" data-price="95000" data-status="Selling" data-units="24" data-track="" data-specs="" data-href="../communities/zeeland-south-storage-condominium-mi"><td><strong>Zeeland South Storage Condominium</strong></td><td>Zeeland</td><td>Selling</td><td>24</td><td>~$95K</td><td><a href="../communities/zeeland-south-storage-condominium-mi">Details →</a></td></tr></tbody>
     </table>
     </div>
     <script>
     (function(){
-      var wrap = document.getElementById('offer-toggle'); if(!wrap) return;
-      wrap.addEventListener('click', function(e){
-        var b = e.target.closest('button'); if(!b) return;
-        var f = b.getAttribute('data-f');
-        wrap.querySelectorAll('button').forEach(function(x){x.className = x===b ? 'btn' : 'btn ghost'; if(x!==b){x.style.marginRight=x.getAttribute('data-f')==='rent'?'':'8px';}});
-        document.querySelectorAll('table.data tbody tr').forEach(function(tr){
-          var o = tr.getAttribute('data-offer')||'buy';
-          var show = f==='all' || (f==='buy' && (o==='buy'||o==='both')) || (f==='rent' && o==='both');
-          tr.style.display = show ? '' : 'none';
+      var wrap = document.getElementById('dir-filters'); if(!wrap) return;
+      var rows = document.querySelectorAll('table.data tbody tr');
+      function apply(){
+        var v = {}; wrap.querySelectorAll('[data-k]').forEach(function(el){ v[el.getAttribute('data-k')] = el.type==='checkbox' ? el.checked : el.value; });
+        var n = 0;
+        rows.forEach(function(tr){
+          var d = tr.dataset, ok = true;
+          if (v.price){ var r=v.price.split('-').map(Number), p=+d.price; ok = ok && !!d.price && p>=r[0] && p<r[1]; }
+          if (v.status){ ok = ok && (v.status==='new' ? (d.status==='Planned'||d.status==='Under construction') : d.status===v.status); }
+          if (v.offer){ var o=d.offer||'buy'; ok = ok && (v.offer==='buy' ? (o==='buy'||o==='both') : o==='both'); }
+          if (v.size){ var s=v.size.split('-').map(Number), u=+d.units; ok = ok && !!d.units && u>=s[0] && u<=s[1]; }
+          if (v.track) ok = ok && d.track==='1';
+          if (v.specs) ok = ok && d.specs==='1';
+          tr.style.display = ok ? '' : 'none'; if (ok) n++;
         });
-      });
+        document.getElementById('df-count').textContent = 'Showing ' + n + ' of ' + rows.length + (n===0 ? ' (try fewer filters)' : '');
+      }
+      wrap.addEventListener('change', apply);
     })();
     document.querySelectorAll('tr[data-href]').forEach(function(r){
       r.style.cursor='pointer';
@@ -133,6 +145,7 @@
         <a href="../blog">Blog</a>
         <a href="../blog/what-is-a-car-condo">What Is a Car Condo?</a>
         <a href="../blog/car-condo-cost-guide">Cost Guide</a>
+        <a href="/price-index">Car Condo Price Index</a>
         <a href="../best/best-car-condos-texas">Best Car Condos in Texas</a>
         <a href="../best/best-car-condos-florida">Best Car Condos in Florida</a>
       </div>
