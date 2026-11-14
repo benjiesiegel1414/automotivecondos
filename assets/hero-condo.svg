@@ -53,21 +53,20 @@
     <path d="M446 269 L455.5 243 L465 269 M449.6 260 H461.4 M498 248.5 C495.5 244.8 492 243 488.5 243 C482.5 243 478.5 248.5 478.5 256 C478.5 263.5 482.5 269 488.5 269 C492 269 495.5 267.2 498 263.5" stroke="#EAF6FF" stroke-width="1.4"/>
     <path d="M455.5 236 V241 M488.5 236 V241" stroke="#FFFFFF" stroke-width="1.2" opacity=".35"/>
   </g>
-  <g opacity=".85" transform="translate(235.6,95.4) scale(0.72)">
-    <rect x="276" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
-    <rect x="366" y="294" width="12" height="18" rx="4" fill="#0D1117" stroke="#FFFFFF" stroke-width="2.4"/>
-    <path d="M284 312 V293 C284 283 291 276 301 275 L353 275 C363 276 370 283 370 293 V312 Z"
-          fill="#3B8EE2" fill-opacity=".28" stroke="#3B8EE2" stroke-width="2.8" stroke-linejoin="round"/>
-    <path d="M297 275 C299 264 306 258 314 257 L340 257 C348 258 355 264 357 275"
-          fill="none" stroke="#3B8EE2" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M303 273 C305 266 309 262 315 261 L339 261 C345 262 349 266 351 273 Z"
-          fill="#0D1117" opacity=".55" stroke="#3B8EE2" stroke-width="1.6"/>
-    <path d="M284 280 L276 276 M370 280 L378 276" stroke="#3B8EE2" stroke-width="2.4" stroke-linecap="round"/>
-    <ellipse cx="298" cy="286" rx="10" ry="5.5" fill="#FFE14D" opacity=".4" filter="url(#hlblur)"/>
-    <ellipse cx="356" cy="286" rx="10" ry="5.5" fill="#FFE14D" opacity=".4" filter="url(#hlblur)"/>
-    <path d="M291 287 L306 284 M348 284 L363 287" stroke="#FFE14D" stroke-width="3.2" stroke-linecap="round"/>
-    <path d="M305 302 H349" stroke="#3B8EE2" stroke-width="2.6" stroke-linecap="round"/>
-    <path d="M296 307 H302 M352 307 H358" stroke="#3B8EE2" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <rect x="441" y="305" width="9" height="14" rx="3" fill="#0D1117" stroke="#FFFFFF" stroke-width="1.8"/>
+    <rect x="492" y="305" width="9" height="14" rx="3" fill="#0D1117" stroke="#FFFFFF" stroke-width="1.8"/>
+    <path d="M454 295 C455 287 459 283 464 283 H478 C483 283 487 287 488 295" fill="#0D1117" fill-opacity=".5" stroke="#E6EBF0" stroke-width="2.1"/>
+    <path d="M471 283 V295" stroke="#E6EBF0" stroke-width="1.2" opacity=".6"/>
+    <path d="M446 318 V303 C446 298 450 295 455 295 H487 C492 295 496 298 496 303 V318 Z" fill="#FFFFFF" fill-opacity=".22" stroke="#E6EBF0" stroke-width="2.1"/>
+    <rect x="461" y="300" width="20" height="8" rx="2.5" fill="#0D1117" fill-opacity=".6" stroke="#E6EBF0" stroke-width="1.4"/>
+    <path d="M465 301 V307 M468 301 V307 M471 301 V307 M474 301 V307 M477 301 V307" stroke="#E6EBF0" stroke-width="1" opacity=".7"/>
+    <circle cx="453.5" cy="304" r="5" fill="#FFE14D" opacity=".35" filter="url(#hlblur)"/>
+    <circle cx="488.5" cy="304" r="5" fill="#FFE14D" opacity=".35" filter="url(#hlblur)"/>
+    <circle cx="453.5" cy="304" r="3.2" fill="#FFE14D" fill-opacity=".85" stroke="#E6EBF0" stroke-width="1.2"/>
+    <circle cx="488.5" cy="304" r="3.2" fill="#FFE14D" fill-opacity=".85" stroke="#E6EBF0" stroke-width="1.2"/>
+    <path d="M443.5 313 H498.5" stroke="#FFFFFF" stroke-width="2.4"/>
+    <path d="M446 297 L441.5 294.5 M496 297 L500.5 294.5" stroke="#E6EBF0" stroke-width="1.6"/>
   </g>
 
   <!-- highlighted bay: glow + car behind the animated door -->
