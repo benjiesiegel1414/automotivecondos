@@ -2,27 +2,27 @@
  "snapshots": [
   {
    "month": "2026-11",
-   "n": 245,
+   "n": 267,
    "median": 256000,
    "newMedian": 252500,
    "resaleMedian": 275000,
-   "communities": 613,
+   "communities": 638,
    "states": {
     "CA": {
-     "n": 7,
-     "median": 731000
+     "n": 8,
+     "median": 668500
     },
     "TX": {
-     "n": 15,
-     "median": 465000
+     "n": 17,
+     "median": 475000
     },
     "SC": {
-     "n": 6,
+     "n": 7,
      "median": 395000
     },
     "FL": {
-     "n": 43,
-     "median": 385000
+     "n": 46,
+     "median": 387500
     },
     "WA": {
      "n": 16,
@@ -37,16 +37,16 @@
      "median": 245000
     },
     "CO": {
-     "n": 13,
-     "median": 240000
+     "n": 14,
+     "median": 230000
     },
     "GA": {
      "n": 7,
      "median": 225000
     },
     "MN": {
-     "n": 15,
-     "median": 195000
+     "n": 21,
+     "median": 199900
     },
     "MI": {
      "n": 11,
@@ -65,7 +65,7 @@
      "median": 130000
     },
     "AZ": {
-     "n": 29,
+     "n": 31,
      "median": 126000
     },
     "IA": {
