@@ -2,11 +2,11 @@
  "snapshots": [
   {
    "month": "2026-11",
-   "n": 267,
+   "n": 269,
    "median": 256000,
-   "newMedian": 252500,
+   "newMedian": 255500,
    "resaleMedian": 275000,
-   "communities": 638,
+   "communities": 639,
    "states": {
     "CA": {
      "n": 8,
@@ -24,6 +24,10 @@
      "n": 46,
      "median": 387500
     },
+    "CO": {
+     "n": 16,
+     "median": 252000
+    },
     "WA": {
      "n": 16,
      "median": 248000
@@ -35,10 +39,6 @@
     "ID": {
      "n": 5,
      "median": 245000
-    },
-    "CO": {
-     "n": 14,
-     "median": 230000
     },
     "GA": {
      "n": 7,

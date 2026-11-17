@@ -672,14 +672,15 @@
    "name": "The Garage Den",
    "city": "Centennial",
    "state": "CO",
-   "status": "Resale only",
-   "units": null,
-   "priceNote": "Inquire",
+   "status": "Selling",
+   "units": 88,
+   "priceNote": "From mid $300Ks",
    "website": null,
    "lat": 39.58,
    "lng": -104.86,
    "offer": "buy",
-   "slug": "the-garage-den-co"
+   "slug": "the-garage-den-co",
+   "priceLow": 300000
   },
   {
    "name": "My Car Barn",
@@ -837,12 +838,13 @@
    "state": "CO",
    "status": "Under construction",
    "units": 53,
-   "priceNote": "Pre-construction",
+   "priceNote": "From ~$309.6K",
    "website": "https://playgroundgarages.com",
    "lat": 39.76,
    "lng": -105.22,
    "offer": "buy",
-   "slug": "golden-garages-by-playground-co"
+   "slug": "golden-garages-by-playground-co",
+   "priceLow": 309600
   },
   {
    "name": "Indiana Street RV Plaza Condos",
@@ -6309,13 +6311,13 @@
    "state": "MN",
    "status": "Selling",
    "units": 150,
-   "priceNote": "From ~$290K unfinished; $485K–$1.7M finished",
+   "priceNote": "From ~$280K unfinished; $485K–$1.7M finished",
    "website": null,
    "lat": 45.21,
    "lng": -93.66,
    "offer": "buy",
    "slug": "the-hideout-mn",
-   "priceLow": 290000
+   "priceLow": 280000
   },
   {
    "name": "Brink 4 Luxury Condos",
@@ -6421,8 +6423,8 @@
    "state": "MN",
    "status": "Selling",
    "units": 44,
-   "priceNote": "From $230K",
-   "website": null,
+   "priceNote": "From ~$230K",
+   "website": "https://www.westenddelano.com",
    "lat": 45.04,
    "lng": -93.79,
    "offer": "buy",
@@ -8554,6 +8556,19 @@
    "offer": "buy",
    "slug": "dakota-dunes-toy-box-storage-units-sd",
    "priceLow": 135000
+  },
+  {
+   "name": "The Collector's Headquarters",
+   "city": "San Jose",
+   "state": "CA",
+   "status": "Resale only",
+   "units": 86,
+   "priceNote": "Resales ~$470/SF",
+   "website": null,
+   "lat": 37.4,
+   "lng": -121.92,
+   "offer": "buy",
+   "slug": "the-collectors-headquarters-ca"
   }
  ]
 }
