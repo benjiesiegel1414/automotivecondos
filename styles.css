@@ -284,9 +284,10 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .adv-caret{width:2px;height:20px;background:var(--blue);animation:blink 1s steps(1) infinite;margin-left:-6px}
 @keyframes blink{50%{opacity:0}}
 .adv-sub{color:#C9D1DB;font-size:16.5px;line-height:1.6;max-width:520px;margin:0 0 26px}
-.adv-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.adv-btn{padding:14px 26px;font-size:15.5px;box-shadow:0 10px 26px rgba(0,84,166,.45)}
-.adv-link{color:#9CC6F2;font-size:14px}
+.adv-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;max-width:470px}
+.adv-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;padding:18px 26px;font-size:18px;font-weight:800;border-radius:12px;box-shadow:0 14px 34px rgba(0,84,166,.5);animation:advPulse 2.6s ease-in-out infinite}
+@keyframes advPulse{0%,100%{box-shadow:0 14px 34px rgba(0,84,166,.5)}50%{box-shadow:0 14px 44px rgba(59,142,226,.75)}}
+.adv-link{color:#9CC6F2;font-size:15px;text-align:center}
 .adv-hero-art{flex:0 0 380px;position:relative;height:380px}
 .float-card{position:absolute;width:290px;background:#fff;color:#1F2733;border-radius:14px;overflow:hidden;box-shadow:0 26px 60px rgba(0,0,0,.45)}
 .fc-img{height:130px;background-size:cover;background-position:center}
@@ -526,3 +527,42 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .best-hub-card .bh-st{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--blue)}
 .best-hub-card h3{font-size:18px;margin:6px 0;color:var(--ink)}
 .best-hub-card .bb-go2{font-weight:700;font-size:14px;color:var(--blue)}
+
+/* advertise packages (landing-page style) */
+.pk-sec{position:relative;overflow:hidden;padding:92px 0 80px;background:radial-gradient(ellipse at 50% 0%,rgba(59,142,226,.22),transparent 60%),linear-gradient(180deg,#0F1216 0%,#151A21 100%);color:#fff}
+.pk-head{text-align:center;margin-bottom:44px}
+.pk-head h2{color:#fff;font-size:42px;line-height:1.1;margin:0 0 12px}
+.pk-head p{color:#AEB8C4;font-size:16.5px;margin:0}
+.pk-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:900px;margin:0 auto;align-items:stretch}
+.pk-card{position:relative;background:linear-gradient(180deg,#1B2129,#161B22);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:36px 32px 28px;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.35);transition:transform .25s ease,box-shadow .25s ease}
+.pk-card:hover{transform:translateY(-4px);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.pk-hot{background:linear-gradient(180deg,#14304F,#0F1C2E);border:1.5px solid #3B8EE2;box-shadow:0 0 0 6px rgba(59,142,226,.12),0 30px 80px rgba(0,84,166,.45)}
+.pk-ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:linear-gradient(90deg,#0054A6,#3B8EE2);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;padding:7px 16px;border-radius:999px;box-shadow:0 8px 20px rgba(0,84,166,.5)}
+.pk-name{font-weight:800;font-size:19px;color:#fff;margin-bottom:14px}
+.pk-life{display:inline-block;margin-left:6px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#0F1C2E;background:#7FC4FF;border-radius:6px;padding:3px 8px;vertical-align:3px}
+.pk-price{font-family:'Manrope',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-1.5px;color:#fff}
+.pk-price span{font-size:16px;letter-spacing:0;color:#AEB8C4;font-weight:600;margin-left:4px}
+.pk-sub{color:#AEB8C4;font-size:14px;margin:10px 0 22px}
+.pk-sub b{color:#7FC4FF}
+.pk-list{list-style:none;padding:0;margin:0 0 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.pk-list li{display:flex;align-items:flex-start;gap:11px;color:#DCE3EA;font-size:15px;line-height:1.45}
+.pk-ck{flex:0 0 22px;height:22px;border-radius:50%;background:rgba(59,142,226,.18);color:#7FC4FF;display:flex;align-items:center;justify-content:center;margin-top:-1px}
+.pk-ck svg{width:12px;height:12px}
+.pk-btn{display:block;text-align:center;background:linear-gradient(90deg,#0054A6,#3B8EE2);color:#fff;font-weight:800;font-size:16.5px;padding:16px 20px;border-radius:12px;text-decoration:none;box-shadow:0 12px 28px rgba(0,84,166,.45);transition:transform .2s ease,box-shadow .2s ease}
+.pk-btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(59,142,226,.6);color:#fff}
+.pk-btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.28);box-shadow:none}
+.pk-btn-ghost:hover{background:rgba(255,255,255,.06);box-shadow:none}
+.pk-fine{text-align:center;color:#8C97A4;font-size:12.5px;margin-top:12px;font-weight:600}
+.pk-trust{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 28px;margin-top:38px;color:#AEB8C4;font-size:14px;font-weight:600}
+.pk-trust span{display:inline-flex;align-items:center;gap:8px}
+.pk-trust svg{color:#7FC4FF}
+.pk-unit{text-align:center;color:#8C97A4;font-size:14px;margin:18px 0 0}
+.pk-unit a{color:#7FC4FF}
+@media(max-width:760px){
+  .pk-sec{padding:70px 0 60px}
+  .pk-head h2{font-size:32px}
+  .pk-grid{grid-template-columns:1fr;gap:34px}
+  .pk-hot{order:-1}
+  .pk-card{padding:34px 24px 24px}
+  .pk-price{font-size:48px}
+}
