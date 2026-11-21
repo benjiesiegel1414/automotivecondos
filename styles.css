@@ -548,8 +548,13 @@ nav.main a.nav-adv:hover{color:#FFE27A}
 .pk-list li{display:flex;align-items:flex-start;gap:11px;color:#DCE3EA;font-size:15px;line-height:1.45}
 .pk-ck{flex:0 0 22px;height:22px;border-radius:50%;background:rgba(59,142,226,.18);color:#7FC4FF;display:flex;align-items:center;justify-content:center;margin-top:-1px}
 .pk-ck svg{width:12px;height:12px}
-.pk-btn{display:block;text-align:center;background:linear-gradient(90deg,#0054A6,#3B8EE2);color:#fff;font-weight:800;font-size:16.5px;padding:16px 20px;border-radius:12px;text-decoration:none;box-shadow:0 12px 28px rgba(0,84,166,.45);transition:transform .2s ease,box-shadow .2s ease}
-.pk-btn:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(59,142,226,.6);color:#fff}
+.pk-btn{position:static;display:block;text-align:center;background:linear-gradient(90deg,#0054A6,#3B8EE2);color:#fff;font-weight:800;font-size:16.5px;padding:16px 20px;border-radius:12px;text-decoration:none;box-shadow:0 12px 28px rgba(0,84,166,.45);transition:transform .2s ease,box-shadow .2s ease}
+.pk-btn:hover{box-shadow:0 16px 36px rgba(59,142,226,.6);color:#fff}
+.pk-btn::after{content:"";position:absolute;inset:0;border-radius:20px;z-index:1}
+.pk-card{cursor:pointer}
+.pk-card:hover .pk-btn{box-shadow:0 16px 36px rgba(59,142,226,.6)}
+.pk-card:hover .pk-btn-ghost{background:rgba(255,255,255,.08);box-shadow:none}
+.pk-ribbon{pointer-events:none}
 .pk-btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.28);box-shadow:none}
 .pk-btn-ghost:hover{background:rgba(255,255,255,.06);box-shadow:none}
 .pk-fine{text-align:center;color:#8C97A4;font-size:12.5px;margin-top:12px;font-weight:600}
